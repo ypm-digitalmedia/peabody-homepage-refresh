@@ -13,7 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="http://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <style>
@@ -35,8 +35,8 @@
 
     <header>
         <div class="container">
-            <img src="http://peabody.yale.edu/sites/all/themes/restricted/peabody/images/torosauras.png" width="275" class="toro" />
-            <!--<img src="http://peabody.yale.edu/sites/default/files/images/peabody_wordmark_2color_single.png" height="30" width="auto" />-->
+            <img src="img/torosaurus.png" width="275" class="toro" />
+            <img class="wordmark" src="img/peabodyWordmarkSingle.png" height="30" width="auto" />
         </div>
     </header>
 
@@ -188,49 +188,314 @@
         </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+
+
+    <div class="jumbotron main-slider">
         <div class="container">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a class="btn btn-peabody btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+            <div id="slider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators carousel-ui">
+                    <li data-target="#slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                    <li data-target="#slider" data-slide-to="3"></li>
+                    <li data-target="#slider" data-slide-to="4"></li>
+                    <li data-target="#slider" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/slider/museumWithToro.jpg" alt="Museum with Torosaurus" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/slider/davidFriendHall.jpg" alt="David Friend Hall" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/slider/placeholder.png" alt="n/a" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/slider/placeholder.png" alt="n/a" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/slider/placeholder.png" alt="n/a" style="width:100%;">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/slider/placeholder.png" alt="n/a" style="width:100%;">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control carousel-ui" href="#slider" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control carousel-ui" href="#slider" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="jumbotron" id="masthead">
+        <div class="container">
+            <h1 class="bigTitle" id="mainHeader">A Yale and New Haven Treasure</h1>
+            <p class="jumbotron-paragraph">The mission of the Peabody Museum is to serve Yale University by advancing our understanding of earth’s history through geological, biological and anthropological research, and by communicating the results of this research to the widest possible
+                audience through publication, exhibition and educational programs.</p>
+            <h3>We're evolving!</h3>
+            <p>Visit our new website, <a href="#">Peabody Evolved</a>, to learn more.</p>
+            <!--<p><a class="btn btn-peabody btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
         </div>
     </div>
 
     <div class="container">
-        <!-- Example row of columns -->
+
+
+        <h1 class="mediumTitle" id="upcomingEvents">Upcoming Events</h1>
+
+        <div class="alert alert-warning" role="alert">
+            <h1><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h1>
+            <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
+        </div>
+
+        <!-- 2-column upcoming event panels -->
         <div class="row">
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-md-6">
+                <div class="card-container">
+                    <div class="box-item box-with-header">
+                        <figure class="front">
+                            <h2 class="box-header">Header</h2>
+                            <p>FRONT OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                        <figure class="back">
+                            <h2 class="box-header">Header</h2>
+                            <p>BACK OF THE CARD</p>
+                        </figure>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-4">
-                <h2>Heading</h2>
-                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
-                    risus.
-                </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            <div class="col-md-6">
+                <div class="card-container">
+                    <div class="box-item box-with-header">
+                        <figure class="front">
+                            <h2 class="box-header">Header</h2>
+                            <p>FRONT OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                        <figure class="back">
+                            <h2 class="box-header">Header</h2>
+                            <p>BACK OF THE CARD</p>
+                        </figure>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <hr>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="button-row"><a class="btn btn-peabody btn-lg" href="#" role="button"><i class="fa fa-calendar"></i> View Calendar</a></p>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- 3-column main call-to-action panels -->
+        <h1 class="mediumTitle" id="explore">Explore the Peabody</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-container">
+                    <div class="box-item box">
+                        <figure class="front">
+                            <h2>School &amp; Group Visits</h2>
+                            <p>FRONT OF THE CARD</p>
+                        </figure>
+                        <figure class="back">
+                            <h5>Header</h5>
+                            <p>BACK OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-container">
+                    <div class="box-item box">
+                        <figure class="front">
+                            <h2>Mailing List</h2>
+                            <p>FRONT OF THE CARD</p>
+                        </figure>
+                        <figure class="back">
+                            <form class="form-horizontal form-contact" name="contact" action="javascript:alert('submitted')">
+                                <fieldset>
+                                    <!-- Form Name -->
+                                    <h5>Sign up for our mailing list</h5>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="first_name">First Name</label>
+                                        <div class="col-md-8">
+                                            <input id="first_name" name="first_name" placeholder="" class="form-control input-md" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="last_name">Last Name</label>
+                                        <div class="col-md-8">
+                                            <input id="last_name" name="last_name" placeholder="" class="form-control input-md" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <!-- Text input-->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="email">Email</label>
+                                        <div class="col-md-8">
+                                            <input id="email" name="email" placeholder="" class="form-control input-md" required="" type="text">
+                                        </div>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="form-group">
+                                        <label class="col-md-4 control-label" for="submit"></label>
+                                        <div class="col-md-8">
+                                            <button id="submit" name="submit" type="submit" class="btn btn-peabody">Submit</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-container">
+                    <div class="box-item box">
+                        <figure class="front photo-front" style="background-image:url('../images/collections/IMG1.jpg')">
+                            <h2>Collections</h2>
+                            <!--<p>FRONT OF THE CARD</p>-->
+                        </figure>
+                        <figure class="back">
+                            <h5>Header</h5>
+                            <p>BACK OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card-container">
+                    <div class="box-item box">
+                        <figure class="front">
+                            <h2>Exhibits</h2>
+                            <p>FRONT OF THE CARD</p>
+                        </figure>
+                        <figure class="back">
+                            <h5>Header</h5>
+                            <p>BACK OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-container">
+                    <div class="box-item box">
+                        <figure class="front">
+                            <h2>Summer Camps</h2>
+                            <p>FRONT OF THE CARD</p>
+                        </figure>
+                        <figure class="back">
+                            <h5>Header</h5>
+                            <p>BACK OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card-container">
+                    <div class="box-item box">
+                        <figure class="front">
+                            <h2>Support</h2>
+                            <p>FRONT OF THE CARD</p>
+                        </figure>
+                        <figure class="back">
+                            <h5>Header</h5>
+                            <p>BACK OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <!-- Hours & Admission -->
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mediumTitle">Hours and Admission</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <p style="text-align: right;">
+                    <span class="hours-day"><strong>Sunday</strong></span><br />
+                    <span class="hours-day"><strong>Monday</strong></span><br />
+                    <span class="hours-day"><strong>Tuesday</strong></span><br />
+                    <span class="hours-day"><strong>Wednesday</strong></span><br />
+                    <span class="hours-day"><strong>Thursday</strong></span><br />
+                    <span class="hours-day"><strong>Friday</strong></span><br />
+                    <span class="hours-day"><strong>Saturday</strong></span>
+                </p>
+            </div>
+            <div class="col-xs-6">
+                <p>
+                    <span class="hours-time">12 pm &ndash; 5 pm</span><br />
+                    <span class="hours-time">CLOSED</span><br />
+                    <span class="hours-time">10 am &ndash; 5 pm</span><br />
+                    <span class="hours-time">10 am &ndash; 5 pm</span><br />
+                    <span class="hours-time">10 am &ndash; 5 pm</span><br />
+                    <span class="hours-time">10 am &ndash; 5 pm</span><br />
+                    <span class="hours-time">10 am &ndash; 5 pm</span>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p align="center"><br /><strong>Note:</strong>&nbsp;Openings subject to inclement weather, and holiday schedules.<br />Please check our <a href="#">admissions</a> page for more information.</p>
+
+                <p align="center">
+                    <a href="#" class="btn btn-peabody" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> Directions</a>
+                    <!--<a href="#" class="btn btn-peabody" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i> Admissions Info</a>-->
+                </p>
+            </div>
+        </div>
+
+        <hr />
 
         <footer>
-            <p>&copy; Company 2015</p>
+            <p class="footer-copyright">
+                <a class="footer-item footer-logo" href="http://www.yale.edu"><img src="img/yaleWordmark.gif" alt="Yale University" width="72" height="36"></a>
+                <p class="footer-item footer-text">Copyright &copy; 2017, Yale Peabody Museum of Natural History. All rights reserved.<br /> 170 Whitney Ave, New Haven, CT 06511&nbsp;&bull;&nbsp;<a target="_blank" href="http://www.yale.edu/privacy">Privacy policy</a></p>
+            </p>
+
         </footer>
     </div>
     <!-- /container -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
 
+    <script src="js/vendor/jquery.fittext.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
