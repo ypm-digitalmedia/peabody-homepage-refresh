@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
 
-
+    $(window).resize(function() { console.log($(".box").eq(0).css("width")); });
 
 
 
