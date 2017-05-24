@@ -104,7 +104,7 @@
                             <li><a href="#">Action</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Peabody Online</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
@@ -115,7 +115,7 @@
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Action</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Collections</a>
                         <ul class="dropdown-menu">
@@ -167,7 +167,7 @@
                             <li><a href="#">Action</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <!--<li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Store</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
@@ -181,7 +181,7 @@
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Action</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                 </ul>
             </div>
             <!--/.navbar-collapse -->
@@ -261,7 +261,8 @@
         <h1 class="mediumTitle" id="upcomingEvents">Upcoming Events</h1>
 
         <div class="alert alert-warning" role="alert">
-            <h1><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h1>
+            <!--<h1><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h1>-->
+            <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
             <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
         </div>
 
@@ -272,6 +273,7 @@
                     <div class="box-item box-with-header">
                         <figure class="front photo-front" style="background-image:url('../images/collections/DSC03882.JPG')">
                             <h2 class="box-header">Gallery Talk</h2>
+                            <h5 class="box-date box-date-photo box-date-right">June 1, 2017</h5>
                         </figure>
                         <figure class="back">
                             <h2 class="box-header">Gallery Talk</h2>
@@ -472,12 +474,22 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p align="center"><br /><strong>Note:</strong>&nbsp;Openings subject to inclement weather, and holiday schedules.<br />Please check our <a href="#">admissions</a> page for more information.</p>
+                <p align="center"><br /><strong>Note:</strong>&nbsp;Openings subject to inclement weather and holiday schedules.<br />Please check our <a href="#">admissions</a> page for more information.</p>
 
                 <p align="center">
                     <a href="#" class="btn btn-peabody" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i> Directions</a>
                     <!--<a href="#" class="btn btn-peabody" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i> Admissions Info</a>-->
                 </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="social-icons">
+                    <li class="social-icon-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-icon-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-icon-youtube"><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                </ul>
             </div>
         </div>
 
@@ -498,6 +510,7 @@
     </script>
 
     <script src="js/vendor/jquery.fittext.js"></script>
+    <script src="js/vendor/lodash.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <script src="js/main.js"></script>
