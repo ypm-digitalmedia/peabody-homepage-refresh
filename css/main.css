@@ -609,3 +609,7 @@ li.social-icon-instagram:hover {
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
+
+a {
+    font-family: "Mallory MP Bold";
+}
