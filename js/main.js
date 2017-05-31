@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     $("#mainHeader").fitText(2.0);
-
+    logoImageSwap();
+    toroImageSwap();
     // $('#slider').mouseover(function() {
     //     $('.carousel-ui').css({ opacity: 0.0, visibility: "visible" }).animate({ opacity: 1.0 });
     // });
@@ -44,8 +45,38 @@ $(document).ready(function() {
         $(e).addClass("flipped");
     }, 100);
 
+    function logoImageSwap() {
+        if ($(window).width() >= 1000) {
+            $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
+        } else {
+            if ($(window).width() < 480) {
+                $(".wordmark").attr("src", "img/peabodyWordmarkDouble.png");
+            } else if ($(window).width() < 640) {
+                $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
+            } else {
+                $(".wordmark").attr("src", "img/peabodyWordmarkDouble.png");
+            }
+        }
+    }
 
-    // $(window).resize(function() { console.log($(".box").eq(0).css("width")); });
+    function toroImageSwap() {
+        if ($(window).width() < 640) {
+            $(".toro").hide();
+        } else {
+            $(".toro").show();
+        }
+    }
+
+
+    var headerImageSwapDebounced = _.debounce(function(e) {
+        // $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
+        logoImageSwap();
+        toroImageSwap();
+    }, 25);
+
+    $(window).resize(function() {
+        headerImageSwapDebounced();
+    });
 
 
 
