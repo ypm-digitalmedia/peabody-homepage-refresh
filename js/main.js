@@ -1,5 +1,9 @@
 var isMobile = false; //initiate as false
+var fliplocks = {};
+var fliplock = false;
+
 $(document).ready(function() {
+
 
     // device detection
     if (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) ||
@@ -24,6 +28,24 @@ $(document).ready(function() {
     $(".box-item").mouseleave(function() {
         flipToFront($(this));
     });
+
+
+
+    $(".box-item").each(function() {
+        var card = $(this).attr("id");
+        fliplocks[card] = false;
+    });
+    console.log(fliplocks);
+
+
+
+
+
+
+
+
+
+
 
     // $(window).on('touchstart', function(e) {
     //     // the user touched the screen!
@@ -72,28 +94,31 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-
-
-    var flip = _.debounce(function(e) {
-        $(e).toggleClass("flipped");
-    }, 500);
-
     var flipToFront = _.debounce(function(e) {
-        $(e).removeClass("flipped");
-    }, 500);
+        setTimeout(function() {
+            $(e).removeClass("flipped");
+            fliplock = false;
+        }, 500);
+        // if (fliplock === false) {
+        //     fliplock = true;
+        //     setTimeout(function() { fliplock = false; }, 1000);
+        //     $(e).removeClass("flipped");
+        // }
+        // console.log(e.attr("id") + " flipped to front");
+    }, 100);
 
 
     var flipToBack = _.debounce(function(e) {
+        // if (fliplock === false) {
+        //     fliplock = true;
+        //     setTimeout(function() { fliplock = false; }, 500);
+        //     $(e).addClass("flipped");
+        //     $(".flipped").not(e).removeClass("flipped");
+        // }
         $(e).addClass("flipped");
-        $(".flipped").not(e).removeClass("flipped");
-    }, 500);
+        // $(".flipped").not(e).removeClass("flipped");
+        // console.log(e.attr("id") + " flipped to back");
+    }, 100);
 
     function logoImageSwap() {
         if ($(window).width() >= 1000) {

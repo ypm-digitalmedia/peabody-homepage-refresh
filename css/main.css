@@ -448,9 +448,15 @@ nav.navbar {
 
 .main-slider {
     background: white;
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     padding-bottom: 0;
     margin-bottom: 0;
+    padding-top: 0;
+}
+
+.slider-container {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 #mainHeader {
