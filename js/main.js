@@ -83,17 +83,17 @@ $(document).ready(function() {
 
     var flip = _.debounce(function(e) {
         $(e).toggleClass("flipped");
-    }, 100);
+    }, 500);
 
     var flipToFront = _.debounce(function(e) {
         $(e).removeClass("flipped");
-    }, 100);
+    }, 500);
 
 
     var flipToBack = _.debounce(function(e) {
         $(e).addClass("flipped");
         $(".flipped").not(e).removeClass("flipped");
-    }, 100);
+    }, 500);
 
     function logoImageSwap() {
         if ($(window).width() >= 1000) {

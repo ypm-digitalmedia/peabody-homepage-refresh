@@ -284,6 +284,16 @@ nav.navbar {
     cursor: pointer!important;
 }
 
+.open.dropdown .dropdown-menu {
+    background-color: #dde6ee;
+}
+
+.open.dropdown .dropdown-menu li a:hover,
+.open.dropdown .dropdown-menu li a:focus {
+    background-color: #708fb8!important;
+    color: white!important;
+}
+
 .dropdown-menu {
     border-top: none;
     border-right: 5px #708fb8 solid!important;
@@ -291,8 +301,8 @@ nav.navbar {
     border-bottom: none;
     background-color: #dde6ee;
     cursor: pointer!important;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .dropdown-menu li {
