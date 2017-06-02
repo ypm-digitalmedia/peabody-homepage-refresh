@@ -673,9 +673,11 @@ figure.photo-front h2 {
 }
 
 ul.social-icons {
-    float: right;
+    width: 100%;
+    text-align: right;
     padding-top: 2em;
     list-style: none;
+    padding-left: 0;
 }
 
 ul.social-icons li {
@@ -789,6 +791,9 @@ a {
         color: black!important;
         background-image: none!important;
         filter: none;
+    }
+    ul.social-icons {
+        text-align: center;
     }
 }
 
