@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Yale Peabody Museum of Natural History</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="http://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css" />
 
@@ -32,6 +32,13 @@
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+    <script>
+        // For IE11.
+        Modernizr.addTest('preserve3d', function() {
+            return Modernizr.testAllProps('transformStyle', 'preserve-3d');
+        });
+    </script>
 
     <header>
         <div class="container">
@@ -249,9 +256,19 @@
             <h1 class="bigTitle" id="mainHeader">A Yale and New Haven Treasure</h1>
             <p class="jumbotron-paragraph">The mission of the Peabody Museum is to serve Yale University by advancing our understanding of earth’s history through geological, biological and anthropological research, and by communicating the results of this research to the widest possible
                 audience through publication, exhibition and educational programs.</p>
-            <h3>We're evolving!</h3>
-            <p>Visit our new website, <a href="#">Peabody Evolved</a>, to learn more.</p>
-            <!--<p><a class="btn btn-peabody btn-lg" href="#" role="button">Learn more &raquo;</a></p>-->
+        </div>
+    </div>
+    <div class="jumbotron" id="masthead2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 hidden-xs" style="text-align: right">
+                    <img src="img/deino_blue.png" />
+                </div>
+                <div class="col-sm-8 col-xs-12" id="evolving_text">
+                    <h2>We're evolving!</h2>
+                    <p>Visit our new website, <a href="#">Peabody Evolved</a>, to learn more.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -261,16 +278,25 @@
         <h1 class="mediumTitle" id="upcomingEvents">Upcoming Events</h1>
 
         <div class="alert alert-warning" role="alert">
-            <!--<h1><i class="fa fa-exclamation-circle" aria-hidden="true"></i></h1>-->
-            <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
-            <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 col-sm-2 col-xs-3" style="padding-right: 5px; padding-left: 5px; text-align: center;">
+                        <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
+                    </div>
+                    <div class="col-md-11 col-sm-10 col-xs-9" style="padding-left: 0">
+                        <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <hr />
 
         <!-- 2-column upcoming event panels -->
         <div class="row">
             <div class="col-md-6">
                 <div class="card-container">
-                    <div class="box-item box">
+                    <div class="box-item box" id="card_event1">
                         <!-- replace 'box' with 'box-with-header' -->
                         <figure class="front photo-front" style="background-image:url('img/events/events1_BatB.jpg'); background-position: left;">
                             <h2 class="box-header">Temporary Exhibit</h2>
@@ -286,7 +312,7 @@
             </div>
             <div class="col-md-6">
                 <div class="card-container">
-                    <div class="box-item box-with-header">
+                    <div class="box-item box" id="card_event2">
                         <!-- replace 'box' with 'box-with-header' -->
                         <figure class="front photo-front" style="background-image:url('img/events/events1_DTFAoA.jpg'); background-position: center;">
                             <h2 class="box-header">Temporary Exhibit</h2>
@@ -315,7 +341,7 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card-container">
-                    <div class="box-item box">
+                    <div class="box-item box" id="card_cta1">
                         <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/EXHIBITS.jpg'); background-position:right;">
                             <h2>Exhibits</h2>
                         </figure>
@@ -329,8 +355,8 @@
             </div>
             <div class="col-md-4">
                 <div class="card-container">
-                    <div class="box-item box">
-                        <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/YALESTUDENTS.jpg'); background-position:center;">
+                    <div class="box-item box" id="card_cta2">
+                        <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/SCHOOLGROUPS_alt.jpg'); background-position:center;">
                             <h2>Yale Students</h2>
                         </figure>
                         <figure class="back">
@@ -343,7 +369,7 @@
             </div>
             <div class="col-md-4">
                 <div class="card-container">
-                    <div class="box-item box">
+                    <div class="box-item box" id="card_cta3">
                         <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/COLLECTIONS_alt2.jpg'); background-position:center;">
                             <h2>Collections &amp; Research</h2>
                         </figure>
@@ -360,14 +386,15 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="card-container">
-                    <div class="box-item box">
+                    <div class="box-item box" id="card_cta4">
                         <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/SCHOOLGROUPS.jpg'); background-position:center;">
                             <h2>School &amp; Group Visits</h2>
                         </figure>
                         <figure class="back">
                             <h5>School &amp; Group Visits</h5>
-                            <p>BACK OF THE CARD</p>
-                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                            <p>We invite you to explore four billion years of natural history through our captivating exhibits and exciting programs! Advance registration required.</p>
+                            <p><a href="http://peabody.yale.edu/education/general-information-reservations">General information and fees</a></p>
+                            <a href="#"><button class="btn btn-peabody">Register today</button></a>
                         </figure>
                     </div>
                 </div>
@@ -375,7 +402,7 @@
             <div class="col-md-4">
 
                 <div class="card-container">
-                    <div class="box-item box">
+                    <div class="box-item box" id="card_cta5">
                         <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/CONNECT.jpg'); background-position:center;">
                             <h2>Connect</h2>
                         </figure>
@@ -386,30 +413,33 @@
                                     <h5>Sign up for our mailing list</h5>
                                     <!-- Text input-->
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label" for="first_name">First Name</label>
-                                        <div class="col-md-8">
-                                            <input id="first_name" name="first_name" placeholder="" class="form-control input-md" required="" type="text">
+                                        <!--<label class="col-md-4 control-label" for="first_name">First Name</label>-->
+                                        <!--<div class="col-md-8">-->
+                                        <div class="col-md-12">
+                                            <input id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
                                         </div>
                                     </div>
                                     <!-- Text input-->
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label" for="last_name">Last Name</label>
-                                        <div class="col-md-8">
-                                            <input id="last_name" name="last_name" placeholder="" class="form-control input-md" required="" type="text">
+                                        <!--<label class="col-md-4 control-label" for="last_name">Last Name</label>-->
+                                        <!--<div class="col-md-8">-->
+                                        <div class="col-md-12">
+                                            <input id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
                                         </div>
                                     </div>
                                     <!-- Text input-->
                                     <div class="form-group">
-                                        <label class="col-md-4 control-label" for="email">Email</label>
-                                        <div class="col-md-8">
-                                            <input id="email" name="email" placeholder="" class="form-control input-md" required="" type="text">
+                                        <!--<label class="col-md-4 control-label" for="email">Email</label>-->
+                                        <!--<div class="col-md-8">-->
+                                        <div class="col-md-12">
+                                            <input id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text">
                                         </div>
                                     </div>
                                     <!-- Button -->
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="submit"></label>
                                         <div class="col-md-8">
-                                            <button id="submit" name="submit" type="submit" class="btn btn-peabody">Submit</button>
+                                            <button id="submit" name="submit" type="submit" class="btn btn-peabody">Sign Up</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -421,14 +451,20 @@
             </div>
             <div class="col-md-4">
                 <div class="card-container">
-                    <div class="box-item box">
+                    <div class="box-item box" id="card_cta6">
                         <figure class="front photo-front" style="background-image:url('img/cards/main_links_1/SUPPORT.jpg'); background-position:right;">
                             <h2>Support</h2>
                         </figure>
-                        <figure class="back">
-                            <h5>Support</h5>
-                            <p>BACK OF THE CARD</p>
-                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        <figure class="back diagonal-back">
+                            <div class="back-top back-left">
+                                <h5>Donate to the Peabody</h5>
+                                <p>Every contribution counts!</p>
+                                <a href="#"><button class="btn btn-peabody">Donate now</button></a>
+                            </div>
+                            <div class="back-bottom back-right">
+                                <h5>Become a Member</h5>
+                                <a href="#"><button class="btn btn-peabody">Learn more</button></a>
+                            </div>
                         </figure>
                     </div>
                 </div>
@@ -458,7 +494,7 @@
             <div class="col-xs-6">
                 <p>
                     <span class="hours-time">12 pm &ndash; 5 pm</span><br />
-                    <span class="hours-time">CLOSED</span><br />
+                    <span class="hours-time hours-time-closed">CLOSED</span><br />
                     <span class="hours-time">10 am &ndash; 5 pm</span><br />
                     <span class="hours-time">10 am &ndash; 5 pm</span><br />
                     <span class="hours-time">10 am &ndash; 5 pm</span><br />
@@ -507,6 +543,7 @@
     <script src="js/vendor/jquery.fittext.js"></script>
     <script src="js/vendor/lodash.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/hammer.min.js"></script>
 
     <script src="js/main.js"></script>
 

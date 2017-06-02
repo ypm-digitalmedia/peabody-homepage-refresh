@@ -431,8 +431,16 @@ nav.navbar {
     padding-top: 1.5em;
 }
 
+.carousel-inner {
+    width: 100%;
+    max-height: 400px !important;
+}
+
 .main-slider {
     background: white;
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 #mainHeader {
@@ -459,10 +467,28 @@ strong {
     text-transform: uppercase;
 }
 
+.jumbotron h1 {
+    font-size: 48px;
+}
 
-/*#masthead {
-    background: #dde6ee;
+
+/*h1 {
+    margin-top: 36px;
+    margin-bottom: 36px;
 }*/
+
+#masthead {
+    /*background: #dde6ee;*/
+    background: white;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#masthead2 {
+    /*background: #eeeeee;*/
+    background: #dde6ee;
+}
 
 .jumbotron p {
     font-size: 18px;
@@ -507,6 +533,11 @@ strong {
     margin-right: 2em;
 }
 
+.hours-time-closed {
+    font-weight: 700;
+    font-family: "Mallory MP Book";
+}
+
 .inline-time {
     text-align: left;
     min-width: 12em;
@@ -520,6 +551,8 @@ strong {
     transition: transform 1s;
     padding: 0;
     height: 300px;
+    min-height: 300px;
+    margin-left: -5px;
 }
 
 .box-item:hover {
@@ -557,6 +590,34 @@ strong {
 .card-container {
     perspective: 800px;
     position: relative;
+}
+
+.back {
+    border-top: #708fb8 8px solid;
+}
+
+.diagonal-back {
+    background-size: cover;
+    background-image: url('../img/cards/diagonal_blue_2.png');
+    background-position: center;
+}
+
+.back-top {
+    width: 100%;
+    height: 50%;
+}
+
+.back-bottom {
+    width: 100%;
+    height: 50%;
+}
+
+.back-right {
+    text-align: right;
+}
+
+.back-left {
+    text-align: left;
 }
 
 .photo-front {
@@ -718,5 +779,11 @@ a {
         color: black!important;
         background-image: none!important;
         filter: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #evolving_text {
+        text-align: center;
     }
 }
