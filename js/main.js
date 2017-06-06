@@ -116,7 +116,7 @@ $(document).ready(function() {
         //     $(".flipped").not(e).removeClass("flipped");
         // }
         $(e).addClass("flipped");
-        // $(".flipped").not(e).removeClass("flipped");
+        $(".flipped").not(e).removeClass("flipped");
         // console.log(e.attr("id") + " flipped to back");
     }, 100);
 
