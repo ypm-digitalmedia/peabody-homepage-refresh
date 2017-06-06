@@ -247,6 +247,9 @@ nav.navbar {
     margin-bottom: 0!important;
     border: none!important;
     min-height: 0;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 8;
 }
 
 .navbar-right {
@@ -464,7 +467,7 @@ nav.navbar {
 }
 
 #explore {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .mediumTitle {

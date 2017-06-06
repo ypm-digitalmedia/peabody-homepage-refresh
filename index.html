@@ -273,20 +273,7 @@
 
         <h1 class="mediumTitle" id="upcomingEvents">Upcoming Events</h1>
 
-        <div class="alert alert-warning" role="alert">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-1 col-sm-2 col-xs-3" style="padding-right: 5px; padding-left: 5px; text-align: center;">
-                        <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
-                    </div>
-                    <div class="col-md-11 col-sm-10 col-xs-9" style="padding-left: 0">
-                        <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr />
+        <!--<hr />-->
 
         <!-- 2-column upcoming event panels -->
         <div class="row">
@@ -309,6 +296,42 @@
             <div class="col-md-6">
                 <div class="card-container">
                     <div class="box-item box" id="card_event2">
+                        <!-- replace 'box' with 'box-with-header' -->
+                        <figure class="front photo-front" style="background-image:url('img/events/events1_DTFAoA.jpg'); background-position: center;">
+                            <h2 class="box-header">Temporary Exhibit</h2>
+                            <h5 class="box-date box-date-photo box-date-right">Through August 30, 2017</h5>
+                        </figure>
+                        <figure class="back">
+                            <h2 class="box-header">Temporary Exhibit</h2>
+                            <p>BACK OF THE CARD</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- duplicate row for testing -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-container">
+                    <div class="box-item box" id="card_event3">
+                        <!-- replace 'box' with 'box-with-header' -->
+                        <figure class="front photo-front" style="background-image:url('img/events/events1_BatB.jpg'); background-position: left;">
+                            <h2 class="box-header">Temporary Exhibit</h2>
+                            <h5 class="box-date box-date-photo box-date-right">Through August 6, 2017</h5>
+                        </figure>
+                        <figure class="back">
+                            <h2 class="box-header">Temporary Exhibit</h2>
+                            <p>June 1, 2017</p>
+                            <p class="button-row"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card-container">
+                    <div class="box-item box" id="card_event4">
                         <!-- replace 'box' with 'box-with-header' -->
                         <figure class="front photo-front" style="background-image:url('img/events/events1_DTFAoA.jpg'); background-position: center;">
                             <h2 class="box-header">Temporary Exhibit</h2>
@@ -469,10 +492,25 @@
 
         <hr />
 
+
+
+        <div class="alert alert-warning" role="alert">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-1 col-sm-2 col-xs-3" style="padding-right: 5px; padding-left: 5px; text-align: center;">
+                        <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
+                    </div>
+                    <div class="col-md-11 col-sm-10 col-xs-9" style="padding-left: 0">
+                        <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Hours & Admission -->
         <div class="row">
             <div class="col-md-12">
-                <h2 class="mediumTitle">Hours and Admission</h2>
+                <h2 class="mediumTitle">Hours &amp; Admission</h2>
             </div>
         </div>
         <div class="row">
@@ -499,6 +537,7 @@
                 </p>
             </div>
         </div>
+
         <div class="row">
             <div class="col-md-12">
                 <p align="center"><br /><strong>Note:</strong>&nbsp;Openings subject to inclement weather and holiday schedules.<br />Please check our <a href="http://peabody.yale.edu/visit/admission-hours">admissions</a> page for more information.</p>
