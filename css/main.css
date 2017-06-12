@@ -209,41 +209,114 @@ MALLORY FONTS (Mallory microplus) - AM
 
 /* -----------------------------------------------------------*/
 
+.mallory-thin {
+    font-family: "Mallory Thin";
+}
+
+.mallory-light {
+    font-family: "Mallory Light";
+}
+
+.mallory-extra-light {
+    font-family: "Mallory Extra Light";
+}
+
+.mallory-book {
+    font-family: "Mallory Book";
+}
+
+.mallory-medium {
+    font-family: "Mallory Medium";
+}
+
+.mallory-black {
+    font-family: "Mallory Black";
+}
+
+.mallory-bold {
+    font-family: "Mallory Bold";
+}
+
+.mallory-ultra {
+    font-family: "Mallory Ultra";
+}
+
+.mallory-mp-light {
+    font-family: "Mallory MP Light";
+}
+
+.mallory-mp-book {
+    font-family: "Mallory MP Book";
+}
+
+.mallory-mp-medium {
+    font-family: "Mallory MP Medium";
+}
+
+.mallory-mp-bold {
+    font-family: "Mallory MP Bold";
+}
+
+.mallory-mp-black {
+    font-family: "Mallory MP Black";
+}
+
+
+}
+
+/* -----------------------------------------------------------*/
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
+.plain-case {
+    text-transform: none!important;
+}
+.exhibit-heading {
+    margin-bottom: 0!important;
+}
+.exhibit-subheading {
+    letter-spacing: 0.04em;
+    margin-top: 0.1em;
+}
+
+/* -----------------------------------------------------------*/
 body {
     padding-top: 0;
     font-family: "Mallory MP Light";
     font-weight: normal;
+    overflow-x: hidden;
 }
-
 header {
     background-color: #dde6ee!important;
     margin-top: -50px;
     margin-bottom: -51px;
 }
-
 .footer-item {
     font-size: 11px;
     float: left;
 }
-
 .footer-logo {
     margin-right: 30px;
 }
-
 .footer-text {
     margin-left: 30px;
     padding-top: 0.5em;
 }
-
 .navbar-toggle {
     margin-right: 5px;
 }
-
 nav.navbar {
     background-color: #708fb8;
     border-radius: 0!important;
     color: white;
     /*padding-left: 280px;*/
+    
     margin-bottom: 0!important;
     border: none!important;
     min-height: 0;
@@ -251,52 +324,45 @@ nav.navbar {
     position: relative;
     z-index: 8;
 }
-
 .navbar-right {
     position: relative;
     z-index: 500;
 }
-
 .dropdown-toggle {
     -webkit-font-smoothing: antialiased;
     font-family: "The Sans Bold Plain";
     color: white;
     text-transform: uppercase;
 }
-
 .navbar-nav>li>a {
     padding: 0.2em 1em;
 }
-
 .dropdown a {
     color: white;
 }
-
 .nav .open>a {
     background-color: #dde6ee!important;
     color: black!important;
     /*background-color: #708fb8!important;*/
+    
     border-right: 5px #708fb8 solid!important;
 }
-
 .nav>li>a:hover,
 .nav>li>a:focus {
     /*background-color: red;*/
+    
     background: none;
     color: black;
     cursor: pointer!important;
 }
-
 .open.dropdown .dropdown-menu {
     background-color: #dde6ee;
 }
-
 .open.dropdown .dropdown-menu li a:hover,
 .open.dropdown .dropdown-menu li a:focus {
     background-color: #708fb8!important;
     color: white!important;
 }
-
 .dropdown-menu {
     border-top: none;
     border-right: 5px #708fb8 solid!important;
@@ -307,18 +373,15 @@ nav.navbar {
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
 .dropdown-menu li {
     font-size: 12px;
     cursor: pointer!important;
     text-align: right;
 }
-
 .dropdown-menu li a {
     font-family: "Mallory MP Light"!important;
     cursor: pointer!important;
 }
-
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
     background-color: #708fb8!important;
@@ -326,7 +389,6 @@ nav.navbar {
     background-image: none!important;
     filter: none;
 }
-
 .wordmark {
     z-index: 11;
     position: relative;
@@ -335,17 +397,14 @@ nav.navbar {
     top: 85px;
     margin-right: 10px;
 }
-
 .toro {
     position: relative;
     z-index: 10;
 }
-
 .spacer {
     width: 250px;
     height: 1px;
 }
-
 .btn-peabody {
     background-image: -webkit-linear-gradient(top, #708fb8 0, #01356b 100%);
     background-image: -o-linear-gradient(top, #708fb8 0, #01356b 100%);
@@ -357,13 +416,13 @@ nav.navbar {
     border-color: #708fb8;
     color: white;
     /*color: rgb(51, 51, 51);*/
+    
     -webkit-transition: 0.2s all ease-in;
     transition: 0.2s background-image ease-in;
     font-family: "Mallory Bold";
     text-transform: uppercase;
     cursor: pointer;
 }
-
 .btn-peabody:hover,
 .btn-peabody:focus,
 .btn-peabody.focus,
@@ -383,7 +442,6 @@ nav.navbar {
     transition: 0.2s all ease-in;
     cursor: pointer;
 }
-
 .box {
     margin: 1em;
     border-top: #708fb8 8px solid;
@@ -392,26 +450,27 @@ nav.navbar {
     border-bottom: #708fb8 1px solid;
     /*padding: 1em;*/
 }
-
 .box p {
-    text-align: justify;
+    /*text-align: justify;*/
+    
+    font-size: 13px;
+    text-align: left;
 }
-
+.box hr {
+    margin: 5px auto;
+}
 .box h2 {
     margin: 0 0 0.5em 0;
 }
-
 .box-with-header {
     border: #708fb8 1px solid;
     padding: 0 0 1em 0;
     margin: 1em;
 }
-
 .box-with-header p {
     padding: 1em;
     text-align: justify;
 }
-
 .box-with-header h2.box-header {
     width: 100%;
     background-color: #708fb8;
@@ -419,18 +478,22 @@ nav.navbar {
     margin: 0;
     color: white;
 }
-
+.back .box-header {
+    margin-top: 0;
+}
+.back h2,
+.back h3 {
+    margin-top: 10px;
+}
 .box-with-footer {
     border: #708fb8 1px solid;
     padding: 0 0 1em 0;
     margin: 1em;
 }
-
 .box-with-footer p {
     padding: 1em;
     text-align: justify;
 }
-
 .box-with-footer h2.box-footer {
     width: 100%;
     background-color: #708fb8;
@@ -438,43 +501,36 @@ nav.navbar {
     margin: 0;
     color: white;
 }
-
 .button-row {
     text-align: center;
     padding-top: 1.5em;
 }
-
 .carousel-inner {
     width: 100%;
-    max-height: 400px !important;
+    max-height: 500px !important;
 }
-
 .main-slider {
     background: white;
     /*padding-top: 20px;*/
+    
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0;
 }
-
 .slider-container {
     padding-left: 0;
     padding-right: 0;
 }
-
 #mainHeader {
     text-align: center;
 }
-
 #explore {
     margin-top: 1em;
 }
-
 .mediumTitle {
     text-align: center;
     margin-bottom: 1em;
 }
-
 h1,
 h2,
 h3,
@@ -484,100 +540,93 @@ h6,
 strong {
     font-family: "Mallory Bold";
     text-transform: uppercase;
+    /*letter-spacing: 0.1em;*/
 }
-
 .jumbotron h1 {
     font-size: 48px;
 }
-
 
 /*h1 {
     margin-top: 36px;
     margin-bottom: 36px;
 }*/
-
 #masthead {
     /*background: #dde6ee;*/
+    
     background: white;
     margin-bottom: 0;
     padding-bottom: 20px;
     padding-top: 20px;
 }
-
 #masthead2 {
     /*background: #eeeeee;*/
+    
     background: #dde6ee;
 }
-
 .jumbotron p {
     font-size: 18px;
 }
-
 .jumbotron-paragraph {
     text-align: center;
     line-height: 1.6em;
     margin: 1em 0;
 }
-
 .alert {
     margin-right: 10%;
     margin-left: 10%;
 }
-
 .alert h1,
 .alert h2,
 .alert h3 {
     /*border-right: 1px solid rgb(102, 81, 44);*/
+    
     display: inline-block;
     margin: 0;
     /*padding-right: 1em;*/
+    
     margin-right: 0.5em;
 }
-
 .alert span {
     display: inline-block;
     font-size: 14px;
 }
 
-
 /*.carousel-ui {
     visibility: hidden;
     opacity: 0;
 }*/
-
 .hours-day {
     display: inline-block;
     width: 12em;
     text-align: right;
     margin-right: 2em;
 }
-
 .hours-time-closed {
     font-weight: 700;
     font-family: "Mallory MP Book";
 }
-
 .inline-time {
     text-align: left;
     min-width: 12em;
 }
-
 .box-item {
     width: 100%;
     height: 100%;
     /*position: absolute;*/
+    
     transform-style: preserve-3d;
     transition: transform 1s;
     padding: 0;
     height: 300px;
     min-height: 300px;
-    margin-left: -5px;
+    margin-left: 5px;
+    transform: translateX(-5px);
 }
-
 .box-item:hover {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
+/*.box-item div,*/
 .box-item figure {
     margin: 0;
     display: block;
@@ -590,97 +639,84 @@ strong {
     padding: 1em;
 }
 
+/*.box-item.box-with-header div, */
 .box-item.box-with-header figure {
     padding: 0;
 }
-
 .box-item .front {
     /*background-color: white;*/
+    
+    overflow-y: hidden;
 }
-
 .box-item .back {
     transform: rotateY(180deg) translateY(-300px);
+    background-color: white;
+    overflow: hidden;
 }
-
 .box-item.flipped {
     transform: rotateY( 180deg);
 }
-
 .card-container {
     perspective: 800px;
     position: relative;
 }
-
 .back {
     border-top: #708fb8 8px solid;
 }
-
 .diagonal-back {
     background-size: cover;
     background-image: url('../img/cards/diagonal_blue_2.png');
     background-position: center;
 }
-
 .back-top {
     width: 100%;
     height: 50%;
 }
-
 .back-bottom {
     width: 100%;
     height: 50%;
 }
-
 .back-right {
     text-align: right;
 }
-
 .back-left {
     text-align: left;
 }
-
 .photo-front {
     background-size: cover;
 }
 
+/*div.photo-front h2,*/
 figure.photo-front h2 {
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     color: white;
 }
-
 .box-with-header .box-date {
     position: relative;
     top: 220px;
 }
-
 .box .box-date-right {
     margin-right: -1em;
 }
-
 .box-with-header .box-date-right {
     margin-right: 0;
 }
-
 .box .box-date {
     position: relative;
     top: 210px;
 }
-
 .box-date-right {
     right: 10px;
     text-align: right;
 }
-
 .box-date-left {
     left: 10px;
     text-align: left;
 }
-
 .box-date-photo {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     color: white;
 }
-
 ul.social-icons {
     width: 100%;
     text-align: right;
@@ -688,7 +724,6 @@ ul.social-icons {
     list-style: none;
     padding-left: 0;
 }
-
 ul.social-icons li {
     display: inline-block;
     margin-right: 0.5em;
@@ -705,63 +740,49 @@ ul.social-icons li {
     min-width: 1.8em;
     text-align: center;
 }
-
 ul.social-icons li a {
     color: white!important;
 }
-
 ul.social-icons li:hover {
     border-radius: 50%;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
-
 li.social-icon-youtube:hover {
     background: #e62117;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
-
 li.social-icon-facebook:hover {
     background: #3b5998;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
-
 li.social-icon-twitter:hover {
     background: #00b0ed;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
-
 li.social-icon-instagram:hover {
     background: #bc2a8d;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
-
 a {
     font-family: "Mallory MP Bold";
 }
 
+/* ================================================== */
 
 /* ================================================== */
 
+/* ================================================== */
 
 /* ================================================== */
 
-
 /* ================================================== */
 
-
 /* ================================================== */
-
-
-/* ================================================== */
-
-
-/* ================================================== */
-
 @media only screen and (max-width: 1040px) {
     .wordmark {
         width: 50%;
@@ -769,13 +790,13 @@ a {
         margin-right: 10px;
     }
 }
-
 @media only screen and (max-width: 639px) {
     header {
         margin-top: 0;
         margin-bottom: 0;
         padding: 1em;
     }
+    
     .wordmark {
         margin: 0;
         width: 100%;
@@ -783,17 +804,16 @@ a {
         top: 0;
     }
 }
-
 @media only screen and (min-width: 740px) {
     .navbar-right {
         margin-left: -200px;
     }
 }
-
 @media only screen and (max-width: 740px) {
     .dropdown-menu li {
         text-align: left;
     }
+    
     .dropdown-menu>li>a:hover,
     .dropdown-menu>li>a:focus {
         background-color: #dde6ee!important;
@@ -801,17 +821,61 @@ a {
         background-image: none!important;
         filter: none;
     }
+    
     ul.social-icons {
         text-align: center;
     }
 }
-
 @media only screen and (max-width: 768px) {
     #evolving_text {
         text-align: center;
     }
+    
     .main-slider {
         padding-left: 0;
         padding-right: 0;
     }
 }
+@media only screen and (max-width: 360px) {
+    .hours-day {
+        padding-right: 2em;
+    }
+}
+
+/* ================================================== */
+
+/*               CUSTOM STYLES - EVENT CARDS
+/* ================================================== */
+#exhibit1_heading {
+    margin-top: 125px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+    color: #cbcdd4;
+}
+#exhibit1_subheading {
+    color: #cbcdd4;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+#exhibit2_heading {
+    /*margin-top: 125px;*/
+    /*color: #cbcdd4;*/
+}
+#exhibit2_subheading {
+    /*color: #cbcdd4;*/
+}
+
+/* ================================================== */
+
+/*               MEDIA QUERIES - EVENT CARDS
+/* ================================================== */
+
+}
+@media only screen and (max-width: 1199px) {}
+@media only screen and (max-width: 990px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 407px) {
+    #exhibit1_heading {
+        margin-top: 80px;
+    }
+}
+
+/* ================================================== */

@@ -23,11 +23,21 @@ $(document).ready(function() {
 
     $(".box-item").mouseover(function() {
         flipToBack($(this));
+        // $(this).flip({
+        //     trigger: "hover",
+        //     speed: 1000
+        // });
     });
 
     $(".box-item").mouseleave(function() {
         flipToFront($(this));
+        // $(this).flip({
+        //     trigger: "hover",
+        //     speed: 1000
+        // });
     });
+
+
 
 
 
