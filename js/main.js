@@ -37,7 +37,9 @@ $(document).ready(function() {
         // });
     });
 
-
+    // $(".box-item").on("tap", function() {
+    //     flipToggle($(this));
+    // });
 
 
 
@@ -101,7 +103,9 @@ $(document).ready(function() {
     //     $('.box-item').eq(0).toggleClass('flipped');
     // }, 1000);
 
-
+    var flipToggle = function(e) {
+        $(this).toggleClass('flipped');
+    }
 
 
     var flipToFront = _.debounce(function(e) {

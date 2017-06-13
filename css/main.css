@@ -299,7 +299,7 @@ header {
 }
 .footer-item {
     font-size: 11px;
-    float: left;
+    /*float: left;*/
 }
 .footer-logo {
     margin-right: 30px;
@@ -561,6 +561,8 @@ strong {
 #masthead2 {
     /*background: #eeeeee;*/
     
+    padding-top: 24px!important;
+    padding-bottom: 0!important;
     background: #dde6ee;
 }
 .jumbotron p {
@@ -687,7 +689,7 @@ strong {
 }
 
 /*div.photo-front h2,*/
-figure.photo-front h2 {
+figure.photo-front h2.box-header {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     color: white;
 }
@@ -771,6 +773,14 @@ li.social-icon-instagram:hover {
 a {
     font-family: "Mallory MP Bold";
 }
+#evolving_text h2 {
+    font-size: 2.8em;
+    padding-top: 1em;
+}
+#evolving_pic {
+    height: 250px;
+    width: auto;
+}
 
 /* ================================================== */
 
@@ -802,6 +812,28 @@ a {
         width: 100%;
         height: auto;
         top: 0;
+    }
+    
+    #mainHeader {
+        font-size: 36px;
+    }
+    
+    .jumbotron-paragraph,
+    #evolving_text p {
+        font-size: 14px!important;
+    }
+    
+    .footer-item {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 990px) {
+    #evolving_pic {
+        height: 150px;
+    }
+    
+    #evolving_text h2 {
+        padding-top: 0;
     }
 }
 @media only screen and (min-width: 740px) {
@@ -835,6 +867,10 @@ a {
         padding-left: 0;
         padding-right: 0;
     }
+    
+    #masthead2 {
+        padding-bottom: 24px!important;
+    }
 }
 @media only screen and (max-width: 360px) {
     .hours-day {
@@ -848,19 +884,25 @@ a {
 /* ================================================== */
 #exhibit1_heading {
     margin-top: 125px;
+    font-size: 2.2em;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     color: #cbcdd4;
 }
 #exhibit1_subheading {
     color: #cbcdd4;
+    font-size: 1em;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 #exhibit2_heading {
-    /*margin-top: 125px;*/
-    /*color: #cbcdd4;*/
+    margin-top: 60px;
+    color: #333333;
+    font-size: 2.1em;
+    text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
 }
 #exhibit2_subheading {
-    /*color: #cbcdd4;*/
+    color: #333333;
+    font-size: 1em;
+    text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
 }
 
 /* ================================================== */
@@ -872,6 +914,19 @@ a {
 @media only screen and (max-width: 1199px) {}
 @media only screen and (max-width: 990px) {}
 @media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 500px) {
+    #exhibit1_heading {
+        font-size: 1.8em;
+    }
+    #exhibit2_heading {
+        margin-top: 60px;
+        font-size: 1.8em;
+    }
+    #exhibit2_subheading {
+        font-size: 1em;
+        margin-top: 50px;
+    }
+}
 @media only screen and (max-width: 407px) {
     #exhibit1_heading {
         margin-top: 80px;
