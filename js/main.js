@@ -12,6 +12,18 @@ $(document).ready(function() {
     console.log(isMobile ? "MOBILE DEVICE" : "DESKTOP DEVICE");
 
 
+    $('.theSlider').slick({
+        dots: false,
+        infinite: true,
+        speed: 800,
+        lazyLoad: 'ondemand',
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 1000,
+        arrows: false,
+        adaptiveHeight: true
+    });
 
 
 
