@@ -2,6 +2,8 @@ var isMobile = false; //initiate as false
 var fliplocks = {};
 var fliplock = false;
 
+var sliderHeight = "500px";
+
 $(document).ready(function() {
 
 
@@ -20,9 +22,9 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 5000,
         arrows: false,
-        adaptiveHeight: true
+        adaptiveHeight: false
     });
 
 
@@ -146,6 +148,25 @@ $(document).ready(function() {
         // console.log(e.attr("id") + " flipped to back");
     }, 100);
 
+
+
+    function resizeSliderImages() {
+
+        $(".slick-slide img").each(function() {
+            if ($(this).height() < $(".slick-list").height()) {
+                console.log("container is too tall!")
+                $(this).css("height", sliderHeight).css("width", "auto");
+            } else {
+                console.log("container is shorter than image");
+                $(this).css("width", "100%").css("height", "auto");
+            }
+            // console.log($(".slick-active img").eq(0).attr("src"))
+        })
+
+    }
+
+
+
     function logoImageSwap() {
         if ($(window).width() >= 1000) {
             $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
@@ -177,6 +198,7 @@ $(document).ready(function() {
 
     $(window).resize(function() {
         headerImageSwapDebounced();
+        // resizeSliderImages();
     });
 
 

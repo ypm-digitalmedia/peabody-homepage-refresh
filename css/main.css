@@ -511,8 +511,17 @@ nav.navbar {
     
     max-height: 500px !important;
 }
+.slider-container {
+    visibility: hidden;
+}
+.slick-initialized {
+    visibility: visible;
+}
 .theSlider {
     /*height: 500px;*/
+}
+.slick-list {
+    height: 500px;
 }
 .carousel-control.left,
 .carousel-control.right {
