@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-dialog.css" />
     <style>
         body {
             padding-top: 50px;
@@ -418,7 +419,7 @@
                             <h2 class="box-header">Connect</h2>
                         </figure>
                         <figure class="back">
-                            <form class="form-horizontal form-contact" name="contact" action="javascript:alert('Thank you!')">
+                            <form class="form-horizontal form-contact" name="contact" action="javascript:signup()">
                                 <fieldset>
                                     <!-- Form Name -->
                                     <h5>Sign up for our mailing list</h5>
@@ -443,14 +444,14 @@
                                         <!--<label class="col-md-4 control-label" for="email">Email</label>-->
                                         <!--<div class="col-md-8">-->
                                         <div class="col-md-12">
-                                            <input id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text">
+                                            <input id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onkeyup="checkEmail(this.value)">
                                         </div>
                                     </div>
                                     <!-- Button -->
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="submit"></label>
                                         <div class="col-md-8">
-                                            <button id="submit" name="submit" type="submit" class="btn btn-peabody">Sign Up</button>
+                                            <button id="submit" name="submit" type="submit" class="btn btn-peabody disabled">Sign Up</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -576,6 +577,7 @@
     <script src="js/vendor/jquery.fittext.js"></script>
     <script src="js/vendor/lodash.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/bootstrap-dialog.js"></script>
     <script src="js/vendor/jquery.mobile-events.js"></script>
     <!--<script src="js/vendor/jquery.flip.min.js"></script>-->
     <script type="text/javascript" src="slick/slick.min.js"></script>
