@@ -421,33 +421,25 @@
                         <figure class="back">
                             <form class="form-horizontal form-contact" name="contact" id="contactForm" action="javascript:void(0)">
                                 <fieldset>
-                                    <!-- Form Name -->
                                     <h5 class="event-back-heading">Sign up for our mailing list</h5>
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <!--<label class="col-md-4 control-label" for="first_name">First Name</label>-->
-                                        <!--<div class="col-md-8">-->
-                                        <div class="col-md-12">
-                                            <input id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
+
+                                    <div id="signup_textfields">
+                                        <div class="form-group">
+                                            <div class="col-xs-6">
+                                                <input id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <input id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="col-xs-12">
+                                                <input id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onkeyup="checkEmail(this.value)">
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <!--<label class="col-md-4 control-label" for="last_name">Last Name</label>-->
-                                        <!--<div class="col-md-8">-->
-                                        <div class="col-md-12">
-                                            <input id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
-                                        </div>
-                                    </div>
-                                    <!-- Text input-->
-                                    <div class="form-group">
-                                        <!--<label class="col-md-4 control-label" for="email">Email</label>-->
-                                        <!--<div class="col-md-8">-->
-                                        <div class="col-md-12">
-                                            <input id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onkeyup="checkEmail(this.value)">
-                                        </div>
-                                    </div>
-                                    <!-- Button -->
+                                    <div id="signup_recaptcha" class="g-recaptcha" data-sitekey="6Ldr1CYUAAAAAAWfcLmbslrdyR5UeHeNgN_YgDJS"></div>
+
                                     <div class="form-group">
                                         <label class="col-md-4 control-label" for="submit"></label>
                                         <div class="col-md-8">
@@ -582,6 +574,7 @@
     <!--<script src="js/vendor/jquery.flip.min.js"></script>-->
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <script src="js/main.js"></script>
 

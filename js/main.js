@@ -232,7 +232,7 @@ function submitForm() {
     var formData = { firstName: $("#first_name").val(), lastName: $("#last_name").val(), email: $("#email").val() };
 
     console.log(formData);
-    $.post('signup.php', { jsonData: JSON.stringify(formData) }, function(response) {
+    $.post('signup.php', { form_email: formData.email, form_firstName: formData.firstName, form_lastName: formData.lastName }, function(response) {
             console.log(response);
         })
         .done(function() {
