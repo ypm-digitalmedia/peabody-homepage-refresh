@@ -250,9 +250,10 @@ function submitForm() {
 }
 
 function captchaExpiredCalback() {
-    alert("captcha expired!")
+    console.log("captcha expired!")
 }
 
-function captchaCallback() {
-    alert("captcha successful!")
+function captchaCallback(grr) {
+    console.log("captcha successful!");
+    console.log(grr);
 }
