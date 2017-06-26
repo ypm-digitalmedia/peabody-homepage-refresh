@@ -4,28 +4,23 @@
 
     $url = "https://www.google.com/recaptcha/api/siteverify";
 
-    $fields = array('response' => $response, 'secret' => $secret);
+    $data = array('response' => $response, 'secret' => $secret);
 
-    // build the urlencoded data
-    $postvars = http_build_query($fields);
+    $options = array(
+    'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data)
+        )
+    );
+    $context  = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    if ($result === FALSE) { echo FALSE; } else { echo $result; }
 
+    // var_dump($result);
 
-    // open connection
-    $ch = curl_init();
-
-    // set the url, number of POST vars, POST data
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_POST, count($fields));
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $postvars);
-
-    // execute post
-    $result = curl_exec($ch);
-
-    // close connection
-    curl_close($ch);
-
-    header('Content-type:application/json;charset=utf-8');
-    echo json_encode($result);
+    // echo $result;
+    
 
 ?>
 
