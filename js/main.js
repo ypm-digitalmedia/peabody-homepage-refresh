@@ -269,7 +269,7 @@ function captchaCallback(grr) {
     $.post('recaptcha.php', { g_recaptcha_response: grr }, function(response) {
             console.log(response);
         })
-        .done(function() {
+        .done(function(response) {
             console.log("recaptcha: success");
             if (response.success === true) {
                 if (emailStatus() === true) {
@@ -279,10 +279,10 @@ function captchaCallback(grr) {
                 }
             }
         })
-        .fail(function() {
+        .fail(function(response) {
             console.log("recaptcha: error");
         })
-        .always(function() {
+        .always(function(response) {
             console.log("recaptcha: request finished");
         });
 
