@@ -1,6 +1,7 @@
 var isMobile = false; //initiate as false
 var fliplocks = {};
 var fliplock = false;
+var isEmailValid = false;
 
 var sliderHeight = "500px";
 
@@ -218,7 +219,15 @@ function checkEmail(val) {
 
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var matches = emailRegex.test(val);
-    if (matches === true) { $("#submit").removeClass("disabled"); } else { $("#submit").addClass("disabled"); }
+    // if (matches === true) { $("#submit").removeClass("disabled"); } else { $("#submit").addClass("disabled"); }
+    isEmailValid = matches;
+}
+
+function emailStatus() {
+    var val = $("#email").val();
+    var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    var matches = emailRegex.test(val);
+    return matches;
 }
 
 
@@ -262,6 +271,13 @@ function captchaCallback(grr) {
         })
         .done(function() {
             console.log("recaptcha: success");
+            if (response.success === true) {
+                if (emailStatus() === true) {
+                    $("#submit").removeClass("disabled");
+                } else {
+                    $("#submit").add("disabled");
+                }
+            }
         })
         .fail(function() {
             console.log("recaptcha: error");
