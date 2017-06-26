@@ -24,7 +24,7 @@
     // close connection
     curl_close($ch);
 
-    header('Content-Type: application/json');
+    header('Content-type:application/json;charset=utf-8');
     echo json_encode($result);
 
 ?>
