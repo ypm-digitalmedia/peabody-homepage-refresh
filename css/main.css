@@ -284,6 +284,12 @@ MALLORY FONTS (Mallory microplus) - AM
     letter-spacing: 0.04em;
     margin-top: 0.1em;
 }
+.event-back-heading-double {
+    margin-top: 0.5em;
+}
+.event-back-heading {
+    margin-top: 0;
+}
 
 /* -----------------------------------------------------------*/
 body {

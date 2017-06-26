@@ -63,7 +63,11 @@ $(document).ready(function() {
     });
     console.log(fliplocks);
 
-
+    $("#contactForm").submit(function(e) {
+        e.preventDefault();
+        submitForm();
+        return false;
+    });
 
 
 
@@ -215,4 +219,32 @@ function checkEmail(val) {
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var matches = emailRegex.test(val);
     if (matches === true) { $("#submit").removeClass("disabled"); } else { $("#submit").addClass("disabled"); }
+}
+
+
+function submitForm() {
+
+    // take in form variables
+    // send to signup.php
+    // send email
+    // notify user with bootstrapDialog modal
+    // --> WARNING for error, PEABODY for success
+    var formData = { firstName: $("#first_name").val(), lastName: $("#last_name").val(), email: $("#email").val() };
+
+    console.log(formData);
+    $.post('signup.php', { jsonData: JSON.stringify(formData) }, function(response) {
+            console.log(response);
+        })
+        .done(function() {
+            console.log("form submit: success");
+        })
+        .fail(function() {
+            console.log("form submit: error");
+        })
+        .always(function() {
+            console.log("form submit: request finished");
+        });
+
+    // $("#contactForm").find("input[type=text]").val("");
+    return false;
 }
