@@ -254,6 +254,25 @@ function captchaExpiredCalback() {
 }
 
 function captchaCallback(grr) {
-    console.log("captcha successful!");
-    console.log(grr);
+    // console.log("captcha successful!");
+    // console.log(grr);
+
+    $.post('recaptcha.php', { g_recaptcha_response: grr }, function(response) {
+            console.log(response);
+        })
+        .done(function() {
+            console.log("recaptcha: success");
+        })
+        .fail(function() {
+            console.log("recaptcha: error");
+        })
+        .always(function() {
+            console.log("recaptcha: request finished");
+        });
+
+    // if successful, enable form submission!
+    // then reset the recaptcha
+
+    return false;
+
 }
