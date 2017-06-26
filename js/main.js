@@ -248,3 +248,11 @@ function submitForm() {
     // $("#contactForm").find("input[type=text]").val("");
     return false;
 }
+
+function captchaExpiredCalback() {
+    alert("captcha expired!")
+}
+
+function captchaCallback() {
+    alert("captcha successful!")
+}
