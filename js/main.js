@@ -2,6 +2,11 @@ var isMobile = false; //initiate as false
 var fliplocks = {};
 var fliplock = false;
 var isEmailValid = false;
+var formTimeoutLength = 30000;
+var formTimeout;
+var formLock = false;
+
+var mouseLeaveTimeout;
 
 var sliderHeight = "500px";
 
@@ -36,20 +41,29 @@ $(document).ready(function() {
     toroImageSwap();
 
 
+    $("body").click(function(event) {
+        var target = $(event.target);
+        if (target.is(".box-item") || target.is("[rel=card]") || target.is(".back") || target.is(".back-content") || target.is(".front") || target.is(".front-content") || target.parent().is(".front-content") || target.parent().is(".back-content")) {
+            // console.log("clicked on a card!")
+        } else {
+
+            $(".faded").find(".front").css("opacity", 1);
+            $(".faded").find(".back").css("opacity", 0);
+            $(".faded").removeClass("shadow");
+
+        }
+    });
+
+
     $(".box-item").mouseover(function() {
-        flipToBack($(this));
-        // $(this).flip({
-        //     trigger: "hover",
-        //     speed: 1000
-        // });
+        // flipToBack($(this));
+        fadeToBack($(this));
     });
 
     $(".box-item").mouseleave(function() {
-        flipToFront($(this));
-        // $(this).flip({
-        //     trigger: "hover",
-        //     speed: 1000
-        // });
+        // flipToFront($(this));
+        // fadeToFront($(this));
+        // delayedMouseLeave();
     });
 
     // $(".box-item").on("tap", function() {
@@ -62,70 +76,33 @@ $(document).ready(function() {
         var card = $(this).attr("id");
         fliplocks[card] = false;
     });
-    console.log(fliplocks);
+    // console.log(fliplocks);
 
     $("#contactForm").submit(function(e) {
         e.preventDefault();
-        submitForm();
+        if (formLock === false) {
+            submitForm();
+        } else {
+            BootstrapDialog.show({
+                title: 'Please wait',
+                message: 'You have recently submitted an email signup request.  Please try again shortly.',
+                type: 'type-warning'
+            });
+        }
         return false;
     });
 
 
 
-
-
-
-
-
-
-    // $(window).on('touchstart', function(e) {
-    //     // the user touched the screen!
-
-    //     var target = e.originalEvent.touches[0].target;
-    //     alert($(target).parent().attr("class"))
-
-    //     if ($(target).is("div.front")) {
-    //         $(target).parent().addClass("flipped");
-    //     } else if ($(target).is("div.back")) {
-    //         console.log("Back of the card, div");
-    //         $(target).parent().removeClass("flipped");
-    //     }
-
-    // });
-
-
-
-
-
-    // var hOptions = {};
-    // var eee = document.getElementsByClassName("box-item");
-    // for (var x = 0; x < eee.length; x++) {
-
-    //     var h = new Hammer(eee[x], hOptions);
-    //     h.on('pan', function(ev) {
-    //         console.log(ev);
-    //     });
-    // }
-
-
-
-
-
-    // $('.box-item').bind('touchstart touchend', function(e) {
-    //     e.preventDefault();
-    //     console.log(e)
-    //     $(this).toggleClass('flipped');
-    // });
-
-
-    // setInterval(function() {
-    //     $('.box-item').eq(0).toggleClass('flipped');
-    // }, 1000);
-
     var flipToggle = function(e) {
         $(this).toggleClass('flipped');
     }
 
+    var fadeToggle = function(e) {
+        $(this).toggleClass('crossfade');
+    }
+
+    // =================================== FLIP ANIMATIONS =========================================
 
     var flipToFront = _.debounce(function(e) {
         setTimeout(function() {
@@ -154,6 +131,31 @@ $(document).ready(function() {
     }, 100);
 
 
+    // =================================== FADE ANIMATIONS =========================================
+
+    var fadeToBack = _.throttle(function(e) {
+        $(e).addClass("shadow");
+        $(e).addClass("faded");
+        $(e).find(".front").css("opacity", 0);
+        $(e).find(".back").css("opacity", 1);
+
+        $(".faded").not(e).find(".front").css("opacity", 1);
+        $(".faded").not(e).find(".back").css("opacity", 0);
+        $(".faded").not(e).removeClass("shadow");
+
+    }, 100);
+
+
+
+    var fadeToFront = _.debounce(function(e) {
+        $(e).removeClass("shadow");
+        $(e).removeClass("faded");
+        $(e).find(".front").css("opacity", 1);
+        $(e).find(".back").css("opacity", 0);
+    }, 0);
+
+
+    // =============================================================================================
 
     function resizeSliderImages() {
 
@@ -223,7 +225,7 @@ function checkEmail(val) {
     isEmailValid = matches;
 }
 
-function emailStatus() {
+function emailValid() {
     var val = $("#email").val();
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var matches = emailRegex.test(val);
@@ -242,19 +244,36 @@ function submitForm() {
 
     console.log(formData);
     $.post('signup.php', { form_email: formData.email, form_firstName: formData.firstName, form_lastName: formData.lastName }, function(response) {
-            console.log(response);
+            // console.log(response);
         })
         .done(function() {
             console.log("form submit: success");
+            BootstrapDialog.show({
+                title: 'Thank you!',
+                message: 'We have recieved your request.  Be sure to check your email for updates from us!',
+                type: 'type-success'
+            });
+            formLock = true;
+            formTimeout = setTimeout(function() {
+                formLock = false;
+                console.log("formLock is reset.");
+                clearTimeout(formTimeout);
+            }, formTimeoutLength);
+
         })
         .fail(function() {
             console.log("form submit: error");
+            BootstrapDialog.show({
+                title: 'Error',
+                message: 'Something went wrong processing your request.  Please try again later.',
+                type: 'type-danger'
+            });
         })
         .always(function() {
             console.log("form submit: request finished");
         });
 
-    // $("#contactForm").find("input[type=text]").val("");
+    $("#contactForm").find("input[type=text]").val("");
     return false;
 }
 
@@ -272,7 +291,7 @@ function captchaCallback(grr) {
         .done(function(response) {
             console.log("recaptcha: success");
             if (response.success === true) {
-                if (emailStatus() === true) {
+                if (emailValid() === true) {
                     $("#submit").removeClass("disabled");
                 } else {
                     $("#submit").add("disabled");
