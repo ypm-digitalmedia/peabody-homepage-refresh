@@ -174,31 +174,31 @@
                 <div class="theSlider" id="theSlider">
                     <!-- BEGIN SLIDER ITEMS -->
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_01.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_01.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_02.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_02.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_03.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_03.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_04.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_04.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_05.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_05.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_06.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_06.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_07.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_07.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_08.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_08.jpg" alt="">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_09.jpg" alt="" style="width:100%;">
+                        <img src="img/slider/slider_image_test_4k/slider_image_test_4k_09.jpg" alt="">
                     </div>
                     <!-- END SLIDER ITEMS -->
                 </div>
@@ -208,18 +208,26 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-xs-5 col-xs-offset-7">
-                <div class="sliderAlert">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-4 col-md-7 col-md-offset-5 col-lg-4 col-lg-offset-8">
+                <div class="sliderAlert" id="alert1">
 
                     <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-1 col-sm-2 col-xs-3" style="padding-right: 5px; padding-left: 5px; text-align: center;">
-                                <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
-                            </div>
-                            <div class="col-md-11 col-sm-10 col-xs-9" style="padding-left: 0">
-                                <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
-                            </div>
-                        </div>
+
+
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                                <td width="60" style="text-align: left;">
+                                    <h1 style="margin-top: 0"><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
+                                </td>
+                                <td>
+                                    <p style="padding-top: 5px;">
+                                        <strong>Monday, October 12</strong>
+                                        <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
+                                    </p>
+                                    <p>David Friend Hall is closed from 2pm until 5pm for a special event.</p>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
 
                 </div>
@@ -236,6 +244,30 @@
             <p class="jumbotron-paragraph">To serve Yale University by advancing our understanding of Earth’s history through geological, biological, and anthropological research.</p>
         </div>
     </div>
+
+    <div class="container" id="icons">
+        <div class="row">
+            <div class="col-sm-2 hidden-xs">
+                <p align="center" class="icon-container"><img src="img/icons/icon01.png"></p>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <p align="center" class="icon-container"><img src="img/icons/icon02.png"></p>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <p align="center" class="icon-container"><img src="img/icons/icon03.png"></p>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <p align="center" class="icon-container"><img src="img/icons/icon04.png"></p>
+            </div>
+            <div class="col-sm-2 col-xs-3">
+                <p align="center" class="icon-container"><img src="img/icons/icon05.png"></p>
+            </div>
+            <div class="col-sm-2 hidden-xs">
+                <p align="center" class="icon-container"><img src="img/icons/icon06.png"></p>
+            </div>
+        </div>
+    </div>
+
     <div class="jumbotron" id="masthead2">
         <div class="container">
             <div class="row">
@@ -277,7 +309,7 @@
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Coleoptera in Art and Science</h5>
                             <hr />
                             <p>Artist Gar Waterman and photographer William Guth present dazzling representations of these incredible insects!</p>
-                            <p>On view through August 6, 2017</p>
+                            <p>On view through August 6, 2017.</p>
                             <p class="button-row"><a class="btn btn-peabody" href="#" role="button" title="More info: Beauty and the Beetle" aria-label="More info: Beauty and the Beetle">More Info</a></p>
                         </div>
                     </figure>
@@ -301,7 +333,7 @@
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">The Art of Archaeopteryx</h5>
                             <hr />
                             <p>Six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic "missing link" back to life.</p>
-                            <p>On view through August 30, 2017</p>
+                            <p>On view through August 30, 2017.</p>
                             <p class="button-row"><a class="btn btn-peabody" href="#" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
                         </div>
                     </figure>
@@ -551,7 +583,7 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
 
-    <script src="js/vendor/jquery.fittext.js"></script>
+    <!--<script src="js/vendor/jquery.fittext.js"></script>-->
     <script src="js/vendor/lodash.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/bootstrap-dialog.js"></script>

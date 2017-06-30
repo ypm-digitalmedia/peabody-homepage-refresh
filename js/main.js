@@ -34,6 +34,10 @@ $(document).ready(function() {
     });
 
 
+    setTimeout(function() {
+        $("#alert1").fadeIn();
+    }, 1500);
+
 
     // $("#mainHeader").fitText(2.0);
 
@@ -41,7 +45,7 @@ $(document).ready(function() {
     toroImageSwap();
 
 
-    $("body").click(function(event) {
+    $("body").on("tap", function(event) {
         var target = $(event.target);
         if (target.is(".box-item") || target.is("[rel=card]") || target.is(".back") || target.is(".back-content") || target.is(".front") || target.is(".front-content") || target.parent().is(".front-content") || target.parent().is(".back-content")) {
             // console.log("clicked on a card!")
@@ -66,10 +70,18 @@ $(document).ready(function() {
         // delayedMouseLeave();
     });
 
-    // $(".box-item").on("tap", function() {
+    // $("body").on("tap", function(event) {
     //     flipToggle($(this));
     // });
 
+
+    // $(".box-item .back").each(function() {
+    //     var matchingFront = $(this).prev();
+    //     if ($(matchingFront).is(".front")) {
+    //         var theOffset = $(matchingFront).offset().top;
+    //         $(this).offset({ top: theOffset });
+    //     }
+    // });
 
 
     $(".box-item").each(function() {
@@ -216,6 +228,10 @@ $(document).ready(function() {
 
 
 })
+
+function dismissAlert(theID) {
+    $(theID).fadeOut();
+}
 
 function checkEmail(val) {
 
