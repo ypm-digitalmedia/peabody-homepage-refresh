@@ -25,7 +25,7 @@ $message .= "<table cellpadding='5' cellspacing='5' border='0' style='margin: 20
 // $message .= "<tr><td style='padding-right: 10px;'><strong>First name:</td><td>" . $firstName . "</td></tr>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>Last name:</td><td>" . $lastName . "</td></tr>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>Email address:</td><td>" . $email . "</td></tr>";
-$message .= "<tr><td>style='padding-right: 10px'><strong>" . $arr . "</strong></td></tr>";
+$message .= "<tr><td>style='padding-right: 10px'><strong>" . $arrStr . "</strong></td></tr>";
 $message .= "</table>";
 $message .= "</body>";
 $message .= "</html>";
