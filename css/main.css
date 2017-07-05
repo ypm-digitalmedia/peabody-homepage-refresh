@@ -936,6 +936,11 @@ a {
 /* ================================================== */
 
 /* ================================================== */
+@media only screen and (min-width: 1600px) {
+    .item img {
+        transform: translateY(-20%);
+    }
+}
 @media only screen and (min-width: 1200px) {
     .item img {
         transform: translateY(-15%);
@@ -1064,6 +1069,11 @@ a {
         -webkit-transform: translateX(-40%) translateY(-10%);
         -moz-transform: translateX(-40%) translateY(-10%);
         transform: translateX(-40%) translateY(-10%);
+    }
+    
+    .icon-container img {
+        width: 60px;
+        height: 60px;
     }
 }
 
