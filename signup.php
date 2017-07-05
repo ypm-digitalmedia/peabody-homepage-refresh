@@ -1,8 +1,8 @@
 <?php
 // $arrStr = $_POST['jsonData'];
-$form_email = $_POST['form_email'];
-$form_firstName = $_POST['form_firstName'];
-$form_lastName = $_POST['form_lastName'];
+$form_email = json_decode($_POST['form_email']);
+$form_firstName = json_decode($_POST['form_firstName']);
+$form_lastName = json_decode($_POST['form_lastName']);
 
 $arr = json_decode($_POST['jsonData']);
 // $arr=json_decode( $_POST['jsonData'] );
