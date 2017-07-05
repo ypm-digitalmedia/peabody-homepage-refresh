@@ -9,6 +9,8 @@ $arr = $_POST['jsonData'];
 
 // $dt = new DateTime();
 // $dt->setTimezone(new DateTimeZone('America/New_York'));
+date_default_timezone_set('America/New_York');
+$dt = date("Y-m-d @ H:i:s");
 
 $to = "ypm.digitalmedia@gmail.com";
 // $to = "andrew.melien@yale.edu";
@@ -20,7 +22,8 @@ $message .= "<style type='text/css'>body { font-family: sans-serif; font-size: 1
 $message .= "<title>Email signup from Peabody Website</title>";
 $message .= "</head>";
 $message .= "<body>";
-// $message .= "<p>Submitted " . $dt->format('Y-m-d H:i:s') . "</p>";
+// $message .= "<p>Submitted on " . $dt->format('Y-m-d H:i:s') . "</p>";
+$message .= "<p>Submitted on " . $dt . "</p>";
 $message .= "<table cellpadding='5' cellspacing='5' border='0' style='margin: 20px;'>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>First name:</td><td>" . $firstName . "</td></tr>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>Last name:</td><td>" . $lastName . "</td></tr>";
@@ -39,10 +42,19 @@ $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 $headers .= 'From: <no-reply@peabody.yale.edu>' . "\r\n";
 
 
-echo $message;
+// echo $message;
 // echo $arr;
 
-// mail($to,$subject,$message,$headers);
+$file = 'signups.log';
+// Open the file to get existing content
+// $current = file_get_contents($file);
+// Append a new person to the file
+$current .= $dt . "\t" . $arr["firstName"] . " " . $arr["lastName"] . "\t" . $arr["email"] . "\n";
+// Write the contents back to the file
+file_put_contents($file, $current, FILE_APPEND | LOCK_EX);
+
+
+mail($to,$subject,$message,$headers);
 
 // echo $arrStr;
 // print_r($arr);
