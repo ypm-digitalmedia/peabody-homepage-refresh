@@ -1,8 +1,8 @@
 <?php
 // $arrStr = $_POST['jsonData'];
-$form_email = json_decode($_POST['form_email']);
-$form_firstName = json_decode($_POST['form_firstName']);
-$form_lastName = json_decode($_POST['form_lastName']);
+$email = json_decode($_POST['email']);
+$firstName = json_decode($_POST['firstName']);
+$lastName = json_decode($_POST['lastName']);
 
 // $arr = json_decode($_POST['jsonData']);
 // $arr=json_decode( $_POST['jsonData'] );
@@ -22,9 +22,9 @@ $message .= "</head>";
 $message .= "<body>";
 $message .= "<p>Submitted " . $dt->format('Y-m-d H:i:s') . "</p>";
 $message .= "<table cellpadding='5' cellspacing='5' border='0' style='margin: 20px;'>";
-$message .= "<tr><td style='padding-right: 10px;'><strong>First name:</td><td>" . $form_firstName . "</td></tr>";
-$message .= "<tr><td style='padding-right: 10px;'><strong>Last name:</td><td>" . $form_lastName . "</td></tr>";
-$message .= "<tr><td style='padding-right: 10px;'><strong>Email address:</td><td>" . $form_email . "</td></tr>";
+$message .= "<tr><td style='padding-right: 10px;'><strong>First name:</td><td>" . $firstName . "</td></tr>";
+$message .= "<tr><td style='padding-right: 10px;'><strong>Last name:</td><td>" . $lastName . "</td></tr>";
+$message .= "<tr><td style='padding-right: 10px;'><strong>Email address:</td><td>" . $email . "</td></tr>";
 $message .= "</table>";
 $message .= "</body>";
 $message .= "</html>";
