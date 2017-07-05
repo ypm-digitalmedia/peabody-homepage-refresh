@@ -1,14 +1,14 @@
 <?php
-$arrStr = $_POST['jsonData'];
+// $arrStr = $_POST['jsonData'];
 // $email = json_decode($_POST['email']);
 // $firstName = json_decode($_POST['firstName']);
 // $lastName = json_decode($_POST['lastName']);
 
-$arr = json_decode($_POST['jsonData']);
-// $arr=json_decode( $_POST['jsonData'] );
+$arr = $_POST['jsonData'];
+// $arr= $_POST['jsonData'] );
 
-$dt = new DateTime();
-$dt->setTimezone(new DateTimeZone('America/New_York'));
+// $dt = new DateTime();
+// $dt->setTimezone(new DateTimeZone('America/New_York'));
 
 $to = "ypm.digitalmedia@gmail.com";
 // $to = "andrew.melien@yale.edu";
@@ -20,12 +20,14 @@ $message .= "<style type='text/css'>body { font-family: sans-serif; font-size: 1
 $message .= "<title>Email signup from Peabody Website</title>";
 $message .= "</head>";
 $message .= "<body>";
-$message .= "<p>Submitted " . $dt->format('Y-m-d H:i:s') . "</p>";
+// $message .= "<p>Submitted " . $dt->format('Y-m-d H:i:s') . "</p>";
 $message .= "<table cellpadding='5' cellspacing='5' border='0' style='margin: 20px;'>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>First name:</td><td>" . $firstName . "</td></tr>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>Last name:</td><td>" . $lastName . "</td></tr>";
 // $message .= "<tr><td style='padding-right: 10px;'><strong>Email address:</td><td>" . $email . "</td></tr>";
-$message .= "<tr><td>style='padding-right: 10px'><strong>" . $arrStr . "</strong></td></tr>";
+$message .= "<tr><td style='padding-right: 10px'>First Name:</td><td style='padding-right: 10px'><strong>" . $arr["firstName"] . "</strong></td></tr>";
+$message .= "<tr><td style='padding-right: 10px'>Last Name:</td><td style='padding-right: 10px'><strong>" . $arr["lastName"] . "</strong></td></tr>";
+$message .= "<tr><td style='padding-right: 10px'>Email Address:</td><td style='padding-right: 10px'><strong>" . $arr["email"] . "</strong></td></tr>";
 $message .= "</table>";
 $message .= "</body>";
 $message .= "</html>";
