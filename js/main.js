@@ -260,7 +260,7 @@ function submitForm() {
 
     console.log(formData);
     $.post('signup.php', { form_email: formData.email, form_firstName: formData.firstName, form_lastName: formData.lastName }, function(response) {
-            // console.log(response);
+            console.log(response);
         })
         .done(function() {
             console.log("form submit: success");
