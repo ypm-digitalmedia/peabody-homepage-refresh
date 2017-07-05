@@ -259,7 +259,8 @@ function submitForm() {
     var formData = { firstName: $("#first_name").val(), lastName: $("#last_name").val(), email: $("#email").val() };
 
     console.log(formData);
-    $.post('signup.php', { email: formData.email, firstName: formData.firstName, lastName: formData.lastName }, function(response) {
+    // $.post('signup.php', { email: formData.email, firstName: formData.firstName, lastName: formData.lastName }, function(response) {
+    $.post('signup.php', { jsonData: formData }, function(response) {
             console.log(response);
         })
         .done(function() {
