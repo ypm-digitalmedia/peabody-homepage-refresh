@@ -1,3 +1,10 @@
+var sliderAlert = true;
+var showPeabodyEvolved = true;
+
+
+
+
+
 var isMobile = false; //initiate as false
 var fliplocks = {};
 var fliplock = false;
@@ -34,9 +41,31 @@ $(document).ready(function() {
     });
 
 
-    setTimeout(function() {
-        $("#alert1").fadeIn();
-    }, 1500);
+
+
+
+    /* --------------------- INITIALIZE PAGE ELEMENTS --------------------------- */
+
+
+    if (!showPeabodyEvolved) {
+        $(".peabody-evolved").hide();
+        $(".peabody-evolved-separator").show();
+
+    } else {
+        $(".peabody-evolved").show();
+        $(".peabody-evolved-separator").hide();
+
+    }
+
+
+    if (sliderAlert) {
+        setTimeout(function() {
+            $("#alert1").fadeIn();
+        }, 1500);
+    }
+
+
+    /* -------------------------------------------------------------------------- */
 
 
     // $("#mainHeader").fitText(2.0);

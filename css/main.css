@@ -610,6 +610,9 @@ strong {
     padding-bottom: 0!important;
     background: #dde6ee;
 }
+.peabody-evolved-separator {
+    display: none;
+}
 .jumbotron p {
     font-size: 18px;
 }
