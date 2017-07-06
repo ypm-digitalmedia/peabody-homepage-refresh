@@ -1006,6 +1006,10 @@ a {
     #evolving_text h2 {
         padding-top: 0;
     }
+    
+    #actionsRow2 {
+        margin-top: -15px;
+    }
 }
 @media only screen and (max-width: 990px) and (min-width: 768px) {
     img.toro {
@@ -1077,6 +1081,12 @@ a {
         padding-right: 2em;
     }
 }
+@media only screen and (max-width: 510px) {
+    .footer-text {
+        width: 365px;
+        margin: 0 auto;
+    }
+}
 @media only screen and (max-width: 480px) {
     .slick-list {
         height: 350px;
@@ -1092,6 +1102,16 @@ a {
     .icon-container img {
         width: 60px;
         height: 60px;
+    }
+    
+    #footerPrivacyTerms {
+        display: block;
+        clear: both;
+    }
+    
+    .icon-container-col-mobile {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
