@@ -31,7 +31,7 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         speed: 800,
-        lazyLoad: 'ondemand',
+        // lazyLoad: 'ondemand',
         fade: true,
         cssEase: 'linear',
         autoplay: true,
