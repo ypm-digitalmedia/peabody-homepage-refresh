@@ -1083,7 +1083,7 @@ a {
 }
 @media only screen and (max-width: 510px) {
     .footer-text {
-        width: 365px;
+        /*width: 365px;*/
         margin: 0 auto;
     }
 }
