@@ -94,7 +94,8 @@ function adjustImageY(dir) {
     var amt = $("#imageOffsetY").val();
     if (dir == "up") { amt++; } else if (dir == "down") { amt--; } else if (!dir || dir == "" || typeof(dir) == "undefined") {}
     var theImage = $("#theSliderImage");
+    var theImageContainer = $(".item");
     var transString = "translateY(" + amt + 'px' + ")"
     console.log(transString);
-    theImage.css("transform", transString);
+    theImageContainer.css("transform", transString);
 }
