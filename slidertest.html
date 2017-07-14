@@ -28,7 +28,7 @@
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
-    <style type="text/css">
+    <!--<style type="text/css">
         .dropzone {
             border: 2px dashed #0087F7;
             border-radius: 5px;
@@ -36,7 +36,9 @@
             min-height: 150px;
             padding: 54px 54px;
         }
-    </style>
+    </style>-->
+
+    <link rel="stylesheet" href="css/dropzone.css" />
 
 </head>
 
@@ -123,9 +125,15 @@
         </div>
     </div>
 
-    <hr />
+    <!--<div class="jumbotron" id="masthead">
+        <div class="container">
+            <h1 class="bigTitle" id="mainHeader">Our Mission</h1>
+        </div>
+    </div>-->
 
-    <div class="jumbotron" id="masthead">
+    <hr style="margin-top: 40px;" />
+
+    <div class="jumbotron" id="masthead3" style="padding-top:10px">
 
         <div class="container">
 
@@ -146,12 +154,15 @@
 
     <hr />
 
-    <div class="jumbotron" id="masthead">
+    <div class="meter">
+        <span class="roller"></span>
+    </div>
+    <div class="jumbotron" id="masthead4">
 
         <div class="container">
 
             <div class="row">
-                <form action="javascript:getImage()" class="dropzone" id="my-awesome-dropzone"></form>
+                <form action="loadimage.php" class="dropzone" id="my-awesome-dropzone"></form>
             </div>
         </div>
 
