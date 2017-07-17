@@ -939,6 +939,11 @@ a {
     height: 80px;
     width: 80px;
 }
+.item {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
 .item img {
     width: 100%;
 }
