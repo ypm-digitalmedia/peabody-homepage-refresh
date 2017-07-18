@@ -1,4 +1,5 @@
 var isMobile = false; //initiate as falsevar sliderHeight = "500px";
+var clipboard;
 
 $(document).ready(function() {
 
@@ -25,6 +26,13 @@ $(document).ready(function() {
         pauseOnHover: false
     });
 
+    $("#sliderOrder").empty();
+    $(".sortable li").each(function() {
+            // console.log($(this).attr("title"));
+            $("#sliderOrder").append("<li>" + $(this).attr("title") + "</li>");
+        })
+        // clipboard = new Clipboard('.copy-button');
+
     sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
         /*
 
@@ -42,14 +50,17 @@ $(document).ready(function() {
         e.detail.oldStartList contains all elements in the list the dragged item was dragged from BEFORE it was dragged from it
         */
 
-        console.log(e.detail.newEndList);
+        console.log(e.detail);
 
         $(".theSlider").slick('unslick');
         $(".theSlider").empty();
+        $("#sliderOrder").empty();
 
         _.forEach(e.detail.newEndList, function(item) {
             $(".theSlider").append("<div class='item'>" + item.innerHTML.split("/thumb").join("") + "</div>");
+            $("#sliderOrder").append("<li>" + item.title + "</li>");
         });
+
 
         $('.theSlider').slick({
             dots: false,
@@ -67,5 +78,11 @@ $(document).ready(function() {
         });
 
     });
+
+
+    $(".copy-button").click(function() {
+        clipboard = new Clipboard('.copy-button');
+        alert("text copied!");
+    })
 
 });
