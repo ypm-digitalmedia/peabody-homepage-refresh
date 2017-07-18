@@ -18,86 +18,54 @@ $(document).ready(function() {
         fade: true,
         cssEase: 'ease',
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 1000,
         arrows: false,
         adaptiveHeight: false,
         pauseOnFocus: false,
         pauseOnHover: false
     });
 
-    $("#imageOffsetY").bootstrapNumber({
-        upClass: "default",
-        downClass: "default",
-        center: true
+    sortable('.sortable')[0].addEventListener('sortupdate', function(e) {
+        /*
+
+        This event is triggered when the user stopped sorting and the DOM position has changed.
+
+        e.detail.item contains the current dragged element.
+        e.detail.index contains the new index of the dragged element (considering only list items)
+        e.detail.oldindex contains the old index of the dragged element (considering only list items)
+        e.detail.elementIndex contains the new index of the dragged element (considering all items within sortable)
+        e.detail.oldElementIndex contains the old index of the dragged element (considering all items within sortable)
+        e.detail.startparent contains the element that the dragged item comes from
+        e.detail.endparent contains the element that the dragged item was added to (new parent)
+        e.detail.newEndList contains all elements in the list the dragged item was dragged to
+        e.detail.newStartList contains all elements in the list the dragged item was dragged from
+        e.detail.oldStartList contains all elements in the list the dragged item was dragged from BEFORE it was dragged from it
+        */
+
+        console.log(e.detail.newEndList);
+
+        $(".theSlider").slick('unslick');
+        $(".theSlider").empty();
+
+        _.forEach(e.detail.newEndList, function(item) {
+            $(".theSlider").append("<div class='item'>" + item.innerHTML.split("/thumb").join("") + "</div>");
+        });
+
+        $('.theSlider').slick({
+            dots: false,
+            infinite: true,
+            speed: 800,
+            lazyLoad: 'progressive',
+            fade: true,
+            cssEase: 'ease',
+            autoplay: true,
+            autoplaySpeed: 1000,
+            arrows: false,
+            adaptiveHeight: false,
+            pauseOnFocus: false,
+            pauseOnHover: false
+        });
+
     });
 
-
-
-
-
-    Dropzone.options.myAwesomeDropzone = {
-        maxFilesize: 10,
-        addRemoveLinks: true,
-        dictResponseError: 'Server not Configured',
-        acceptedFiles: ".png,.jpg,.gif,.bmp,.jpeg",
-        init: function() {
-            var self = this;
-            // config
-            self.options.addRemoveLinks = true;
-            self.options.dictRemoveFile = "Delete";
-            //New file added
-            self.on("addedfile", function(file) {
-                console.log('new file added ', file);
-            });
-            // Send file starts
-            self.on("sending", function(file) {
-                console.log('upload started', file);
-                $('.meter').show();
-            });
-
-            // File upload Progress
-            self.on("totaluploadprogress", function(progress) {
-                console.log("progress ", progress);
-                $('.roller').width(progress + '%');
-            });
-
-            self.on("queuecomplete", function(progress) {
-                $('.meter').delay(999).slideUp(999);
-            });
-
-            // On removing file
-            self.on("removedfile", function(file) {
-
-                console.log(file);
-            });
-
-            self.on("complete", function(file) {
-                self.removeAllFiles();
-            });
-
-            self.on("success", function(file) {
-                console.log("file upload successful");
-                // console.log(file.dataURL);
-                $("#theSliderImage").attr("src", file.dataURL);
-            });
-        }
-    };
-
-
 });
-
-
-
-
-
-
-
-function adjustImageY(dir) {
-    var amt = $("#imageOffsetY").val();
-    if (dir == "up") { amt++; } else if (dir == "down") { amt--; } else if (!dir || dir == "" || typeof(dir) == "undefined") {}
-    var theImage = $("#theSliderImage");
-    var theImageContainer = $(".item");
-    var transString = "translateY(" + amt + 'px' + ")"
-    console.log(transString);
-    theImageContainer.css("transform", transString);
-}

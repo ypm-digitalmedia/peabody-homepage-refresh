@@ -31,13 +31,15 @@ $(document).ready(function() {
         dots: false,
         infinite: true,
         speed: 800,
-        // lazyLoad: 'ondemand',
+        lazyLoad: 'progressive',
         fade: true,
-        cssEase: 'linear',
+        cssEase: 'ease',
         autoplay: true,
         autoplaySpeed: 5000,
         arrows: false,
-        adaptiveHeight: false
+        adaptiveHeight: false,
+        pauseOnFocus: false,
+        pauseOnHover: false
     });
 
 
