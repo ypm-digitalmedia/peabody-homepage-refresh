@@ -1,329 +1,75 @@
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-/* =========================================
-   FONTS 
-   ========================================= */
-
-@font-face {
-    font-family: 'The Sans Bold Plain';
-    src: url('../fonts/thesansboldplain-webfont.woff2') format('woff2'), url('../fonts/thesansboldplain-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/*--------------------------------------------------------------
-MALLORY FONTS (Mallory normal) - AM
---------------------------------------------------------------*/
-
-@font-face {
-    font-family: 'Mallory Thin';
-    src: url('../fonts/MalloryWebFinal/mallory-thin-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Thin Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-thinitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-thinitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Extra Light';
-    src: url('../fonts/MalloryWebFinal/mallory-extralight-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Extra Light Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-extralightitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-extralightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Light';
-    src: url('../fonts/MalloryWebFinal/mallory-light-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Light Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-lightitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Book';
-    src: url('../fonts/MalloryWebFinal/mallory-book-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Book Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-bookitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-bookitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Medium';
-    src: url('../fonts/MalloryWebFinal/mallory-medium-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Medium Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Bold';
-    src: url('../fonts/MalloryWebFinal/mallory-bold-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Bold Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-bolditalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Black';
-    src: url('../fonts/MalloryWebFinal/mallory-black-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Black Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-blackitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Ultra';
-    src: url('../fonts/MalloryWebFinal/mallory-ultra-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-ultra-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory Ultra Italic';
-    src: url('../fonts/MalloryWebFinal/mallory-ultraitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallory-ultraitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/*--------------------------------------------------------------
-MALLORY FONTS (Mallory microplus) - AM
---------------------------------------------------------------*/
-
-@font-face {
-    font-family: 'Mallory MP Light';
-    src: url('../fonts/MalloryWebFinal/mallorymp-light-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Light Italic';
-    src: url('../fonts/MalloryWebFinal/mallorymp-lightitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Book';
-    src: url('../fonts/MalloryWebFinal/mallorymp-book-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Book Italic';
-    src: url('../fonts/MalloryWebFinal/mallorymp-bookitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-bookitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Medium';
-    src: url('../fonts/MalloryWebFinal/mallorymp-medium-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Medium Italic';
-    src: url('../fonts/MalloryWebFinal/mallorymp-mediumitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Bold';
-    src: url('../fonts/MalloryWebFinal/mallorymp-bold-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Bold Italic';
-    src: url('../fonts/MalloryWebFinal/mallorymp-bolditalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Black';
-    src: url('../fonts/MalloryWebFinal/mallorymp-black-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Mallory MP Black Italic';
-    src: url('../fonts/MalloryWebFinal/mallorymp-blackitalic-webfont.woff2') format('woff2'), url('../fonts/MalloryWebFinal/mallorymp-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-/* -----------------------------------------------------------*/
-
-.mallory-thin {
-    font-family: "Mallory Thin";
-}
-
-.mallory-light {
-    font-family: "Mallory Light";
-}
-
-.mallory-extra-light {
-    font-family: "Mallory Extra Light";
-}
-
-.mallory-book {
-    font-family: "Mallory Book";
-}
-
-.mallory-medium {
-    font-family: "Mallory Medium";
-}
-
-.mallory-black {
-    font-family: "Mallory Black";
-}
-
-.mallory-bold {
-    font-family: "Mallory Bold";
-}
-
-.mallory-ultra {
-    font-family: "Mallory Ultra";
-}
-
-.mallory-mp-light {
-    font-family: "Mallory MP Light";
-}
-
-.mallory-mp-book {
-    font-family: "Mallory MP Book";
-}
-
-.mallory-mp-medium {
-    font-family: "Mallory MP Medium";
-}
-
-.mallory-mp-bold {
-    font-family: "Mallory MP Bold";
-}
-
-.mallory-mp-black {
-    font-family: "Mallory MP Black";
-}
-
-
-}
-
-/* -----------------------------------------------------------*/
 .left {
     text-align: left;
 }
+
 .right {
     text-align: right;
 }
+
 .center {
     text-align: center;
 }
+
 .plain-case {
     text-transform: none!important;
 }
+
 .exhibit-heading {
     margin-bottom: 0!important;
 }
+
 .exhibit-subheading {
     letter-spacing: 0.04em;
     margin-top: 0.1em;
 }
+
 .event-back-heading-double {
     margin-top: 0.5em;
 }
+
 .event-back-heading {
     margin-top: 0;
 }
 
+
 /* -----------------------------------------------------------*/
+
 body {
     padding-top: 0;
     font-family: "Mallory MP Light";
     font-weight: normal;
     overflow-x: hidden;
 }
+
 header {
     background-color: #dde6ee!important;
     margin-top: -50px;
     margin-bottom: -51px;
 }
+
 .footer-item {
     font-size: 11px;
     /*float: left;*/
 }
+
 .footer-logo {
     /*margin-right: 30px;*/
 }
+
 .footer-text {
     /*margin-left: 30px;*/
-    
     padding-top: 0.5em;
 }
+
 .navbar-toggle {
     margin-right: 5px;
 }
+
 nav.navbar {
     background-color: #708fb8;
     border-radius: 0!important;
     color: white;
     /*padding-left: 280px;*/
-    
     margin-bottom: 0!important;
     border: none!important;
     min-height: 0;
@@ -333,45 +79,52 @@ nav.navbar {
     position: relative;
     z-index: 8;
 }
+
 .navbar-right {
     position: relative;
     z-index: 500;
 }
+
 .dropdown-toggle {
     -webkit-font-smoothing: antialiased;
     font-family: "The Sans Bold Plain";
     color: white;
     text-transform: uppercase;
 }
+
 .navbar-nav>li>a {
     padding: 0.2em 1em;
 }
+
 .dropdown a {
     color: white;
 }
+
 .nav .open>a {
     background-color: #dde6ee!important;
     color: black!important;
     /*background-color: #708fb8!important;*/
-    
     border-right: 5px #708fb8 solid!important;
 }
+
 .nav>li>a:hover,
 .nav>li>a:focus {
     /*background-color: red;*/
-    
     background: none;
     color: black;
     cursor: pointer!important;
 }
+
 .open.dropdown .dropdown-menu {
     background-color: #dde6ee;
 }
+
 .open.dropdown .dropdown-menu li a:hover,
 .open.dropdown .dropdown-menu li a:focus {
     background-color: #708fb8!important;
     color: white!important;
 }
+
 .dropdown-menu {
     border-top: none;
     border-right: 5px #708fb8 solid!important;
@@ -382,15 +135,18 @@ nav.navbar {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+
 .dropdown-menu li {
     font-size: 12px;
     cursor: pointer!important;
     text-align: right;
 }
+
 .dropdown-menu li a {
     font-family: "Mallory MP Light"!important;
     cursor: pointer!important;
 }
+
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
     background-color: #708fb8!important;
@@ -398,6 +154,7 @@ nav.navbar {
     background-image: none!important;
     filter: none;
 }
+
 .wordmark {
     z-index: 11;
     position: relative;
@@ -406,14 +163,17 @@ nav.navbar {
     top: 85px;
     margin-right: 10px;
 }
+
 .toro {
     position: relative;
     z-index: 10;
 }
+
 .spacer {
     width: 250px;
     height: 1px;
 }
+
 .btn-peabody {
     background-image: -webkit-linear-gradient(top, #708fb8 0, #01356b 100%);
     background-image: -o-linear-gradient(top, #708fb8 0, #01356b 100%);
@@ -425,13 +185,13 @@ nav.navbar {
     border-color: #708fb8;
     color: white;
     /*color: rgb(51, 51, 51);*/
-    
     -webkit-transition: 0.2s all ease-in;
     transition: 0.2s background-image ease-in;
     font-family: "Mallory Bold";
     text-transform: uppercase;
     cursor: pointer;
 }
+
 .btn-peabody:hover,
 .btn-peabody:focus,
 .btn-peabody.focus,
@@ -451,33 +211,39 @@ nav.navbar {
     transition: 0.2s all ease-in;
     cursor: pointer;
 }
+
 .box {
     margin: 1em;
     /*border: #708fb8 1px solid;
     border-top: #708fb8 8px solid;*/
     /*padding: 1em;*/
 }
+
 .box p {
     /*text-align: justify;*/
-    
     font-size: 13px;
     text-align: left;
 }
+
 .box hr {
     margin: 5px auto;
 }
+
 .box h2 {
     margin: 0 0 0.5em 0;
 }
+
 .box-with-header {
     border: #708fb8 1px solid;
     padding: 0 0 1em 0;
     margin: 1em;
 }
+
 .box-with-header p {
     padding: 1em;
     text-align: justify;
 }
+
 .box-with-header h2.box-header {
     width: 100%;
     background-color: #708fb8;
@@ -485,22 +251,27 @@ nav.navbar {
     margin: 0;
     color: white;
 }
+
 .back .box-header {
     margin-top: 0;
 }
+
 .back h2,
 .back h3 {
     margin-top: 10px;
 }
+
 .box-with-footer {
     border: #708fb8 1px solid;
     padding: 0 0 1em 0;
     margin: 1em;
 }
+
 .box-with-footer p {
     padding: 1em;
     text-align: justify;
 }
+
 .box-with-footer h2.box-footer {
     width: 100%;
     background-color: #708fb8;
@@ -508,33 +279,40 @@ nav.navbar {
     margin: 0;
     color: white;
 }
+
 .button-row {
     text-align: center;
     padding-top: 1.5em;
 }
+
 .carousel-inner {
     width: 100%;
     /*height: 500px !important;*/
-    
     max-height: 500px !important;
 }
+
 .slider-container {
     visibility: hidden;
 }
+
 .slick-initialized {
     visibility: visible;
 }
+
 .theSlider {
     /*height: 500px;*/
 }
+
 .slick-list {
     height: 500px;
 }
+
 .carousel-control.left,
 .carousel-control.right {
     background-image: none!important;
     filter: none!important;
 }
+
 .carousel-control.left:hover {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%)!important;
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%)!important;
@@ -542,6 +320,7 @@ nav.navbar {
     background-image: linear-gradient(to right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%)!important;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
+
 .carousel-control.right:hover {
     background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%)!important;
     background-image: -o-linear-gradient(right, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%)!important;
@@ -549,28 +328,33 @@ nav.navbar {
     background-image: linear-gradient(to left, rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, .0001) 100%)!important;
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
 }
+
 .main-slider {
     background: white;
     /*padding-top: 20px;*/
-    
     padding-bottom: 0;
     margin-bottom: 0;
     padding-top: 0;
 }
+
 .slider-container {
     padding-left: 0;
     padding-right: 0;
 }
+
 #mainHeader {
     text-align: center;
 }
+
 #explore {
     margin-top: 1em;
 }
+
 .mediumTitle {
     text-align: center;
     margin-bottom: 1em;
 }
+
 h1,
 h2,
 h3,
@@ -582,69 +366,78 @@ strong {
     text-transform: uppercase;
     /*letter-spacing: 0.1em;*/
 }
+
 .jumbotron h1 {
     font-size: 48px;
 }
+
 
 /*h1 {
     margin-top: 36px;
     margin-bottom: 36px;
 }*/
+
 .blue-shadow {
     -webkit-text-shadow: 2px 2px 2px #dde6ee;
     -moz-text-shadow: 2px 2px 2px #dde6ee;
     text-shadow: 2px 2px 2px #dde6ee;
 }
+
 #masthead {
     /*background: #dde6ee;*/
-    
     background: white;
     margin-bottom: 0;
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
 #masthead2 {
     /*background: #eeeeee;*/
-    
     padding-top: 24px!important;
     padding-bottom: 0!important;
     background: #dde6ee;
 }
+
 .peabody-evolved-separator {
     display: none;
 }
+
 .jumbotron p {
     font-size: 18px;
 }
+
 .jumbotron-paragraph {
     text-align: center;
     line-height: 1.6em;
     margin: 1em 0;
 }
+
 .alert {
     margin-right: 10%;
     margin-left: 10%;
 }
+
 .alert h1,
 .alert h2,
 .alert h3 {
     /*border-right: 1px solid rgb(102, 81, 44);*/
-    
     display: inline-block;
     margin: 0;
     /*padding-right: 1em;*/
-    
     margin-right: 0.5em;
 }
+
 .alert span {
     display: inline-block;
     font-size: 14px;
 }
 
+
 /*.carousel-ui {
     visibility: hidden;
     opacity: 0;
 }*/
+
 .hours-day {
     display: inline-block;
     width: 12em;
@@ -654,29 +447,33 @@ strong {
     vertical-align: middle;
     height: 24px;
 }
+
 .hours-time {
     line-height: 24px!important;
     vertical-align: middle;
     height: 24px;
 }
+
 .hours-time strong,
 .hours-day strong {
     padding: 0;
     margin: 0;
 }
+
 .hours-time-closed {
     font-weight: 700;
     font-family: "Mallory MP Book";
 }
+
 .inline-time {
     text-align: left;
     min-width: 12em;
 }
+
 .box-item {
     width: 100%;
     height: 100%;
     /*position: absolute;*/
-    
     transform-style: preserve-3d;
     transition: transform 1s;
     padding: 0;
@@ -687,21 +484,25 @@ strong {
     -moz-transform: translateX(-5px);
     transform: translateX(-5px);
 }
+
 .box-item:hover {
     /*box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);*/
-    
     cursor: pointer;
 }
+
 .front-content {
     height: 100%;
     width: 100%;
 }
+
 .back-content {
     height: 100%;
     width: 100%;
 }
 
+
 /*.box-item div,*/
+
 .box-item figure {
     margin: 0;
     display: block;
@@ -711,17 +512,19 @@ strong {
     /*-webkit-backface-visibility: hidden;*/
     /*backface-visibility: hidden;*/
     /*transform: rotateX(0deg);*/
-    
     -webkit-transition: 0.5s all ease-out;
     -moz-transition: 0.5s all ease-out;
     transition: 0.5s all ease-out;
     padding: 1em;
 }
 
+
 /*.box-item.box-with-header div, */
+
 .box-item.box-with-header figure {
     padding: 0;
 }
+
 .box-item .front {
     height: 100%;
     width: 100%;
@@ -733,9 +536,9 @@ strong {
     -moz-transition: 0.6s all ease-out;
     transition: 0.6s all ease-out;
 }
+
 .box-item .back {
     /*transform: rotateY(180deg) translateY(-300px);*/
-    
     height: 100%;
     width: 100%;
     -webkit-transform: translateY(-300px);
@@ -750,86 +553,107 @@ strong {
     -moz-transition: 0.6s all ease-out;
     transition: 0.6s all ease-out;
 }
+
 .shadow {
     -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
+
 .box-item.flipped {
     -webkit-transform: rotateY( 180deg);
     -moz-transform: rotateY( 180deg);
     transform: rotateY( 180deg);
 }
+
 .card-container {
     perspective: 800px;
     position: relative;
 }
+
 .back {
     /*border-top: #708fb8 8px solid;*/
 }
+
 .diagonal-back {
     background-size: cover;
     background-image: url('../img/cards/diagonal_blue_2.png');
     background-position: center;
 }
+
 .back-top {
     width: 100%;
     height: 50%;
 }
+
 .back-bottom {
     width: 100%;
     height: 50%;
 }
+
 .back-right {
     text-align: right;
 }
+
 .back-left {
     text-align: left;
 }
+
 .photo-front {
     background-size: cover;
 }
+
 .photo-front-shadow {
     -webkit-box-shadow: inset 0 100px 70px -26px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0 100px 70px -26px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 100px 70px -26px rgba(0, 0, 0, 0.5);
 }
 
+
 /*div.photo-front h2,*/
+
 figure.photo-front h2.box-header {
     -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     color: white;
 }
+
 .box-with-header .box-date {
     position: relative;
     top: 220px;
 }
+
 .box .box-date-right {
     margin-right: -1em;
 }
+
 .box-with-header .box-date-right {
     margin-right: 0;
 }
+
 .box .box-date {
     position: relative;
     top: 210px;
 }
+
 .box-date-right {
     right: 10px;
     text-align: right;
 }
+
 .box-date-left {
     left: 10px;
     text-align: left;
 }
+
 .box-date-photo {
     -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
     color: white;
 }
+
 ul.social-icons {
     width: 100%;
     text-align: right;
@@ -837,6 +661,7 @@ ul.social-icons {
     list-style: none;
     padding-left: 0;
 }
+
 ul.social-icons li {
     display: inline-block;
     margin-right: 0.25em;
@@ -854,54 +679,64 @@ ul.social-icons li {
     min-width: 1.8em;
     text-align: center;
 }
+
 ul.social-icons li a {
     color: white!important;
 }
+
 ul.social-icons li:hover {
     border-radius: 50%;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
+
 li.social-icon-youtube:hover {
     background: #e62117;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
+
 li.social-icon-facebook:hover {
     background: #3b5998;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
+
 li.social-icon-twitter:hover {
     background: #00b0ed;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
+
 li.social-icon-instagram:hover {
     background: #bc2a8d;
     -webkit-transition: 0.5s all ease-in-out;
     transition: 0.5s all ease-in-out;
 }
+
 a {
     font-family: "Mallory MP Bold";
 }
+
 #evolving_text h2 {
     font-size: 2.8em;
     padding-top: 1em;
 }
+
 #evolving_pic {
     height: 250px;
     width: auto;
 }
+
 #submit {
     margin-top: 10px;
 }
+
 .sliderAlert {
     /*position: absolute;*/
     /*right: 0;*/
     /*top: 600px;*/
     /*min-width: 300px;*/
-    
     display: none;
     margin-top: -90px;
     /*border-top-left-radius: 5px;*/
@@ -909,7 +744,6 @@ a {
     /*-webkit-opacity: 0.95;
     -moz-opacity: 0.95;
     opacity: 0.95;*/
-    
     -webkit-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.25);
     box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.25);
@@ -924,105 +758,116 @@ a {
     background-image: linear-gradient(to bottom, #ffeb0a 0%, #e3d109 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffffeb0a', endColorstr='#ffe3d109', GradientType=0);
 }
+
 .sliderAlert a {
     color: black!important;
 }
+
 #icons {
     margin-bottom: 25px;
 }
+
 .icon-container {
     text-align: center;
     vertical-align: middle;
     line-height: 60px;
 }
+
 .icon-container img {
     height: 80px;
     width: 80px;
 }
+
 .item {
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
 }
+
 .item img {
     width: 100%;
 }
 
-/* ================================================== */
 
 /* ================================================== */
 
-/* ================================================== */
 
 /* ================================================== */
 
-/* ================================================== */
 
 /* ================================================== */
+
+
+/* ================================================== */
+
+
+/* ================================================== */
+
+
+/* ================================================== */
+
 @media only screen and (min-width: 1600px) {
     .item img {
         transform: translateY(-20%);
     }
 }
+
 @media only screen and (min-width: 1200px) {
     .item img {
         transform: translateY(-15%);
     }
 }
+
 @media only screen and (max-width: 1040px) {
     .wordmark {
         width: 50%;
         top: 65px;
         margin-right: 10px;
     }
-    
     #submit {
         margin-top: 2px;
     }
 }
+
 @media only screen and (max-width: 639px) {
     header {
         margin-top: 0;
         margin-bottom: 0;
         padding: 1em;
     }
-    
     .wordmark {
         margin: 0;
         width: 100%;
         height: auto;
         top: 0;
     }
-    
     #mainHeader {
         font-size: 36px;
     }
-    
     .jumbotron-paragraph,
     #evolving_text p {
         font-size: 14px!important;
     }
 }
+
 @media only screen and (max-width: 990px) {
     #evolving_pic {
         height: 150px;
     }
-    
     #evolving_text h2 {
         padding-top: 0;
     }
-    
     #actionsRow2 {
         margin-top: -15px;
     }
 }
+
 @media only screen and (max-width: 990px) and (min-width: 768px) {
     img.toro {
         -webkit-transform: translateX(-120px);
         -moz-transform: translateX(-120px);
         transform: translateX(-120px);
     }
-    
     .item img {
         -webkit-transform: translateX(-10%);
         -moz-transform: translateX(-10%);
@@ -1030,16 +875,17 @@ a {
         width: 120%;
     }
 }
+
 @media only screen and (min-width: 740px) {
     .navbar-right {
         margin-left: -200px;
     }
 }
+
 @media only screen and (max-width: 740px) {
     .dropdown-menu li {
         text-align: left;
     }
-    
     .dropdown-menu>li>a:hover,
     .dropdown-menu>li>a:focus {
         background-color: #dde6ee!important;
@@ -1047,33 +893,28 @@ a {
         background-image: none!important;
         filter: none;
     }
-    
     ul.social-icons {
         text-align: center;
     }
-    
     .footer-item {
         text-align: center;
     }
 }
+
 @media only screen and (max-width: 768px) {
     #evolving_text {
         text-align: center;
     }
-    
     .main-slider {
         padding-left: 0;
         padding-right: 0;
     }
-    
     #masthead2 {
         padding-bottom: 24px!important;
     }
-    
     .slick-list {
         height: 400px;
     }
-    
     .item img {
         width: 160%;
         -webkit-transform: translateX(-30%) translateY(-10%);
@@ -1081,49 +922,51 @@ a {
         transform: translateX(-30%) translateY(-10%);
     }
 }
+
 @media only screen and (max-width: 360px) {
     .hours-day {
         padding-right: 2em;
     }
 }
+
 @media only screen and (max-width: 510px) {
     .footer-text {
         /*width: 365px;*/
         margin: 0 auto;
     }
 }
+
 @media only screen and (max-width: 480px) {
     .slick-list {
         height: 350px;
     }
-    
     .item img {
         width: 200%;
         -webkit-transform: translateX(-40%) translateY(-10%);
         -moz-transform: translateX(-40%) translateY(-10%);
         transform: translateX(-40%) translateY(-10%);
     }
-    
     .icon-container img {
         width: 60px;
         height: 60px;
     }
-    
     #footerPrivacyTerms {
         display: block;
         clear: both;
     }
-    
     .icon-container-col-mobile {
         padding-left: 5px;
         padding-right: 5px;
     }
 }
 
+
 /* ================================================== */
+
 
 /*               CUSTOM STYLES - EVENT CARDS
 /* ================================================== */
+
 #exhibit1_heading {
     margin-top: 125px;
     font-size: 2.2em;
@@ -1132,6 +975,7 @@ a {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     color: #cbcdd4;
 }
+
 #exhibit1_subheading {
     color: #cbcdd4;
     font-size: 1em;
@@ -1139,6 +983,7 @@ a {
     -moz-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
+
 #exhibit2_heading {
     margin-top: 60px;
     color: #333333;
@@ -1147,6 +992,7 @@ a {
     -moz-text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
     text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
 }
+
 #exhibit2_subheading {
     color: #333333;
     font-size: 1em;
@@ -1155,10 +1001,13 @@ a {
     text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
 }
 
+
 /* ================================================== */
+
 
 /*               MEDIA QUERIES - EVENT CARDS
 /* ================================================== */
+
 
 }
 @media only screen and (max-width: 1199px) {}
@@ -1168,10 +1017,12 @@ a {
     #exhibit1_heading {
         font-size: 1.8em;
     }
+    
     #exhibit2_heading {
         margin-top: 60px;
         font-size: 1.8em;
     }
+    
     #exhibit2_subheading {
         font-size: 1em;
         margin-top: 50px;
