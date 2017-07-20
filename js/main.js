@@ -1,7 +1,7 @@
 var sliderAlert = true;
 var showPeabodyEvolved = true;
 
-
+var siteRoot = "";
 
 
 
@@ -219,14 +219,14 @@ $(document).ready(function() {
 
     function logoImageSwap() {
         if ($(window).width() >= 1000) {
-            $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
+            $(".wordmark").attr("src", siteRoot + "img/peabodyWordmarkSingle.png");
         } else {
             if ($(window).width() < 480) {
-                $(".wordmark").attr("src", "img/peabodyWordmarkDouble.png");
+                $(".wordmark").attr("src", siteRoot + "img/peabodyWordmarkDouble.png");
             } else if ($(window).width() < 640) {
-                $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
+                $(".wordmark").attr("src", siteRoot + "img/peabodyWordmarkSingle.png");
             } else {
-                $(".wordmark").attr("src", "img/peabodyWordmarkDouble.png");
+                $(".wordmark").attr("src", siteRoot + "img/peabodyWordmarkDouble.png");
             }
         }
     }
@@ -241,7 +241,7 @@ $(document).ready(function() {
 
 
     var headerImageSwapDebounced = _.debounce(function(e) {
-        // $(".wordmark").attr("src", "img/peabodyWordmarkSingle.png");
+        // $(".wordmark").attr("src", siteRoot+"img/peabodyWordmarkSingle.png");
         logoImageSwap();
         toroImageSwap();
     }, 25);
@@ -290,8 +290,8 @@ function submitForm() {
     var formData = { firstName: $("#first_name").val(), lastName: $("#last_name").val(), email: $("#email").val() };
 
     console.log(formData);
-    // $.post('signup.php', { jsonData: formData, email: formData.email, firstName: formData.firstName, lastName: formData.lastName }, function(response) {
-    $.post('signup.php', { jsonData: formData }, function(response) {
+    // $.post(siteRoot+'signup.php', { jsonData: formData, email: formData.email, firstName: formData.firstName, lastName: formData.lastName }, function(response) {
+    $.post(siteRoot + 'signup.php', { jsonData: formData }, function(response) {
             console.log(response);
         })
         .done(function() {
@@ -333,7 +333,7 @@ function captchaCallback(grr) {
     // console.log("captcha successful!");
     // console.log(grr);
 
-    $.post('recaptcha.php', { g_recaptcha_response: grr }, function(response) {
+    $.post(siteRoot + 'recaptcha.php', { g_recaptcha_response: grr }, function(response) {
             console.log(response);
         })
         .done(function(response) {
