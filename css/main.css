@@ -1,3 +1,60 @@
+/* -----------------------------------------------------------*/
+
+.mallory-thin {
+    font-family: "Mallory Thin";
+}
+
+.mallory-light {
+    font-family: "Mallory Light";
+}
+
+.mallory-extra-light {
+    font-family: "Mallory Extra Light";
+}
+
+.mallory-book {
+    font-family: "Mallory Book";
+}
+
+.mallory-medium {
+    font-family: "Mallory Medium";
+}
+
+.mallory-black {
+    font-family: "Mallory Black";
+}
+
+.mallory-bold {
+    font-family: "Mallory Bold";
+}
+
+.mallory-ultra {
+    font-family: "Mallory Ultra";
+}
+
+.mallory-mp-light {
+    font-family: "Mallory MP Light";
+}
+
+.mallory-mp-book {
+    font-family: "Mallory MP Book";
+}
+
+.mallory-mp-medium {
+    font-family: "Mallory MP Medium";
+}
+
+.mallory-mp-bold {
+    font-family: "Mallory MP Bold";
+}
+
+.mallory-mp-black {
+    font-family: "Mallory MP Black";
+}
+
+
+/* -----------------------------------------------------------*/
+
 .left {
     text-align: left;
 }
