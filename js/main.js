@@ -1,7 +1,7 @@
 var sliderAlert = true;
 var showPeabodyEvolved = true;
 
-var siteRoot = "";
+var siteRoot = "http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/";
 
 
 
