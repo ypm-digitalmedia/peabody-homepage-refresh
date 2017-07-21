@@ -4,6 +4,9 @@
 // $firstName = json_decode($_POST['firstName']);
 // $lastName = json_decode($_POST['lastName']);
 
+header('content-type: application/json; charset=utf-8');
+header("access-control-allow-origin: *");
+
 $arr = $_POST['jsonData'];
 // $arr= $_POST['jsonData'] );
 
