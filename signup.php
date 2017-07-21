@@ -61,4 +61,5 @@ mail($to,$subject,$message,$headers);
 // echo $arrStr;
 // print_r($arr);
 // echo $arr[0]['firstName'] . " | " . $arr[0]['lastName'] . " | " . $arr[0]['email'];
+echo json_encode($response_array);
 ?>
