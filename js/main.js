@@ -293,7 +293,7 @@ function submitForm() {
     // $.post(siteRoot+'signup.php', { jsonData: formData, email: formData.email, firstName: formData.firstName, lastName: formData.lastName }, function(response) {
     $.post(siteRoot + 'signup.php', { jsonData: formData }, function(response) {
             console.log(response);
-        }, "jsonp")
+        })
         .done(function() {
             console.log("form submit: success");
             BootstrapDialog.show({
