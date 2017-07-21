@@ -58,7 +58,7 @@
             <span class="sr-only">Toggle navigation</span>
             <span><h5 style="display: inline;">Menu </h5> <i class="fa fa-bars"></i></span>
           </button>
-                <!--<a class="navbar-brand" href="#">Project name</a>-->
+          
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -215,7 +215,7 @@
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="60" style="text-align: left;">
-                                    <h1 style="margin-top: 0"><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
+                                    <h1 style="margin-top: 0"><i class="fa fa-comment" aria-hidden="true" style="-moz-transform: rotateY(180deg) translateY(-5px);-webkit-transform: rotateY(180deg) translateY(-5px);transform: rotateY(180deg) translateY(-5px);"></i></h1>
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
@@ -454,7 +454,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--<div id="signup_recaptcha" class="g-recaptcha" data-callback="captchaCallback" data-expired-callback="captchaExpiredCalback" data-sitekey="6Ldr1CYUAAAAAAWfcLmbslrdyR5UeHeNgN_YgDJS"></div>-->
 
                                     <div class="form-group" rel="card">
                                         <label class="col-md-4 control-label" for="submit" rel="card"></label>
@@ -496,20 +495,6 @@
         <!--<hr />-->
 
 
-
-        <!--<div class="alert alert-warning" role="alert">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-1 col-sm-2 col-xs-3" style="padding-right: 5px; padding-left: 5px; text-align: center;">
-                        <h1><i class="fa fa-comment" aria-hidden="true" style="transform: rotateY(180deg) translateY(-5px);"></i></h1>
-                    </div>
-                    <div class="col-md-11 col-sm-10 col-xs-9" style="padding-left: 0">
-                        <span><strong>Monday, October 12</strong><br />David Friend Hall is closed from 2pm until 5pm for a special event.</span>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-
         <!-- Hours & Admission -->
         <div class="row">
             <div class="col-md-12">
@@ -549,7 +534,6 @@
                 <p align="center">
                     <a href="https://www.google.com/maps/place/Yale+Peabody+Museum+of+Natural+History/@41.31611,-72.920938,15z/data=!4m5!3m4!1s0x89e7d9c874e11dd1:0x368793b0d438047!8m2!3d41.315785!4d-72.921048?hl=en" class="btn btn-peabody" target="_blank" title="Directions to the Peabody"
                         aria-label="Directions to the Peabody"><i class="fa fa-map-marker" aria-hidden="true"></i> Directions</a>
-                    <!--<a href="#" class="btn btn-peabody" target="_blank"><i class="fa fa-info-circle" aria-hidden="true"></i> Admissions Info</a>-->
                 </p>
             </div>
         </div>
@@ -585,41 +569,17 @@
         </footer>
     </div>
     <!-- /container -->
-    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+    
     <script src="js/vendor/jquery-1.11.2.min.js"></script>
-
-    <!--<script src="js/vendor/jquery.fittext.js"></script>-->
     <script src="js/vendor/lodash.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/bootstrap-dialog.js"></script>
     <script src="js/vendor/jquery.mobile-events.js"></script>
-    <!--<script src="js/vendor/jquery.flip.min.js"></script>-->
     <script type="text/javascript" src="slick/slick.min.js"></script>
 
 
-    <!-- <script type="text/javascript" src="js/vendor/iframeResizer.contentWindow.min.js"></script> -->
-
-    <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
-
     <script src="js/main.js"></script>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        // (function(b, o, i, l, e, r) {
-        //     b.GoogleAnalyticsObject = l;
-        //     b[l] || (b[l] =
-        //         function() {
-        //             (b[l].q = b[l].q || []).push(arguments)
-        //         });
-        //     b[l].l = +new Date;
-        //     e = o.createElement(i);
-        //     r = o.getElementsByTagName(i)[0];
-        //     e.src = 'http://www.google-analytics.com/analytics.js';
-        //     r.parentNode.insertBefore(e, r)
-        // }(window, document, 'script', 'ga'));
-        // ga('create', 'UA-XXXXX-X', 'auto');
-        // ga('send', 'pageview');
-    </script>
 </body>
 
 </html>

@@ -70,8 +70,6 @@ $(document).ready(function() {
     /* -------------------------------------------------------------------------- */
 
 
-    // $("#mainHeader").fitText(2.0);
-
     logoImageSwap();
     toroImageSwap();
 
@@ -100,19 +98,6 @@ $(document).ready(function() {
         // fadeToFront($(this));
         // delayedMouseLeave();
     });
-
-    // $("body").on("tap", function(event) {
-    //     flipToggle($(this));
-    // });
-
-
-    // $(".box-item .back").each(function() {
-    //     var matchingFront = $(this).prev();
-    //     if ($(matchingFront).is(".front")) {
-    //         var theOffset = $(matchingFront).offset().top;
-    //         $(this).offset({ top: theOffset });
-    //     }
-    // });
 
 
     $(".box-item").each(function() {
@@ -152,25 +137,12 @@ $(document).ready(function() {
             $(e).removeClass("flipped");
             fliplock = false;
         }, 500);
-        // if (fliplock === false) {
-        //     fliplock = true;
-        //     setTimeout(function() { fliplock = false; }, 1000);
-        //     $(e).removeClass("flipped");
-        // }
-        // console.log(e.attr("id") + " flipped to front");
     }, 100);
 
 
     var flipToBack = _.debounce(function(e) {
-        // if (fliplock === false) {
-        //     fliplock = true;
-        //     setTimeout(function() { fliplock = false; }, 500);
-        //     $(e).addClass("flipped");
-        //     $(".flipped").not(e).removeClass("flipped");
-        // }
         $(e).addClass("flipped");
         $(".flipped").not(e).removeClass("flipped");
-        // console.log(e.attr("id") + " flipped to back");
     }, 100);
 
 
@@ -210,7 +182,6 @@ $(document).ready(function() {
                 console.log("container is shorter than image");
                 $(this).css("width", "100%").css("height", "auto");
             }
-            // console.log($(".slick-active img").eq(0).attr("src"))
         })
 
     }
@@ -241,14 +212,12 @@ $(document).ready(function() {
 
 
     var headerImageSwapDebounced = _.debounce(function(e) {
-        // $(".wordmark").attr("src", siteRoot+"img/peabodyWordmarkSingle.png");
         logoImageSwap();
         toroImageSwap();
     }, 25);
 
     $(window).resize(function() {
         headerImageSwapDebounced();
-        // resizeSliderImages();
     });
 
 
@@ -298,7 +267,7 @@ function submitForm() {
             console.log("form submit: success");
             BootstrapDialog.show({
                 title: 'Thank you!',
-                message: 'We have recieved your request.  Be sure to check your email for updates from us!',
+                message: 'We have recieved your request.  Be sure to check your email for updates!',
                 type: 'type-success'
             });
             formLock = true;
@@ -323,39 +292,4 @@ function submitForm() {
 
     $("#contactForm").find("input[type=text]").val("");
     return false;
-}
-
-function captchaExpiredCalback() {
-    console.log("captcha expired!")
-}
-
-function captchaCallback(grr) {
-    // console.log("captcha successful!");
-    // console.log(grr);
-
-    $.post(siteRoot + 'recaptcha.php', { g_recaptcha_response: grr }, function(response) {
-            console.log(response);
-        })
-        .done(function(response) {
-            console.log("recaptcha: success");
-            if (response.success === true) {
-                if (emailValid() === true) {
-                    $("#submit").removeClass("disabled");
-                } else {
-                    $("#submit").add("disabled");
-                }
-            }
-        })
-        .fail(function(response) {
-            console.log("recaptcha: error");
-        })
-        .always(function(response) {
-            console.log("recaptcha: request finished");
-        });
-
-    // if successful, enable form submission!
-    // then reset the recaptcha
-
-    return false;
-
 }
