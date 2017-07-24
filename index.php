@@ -175,7 +175,7 @@
                 <div class="theSlider" id="theSlider">
                     <!-- BEGIN SLIDER ITEMS -->
                     <div class="item">
-                        <img src="img/slider/slider_ageOfReptiles_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural" style="transform: translateY(0px)">
+                        <img src="img/slider/slider_ageOfReptiles2_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural">
                     </div>
                     <div class="item">
                         <img src="img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
