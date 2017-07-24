@@ -175,12 +175,6 @@
                 <div class="theSlider" id="theSlider">
                     <!-- BEGIN SLIDER ITEMS -->
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfReptiles_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural">
-                    </div>
-                    <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfReptiles2_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural">
-                    </div>
-                    <div class="item">
                         <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
                     </div>
                     <div class="item">
