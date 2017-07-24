@@ -1,7 +1,139 @@
-var sliderAlert = true;
-var showPeabodyEvolved = true;
+/* =========================== BEGIN CUSTOMIZATIONS ================================= */
+
+
+// SLIDER ALERT
+var data_alert = {
+    shown: true,
+    date: "",
+    text: "",
+};
+
+var data_slider = [{
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    },
+    {
+        title: "",
+        imgURL: "",
+        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
+        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+    }
+];
+
+var data_eventCards = [{
+    title: "",
+    imgURL: "",
+    imgPin: "center",
+
+}];
+
+// example: data_eventCards
+//      {
+//          title: "TEXT FOR FRONT OF CARD"
+//          imgURL: "path/to/front/image.jpg"
+//          imgPin: "left|center|right" <-- defaults to "center"
+//          
+//      }
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PEABODY EVOLVED BANNER
+var data_renoBanner = {
+    shown: true,
+    text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='#' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
+};
+
+/* =========================== END CUSTOMIZATIONS  ================================= */
+/* ===========================                     ================================= */
+/* =========================== BEGIN DOMAIN SWITCH ================================= */
+
+
+// insert switch for siteRoot (localhost vs sprout) - put switch in main.js?
+
+if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
+    console.log("you are on sprout018.");
+    // use siteRoot = sprout
+} else if (location.host.toString().indexOf("localhost:8888") > -1) {
+    console.log("you are on localhost (port 8888).");
+    // use siteRoot = localhost
+} else if (location.host.toString().indexOf("peabody.yale.edu") > -1) {
+    console.log("you are on peabody.yale.edu.");
+    // use siteRoot = sprout
+} else {
+    console.log("you are lost.")
+        // use siteRoot = localhost
+}
 
 var siteRoot = "http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/";
+
+
+/* =========================== END CUSTOMIZATIONS ================================= */
 
 
 
@@ -49,7 +181,7 @@ $(document).ready(function() {
     /* --------------------- INITIALIZE PAGE ELEMENTS --------------------------- */
 
 
-    if (!showPeabodyEvolved) {
+    if (!data_renoBanner.shown) {
         $(".peabody-evolved").hide();
         $(".peabody-evolved-separator").show();
 
@@ -60,7 +192,7 @@ $(document).ready(function() {
     }
 
 
-    if (sliderAlert) {
+    if (data_alert.shown) {
         setTimeout(function() {
             $("#alert1").fadeIn();
         }, 1500);

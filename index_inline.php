@@ -175,7 +175,13 @@
                 <div class="theSlider" id="theSlider">
                     <!-- BEGIN SLIDER ITEMS -->
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfReptiles_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural" style="transform: translateY(0px)">
+                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfReptiles_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural">
+                    </div>
+                    <div class="item">
+                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfReptiles2_kz_lq_mini.jpg" alt="The Age of Reptiles Mural" aria-label="The Age of Reptiles Mural">
+                    </div>
+                    <div class="item">
+                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
                     </div>
                     <div class="item">
                         <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
@@ -276,7 +282,7 @@
                 </div>
                 <div class="col-md-8 col-sm-9 col-xs-12" id="evolving_text">
                     <h2 class="blue-shadow">We're evolving!</h2>
-                    <p class="blue-shadow">Visit <a href="#" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>
+                    <p class="blue-shadow" id="renoText">Visit <a href="#" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>
                 </div>
             </div>
         </div>
