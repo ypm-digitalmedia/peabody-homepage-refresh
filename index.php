@@ -175,28 +175,28 @@
                 <div class="theSlider" id="theSlider">
                     <!-- BEGIN SLIDER ITEMS -->
                     <div class="item">
-                        <img src="img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
-                    </div>
-                    <div class="item">
-                        <img src="img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
-                    </div>
-                    <div class="item">
-                        <img src="img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
-                    </div>
-                    <div class="item">
-                        <img src="img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
-                    </div>
-                    <div class="item">
-                        <img src="img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
+                        <img src="img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
                     </div>
                     <div class="item">
                         <img src="img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby" aria-label="Giant Squid in Lobby">
                     </div>
                     <div class="item">
+                        <img src="img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
+                    </div>
+                    <div class="item">
+                        <img src="img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
+                    </div>
+                    <div class="item">
+                        <img src="img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
+                    </div>
+                    <div class="item">
                         <img src="img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama" aria-label="Jungle Diorama">
                     </div>
                     <div class="item">
-                        <img src="img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
+                        <img src="img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
+                    </div>
+                    <div class="item">
+                        <img src="img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
                     </div>
                     <!-- END SLIDER ITEMS -->
                 </div>
@@ -215,7 +215,7 @@
                         <table cellpadding="0" cellspacing="0" border="0" width="100%">
                             <tr>
                                 <td width="60" style="text-align: left;">
-                                    <h1 style="margin-top: 0"><i class="fa fa-comment" aria-hidden="true" style="-moz-transform: rotateY(180deg) translateY(-5px);-webkit-transform: rotateY(180deg) translateY(-5px);transform: rotateY(180deg) translateY(-5px);"></i></h1>
+                                    <h1 style="margin-top: 0"><i class="fa fa-comment speech-bubble" aria-hidden="true"></i></h1>
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
@@ -292,17 +292,14 @@
         <h1 class="mediumTitle" id="upcomingEvents">Featured Exhibitions &amp; Events</h1>
         <!--<hr />-->
 
-        <!-- 2-column upcoming event panels -->
         <div class="row">
+            
+            <!-- CARD 1 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/events_exhibitions/Beauty_Beetles_web_image_mini.jpg'); background-position: right;">
                         <div class="front-content">
-                            <!--<h2 class="box-header">On View Now</h2>-->
                             <h2 class="box-header">Beauty and the Beetle</h2>
-                            <!--<h2 class="right plain-case mallory-thin exhibit-heading" id="exhibit1_heading">Beauty and the Beetle</h2>-->
-                            <!--<h5 class="right plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading">Coleoptera in Art and Science</h5>-->
-                            <!--<h5 class="box-date box-date-photo box-date-right">Through August 6, 2017</h5>-->
                         </div>
                     </figure>
                     <figure class="back">
@@ -313,20 +310,40 @@
                             <hr />
                             <p>Artist Gar Waterman and photographer William Guth present dazzling representations of these incredible insects!</p>
                             <p>On view through August 6, 2017.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="#" role="button" title="More info: Beauty and the Beetle" aria-label="More info: Beauty and the Beetle">More Info</a></p>
+                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/beauty-and-beetle" role="button" title="More info: Beauty and the Beetle" aria-label="More info: Beauty and the Beetle">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
+
+            <!-- CARD 1 REPLACEMENT -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event1">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/events_exhibitions/Beauty_Beetles_web_image_mini.jpg'); background-position: right;">
+                        <div class="front-content">
+                            <h2 class="box-header">Summer's Last Roar</h2>
+                            <h5 class="box-date box-date-right">Saturday, August 26</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Public Program</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Summer's Last Roar!</h3>
+                            <hr />
+                            <p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody!  Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
+                            <p>Saturday, August 26, 2017 from 10 am to 4 pm.</p>
+                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event2">
                     <figure class="front photo-front" style="background-image:url('img/cards/events_exhibitions/DinoTakeFlight_web_image_mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Dinosaurs Take Flight</h2>
-                            <!--<h2 class="box-header">On View Now</h2>-->
-                            <!--<h2 class="right plain-case mallory-thin exhibit-heading" id="exhibit2_heading">Dinosaurs Take Flight</h2>-->
-                            <!--<h5 class="right plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading">The Art of Archaeopteryx</h5>-->
-                            <!--<h5 class="box-date box-date-photo box-date-right">Through August 30, 2017</h5>-->
                         </div>
                     </figure>
                     <figure class="back">
@@ -337,7 +354,7 @@
                             <hr />
                             <p>Six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic "missing link" back to life.</p>
                             <p>On view through August 30, 2017.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="#" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
+                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -346,7 +363,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <p class="button-row"><a class="btn btn-peabody btn-lg" href="http://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar"><!--<i class="fa fa-calendar"></i> -->View Calendar</a></p>
+                <p class="button-row"><a class="btn btn-peabody btn-lg" href="http://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar">View Calendar</a></p>
             </div>
         </div>
 
