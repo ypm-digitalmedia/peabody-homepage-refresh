@@ -3,7 +3,7 @@
 
 // SLIDER ALERT
 var data_alert = {
-    shown: false,
+    shown: true,
     date: "",
     text: "",
 };
@@ -125,7 +125,7 @@ if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
 } else if (location.host.toString().indexOf("peabody.yale.edu") > -1) {
     // console.log("you are on peabody.yale.edu.");
     // use siteRoot = sprout
-    $(".social-icons li a i.fa").css("color", "orange");
+    $(".social-icons li a i.fa").css("-moz-transform", "translateY(12px)").css("-webkit-transform", "translateY(12px)").css("transform", "translateY(12px)");
     $(".slider-alert-text").css("font-size", "14px!important");
 } else {
     // console.log("you are lost.")
