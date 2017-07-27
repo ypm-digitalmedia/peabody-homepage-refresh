@@ -3,7 +3,7 @@
 
 // SLIDER ALERT
 var data_alert = {
-    shown: true,
+    shown: false,
     date: "",
     text: "",
 };
@@ -117,17 +117,19 @@ var data_renoBanner = {
 // insert switch for siteRoot (localhost vs sprout) - put switch in main.js?
 
 if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
-    console.log("you are on sprout018.");
+    // console.log("you are on sprout018.");
     // use siteRoot = sprout
 } else if (location.host.toString().indexOf("localhost:8888") > -1) {
-    console.log("you are on localhost (port 8888).");
+    // console.log("you are on localhost (port 8888).");
     // use siteRoot = localhost
 } else if (location.host.toString().indexOf("peabody.yale.edu") > -1) {
-    console.log("you are on peabody.yale.edu.");
+    // console.log("you are on peabody.yale.edu.");
     // use siteRoot = sprout
+    $(".social-icons li a i.fa").css("color", "orange");
+    $(".slider-alert-text").css("font-size", "14px!important");
 } else {
-    console.log("you are lost.")
-        // use siteRoot = localhost
+    // console.log("you are lost.")
+    // use siteRoot = localhost
 }
 
 var siteRoot = "http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/";

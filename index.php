@@ -222,7 +222,7 @@
                                         <strong>Monday, October 12</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p>David Friend Hall is closed from 2pm until 5pm for a special event.</p>
+                                    <p class="slider-alert-text">David Friend Hall is closed from 2pm until 5pm for a special event.</p>
                                 </td>
                             </tr>
                         </table>
@@ -317,7 +317,7 @@
             </div>
 
             <!-- CARD 1 REPLACEMENT -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event1">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/events_exhibitions/summers_last_roar_www_card_mini.jpg'); background-position: right;">
                         <div class="front-content">
