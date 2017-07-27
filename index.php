@@ -319,10 +319,10 @@
             <!-- CARD 1 REPLACEMENT -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/events_exhibitions/Beauty_Beetles_web_image_mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/events_exhibitions/summers_last_roar_www_card_mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Summer's Last Roar</h2>
-                            <h5 class="box-date box-date-right">Saturday, August 26</h5>
+                            <h5 class="box-date box-date-left">Saturday, August 26</h5>
                         </div>
                     </figure>
                     <figure class="back">
