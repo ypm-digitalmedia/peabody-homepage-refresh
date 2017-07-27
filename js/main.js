@@ -1,9 +1,20 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
+var show_alert = false;
+var show_evolved_banner = true;
+
+
+
+
+
+
+
+
+
 
 // SLIDER ALERT
 var data_alert = {
-    shown: true,
+    shown: show_alert,
     date: "",
     text: "",
 };
@@ -105,7 +116,7 @@ var data_eventCards = [{
 
 // PEABODY EVOLVED BANNER
 var data_renoBanner = {
-    shown: true,
+    shown: show_evolved_banner,
     text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='#' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
 };
 
