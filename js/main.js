@@ -1,7 +1,7 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
 var show_alert = false;
-var show_evolved_banner = true;
+var show_evolved_banner = false;
 
 
 
