@@ -353,7 +353,7 @@
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">The Art of Archaeopteryx</h5>
                             <hr />
                             <p>Six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic "missing link" back to life.</p>
-                            <p>On view through August 30, 2017.</p>
+                            <p>On view through August 13, 2017.</p>
                             <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
                         </div>
                     </figure>
