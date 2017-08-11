@@ -317,7 +317,7 @@
             </div>
 
             <!-- CARD 2 -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event2">
                     <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/DinoTakeFlight_web_image_mini.jpg'); background-position: right;">
                         <div class="front-content">
