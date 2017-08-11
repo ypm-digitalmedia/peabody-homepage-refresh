@@ -58,7 +58,7 @@
             <span class="sr-only">Toggle navigation</span>
             <span><h5 style="display: inline;">Menu </h5> <i class="fa fa-bars"></i></span>
           </button>
-          
+
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -294,30 +294,8 @@
 
         <div class="row">
 
-            <!-- CARD 1 -->
+            <!-- CARD 1  -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Beauty_Beetles_web_image_mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Beauty and the Beetle</h2>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Beauty and the Beetle</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Coleoptera in Art and Science</h5>
-                            <hr />
-                            <p>Artist Gar Waterman and photographer William Guth present dazzling representations of these incredible insects!</p>
-                            <p>On view through August 6, 2017.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/beauty-and-beetle" role="button" title="More info: Beauty and the Beetle" aria-label="More info: Beauty and the Beetle">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
-            <!-- CARD 1 REPLACEMENT -->
-            <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event1">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/summers_last_roar_www_card_mini.jpg'); background-position: right;">
                         <div class="front-content">
@@ -330,7 +308,7 @@
                             <h5 class="box-header"><strong>Public Program</strong></h5>
                             <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Summer's Last Roar!</h3>
                             <hr />
-                            <p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody!  Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
+                            <p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody! Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
                             <p>Saturday, August 26, 2017 from 10 am to 4 pm.</p>
                             <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
                         </div>
@@ -359,6 +337,29 @@
                     </figure>
                 </div>
             </div>
+
+            <!-- CARD 2 REPLACEMENT -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event2">
+                    <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">An Artist for Conservation</h2>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">An Artist for Conservation</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">The Paintings of Albert Earl Gilbert</h5>
+                            <hr />
+                            <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
+                            <p>On view through April 15, 2018.</p>
+                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
         </div>
 
         <div class="row">
@@ -384,7 +385,7 @@
                             <h5 class="event-back-heading">Exhibitions</h5>
                             <p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof.</p>
                             <p>From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/permanent-halls" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
+                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
                         </div>
                     </figure>
                 </div>
