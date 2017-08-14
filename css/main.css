@@ -1073,33 +1073,46 @@ a {
 /*               MEDIA QUERIES - EVENT/EXHIBIT CARDS
 /* ================================================== */
 
-
-}
-@media only screen and (max-width: 1199px) {}
-@media only screen and (max-width: 990px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 500px) {
-    #exhibit1_heading {
-        font-size: 1.8em;
-    }
-    
-    #exhibit2_heading {
-        margin-top: 60px;
-        font-size: 1.8em;
-    }
-    
-    #exhibit2_subheading {
-        font-size: 1em;
-        margin-top: 50px;
-    }
-}
 @media only screen and (max-width: 407px) {
     #exhibit1_heading {
         margin-top: 80px;
     }
 }
 
-/* ================================================== */
+@media only screen and (max-width: 1199px) {}
 
-/*               MEDIA QUERIES - SLIDERS
-/* ================================================== */
+@media only screen and (max-width: 990px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 500px) {
+    /* MOBILE STYLES - HEADINGS & SUBHEADINGS */
+    /* FRONT OF CARDS */
+    #exhibit1_heading {
+        font-size: 1.8em;
+    }
+    #exhibit1_subheading {
+        font-size: 1.8em;
+    }
+    #exhibit2_heading {
+        margin-top: 60px;
+        font-size: 1.8em;
+    }
+    #exhibit2_subheading {
+        font-size: 1em;
+        margin-top: 50px;
+    }
+    /* BACK OF CARDS */
+    #exhibit1_heading_back {
+        /* font-size: 1.8em; */
+    }
+    #exhibit1_subheading_back {
+        /* font-size: 1.8em; */
+    }
+    #exhibit2_heading_back {
+        font-size: 1.5em;
+    }
+    #exhibit2_subheading_back {
+        font-size: 0.9em;
+    }
+}

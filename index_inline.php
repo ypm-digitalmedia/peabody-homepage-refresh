@@ -309,7 +309,7 @@
                             <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Summer's Last Roar!</h3>
                             <hr />
                             <p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody! Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
-                            <p>Saturday, August 26, 2017 from 10 am to 4 pm.</p>
+                            <p>Saturday, August 26 &mdash; 10 am to 4 pm.</p>
                             <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
                         </div>
                     </figure>
@@ -344,6 +344,7 @@
                     <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">An Artist for Conservation</h2>
+                            <h5 class="box-date box-date-left">Coming soon</h5>
                         </div>
                     </figure>
                     <figure class="back">
