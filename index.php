@@ -8,8 +8,8 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
     <title>Yale Peabody Museum of Natural History</title>
     <meta name="description" content="">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
@@ -310,7 +310,7 @@
                             <hr />
                             <p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody!  Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
                             <p>Saturday, August 26 &mdash; 10 am to 4 pm.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -332,7 +332,7 @@
                             <hr />
                             <p>Six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic "missing link" back to life.</p>
                             <p>On view through August 13, 2017.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -355,7 +355,7 @@
                             <hr />
                             <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
                             <p>On view through April 15, 2018.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -386,7 +386,7 @@
                             <h5 class="event-back-heading">Exhibitions</h5>
                             <p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof.</p>
                             <p>From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
+                            <p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
                         </div>
                     </figure>
                 </div>
@@ -402,7 +402,7 @@
                         <div class="back-content">
                             <h5 class="event-back-heading">Yale Students</h5>
                             <p>The Peabody is YOUR natural history museum. Join our community today.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs">More info</a></p>
+                            <p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs">More info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -417,8 +417,8 @@
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="event-back-heading">Collections &amp; Research</h5>
-                            <p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="http://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database">search the database</a>                                for over 8.5 million objects.</p>
-                            <p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/collections/the-collections" role="button" title="Explore the Collections" aria-label="Explore the Collections">Explore the Collections</a></p>
+                            <p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="http://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database" class="back-link" data-link-parent="card_cta3">search the database</a>                                for over 8.5 million objects.</p>
+                            <p class="button-row"><a data-link-parent="card_cta3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/collections/the-collections" role="button" title="Explore the Collections" aria-label="Explore the Collections">Explore the Collections</a></p>
                         </div>
                     </figure>
                 </div>
@@ -437,8 +437,8 @@
                         <div class="back-content">
                             <h5 class="event-back-heading">School &amp; Group Visits</h5>
                             <p>Learn about our many offerings and schedule your field trip here. Field trip planning made easy.</p>
-                            <p><a href="http://peabody.yale.edu/education/general-information-reservations" title="Field trip information and fees" aria-label="Field trip information and fees">General information and fees</a></p>
-                            <a href="http://peabody.yale.edu/education/school-program-registration-form" title="Register for a field trip" aria-label="Register for a field trip"><button class="btn btn-peabody">Register today</button></a>
+                            <p><a href="http://peabody.yale.edu/education/general-information-reservations" title="Field trip information and fees" aria-label="Field trip information and fees" class="back-link" data-link-parent="card_cta4">General information and fees</a></p>
+                            <a href="http://peabody.yale.edu/education/school-program-registration-form" title="Register for a field trip" aria-label="Register for a field trip" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
                         </div>
                     </figure>
                 </div>
@@ -459,17 +459,17 @@
                                     <div id="signup_textfields" rel="card">
                                         <div class="form-group" rel="card">
                                             <div class="col-xs-12" rel="card">
-                                                <input rel="card" id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
+                                                <input rel="card" data-form-parent="card_cta5" id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group" rel="card">
                                             <div class="col-xs-12" rel="card">
-                                                <input rel="card" id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
+                                                <input data-form-parent="card_cta5" rel="card" id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group" rel="card">
                                             <div class="col-xs-12" rel="card">
-                                                <input rel="card" id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onchange="checkEmail(this.value)" onkeyup="checkEmail(this.value)">
+                                                <input rel="card" data-form-parent="card_cta5" id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onchange="checkEmail(this.value)" onkeyup="checkEmail(this.value)">
                                             </div>
                                         </div>
                                     </div>
@@ -477,7 +477,7 @@
                                     <div class="form-group" rel="card">
                                         <label class="col-md-4 control-label" for="submit" rel="card"></label>
                                         <div class="col-md-8" rel="card">
-                                            <button id="submit" rel="card" name="submit" type="submit" class="btn btn-peabody disabled" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list">Sign Up</button>
+                                            <button rel="card" id="submit" data-form-parent="card_cta5" name="submit" type="submit" class="btn btn-peabody disabled back-submit" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list">Sign Up</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -499,11 +499,11 @@
                             <div class="back-top back-left">
                                 <h5 class="event-back-heading-double">Donate to the Peabody</h5>
                                 <p>Every contribution counts!</p>
-                                <a href="https://hopperportal.yale.edu/page.aspx?pid=319" target="_blank" title="Donate now" aria-label="Donate now"><button class="btn btn-peabody">Donate now</button></a>
+                                <a href="https://hopperportal.yale.edu/page.aspx?pid=319" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Donate now</button></a>
                             </div>
                             <div class="back-bottom back-right">
                                 <h5 class="event-back-heading-double">Become a Member</h5>
-                                <a href="http://peabody.yale.edu/members" title="Membership information" aria-label="Membership information"><button class="btn btn-peabody">Learn more</button></a>
+                                <a href="http://peabody.yale.edu/members" title="Membership information" aria-label="Membership information" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Learn more</button></a>
                             </div>
                         </div>
                     </figure>

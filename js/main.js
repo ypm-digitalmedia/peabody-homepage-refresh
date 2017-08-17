@@ -16,7 +16,7 @@ var show_evolved_banner = false;
 var data_alert = {
     shown: show_alert,
     date: "",
-    text: "",
+    text: ""
 };
 
 var data_slider = [{
@@ -157,6 +157,7 @@ var isEmailValid = false;
 var formTimeoutLength = 30000;
 var formTimeout;
 var formLock = false;
+var locked_card = null;
 
 var mouseLeaveTimeout;
 
@@ -219,22 +220,72 @@ $(document).ready(function() {
     toroImageSwap();
 
 
-    $("body").on("tap", function(event) {
+    $(".box-item").on("tap", function(event) {
+
         var target = $(event.target);
-        if (target.is(".box-item") || target.is("[rel=card]") || target.is(".back") || target.is(".back-content") || target.is(".front") || target.is(".front-content") || target.parent().is(".front-content") || target.parent().is(".back-content")) {
-            // console.log("clicked on a card!")
-        } else {
 
-            $(".faded").find(".front").css("opacity", 1);
-            $(".faded").find(".back").css("opacity", 0);
-            $(".faded").removeClass("shadow");
-
+        if (target.not("[rel=card]")) {
+            event.preventDefault();
         }
+
+        var card = $(this).attr("id");
+
+        // console.error(card)
+
+        //check to see if user has clicked a link inside a card
+        var isLink = target.attr('data-link-parent');
+        var isForm = target.attr('data-form-parent');
+        if (typeof isLink !== typeof undefined && isLink !== false) {
+            // CLICKED ON A LINK
+            // console.warn("THIS IS A LINK", target);
+            var link = target.attr("href");
+
+            // IS THIS LINK HIDDEN FROM VIEW?
+            if (!locked_card || locked_card != card) {
+                // console.log("this card is not already shown.  flip to back.");
+                fadeToBack($(this));
+                locked_card = card;
+            } else {
+                // console.log("this card is already shown.  resolve URL.")
+                document.location = link;
+            }
+
+        } else if (typeof isForm !== typeof undefined && isForm !== false) {
+            console.warn("YOU CLICKED ON A FORM ELEMENT");
+            $(this).focus();
+        } else {
+            // console.log("not a link", target);
+            // CLICKED ON AN INERT PART OF THE CARD
+            if (!locked_card || locked_card != card) {
+                // console.log("this card is not already shown.  flip to back.");
+                fadeToBack($(this));
+                locked_card = card;
+            } else {
+                if (target.is(".back-submit")) {
+                    console.warn("submit!")
+                } else {
+                    locked_card = null;
+                    fadeToFront();
+                }
+            }
+        }
+
     });
+
+    // $("body").on("tap", function(event) {
+
+    //     var target = $(event.target);
+
+    //     if (target.not(".box-item")) {
+    //         fadeToFront();
+    //     }
+
+    // })
+
+
 
 
     $(".box-item").mouseover(function() {
-        // flipToBack($(this));
         fadeToBack($(this));
     });
 
@@ -275,7 +326,7 @@ $(document).ready(function() {
         $(this).toggleClass('crossfade');
     }
 
-    // =================================== FLIP ANIMATIONS =========================================
+    // =================================== FLIP ANIMATIONS - DEPRECATED =========================================
 
     var flipToFront = _.debounce(function(e) {
         setTimeout(function() {
@@ -291,28 +342,43 @@ $(document).ready(function() {
     }, 100);
 
 
-    // =================================== FADE ANIMATIONS =========================================
+    // =================================== FADE ANIMATIONS - CURRENT =========================================
 
     var fadeToBack = _.throttle(function(e) {
-        $(e).addClass("shadow");
-        $(e).addClass("faded");
-        $(e).find(".front").css("opacity", 0);
-        $(e).find(".back").css("opacity", 1);
 
-        $(".faded").not(e).find(".front").css("opacity", 1);
-        $(".faded").not(e).find(".back").css("opacity", 0);
-        $(".faded").not(e).removeClass("shadow");
+        var card = $(e).attr("id");
+
+        if (locked_card == card) {
+            // console.log("DENIED | locked card: " + card);
+        } else {
+            locked_card = card;
+            // console.log("SWITCHING locked card: " + card);
+
+            $(e).addClass("shadow");
+            $(e).addClass("faded");
+            $(e).find(".front").css("opacity", 0);
+            $(e).find(".back").css("opacity", 1);
+
+            $(".faded").not(e).find(".front").css("opacity", 1);
+            $(".faded").not(e).find(".back").css("opacity", 0);
+            $(".faded").not(e).removeClass("shadow");
+
+        }
 
     }, 100);
 
+    // var fadeToFront = _.debounce(function(e) {
+    //     $(e).removeClass("shadow");
+    //     $(e).removeClass("faded");
+    //     $(e).find(".front").css("opacity", 1);
+    //     $(e).find(".back").css("opacity", 0);
+    // }, 0);
 
-
-    var fadeToFront = _.debounce(function(e) {
-        $(e).removeClass("shadow");
-        $(e).removeClass("faded");
-        $(e).find(".front").css("opacity", 1);
-        $(e).find(".back").css("opacity", 0);
-    }, 0);
+    function fadeToFront() {
+        $(".faded").find(".front").css("opacity", 1);
+        $(".faded").find(".back").css("opacity", 0);
+        $(".faded").removeClass("shadow");
+    }
 
 
     // =============================================================================================
