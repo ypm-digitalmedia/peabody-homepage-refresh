@@ -8,7 +8,9 @@
 <!--<![endif]-->
 
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> -->
     <meta charset="utf-8">
     <title>Yale Peabody Museum of Natural History</title>
     <meta name="description" content="">
