@@ -54,12 +54,18 @@ $current = file_get_contents($file);
 // Append a new person to the file
 $current .= $dt . "\t" . $arr["firstName"] . " " . $arr["lastName"] . "\t" . $arr["email"] . "\n";
 // Write the contents back to the file
-file_put_contents($file, $current);
 
-mail($to,$subject,$message,$headers);
+if( is_null( $response_array) ) { 
+    echo "Permission Denied";
+} else {
+    file_put_contents($file, $current);
 
-// echo $arrStr;
-// print_r($arr);
-// echo $arr[0]['firstName'] . " | " . $arr[0]['lastName'] . " | " . $arr[0]['email'];
-echo json_encode($response_array);
+    mail($to,$subject,$message,$headers);
+
+    // echo $arrStr;
+    // print_r($arr);
+    // echo $arr[0]['firstName'] . " | " . $arr[0]['lastName'] . " | " . $arr[0]['email'];
+    echo json_encode($response_array);
+}
+
 ?>
