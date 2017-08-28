@@ -96,6 +96,7 @@ body {
     font-family: "Mallory MP Light";
     font-weight: normal;
     overflow-x: hidden;
+    background: white;
 }
 
 header {
@@ -1114,5 +1115,37 @@ a {
     }
     #exhibit2_subheading_back {
         font-size: 0.9em;
+    }
+}
+
+
+/* --------------------------------------------- */
+
+.colorchange {
+    animation: colorchange 5s;
+    /* animation-name followed by duration in seconds*/
+    /* you could also use milliseconds (ms) or something like 2.5s */
+    -webkit-animation: colorchange 5s;
+    /* Chrome and Safari */
+}
+
+@keyframes colorchange {
+    0% {
+        background: yellow;
+    }
+    100% {
+        background: white;
+    }
+}
+
+@-webkit-keyframes colorchange
+/* Safari and Chrome - necessary duplicate */
+
+{
+    0% {
+        background: yellow;
+    }
+    100% {
+        background: white;
     }
 }

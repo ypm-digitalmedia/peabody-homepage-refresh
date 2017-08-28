@@ -8,7 +8,7 @@
 <!--<![endif]-->
 
 <head>
-     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> -->
     <meta charset="utf-8">
@@ -291,36 +291,61 @@
     <div class="container">
 
 
-        <h1 class="mediumTitle" id="upcomingEvents">Featured Exhibitions &amp; Events</h1>
+        <h1 class="mediumTitle" id="upcomingEvents">Featured Exhibitions &amp; Programs</h1>
         <!--<hr />-->
 
-        <div class="row">
+        <div class="row card-row">
 
-            <!-- CARD 1  -->
+            <!-- CARD 1 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/summers_last_roar_www_card_mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_NN_Roger_Stone_Image_mini.jpg'); background-position: right;">
                         <div class="front-content">
-                            <h2 class="box-header">Summer's Last Roar</h2>
-                            <h5 class="box-date box-date-left">Saturday, August 26</h5>
+                            <h2 class="box-header">Evening Lecture</h2>
+                            <h5 class="box-date box-date-left">Thursday, September 7</h5>
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>Public Program</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Summer's Last Roar!</h3>
+                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">The Lives of Dillon Ripley</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">With Roger D. Stone</h5>
                             <hr />
-                            <p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody! Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
-                            <p>Saturday, August 26 &mdash; 10 am to 4 pm.</p>
-                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
+                            <p>Scientist, leader, and wartime spy—explore the incredible life of Sidney Dillon Ripley with speaker Roger D. Stone. </p>
+                            <p>Thursday, September 7, 2017 at 5:30 pm.
+                                <br />Reception &amp; book signing to follow.</p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/the-lives-of-dillon-ripley" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
 
-            <!-- CARD 2 -->
+            <!-- CARD 1 REPLACEMENT -->
             <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event2">
+                <div class="box-item box" id="card_event1_alt">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
+                        <div class="front-content">
+                            <h2 class="box-header">Invisible Boundaries</h2>
+                            <h5 class="box-date box-date-left">Coming Soon</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Invisible Boundaries</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Animal Migration in the Greater Yellowstone Ecosystem</h5>
+                            <hr />
+                            <p>This is as much text as the card can handle. This is as much text as the card can handle. This is as much text as the card can handle. This is as much text as the card can handle. </p>
+                            <p>On view through XXXXXX</p>
+                            <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CARD 2 REPLACEMENT -->
+            <div class="col-md-6" style="display: none">
+                <div class="box-item box" id="card_event2_alt">
                     <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/DinoTakeFlight_web_image_mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Dinosaurs Take Flight</h2>
@@ -334,13 +359,13 @@
                             <hr />
                             <p>Six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic "missing link" back to life.</p>
                             <p>On view through August 13, 2017.</p>
-                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
 
-            <!-- CARD 2 REPLACEMENT -->
+            <!-- CARD 2 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event2">
                     <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
@@ -375,7 +400,7 @@
 
         <!-- 3-column main call-to-action panels -->
         <h1 class="mediumTitle" id="explore">Explore the Peabody</h1>
-        <div class="row" id="actionsRow1">
+        <div class="row card-row" id="actionsRow1">
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta1">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
@@ -419,7 +444,8 @@
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="event-back-heading">Collections &amp; Research</h5>
-                            <p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="http://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database" class="back-link" data-link-parent="card_cta3">search the database</a>                                for over 8.5 million objects.</p>
+                            <p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="http://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database" class="back-link"
+                                    data-link-parent="card_cta3">search the database</a> for over 8.5 million objects.</p>
                             <p class="button-row"><a data-link-parent="card_cta3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/collections/the-collections" role="button" title="Explore the Collections" aria-label="Explore the Collections">Explore the Collections</a></p>
                         </div>
                     </figure>
@@ -427,7 +453,7 @@
             </div>
         </div>
 
-        <div class="row" id="actionsRow2">
+        <div class="row card-row" id="actionsRow2">
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta4">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/SCHOOLGROUPS_am.jpg'); background-position:center;">

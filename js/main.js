@@ -153,11 +153,13 @@ var siteRoot = "http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-ref
 var isMobile = false; //initiate as false
 var fliplocks = {};
 var fliplock = false;
+var fliplockTimeout = null;
 var isEmailValid = false;
 var formTimeoutLength = 30000;
 var formTimeout;
 var formLock = false;
 var locked_card = null;
+
 
 var mouseLeaveTimeout;
 
@@ -251,7 +253,7 @@ $(document).ready(function() {
             }
 
         } else if (typeof isForm !== typeof undefined && isForm !== false) {
-            console.warn("YOU CLICKED ON A FORM ELEMENT");
+            // console.warn("YOU CLICKED ON A FORM ELEMENT");
             $(this).focus();
         } else {
             // console.log("not a link", target);
@@ -272,15 +274,23 @@ $(document).ready(function() {
 
     });
 
-    // $("body").on("tap", function(event) {
+    // var fadeTimeout;
+    $("body").on("tap", function(event) {
 
-    //     var target = $(event.target);
+        var target = $(event.target);
+        // console.log(target);
 
-    //     if (target.not(".box-item")) {
-    //         fadeToFront();
-    //     }
+        if (target.not(".card-row") || target.parents('.card-row').length < 1) {
+            // clearTimeout(fadeTimeout);
+            // $("body").addClass("colorchange");
+            // fadeTimeout = setTimeout(function() {
+            //     $("body").removeClass("colorchange");
+            // }, 5000);
+            locked_card = null;
+            fadeToFront();
+        }
 
-    // })
+    })
 
 
 
