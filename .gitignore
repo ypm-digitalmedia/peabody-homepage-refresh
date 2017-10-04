@@ -1,0 +1,6 @@
+# IGNORE LOG FILES #
+
+*.log
+
+
+# IGNORE HTACCESS #
