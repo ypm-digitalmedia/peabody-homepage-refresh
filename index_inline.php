@@ -221,10 +221,10 @@
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Monday, October 12</strong>
+                                        <strong>Saturday, October 7</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">David Friend Hall is closed from 2pm until 5pm for a special event.</p>
+                                    <p class="slider-alert-text">David Friend Hall is closed from 12pm until 5pm for a special event.</p>
                                 </td>
                             </tr>
                         </table>
@@ -241,7 +241,7 @@
     <div class="jumbotron" id="masthead">
         <div class="container">
             <h1 class="bigTitle" id="mainHeader">Our Mission</h1>
-            <p class="jumbotron-paragraph">To serve Yale University by advancing our understanding of earth’s history through geological, biological, and anthropological research, and by communicating the results of this research to the widest possible audience through publication,
+            <p class="jumbotron-paragraph">To serve Yale University by advancing our understanding of Earth’s history through geological, biological, and anthropological research, and by communicating the results of this research to the widest possible audience through publication,
                 exhibition, and educational programs.</p>
         </div>
     </div>
@@ -295,71 +295,25 @@
         <!--<hr />-->
 
         <div class="row card-row">
-
+        
             <!-- CARD 1 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_NN_Roger_Stone_Image_mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/fiesta_latina_web_card_mini.jpg'); background-position: left;">
                         <div class="front-content">
-                            <h2 class="box-header">Evening Lecture</h2>
-                            <h5 class="box-date box-date-left">Thursday, September 7</h5>
+                            <h2 class="box-header">&iexcl;Fiesta Latina!</h2>
+                            <h5 class="box-date box-date-right">Saturday, October 14</h5>
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">The Lives of Dillon Ripley</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">With Roger D. Stone</h5>
+                            <h5 class="box-header"><strong>Public Program</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">&iexcl;Fiesta Latina!</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Free Admission / Entrada Gratis</h5>
                             <hr />
-                            <p>Scientist, leader, and wartime spy—explore the incredible life of Sidney Dillon Ripley with speaker Roger D. Stone. </p>
-                            <p>Thursday, September 7, 2017 at 5:30 pm.
-                                <br />Reception &amp; book signing to follow.</p>
-                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/the-lives-of-dillon-ripley" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
-            <!-- CARD 1 REPLACEMENT -->
-            <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event1_alt">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Invisible Boundaries</h2>
-                            <h5 class="box-date box-date-left">Coming Soon</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Invisible Boundaries</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Animal Migration in the Greater Yellowstone Ecosystem</h5>
-                            <hr />
-                            <p>This is as much text as the card can handle. This is as much text as the card can handle. This is as much text as the card can handle. This is as much text as the card can handle. </p>
-                            <p>On view through XXXXXX</p>
-                            <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
-            <!-- CARD 2 REPLACEMENT -->
-            <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event2_alt">
-                    <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/DinoTakeFlight_web_image_mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Dinosaurs Take Flight</h2>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">Dinosaurs Take Flight</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">The Art of Archaeopteryx</h5>
-                            <hr />
-                            <p>Six renowned artists from around the world provide a glimpse into their studios and processes as they bring this iconic "missing link" back to life.</p>
-                            <p>On view through August 13, 2017.</p>
-                            <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/dinosaurs-take-flight-art-archaeopteryx" role="button" title="More info: Dinosaurs Take Flight" aria-label="More info: Dinosaurs Take Flight">More Info</a></p>
+                            <p>Join us for our annual celebration of Latin American cultures!<br />¡Únase con nosotros para celebrar nuestra celebración de las culturas latinoamericanas!</p>
+                            <p>Saturday, October 14, 10 am &ndash; 4 pm</p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/fiesta-latina" role="button" title="More info: &iexcl;Fiesta Latina!" aria-label="More info: &iexcl;Fiesta Latina!">Más Información</a></p>
                         </div>
                     </figure>
                 </div>
@@ -368,21 +322,66 @@
             <!-- CARD 2 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event2">
-                    <figure class="front photo-front" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
                         <div class="front-content">
-                            <h2 class="box-header">An Artist for Conservation</h2>
-                            <h5 class="box-date box-date-left">Coming soon</h5>
+                            <h2 class="box-header">Gallery Talks</h2>
+                            <h5 class="box-date box-date-right">NEXT: October 19, 2017</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Fall 2017 Semester Series</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">Gallery Talks</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Once a month, Thursdays at 4 pm</h5>
+                            <hr />
+                            <p>Join us this fall for a special series of gallery talks! Yale Peabody Museum curators and collections managers will feature a few remarkable objects from our collections in a 20-minute presentation, followed by Q&amp;A.</p>
+                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event3">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
+                        <div class="front-content">
+                            <h2 class="box-header">Invisible Boundaries</h2>
+                            <!-- <h5 class="box-date box-date-left">Coming Soon</h5> -->
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">An Artist for Conservation</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">The Paintings of Albert Earl Gilbert</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">Invisible Boundaries</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Exploring Yellowstone’s Great Animal Migrations</h5>
+                            <hr />
+                            <p>Discover the meaning of wildlife migrations to the Greater Yellowstone Ecosystem in this groundbreaking exhibition.</p>
+                            <p>On view through March 25, 2018.</p>
+                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event4">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">An Artist for Conservation</h2>
+                            <!-- <h5 class="box-date box-date-left">Coming soon</h5> -->
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">An Artist for Conservation</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">The Paintings of Albert Earl Gilbert</h5>
                             <hr />
                             <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
                             <p>On view through April 15, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -413,7 +412,7 @@
                             <h5 class="event-back-heading">Exhibitions</h5>
                             <p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof.</p>
                             <p>From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
-                            <p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabodyback-link" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
+                            <p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
                         </div>
                     </figure>
                 </div>
@@ -425,11 +424,18 @@
                             <h2 class="box-header">Yale Students</h2>
                         </div>
                     </figure>
-                    <figure class="back">
+                    <figure class="back diagonal-back">
                         <div class="back-content">
-                            <h5 class="event-back-heading">Yale Students</h5>
-                            <p>The Peabody is YOUR natural history museum. Join our community today.</p>
-                            <p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody" href="http://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs" class="back-link">More info</a></p>
+                            <div class="back-top back-left">
+                                <h5 class="event-back-heading-double">Yale Students</h5>
+                                <p>The Peabody is YOUR natural history museum. Join our community today.</p>
+                                <p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs">More info</a></p>
+                            </div>
+                            <div class="back-bottom back-right" style="display: none">
+                                <h5 class="event-back-heading-double">Object Study Gallery</h5>
+                                <p>Our new exhibition enriches Yale courses each semester specimens and artifacts from our collections.</p>
+                                <a href="http://peabody.yale.edu/exhibits/object-study-gallery" title="Object Study Gallery" aria-label="Object Study Gallery" class="btn btn-peabody back-link" data-link-parent="card_cta2b" role="button">Learn more</button></a>
+                            </div>
                         </div>
                     </figure>
                 </div>

@@ -659,6 +659,10 @@ strong {
     text-align: left;
 }
 
+.back-right p {
+    text-align: right;
+}
+
 .photo-front {
     background-size: cover;
 }
@@ -667,6 +671,10 @@ strong {
     -webkit-box-shadow: inset 0 100px 70px -26px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: inset 0 100px 70px -26px rgba(0, 0, 0, 0.5);
     box-shadow: inset 0 100px 70px -26px rgba(0, 0, 0, 0.5);
+}
+
+.front-shadow-brown {
+    box-shadow: inset 0 100px 70px -26px rgba(37, 27, 22, 0.5);
 }
 
 h2.box-header {
@@ -1033,7 +1041,7 @@ a {
 /*               CUSTOM STYLES - EVENT CARDS
 /* ================================================== */
 
-#exhibit1_heading {
+#exhibit3_heading {
     margin-top: 125px;
     font-size: 2.2em;
     -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
@@ -1042,7 +1050,7 @@ a {
     color: #cbcdd4;
 }
 
-#exhibit1_subheading {
+#exhibit3_subheading {
     color: #cbcdd4;
     font-size: 1em;
     -webkit-text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
@@ -1050,7 +1058,7 @@ a {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 
-#exhibit2_heading {
+#exhibit4_heading {
     margin-top: 60px;
     color: #333333;
     font-size: 2.1em;
@@ -1059,7 +1067,7 @@ a {
     text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
 }
 
-#exhibit2_subheading {
+#exhibit4_subheading {
     color: #333333;
     font-size: 1em;
     -webkit-text-shadow: 2px 2px 2px rgba(198, 188, 172, 1);
@@ -1075,7 +1083,7 @@ a {
 /* ================================================== */
 
 @media only screen and (max-width: 407px) {
-    #exhibit1_heading {
+    #exhibit3_heading {
         margin-top: 80px;
     }
 }
@@ -1089,31 +1097,31 @@ a {
 @media only screen and (max-width: 500px) {
     /* MOBILE STYLES - HEADINGS & SUBHEADINGS */
     /* FRONT OF CARDS */
-    #exhibit1_heading {
+    #exhibit3_heading {
         font-size: 1.8em;
     }
-    #exhibit1_subheading {
+    #exhibit3_subheading {
         font-size: 1.8em;
     }
-    #exhibit2_heading {
+    #exhibit4_heading {
         margin-top: 60px;
         font-size: 1.8em;
     }
-    #exhibit2_subheading {
+    #exhibit4_subheading {
         font-size: 1em;
         margin-top: 50px;
     }
     /* BACK OF CARDS */
-    #exhibit1_heading_back {
+    #exhibit3_heading_back {
         /* font-size: 1.8em; */
     }
-    #exhibit1_subheading_back {
+    #exhibit3_subheading_back {
         /* font-size: 1.8em; */
     }
-    #exhibit2_heading_back {
+    #exhibit4_heading_back {
         font-size: 1.5em;
     }
-    #exhibit2_subheading_back {
+    #exhibit4_subheading_back {
         font-size: 0.9em;
     }
 }

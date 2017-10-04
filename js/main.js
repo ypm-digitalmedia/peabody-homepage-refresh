@@ -1,6 +1,6 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
-var show_alert = false;
+var show_alert = true;
 var show_evolved_banner = false;
 
 
@@ -134,10 +134,17 @@ if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
     // console.log("you are on localhost (port 8888).");
     // use siteRoot = localhost
 } else if (location.host.toString().indexOf("peabody.yale.edu") > -1) {
-    // console.log("you are on peabody.yale.edu.");
-    // use siteRoot = sprout
-    $(".social-icons li a i.fa").css("-moz-transform", "translateY(12px)").css("-webkit-transform", "translateY(12px)").css("transform", "translateY(12px)");
+
+
+
+
+    // $(".social-icons li a i.fa").css("-moz-transform", "translateY(0)").css("-webkit-transform", "translateY(12px)").css("transform", "translateY(12px)");
+
+
+
     $(".slider-alert-text").css("font-size", "14px!important");
+
+
 } else {
     // console.log("you are lost.")
     // use siteRoot = localhost
