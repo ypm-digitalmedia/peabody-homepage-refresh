@@ -1038,7 +1038,7 @@ a {
 /* ================================================== */
 
 
-/*               CUSTOM STYLES - EVENT CARDS
+/*               CUSTOM STYLES - EVENT/EXHIBIT / CTA CARDS
 /* ================================================== */
 
 #exhibit3_heading {
@@ -1078,8 +1078,15 @@ a {
 
 /* ================================================== */
 
+#card_cta2_customtext p {
+    margin-left: 0px;
+}
 
-/*               MEDIA QUERIES - EVENT/EXHIBIT CARDS
+
+/* ================================================== */
+
+
+/*               MEDIA QUERIES - EVENT/EXHIBIT / CTA CARDS
 /* ================================================== */
 
 @media only screen and (max-width: 407px) {
@@ -1088,11 +1095,26 @@ a {
     }
 }
 
-@media only screen and (max-width: 1199px) {}
+@media only screen and (min-width: 1199px) {
+    /* DESKTOP-FULL-WIDTH STYLES - HEADINGS & SUBHEADINGS */
+    #card_cta2_customtext p {
+        margin-left: 25%;
+    }
+}
 
-@media only screen and (max-width: 990px) {}
+@media only screen and (max-width: 990px) {
+    /* DESKTOP STYLES - HEADINGS & SUBHEADINGS */
+    #card_cta2_customtext p {
+        margin-left: 40%;
+    }
+}
 
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    /* TABLET STYLES - HEADINGS & SUBHEADINGS */
+    #card_cta2_customtext p {
+        margin-left: 40%;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     /* MOBILE STYLES - HEADINGS & SUBHEADINGS */
@@ -1123,6 +1145,9 @@ a {
     }
     #exhibit4_subheading_back {
         font-size: 0.9em;
+    }
+    #card_cta2_customtext p {
+        margin-left: 0px;
     }
 }
 

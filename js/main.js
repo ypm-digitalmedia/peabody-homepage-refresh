@@ -1,6 +1,6 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
-var show_alert = true;
+var show_alert = false;
 var show_evolved_banner = false;
 
 
@@ -117,7 +117,7 @@ var data_eventCards = [{
 // PEABODY EVOLVED BANNER
 var data_renoBanner = {
     shown: show_evolved_banner,
-    text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='#' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
+    text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='http://peabodyevolved.yale.edu' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
 };
 
 /* =========================== END CUSTOMIZATIONS  ================================= */
@@ -138,7 +138,7 @@ if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
 
 
 
-    // $(".social-icons li a i.fa").css("-moz-transform", "translateY(0)").css("-webkit-transform", "translateY(12px)").css("transform", "translateY(12px)");
+    $(".social-icons li a i.fa").css("-moz-transform", "translateY(0)").css("-webkit-transform", "translateY(12px)").css("transform", "translateY(12px)");
 
 
 
@@ -228,8 +228,8 @@ $(document).ready(function() {
     logoImageSwap();
     toroImageSwap();
 
-
-    $(".box-item").on("tap", function(event) {
+    //CHANGE "box-items" to "box-item" TO RESET FUNCTIONALITY
+    $(".box-items").on("tap", function(event) {
 
         var target = $(event.target);
 
