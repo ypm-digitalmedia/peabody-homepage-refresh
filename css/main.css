@@ -1119,6 +1119,13 @@ a {
 @media only screen and (max-width: 500px) {
     /* MOBILE STYLES - HEADINGS & SUBHEADINGS */
     /* FRONT OF CARDS */
+    .compress-h3 {
+        font-size: 1.5em;
+    }
+    .compress-h4 {}
+    .compress-h5 {
+        font-size: 0.95em;
+    }
     #exhibit3_heading {
         font-size: 1.8em;
     }
@@ -1134,6 +1141,9 @@ a {
         margin-top: 50px;
     }
     /* BACK OF CARDS */
+    .back-content .button-row {
+        padding-top: 0;
+    }
     #exhibit3_heading_back {
         /* font-size: 1.8em; */
     }

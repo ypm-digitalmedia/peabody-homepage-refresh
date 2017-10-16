@@ -295,74 +295,74 @@
         <!--<hr />-->
 
         <div class="row card-row">
-
-            <!-- CARD 5 -->
-            <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event5">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/haunted_hall_crawl_costume_ball_event_card_2017_mini.jpg'); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">Halloween Party</h2>
-                            <h5 class="box-date box-date-right">Thursday, October 26, 7-10 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Halloween Party</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit5_heading_back">2017 Haunted Hall Crawl &amp; Costume Ball</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_subheading_back">Tickets on Sale Now!</h5>
-                            <hr />
-                            <p>Experience the Museum as you never have before with our 3rd annual haunted costume ball!</p>
-                            <p>Thursday, October 26, 7 &ndash; 10 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/hauntedmuseum" role="button" title="More info: 2017 Haunted Hall Crawl &amp; Costume Ball" aria-label="More info: 2017 Haunted Hall Crawl &amp; Costume Ball">Info / Tickets</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
         
-            <!-- CARD 1 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/fiesta_latina_web_card_mini.jpg'); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">&iexcl;Fiesta Latina!</h2>
-                            <h5 class="box-date box-date-right">Saturday, October 14</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Public Program</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">&iexcl;Fiesta Latina!</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Free Admission / Entrada Gratis</h5>
-                            <hr />
-                            <p>Join us for our annual celebration of Latin American cultures!<br />¡Únase con nosotros para celebrar nuestra celebración de las culturas latinoamericanas!</p>
-                            <p>Saturday, October 14, 10 am &ndash; 4 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/fiesta-latina" role="button" title="More info: &iexcl;Fiesta Latina!" aria-label="More info: &iexcl;Fiesta Latina!">Más Información</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
+             <!-- CARD 1 -->
+             <div class="col-md-6">
+             <div class="box-item box" id="card_event1">
+                 <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/haunted_hall_crawl_costume_ball_event_card_2017_mini.jpg'); background-position: left;">
+                     <div class="front-content">
+                         <h2 class="box-header">Halloween Party</h2>
+                         <h5 class="box-date box-date-right">Thursday, October 26, 7-10 pm</h5>
+                     </div>
+                 </figure>
+                 <figure class="back">
+                     <div class="back-content">
+                         <h5 class="box-header"><strong>Halloween Party</strong></h5>
+                         <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">2017 Haunted Hall Crawl &amp; Costume Ball</h3>
+                         <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Tickets on Sale Now!</h5>
+                         <hr />
+                         <p>Experience the Museum as you never have before with our 3rd annual haunted costume ball!</p>
+                         <p>Thursday, October 26, 7 &ndash; 10 pm</p>
+                         <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/hauntedmuseum" role="button" title="More info: 2017 Haunted Hall Crawl &amp; Costume Ball" aria-label="More info: 2017 Haunted Hall Crawl &amp; Costume Ball">Info / Tickets</a></p>
+                     </div>
+                 </figure>
+             </div>
+         </div>
 
-            <!-- CARD 2 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event2">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">Gallery Talks</h2>
-                            <h5 class="box-date box-date-right">NEXT: October 19, 2017</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Fall 2017 Semester Series</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">Gallery Talks</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Once a month, Thursdays at 4 pm</h5>
-                            <hr />
-                            <p>Join us this fall for a special series of gallery talks! Yale Peabody Museum curators and collections managers will feature a few remarkable objects from our collections in a 20-minute presentation, followed by Q&amp;A.</p>
-                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
+         <!-- CARD 2 -->
+         <div class="col-md-6">
+             <div class="box-item box" id="card_event2">
+                 <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_NN_Ari_Freidlaender_web_image_mini.jpg'); background-position: center;">
+                     <div class="front-content">
+                         <h2 class="box-header">Evening Lecture</h2>
+                         <h5 class="box-date box-date-right">Thursday, October 19, 5:30 pm</h5>
+                     </div>
+                 </figure>
+                 <figure class="back">
+                     <div class="back-content">
+                         <h5 class="box-header"><strong>Evening Lecture</strong></h5>
+                         <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">Seeing Below the Surface</h3>
+                         <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">Combining Science and Art to Expose and Protect Antarctica with Ari Friedlaender</h5>
+                         <hr />
+                         <p>In this talk Ari Friedlaender will share his experiences as a scientist, artist, and educator to see below the surface and present a fragile but resilient Antarctica.</p>
+                         <p>Thursday, October 19, 5:30 pm</p>
+                         <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/seeing-below-the-surface" role="button" title="More info: Ostrom Lecture with Ari Friedlaender" aria-label="More info: Ostrom Lecture with Ari Friedlaender">More Info</a></p>
+                     </div>
+                 </figure>
+             </div>
+         </div>
+
+         <!-- CARD 2 - ALT  -->
+         <div class="col-md-6" style="display: none">
+             <div class="box-item box" id="card_event2_alt">
+                 <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
+                     <div class="front-content">
+                         <h2 class="box-header">Gallery Talks</h2>
+                         <h5 class="box-date box-date-right">NEXT: October 19, 2017</h5>
+                     </div>
+                 </figure>
+                 <figure class="back">
+                     <div class="back-content">
+                         <h5 class="box-header"><strong>Fall 2017 Semester Series</strong></h5>
+                         <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Gallery Talks</h3>
+                         <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Once a month, Thursdays at 4 pm</h5>
+                         <hr />
+                         <p>Join us this fall for a special series of gallery talks! Yale Peabody Museum curators and collections managers will feature a few remarkable objects from our collections in a 20-minute presentation, followed by Q&amp;A.</p>
+                         <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
+                     </div>
+                 </figure>
+             </div>
+         </div>
 
             <!-- CARD 3 -->
             <div class="col-md-6">
