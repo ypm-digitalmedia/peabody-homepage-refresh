@@ -28,7 +28,7 @@
     </style>
     <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/fonts_d6.css" />
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/main.css?1" />
+    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/main.css?v=1" />
 
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -151,7 +151,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Support" aria-label="Support">Support</a>
                         <ul class="dropdown-menu">
-                            <li><a href="https://hopperportal.yale.edu/page.aspx?pid=319" target="_blank" title="Make a Donation Now" aria-label="Make a Donation Now">Make a Donation Now!</a></li>
+                            <li><a href="https://yale.edu/givepeabody" target="_blank" title="Make a Donation Now" aria-label="Make a Donation Now">Make a Donation Now!</a></li>
                             <li><a href="http://peabody.yale.edu/support/we-appreciate-our-supporters" title="Past Supporters" aria-label="Past Supporters">Past Supporters</a></li>
                             <li><a href="http://peabody.yale.edu/support/peabody-renovation" title="Peabody Renovation" aria-label="Peabody Renovation">Peabody Renovation</a></li>
                             <li><a href="http://peabody.yale.edu/support/giving-opportunities-planned-giving" title="Giving Opportunities and Planned Giving" aria-label="Giving Opportunities and Planned Giving">Giving Opportunities &amp; Planned Giving</a></li>
@@ -221,10 +221,10 @@
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Saturday, October 7</strong>
+                                        <strong>Saturday, October 21</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">David Friend Hall is closed from 12pm until 5pm for a special event.</p>
+                                    <p class="slider-alert-text">David Friend Hall is closed for a special event.</p>
                                 </td>
                             </tr>
                         </table>
@@ -319,36 +319,13 @@
              </div>
          </div>
 
-         <!-- CARD 2 -->
-         <div class="col-md-6">
-             <div class="box-item box" id="card_event2">
-                 <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_NN_Ari_Freidlaender_web_image_mini.jpg'); background-position: center;">
-                     <div class="front-content">
-                         <h2 class="box-header">Evening Lecture</h2>
-                         <h5 class="box-date box-date-right">Thursday, October 19, 5:30 pm</h5>
-                     </div>
-                 </figure>
-                 <figure class="back">
-                     <div class="back-content">
-                         <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                         <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">Seeing Below the Surface</h3>
-                         <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">Combining Science and Art to Expose and Protect Antarctica with Ari Friedlaender</h5>
-                         <hr />
-                         <p>In this talk Ari Friedlaender will share his experiences as a scientist, artist, and educator to see below the surface and present a fragile but resilient Antarctica.</p>
-                         <p>Thursday, October 19, 5:30 pm</p>
-                         <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/seeing-below-the-surface" role="button" title="More info: Ostrom Lecture with Ari Friedlaender" aria-label="More info: Ostrom Lecture with Ari Friedlaender">More Info</a></p>
-                     </div>
-                 </figure>
-             </div>
-         </div>
-
          <!-- CARD 2 - ALT  -->
-         <div class="col-md-6" style="display: none">
+         <div class="col-md-6">
              <div class="box-item box" id="card_event2_alt">
                  <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
                      <div class="front-content">
                          <h2 class="box-header">Gallery Talks</h2>
-                         <h5 class="box-date box-date-right">NEXT: October 19, 2017</h5>
+                         <h5 class="box-date box-date-right">NEXT: November 9, 2017</h5>
                      </div>
                  </figure>
                  <figure class="back">
@@ -556,7 +533,7 @@
                             <div class="back-top back-left">
                                 <h5 class="event-back-heading-double">Donate to the Peabody</h5>
                                 <p>Every contribution counts!</p>
-                                <a href="https://hopperportal.yale.edu/page.aspx?pid=319" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Donate now</button></a>
+                                <a href="https://yale.edu/givepeabody" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Donate now</button></a>
                             </div>
                             <div class="back-bottom back-right">
                                 <h5 class="event-back-heading-double">Become a Member</h5>
@@ -651,10 +628,11 @@
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap.min.js"></script>
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap-dialog.js"></script>
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/jquery.mobile-events.js"></script>
+    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/moment.js"></script>
     <script type="text/javascript" src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.min.js"></script>
 
 
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/main.js?1"></script>
+    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/main.js?v=1"></script>
 
 </body>
 

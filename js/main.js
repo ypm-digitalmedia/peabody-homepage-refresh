@@ -1,6 +1,8 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
-var show_alert = false;
+var show_alert = true;
+var show_alert_until = '2017-10-21'; // FORMAT 'YYYY-MM-DD'
+
 var show_evolved_banner = false;
 
 
@@ -214,11 +216,21 @@ $(document).ready(function() {
 
     }
 
-
+    // do we show the alert?
     if (data_alert.shown) {
-        setTimeout(function() {
-            $("#alert1").fadeIn();
-        }, 1500);
+        // is the alert expiration date valid?
+        if (show_alert_until && typeof(show_alert_until != 'undefined') && show_alert_until != "") {
+            // is the banner expiration date in the future?
+            console.warn("the date is: " + moment().format('YYYY-MM-DD') + ".  alert is active, expires " + show_alert_until);
+            if (moment().isAfter(show_alert_until, 'day') === false) {
+                console.warn("alert is active.");
+                setTimeout(function() {
+                    $("#alert1").fadeIn();
+                }, 1500);
+            } else {
+                console.warn("alert active, but expired.");
+            }
+        }
     }
 
 
