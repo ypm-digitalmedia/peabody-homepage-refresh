@@ -1,7 +1,7 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
 var show_alert = true;
-var show_alert_until = '2017-10-21'; // FORMAT 'YYYY-MM-DD'
+var show_alert_until = '2017-10-27'; // FORMAT 'YYYY-MM-DD'
 
 var show_evolved_banner = false;
 

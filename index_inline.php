@@ -221,10 +221,10 @@
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Saturday, October 21</strong>
+                                        <strong>Thursday, October 26</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">David Friend Hall is closed for a special event.</p>
+                                    <p class="slider-alert-text">The Peabody will be closed to prepare for a Halloween event.</p>
                                 </td>
                             </tr>
                         </table>
@@ -628,7 +628,7 @@
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap.min.js"></script>
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap-dialog.js"></script>
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/jquery.mobile-events.js"></script>
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/moment.js"></script>
+    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/moment.js"></script>
     <script type="text/javascript" src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.min.js"></script>
 
 
