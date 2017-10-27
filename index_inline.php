@@ -1,4 +1,16 @@
 <?php header("access-control-allow-origin: *"); ?>
+
+
+<?  
+session_start(); 
+if(!isset($_SESSION['random'])){  
+     $_SESSION['randomone'] = mt_rand(100000, 999999);  
+     $_SESSION['randomtwo'] = mt_rand(100000, 999999);  
+}  
+$randomone = $_SESSION['randomone'];  
+$randomtwo = $_SESSION['randomtwo'];  
+?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -28,7 +40,7 @@
     </style>
     <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/fonts_d6.css" />
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/main.css?v=1" />
+    <?php echo '<link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/main.css?v=' . $randomone . '" />'; ?>
 
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
@@ -296,28 +308,28 @@
 
         <div class="row card-row">
         
-             <!-- CARD 1 -->
-             <div class="col-md-6">
-             <div class="box-item box" id="card_event1">
-                 <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/haunted_hall_crawl_costume_ball_event_card_2017_mini.jpg'); background-position: left;">
-                     <div class="front-content">
-                         <h2 class="box-header">Halloween Party</h2>
-                         <h5 class="box-date box-date-right">Thursday, October 26, 7-10 pm</h5>
-                     </div>
-                 </figure>
-                 <figure class="back">
-                     <div class="back-content">
-                         <h5 class="box-header"><strong>Halloween Party</strong></h5>
-                         <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">2017 Haunted Hall Crawl &amp; Costume Ball</h3>
-                         <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Tickets on Sale Now!</h5>
-                         <hr />
-                         <p>Experience the Museum as you never have before with our 3rd annual haunted costume ball!</p>
-                         <p>Thursday, October 26, 7 &ndash; 10 pm</p>
-                         <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/hauntedmuseum" role="button" title="More info: 2017 Haunted Hall Crawl &amp; Costume Ball" aria-label="More info: 2017 Haunted Hall Crawl &amp; Costume Ball">Info / Tickets</a></p>
-                     </div>
-                 </figure>
-             </div>
-         </div>
+            <!-- CARD 1 -->
+            <div class="col-md-6">
+            <div class="box-item box" id="card_event1">
+                <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2017_Paula_Finlen_Fall_EventcardV1-mini.jpg'); background-position: right;">
+                    <div class="front-content">
+                        <h2 class="box-header">Afternoon Lecture</h2>
+                        <h5 class="box-date box-date-right">Tuesday, November 7, 1:30 pm</h5>
+                    </div>
+                </figure>
+                <figure class="back">
+                    <div class="back-content">
+                        <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
+                        <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">The Specimen and the Image</h3>
+                        <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_subheading_back">Learning to Draw Fossils in the Seventeenth Century with Paula Findlen</h5>
+                        <hr />
+                        <p>This talk explores how a new understanding of fossils inspired new approaches to natural history illustration, through the late-Renaissance works of Agostino Scilla.</p>
+                        <p>Tuesday, November 7, 1:30 pm</p>
+                        <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/specimen-and-the-image" role="button" title="More info: Ostrom Lecture with Paula Findlen" aria-label="More info: Ostrom Lecture with Paula Findlen">More Info</a></p>
+                    </div>
+                </figure>
+            </div>
+        </div>
 
          <!-- CARD 2 - ALT  -->
          <div class="col-md-6">
@@ -631,8 +643,8 @@
     <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/moment.js"></script>
     <script type="text/javascript" src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.min.js"></script>
 
-
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/main.js?v=1"></script>
+    
+    <?php echo '<script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/main.js?v=' . $randomtwo . '"></script>'; ?>
 
 </body>
 
