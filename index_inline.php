@@ -307,34 +307,57 @@ $randomtwo = $_SESSION['randomtwo'];
         <!--<hr />-->
 
         <div class="row card-row">
-        
+
             <!-- CARD 1 -->
             <div class="col-md-6">
-            <div class="box-item box" id="card_event1">
-                <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2017_Paula_Finlen_Fall_EventcardV1-mini.jpg'); background-position: right;">
-                    <div class="front-content">
-                        <h2 class="box-header">Afternoon Lecture</h2>
-                        <h5 class="box-date box-date-right">Tuesday, November 7, 1:30 pm</h5>
-                    </div>
-                </figure>
-                <figure class="back">
-                    <div class="back-content">
-                        <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
-                        <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">The Specimen and the Image</h3>
-                        <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_subheading_back">Learning to Draw Fossils in the Seventeenth Century with Paula Findlen</h5>
-                        <hr />
-                        <p>This talk explores how a new understanding of fossils inspired new approaches to natural history illustration, through the late-Renaissance works of Agostino Scilla.</p>
-                        <p>Tuesday, November 7, 1:30 pm</p>
-                        <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/specimen-and-the-image" role="button" title="More info: Ostrom Lecture with Paula Findlen" aria-label="More info: Ostrom Lecture with Paula Findlen">More Info</a></p>
-                    </div>
-                </figure>
+                <div class="box-item box" id="card_event1">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Thomas_Wide_event_card-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Museum Talk</h2>
+                            <h5 class="box-date box-date-right">Thursday, November 2, 4:30 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Museum Talk</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">From Kabul to D.C.</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_subheading_back">Preserving and Presenting Afghanistan’s Cultural Heritage with Dr. Thomas Wide</h5>
+                            <hr />
+                            <p>This talk introduces the work of Turquoise Mountain, an NGO which has spent the last decade restoring the historic neighborhood of Murad Khani in Kabul, Afghanistan.</p>
+                            <p>Thursday, November 2, 4:30 pm</p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/kabul-dc" role="button" title="More info: Museum Talk with Dr. Thomas Wide" aria-label="More info: Museum Talk with Dr. Thomas Wide">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
             </div>
-        </div>
+
+            <!-- CARD 2 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event2">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2017_Paula_Finlen_Fall_EventcardV1-mini.jpg'); background-position: right;">
+                        <div class="front-content">
+                            <h2 class="box-header">Afternoon Lecture</h2>
+                            <h5 class="box-date box-date-right">Tuesday, November 7, 1:30 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">The Specimen and the Image</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">Learning to Draw Fossils in the Seventeenth Century with Paula Findlen</h5>
+                            <hr />
+                            <p>This talk explores how a new understanding of fossils inspired new approaches to natural history illustration, through the late-Renaissance works of Agostino Scilla.</p>
+                            <p>Tuesday, November 7, 1:30 pm</p>
+                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/specimen-and-the-image" role="button" title="More info: Ostrom Lecture with Paula Findlen" aria-label="More info: Ostrom Lecture with Paula Findlen">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
 
          <!-- CARD 2 - ALT  -->
-         <div class="col-md-6">
+         <div class="col-md-6" style="display: none">
              <div class="box-item box" id="card_event2_alt">
-                 <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
+                 <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
                      <div class="front-content">
                          <h2 class="box-header">Gallery Talks</h2>
                          <h5 class="box-date box-date-right">NEXT: November 9, 2017</h5>
