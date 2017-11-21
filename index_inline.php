@@ -1,7 +1,7 @@
 <?php header("access-control-allow-origin: *"); ?>
 
 
-<?  
+<?php  
 session_start(); 
 if(!isset($_SESSION['random'])){  
      $_SESSION['randomone'] = mt_rand(100000, 999999);  
@@ -308,25 +308,23 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
 
-            <!-- CARD 1 -->
-            <div class="col-md-6">
+        <!-- CARD 1 -->
+        <div class="col-md-6">
             <div class="box-item box" id="card_event1">
-                <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Matthew_Isaac_Cohen_lecture_event_Nov_2017-mini.jpg'); background-position: right;">
+                <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/fall_family_days_card-mini.jpg'); background-position: center;">
                     <div class="front-content">
-                        <h2 class="box-header">Afternoon Lecture</h2>
-                        <h5 class="box-date box-date-right">Wednesday, November 15, 4:30 pm</h5>
+                        <h2 class="box-header">Fall Family Days</h2>
+                        <h5 class="box-date box-date-right">Friday&ndash;Sunday, November 24&ndash;26</h5>
                     </div>
                 </figure>
                 <figure class="back">
                     <div class="back-content">
-                        <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
-                        <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit1_heading_back">Negotiating Living Tradition and Cultural Heritage</h3>
-                        <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_subheading_back">Indonesian Wayang Puppetry in Museum Contexts</h5>
+                        <h5 class="box-header"><strong>Thanksgiving Weekend</strong></h5>
+                        <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Fall Family Days</h3>
                         <hr />
-                        <p>What role do museums play in both preserving and developing Indonesian puppetry traditions? Join us to find out!</p>
-                        <p>Wednesday, November 15, 4:30 pm</p>
-                        <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/indonesian-wayang-puppetry" role="button" title="More info: Negotiating Living Tradition and Cultural Heritage"
-                                aria-label="More info: Negotiating Living Tradition and Cultural Heritage">More Info</a></p>
+                        <p>Join us for our Fall Family Days at the Yale Peabody Museum! Try out hands on activities with the Sci.CORPS Interpreters, take a guided tour, and do some fun fall craft stations.</p>
+                        <p>Friday&ndash;Sunday, November 24&ndash;26<br />12:00&ndash;4:00 pm<br />Museum admission required.</p>
+                        <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/family-day-peabody-museum" role="button" title="More info: Fall Family Days" aria-label="More info: Fall Family Days">More Info</a></p>
                     </div>
                 </figure>
             </div>
