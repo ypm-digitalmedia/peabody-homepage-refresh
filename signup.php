@@ -55,17 +55,14 @@ $current = file_get_contents($file);
 $current .= $dt . "\t" . $arr["firstName"] . " " . $arr["lastName"] . "\t" . $arr["email"] . "\n";
 // Write the contents back to the file
 
-if( is_null( $response_array) ) { 
-    echo "Permission Denied";
-} else {
+// if( is_null( $response_array) ) { 
+//     echo "Permission Denied";
+// } else {
     file_put_contents($file, $current);
 
     mail($to,$subject,$message,$headers);
 
-    // echo $arrStr;
-    // print_r($arr);
-    // echo $arr[0]['firstName'] . " | " . $arr[0]['lastName'] . " | " . $arr[0]['email'];
     echo json_encode($response_array);
-}
+// }
 
 ?>
