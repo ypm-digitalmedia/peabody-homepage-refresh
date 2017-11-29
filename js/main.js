@@ -518,8 +518,11 @@ function submitForm() {
             }, formTimeoutLength);
 
         })
-        .fail(function() {
+        .fail(function(xhr, status, error) {
             console.log("form submit: error");
+            console.warn(xhr);
+            console.warn(status);
+            console.warn(error);
             BootstrapDialog.show({
                 title: 'Error',
                 message: 'Something went wrong processing your request.  Please try again later.',
