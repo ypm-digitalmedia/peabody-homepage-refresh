@@ -335,94 +335,116 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <!-- CARD 2 -->
         <div class="col-md-6">
-            <div class="box-item box" id="card_event2">
-                <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/ms_holiday_web_card-mini.jpg'); background-position: left;">
-                    <div class="front-content">
-                        <h2 class="box-header">Holiday Sale</h2>
-                        <h5 class="box-date box-date-right">Ends December 22</h5>
-                    </div>
-                </figure>
-                <figure class="back">
-                    <div class="back-content">
-                        <h5 class="box-header"><strong>Holiday Sale</strong></h5>
-                        <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">A Gift For Everyone</h3>
-                        <hr />
-                        <p>Find the perfect gift for every natural history lover on your list this year and enjoy <strong>10% off</strong> at the Yale Peabody Museum Store!</p>
-                        <p>Sale happening now through December 22. Don't miss out!</p>
-                        <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/store/holiday-sale" role="button" title="Click for Coupon: Holiday Sale" aria-label="Click for Coupon: Holiday Sale">Get Coupon</a></p>
-                    </div>
-                </figure>
-            </div>
-        </div>
-
-
-        <!-- CARD 2 - ALT  -->
-        <div class="col-md-6" style="display: none">
-            <div class="box-item box" id="card_event2_alt">
-                <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
-                    <div class="front-content">
-                        <h2 class="box-header">Gallery Talks</h2>
-                        <h5 class="box-date box-date-right">NEXT: December 7, 2017</h5>
-                    </div>
-                </figure>
-                <figure class="back">
-                    <div class="back-content">
-                        <h5 class="box-header"><strong>Fall 2017 Semester Series</strong></h5>
-                        <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Gallery Talks</h3>
-                        <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Once a month, Thursdays at 4 pm</h5>
-                        <hr />
-                        <p>Join us this fall for a special series of gallery talks! Yale Peabody Museum curators and collections managers will feature a few remarkable objects from our collections in a 20-minute presentation, followed by Q&amp;A.</p>
-                        <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
-                    </div>
-                </figure>
-            </div>
-        </div>
-
-            <!-- CARD 3 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event3">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Invisible Boundaries</h2>
-                            <!-- <h5 class="box-date box-date-left">Coming Soon</h5> -->
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">Invisible Boundaries</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Exploring Yellowstone’s Great Animal Migrations</h5>
-                            <hr />
-                            <p>Discover the meaning of wildlife migrations to the Greater Yellowstone Ecosystem in this groundbreaking exhibition.</p>
-                            <p>On view through March 25, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
-                        </div>
-                    </figure>
+        <div class="box-item box" id="card_event2">
+            <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/ms_holiday_web_card-mini.jpg'); background-position: left;">
+                <div class="front-content">
+                    <h2 class="box-header">Holiday Sale</h2>
+                    <h5 class="box-date box-date-right">Ends December 21</h5>
                 </div>
-            </div>
-
-            <!-- CARD 4 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event4">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">An Artist for Conservation</h2>
-                            <!-- <h5 class="box-date box-date-left">Coming soon</h5> -->
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">An Artist for Conservation</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">The Paintings of Albert Earl Gilbert</h5>
-                            <hr />
-                            <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
-                            <p>On view through April 15, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
-                        </div>
-                    </figure>
+            </figure>
+            <figure class="back">
+                <div class="back-content">
+                    <h5 class="box-header"><strong>A Gift For Everyone</strong></h5>
+                    <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">Holiday Sale</h3>
+                    <hr />
+                    <p>Find the perfect gift for every natural history lover on your list this year and enjoy <strong>10% off</strong> at the Yale Peabody Museum Store!</p>
+                    <p>Sale happening now through December 21. Don't miss out!</p>
+                    <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/store/printable-holiday-coupon" role="button" title="Click for Coupon: Holiday Sale" aria-label="Click for Coupon: Holiday Sale">Get Coupon</a></p>
                 </div>
-            </div>
+            </figure>
+        </div>
+    </div>
+
+
+    <!-- CARD 2 - ALT  -->
+    <div class="col-md-6" style="display: none">
+        <div class="box-item box" id="card_event2_alt">
+            <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
+                <div class="front-content">
+                    <h2 class="box-header">Gallery Talks</h2>
+                    <h5 class="box-date box-date-right">NEXT: December 7, 2017</h5>
+                </div>
+            </figure>
+            <figure class="back">
+                <div class="back-content">
+                    <h5 class="box-header"><strong>Fall 2017 Semester Series</strong></h5>
+                    <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Gallery Talks</h3>
+                    <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Once a month, Thursdays at 4 pm</h5>
+                    <hr />
+                    <p>Join us this fall for a special series of gallery talks! Yale Peabody Museum curators and collections managers will feature a few remarkable objects from our collections in a 20-minute presentation, followed by Q&amp;A.</p>
+                    <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col-md-6">
+        <div class="box-item box" id="card_event3">
+            <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
+                <div class="front-content">
+                    <h2 class="box-header">Invisible Boundaries</h2>
+                    <!-- <h5 class="box-date box-date-left">Coming Soon</h5> -->
+                </div>
+            </figure>
+            <figure class="back">
+                <div class="back-content">
+                    <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+                    <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">Invisible Boundaries</h3>
+                    <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Exploring Yellowstone’s Great Animal Migrations</h5>
+                    <hr />
+                    <p>Discover the meaning of wildlife migrations to the Greater Yellowstone Ecosystem in this groundbreaking exhibition.</p>
+                    <p>On view through March 25, 2018.</p>
+                    <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="col-md-6">
+        <div class="box-item box" id="card_event4">
+            <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+                <div class="front-content">
+                    <h2 class="box-header">Adult Art Classes</h2>
+                    <h5 class="box-date box-date-right">Register Now</h5>
+                </div>
+            </figure>
+            <figure class="back">
+                <div class="back-content">
+                    <h5 class="box-header"><strong>Ongoing</strong></h5>
+                    <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">Adult Art Classes</h3>
+                    <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Programs in Natural Science Illustration</h5>
+                    <hr />
+                    <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
+                    <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <!-- CARD 4 - ALT -->
+    <div class="col-md-6" style="display: none">
+        <div class="box-item box" id="card_event4_alt">
+            <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
+                <div class="front-content">
+                    <h2 class="box-header">An Artist for Conservation</h2>
+                    <!-- <h5 class="box-date box-date-left">Coming soon</h5> -->
+                </div>
+            </figure>
+            <figure class="back">
+                <div class="back-content">
+                    <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+                    <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_alt_heading_back">An Artist for Conservation</h3>
+                    <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">The Paintings of Albert Earl Gilbert</h5>
+                    <hr />
+                    <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
+                    <p>On view through April 15, 2018.</p>
+                    <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                </div>
+            </figure>
+        </div>
+    </div>
 
         </div>
 
