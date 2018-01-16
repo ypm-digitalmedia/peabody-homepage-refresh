@@ -132,7 +132,7 @@ $randomtwo = $_SESSION['randomtwo'];
                             <li><a href="http://peabody.yale.edu/collections/the-collections" title="The Collections" aria-label="The Collections">The Collections</a></li>
                             <li><a href="http://peabody.yale.edu/collections/collection-contacts" title="Collection Contacts" aria-label="Collection Contacts">Collection Contacts</a></li>
                             <li><a href="http://peabody.yale.edu/collections/using-collections" title="Using the Collections" aria-label="Using the Collections">Using the Collections</a></li>
-                            <li><a href="http://peabody.yale.edu/collections/office-collections-and-operations" title="Office of Collections and Operations" aria-label="Office of Collections and Operations">Office of Collections &amp; Operations</a></li>
+                            <li><a href="http://peabody.yale.edu/collections/office-collections-and-research" title="Office of Collections and Research" aria-label="Office of Collections and Research">Office of Collections &amp; Research</a></li>
                             <li><a href="http://peabody.yale.edu/collections/facilities" title="Facilities" aria-label="Facilities">Facilities</a></li>
                             <li><a href="http://peabody.yale.edu/collections/collections-policies" title="Collections Policies" aria-label="Collections Policies">Collections Policies</a></li>
                             <li><a href="http://peabody.yale.edu/collections/opportunities" title="Opportunities" aria-label="Opportunities">Opportunities</a></li>
@@ -308,33 +308,9 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
 
-            <!-- CARD 1  -->
+            <!-- CARD 1 - ALT  -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1_alt">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/mlk-web-card-mini.jpg'); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">2018 MLK Day</h2>
-                            <h5 class="box-date box-date-right">Sunday &amp; Monday, January 14 &amp; 15</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>22nd Annual Celebration</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_alt_heading_back">Dr. Martin Luther King, Jr.</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_alt_subheading_back">Legacy of Environmental &amp; Social Justice 2018</h5>
-                            <hr />
-                            <p>Join us for our 22nd annual 2-day celebration, including music &amp; dance, hands-on activities, professional poetry slam and much more!</p>
-                            <p>Sunday &amp; Monday, January 14 &amp; 15</p>
-                            <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/dr-martin-luther-king-jrs-legacy-environmental-and-social-justice" role="button" title="More info: Dr. Martin Luther King, Jr. Legacy of Environmental & Social Justice 2018"
-                                    aria-label="More info: Dr. Martin Luther King, Jr. Legacy of Environmental & Social Justice 2018">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
-            <!-- CARD 2 - ALT  -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event2_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
                         <div class="front-content">
                             <h2 class="box-header">Gallery Talks</h2>
@@ -344,11 +320,33 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Spring 2018 Semester Series</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Gallery Talks</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Once a month, Thursdays at 4 pm</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_alt_heading_back">Gallery Talks</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_alt_subheading_back">Once a month, Thursdays at 4 pm</h5>
                             <hr />
                             <p>Join us this fall for a special series of gallery talks! Yale Peabody Museum curators and collections managers will feature a few remarkable objects from our collections in a 20-minute presentation, followed by Q&amp;A.</p>
-                            <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/yale-peabody-museum-gallery-talks" role="button" title="More info: Gallery Talks" aria-label="More info: Gallery Talks">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CARD 2 - ALT -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event2_alt">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Adult Art Classes</h2>
+                            <h5 class="box-date box-date-right">Register Now</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Ongoing</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Adult Art Classes</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Programs in Natural Science Illustration</h5>
+                            <hr />
+                            <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
+                            <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -378,30 +376,8 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
 
             <!-- CARD 4 -->
-            <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event4">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Adult Art Classes</h2>
-                            <h5 class="box-date box-date-right">Register Now</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">Adult Art Classes</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Programs in Natural Science Illustration</h5>
-                            <hr />
-                            <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
-                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
-            <!-- CARD 4 - ALT -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event4_alt">
+                <div class="box-item box" id="card_event4">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">An Artist for Conservation</h2>
@@ -411,12 +387,12 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_alt_heading_back">An Artist for Conservation</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">The Paintings of Albert Earl Gilbert</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">An Artist for Conservation</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">The Paintings of Albert Earl Gilbert</h5>
                             <hr />
                             <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
                             <p>On view through April 15, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
                         </div>
                     </figure>
                 </div>
