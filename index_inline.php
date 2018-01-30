@@ -379,10 +379,10 @@ $randomtwo = $_SESSION['randomtwo'];
             <!-- CARD 3 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event3">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Invisible Boundaries</h2>
-                            <!-- <h5 class="box-date box-date-left">Coming Soon</h5> -->
+                            <h5 class="box-date box-date-right">Through March 25</h5>
                         </div>
                     </figure>
                     <figure class="back">
@@ -400,12 +400,12 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
 
             <!-- CARD 4 -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event4">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">An Artist for Conservation</h2>
-                            <!-- <h5 class="box-date box-date-left">Coming soon</h5> -->
+                            <h5 class="box-date box-date-right">Through April 15</h5>
                         </div>
                     </figure>
                     <figure class="back">
@@ -417,6 +417,28 @@ $randomtwo = $_SESSION['randomtwo'];
                             <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
                             <p>On view through April 15, 2018.</p>
                             <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+
+            <!-- CARD 4 - ALT -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event4_alt">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
+                        <div class="front-content">
+                            <h2 class="box-header">Peabody Birthday Parties</h2>
+                            <h5 class="box-date box-date-right">Book Today</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Ongoing</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_alt_heading_back">Peabody Birthday Parties</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">For children 4-10 years of age</h5>
+                            <hr/>
+                            <p>Celebrate your child’s birthday with us! Peabody birthday parties are fun and educational! Four themes to choose from, includes scavenger hunts, hand-on activities and much more.</p>
+                            <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
                         </div>
                     </figure>
                 </div>
