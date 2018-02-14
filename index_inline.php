@@ -233,10 +233,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Friday, November 3</strong>
+                                        <strong>Monday, February 19</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">The Peabody will be closed for a private event.</p>
+                                    <p class="slider-alert-text">The Peabody will be open for Presidents' Day!</p>
                                 </td>
                             </tr>
                         </table>
