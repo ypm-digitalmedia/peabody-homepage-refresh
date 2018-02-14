@@ -138,7 +138,8 @@ $randomtwo = $_SESSION['randomtwo'];
                             <li><a href="http://peabody.yale.edu/collections/opportunities" title="Opportunities" aria-label="Opportunities">Opportunities</a></li>
                             <li><a href="http://peabody.yale.edu/scientific-publications" title="Scientific Publications" aria-label="Scientific Publications">Scientific Publications</a></li>
                             <li><a href="http://peabody.yale.edu/education/specimen-identifications" title="Specimen Identifications" aria-label="Specimen Identifications">Specimen Identifications</a></li>
-                            <li><a href="http://peabody.yale.edu/collections/database-admin-informatics" title="Database Admin and Informatics" aria-label="Database Admin and Informatics">Database Admin / Informatics</a></li>
+                            <li><a href="http://peabody.yale.edu/collections/systems-database-admin" title="Systems/Database Admin" aria-label="Systems/Database Admin">Systems/Database Admin</a></li>
+                            <li><a href="http://peabody.yale.edu/collections/informatics" title="Informatics" aria-label="Informatics">Informatics</a></li>
                             <li><a href="http://peabody.yale.edu/collections/conservation-lab" title="Conservation Lab" aria-label="Conservation Lab">Conservation Lab</a></li>
                             <li><a href="http://peabody.yale.edu/collections/blog" title="Collections Blog" aria-label="Collections Blog">Collections Blog</a></li>
                             <li><a href="http://peabody.yale.edu/collections/spnhc2012" title="SPNHC 2012" aria-label="SPNHC 2012">SPNHC 2012</a></li>
