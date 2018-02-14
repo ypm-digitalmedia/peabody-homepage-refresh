@@ -13,7 +13,6 @@ var show_evolved_banner = false;
 
 
 
-
 // SLIDER ALERT
 var data_alert = {
     shown: show_alert,
