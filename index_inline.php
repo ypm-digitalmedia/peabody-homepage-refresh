@@ -333,7 +333,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
 
             <!-- CARD 1 - ALT  -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="display:none">
                 <div class="box-item box" id="card_event1_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
                         <div class="front-content">
@@ -355,7 +355,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
 
             <!-- CARD 2 - ALT -->
-            <div class="col-md-6" style="display:none">
+            <div class="col-md-6">
                 <div class="box-item box" id="card_event2_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
                         <div class="front-content">
