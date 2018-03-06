@@ -236,10 +236,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Monday, February 19</strong>
+                                        <strong>Wednesday, March 7</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">The Peabody will be open for Presidents' Day!</p>
+                                    <p class="slider-alert-text">The Peabody will be closing at noon due to inclement weather.</p>
                                 </td>
                             </tr>
                         </table>
@@ -310,7 +310,7 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
 
-        <!-- CARD 1 -->
+            <!-- CARD 1 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/James_Prosek_event_card_2018-mini.jpg'); background-position: center;">
@@ -332,7 +332,7 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
             
-            <!-- CARD 1 - ALT  -->
+            <!-- CARD 1 - ALT -->
             <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event1_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/gallery_talk_web_card_mini.jpg'); background-position: left;">
@@ -353,24 +353,25 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                 </div>
             </div>
-
-            <!-- CARD 2 - ALT -->
+            
+            <!-- CARD 2 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event2_alt">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+                <div class="box-item box" id="card_event2">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_Student EX_Event_card_2018_V3_final-mini.jpg'); background-position: right;">
                         <div class="front-content">
-                            <h2 class="box-header">Adult Art Classes</h2>
-                            <h5 class="box-date box-date-right">Register Now</h5>
+                            <h2 class="box-header">Student Art Exhibition</h2>
+                            <h5 class="box-date box-date-right">Sunday, April 4, 2-4 pm</h5>
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Adult Art Classes</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Programs in Natural Science Illustration</h5>
+                            <h5 class="box-header"><strong>Afternoon Event</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">Student Art Exhibition</h3>
                             <hr />
-                            <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
-                            <p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
+                            <p>Join us for this special afternoon event in the Great Hall of Dinosaurs, where students from the Natural Science Illustration Program will have their artwork on display.</p>
+                            <p>Free to the public with Museum admission.</p>
+                            <p>Sunday, April 4, 2018, 2-4 pm</p>
+                            <p class="button-row" style="display:none"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="#" role="button" title="More info: Student Art Exhibition" aria-label="More info: Student Art Exhibition">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -400,7 +401,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
 
             <!-- CARD 4 -->
-            <div class="col-md-6" style="display: none">
+            <div class="col-md-6">
                 <div class="box-item box" id="card_event4">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
                         <div class="front-content">
@@ -422,9 +423,31 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
 
-            <!-- CARD 4 - ALT -->
+            <!-- CARD 5 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event4_alt">
+                <div class="box-item box" id="card_event5">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Adult Art Classes</h2>
+                            <h5 class="box-date box-date-right">Register Now</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Ongoing</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit5_heading_back">Adult Art Classes</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_subheading_back">Programs in Natural Science Illustration</h5>
+                            <hr />
+                            <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
+                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- CARD 6 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event6">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
                         <div class="front-content">
                             <h2 class="box-header">Peabody Birthday Parties</h2>
@@ -434,11 +457,11 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_alt_heading_back">Peabody Birthday Parties</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">For children 4-10 years of age</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Peabody Birthday Parties</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">For children 4-10 years of age</h5>
                             <hr/>
                             <p>Celebrate your child’s birthday with us! Peabody birthday parties are fun and educational! Four themes to choose from, includes scavenger hunts, hand-on activities and much more.</p>
-                            <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
                         </div>
                     </figure>
                 </div>
