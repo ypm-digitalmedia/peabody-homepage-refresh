@@ -1,7 +1,7 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
 var show_alert = false;
-var show_alert_until = '2018-03-14'; // FORMAT 'YYYY-MM-DD'
+var show_alert_until = '2018-03-21'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
 
 var show_evolved_banner = false;
 

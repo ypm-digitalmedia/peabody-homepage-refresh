@@ -236,10 +236,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Tuesday, March 13</strong>
+                                        <strong>Wednesday, March 21</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">The Peabody will be closed due to inclement weather.</p>
+                                    <p class="slider-alert-text">The Peabody is closed due to inclement weather.</p>
                                 </td>
                             </tr>
                         </table>
@@ -310,35 +310,13 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
 
-            <!-- CARD 1 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/James_Prosek_event_card_2018-mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Evening Lecture</h2>
-                            <h5 class="box-date box-date-right">Thursday, March 15, 5:30 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">Why We Draw, and Naming Nature</h3>
-                            <hr />
-                            <p>How can drawing help us all be more present and connect with nature? Join artist James Prosek as he explores drawing and its connection to science.</p>
-                            <p>Thursday, March 15, 2018 at 5:30 pm.<br />Book signing to follow.</p>
-                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/why-we-draw-naming-nature" role="button" title="More info: Ostrom Lecture with James Prosek" aria-label="More info: Ostrom Lecture with James Prosek">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
             <!-- CARD 1 - ALT -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ali-Eckermann_lecture_event_webcard_3_2018-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Evening Lecture</h2>
-                            <h5 class="box-date box-date-right">Wednesday, March 21, 5:00 pm</h5>
+                            <h5 class="box-date box-date-right">Weather Cancellation</h5>
                         </div>
                     </figure>
                     <figure class="back">
@@ -348,7 +326,7 @@ $randomtwo = $_SESSION['randomtwo'];
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_alt_subheading_back">Memoir of a Stolen Childhood</h5>
                             <hr />
                             <p>Join Ali Cobby Eckermann as she shares her own astonishing story of heartbreak and reunion, the mistreatment of Aboriginal cultures and a future of understanding and reconciliation.</p>
-                            <p>Wednesday, March 21, 2018 at 5:00 pm.</p>
+                            <p>This lecture has been cancelled.</p>
                             <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/too-afraid-cry" role="button" title="More info: Museum Lecture with Ali Cobby Eckermann" aria-label="More info: Museum Lecture with Ali Cobby Eckermann">More Info</a></p>
                         </div>
                     </figure>
@@ -395,14 +373,14 @@ $randomtwo = $_SESSION['randomtwo'];
                             <p>Join us for this special afternoon event in the Great Hall of Dinosaurs, where students from the Natural Science Illustration Program will have their artwork on display.</p>
                             <p>Free to the public with Museum admission.</p>
                             <p>Sunday, April 8, 2018, 2-4 pm</p>
-                            <p class="button-row" style="display:none"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="#" role="button" title="More info: Student Art Exhibition" aria-label="More info: Student Art Exhibition">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/natural-science-illustration-program-student-art-exhibition" role="button" title="More info: Student Art Exhibition" aria-label="More info: Student Art Exhibition">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
 
             <!-- CARD 4 - ALT -->
-            <div class="col-md-6" style="display: none">
+            <div class="col-md-6">
                 <div class="box-item box" id="card_event4_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
                         <div class="front-content">
