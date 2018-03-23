@@ -205,15 +205,15 @@ $(document).ready(function() {
     /* --------------------- INITIALIZE PAGE ELEMENTS --------------------------- */
 
 
-    if (!data_renoBanner.shown) {
-        $(".peabody-evolved").hide();
-        $(".peabody-evolved-separator").show();
-
-    } else {
-        $(".peabody-evolved").show();
-        $(".peabody-evolved-separator").hide();
-
-    }
+//    if (!data_renoBanner.shown) {
+//        $(".peabody-evolved").hide();
+//        $(".peabody-evolved-separator").show();
+//
+//    } else {
+//        $(".peabody-evolved").show();
+//        $(".peabody-evolved-separator").hide();
+//
+//    }
 
     // do we show the alert?
     if (data_alert.shown) {
