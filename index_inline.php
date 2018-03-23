@@ -297,24 +297,24 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
 
-            <!-- CARD 1 - ALT -->
+            <!-- CARD 1 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event1_alt">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ali-Eckermann_lecture_event_webcard_3_2018-mini.jpg'); background-position: right;">
+                <div class="box-item box" id="card_event1">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
                         <div class="front-content">
-                            <h2 class="box-header">Evening Lecture</h2>
-                            <h5 class="box-date box-date-right">Weather Cancellation</h5>
+                            <h2 class="box-header">Invisible Boundaries</h2>
+                            <h5 class="box-date box-date-right">Closing Sunday, March 25!</h5>
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_alt_heading_back">Too Afraid to Cry</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_alt_subheading_back">Memoir of a Stolen Childhood</h5>
+                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Invisible Boundaries</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Exploring Yellowstone’s Great Animal Migrations</h5>
                             <hr />
-                            <p>Join Ali Cobby Eckermann as she shares her own astonishing story of heartbreak and reunion, the mistreatment of Aboriginal cultures and a future of understanding and reconciliation.</p>
-                            <p>This lecture has been cancelled.</p>
-                            <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/too-afraid-cry" role="button" title="More info: Museum Lecture with Ali Cobby Eckermann" aria-label="More info: Museum Lecture with Ali Cobby Eckermann">More Info</a></p>
+                            <p>Discover the meaning of wildlife migrations to the Greater Yellowstone Ecosystem in this groundbreaking exhibition.</p>
+                            <p>On view through March 25, 2018.</p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -365,33 +365,34 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                 </div>
             </div>
-
-            <!-- CARD 4 - ALT -->
+            
+            <!-- CARD 4 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event4_alt">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Invisible_Boundaries_Web Exhibit_card_2017_mini.jpg'); background-position: right;">
+                <div class="box-item box" id="card_event4">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Lynn_Meskell_event_card_Apr_2018-mini.jpg'); background-position: right;">
                         <div class="front-content">
-                            <h2 class="box-header">Invisible Boundaries</h2>
-                            <h5 class="box-date box-date-right">Through March 25</h5>
+                            <h2 class="box-header">Afternoon Lecture</h2>
+                            <h5 class="box-date box-date-right">Tuesday, April 17, 4:30 pm</h5>
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_alt_heading_back">Invisible Boundaries</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">Exploring Yellowstone’s Great Animal Migrations</h5>
+                            <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit4_heading_back">Engineering Internationalism</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit4_subheading_back">UNESCO's Victory in Nubia</h5>
                             <hr />
-                            <p>Discover the meaning of wildlife migrations to the Greater Yellowstone Ecosystem in this groundbreaking exhibition.</p>
-                            <p>On view through March 25, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/invisible-boundaries" role="button" title="More info: Invisible Boundaries" aria-label="More info: Invisible Boundaries">More Info</a></p>
+                            <p>Join Dr. Lynn Meskell and learn about the Nubian Monuments Campaign in Egypt and Sudan, which represented UNESCO’s utopian desires for world citizenship and global preservation of cultural heritage.</p>
+                            <p>Tuesday, April 17, 4:30 pm</p>
+                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/engineering-internationalism" role="button" title="More info: Engineering Internationalism"
+                                    aria-label="More info: Engineering Internationalism">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
 
-            <!-- CARD 4 -->
+            <!-- CARD 4 - ALT -->
             <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event4">
+                <div class="box-item box" id="card_event4_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">An Artist for Conservation</h2>
@@ -401,12 +402,12 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">An Artist for Conservation</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">The Paintings of Albert Earl Gilbert</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_alt_heading_back">An Artist for Conservation</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">The Paintings of Albert Earl Gilbert</h5>
                             <hr />
                             <p>Explore the beauty and majesty of birds through the eyes of renowned artist Albert Earl Gilbert, and discover the process and passion behind Al’s unique vision.</p>
                             <p>On view through April 15, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/albert-earl-gilbert-artist-conservation" role="button" title="More info: Albert Earl Gilbert" aria-label="More info: Albert Earl Gilbert">More Info</a></p>
                         </div>
                     </figure>
                 </div>
