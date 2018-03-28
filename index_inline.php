@@ -297,32 +297,9 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
             
-            <!-- CARD 2 -->
+            <!-- CARD 1 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event2">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_AerinJacobs_Lecture_eventcard_2018-AM-mini.jpg'); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">Evening Lecture</h2>
-                            <h5 class="box-date box-date-right">Wednesday, March 28, 5:30 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">Yellowstone to Yukon</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">Why Large Landscape Conservation Matters Now More Than Ever</h5>
-                            <hr />
-                            <p>Join conservation scientist Dr. Aerin Jacob on a 2,000-mile journey to explore how grassroots efforts and collaboration connect and protect habitat, allowing people and nature can thrive.</p>
-                            <p>Wednesday, March 28, 5:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/yellowstone-to-yukon" role="button" title="More info: Ostrom Lecture with Aerin Jacob" aria-label="More info: Ostrom Lecture with Aerin Jacob">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
-            <!-- CARD 3 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event3">
+                <div class="box-item box" id="card_event1">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_Student EX_Event_card_2018_V3_final-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Student Art Exhibition</h2>
@@ -332,20 +309,43 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Afternoon Event</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit3_heading_back">Student Art Exhibition</h3>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">Student Art Exhibition</h3>
                             <hr />
                             <p>Join us for this special afternoon event in the Great Hall of Dinosaurs, where students from the Natural Science Illustration Program will have their artwork on display.</p>
                             <p>Free to the public with Museum admission.</p>
                             <p>Sunday, April 8, 2018, 2-4 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/natural-science-illustration-program-student-art-exhibition" role="button" title="More info: Student Art Exhibition" aria-label="More info: Student Art Exhibition">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/natural-science-illustration-program-student-art-exhibition" role="button" title="More info: Student Art Exhibition" aria-label="More info: Student Art Exhibition">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
             
-            <!-- CARD 4 -->
+            <!-- CARD 2 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event4">
+                <div class="box-item box" id="card_event2">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Ted Levin_eventcard-mini.jpg'); background-position: right;">
+                        <div class="front-content">
+                            <h2 class="box-header">Evening Lecture</h2>
+                            <h5 class="box-date box-date-right">Thursday, April 12, 5:30 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">America's Snake</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">The Rise and Fall of the Timber Rattlesnake</h5>
+                            <hr />
+                            <p>Please join us as award-winning nature writer Ted Levin reads from his new work <em>America's Snake: The Rise and Fall of the Timber Rattlesnake</em>, and discusses the joys and frustrations of befriending a venomous reptile.</p>
+                            <p>Thursday, April 12, 5:30 pm</p>
+                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/americas-snake" role="button" title="More info: Ostrom Lecture with Ted Levin" aria-label="More info: Ostrom Lecture with Ted Levin">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- CARD 3 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event3">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Lynn_Meskell_event_card_Apr_2018-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Afternoon Lecture</h2>
@@ -355,12 +355,12 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit4_heading_back">Engineering Internationalism</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit4_subheading_back">UNESCO's Victory in Nubia</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit3_heading_back">Engineering Internationalism</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit3_subheading_back">UNESCO's Victory in Nubia</h5>
                             <hr />
                             <p>Join Dr. Lynn Meskell and learn about the Nubian Monuments Campaign in Egypt and Sudan, which represented UNESCO’s utopian desires for world citizenship and global preservation of cultural heritage.</p>
                             <p>Tuesday, April 17, 4:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/engineering-internationalism" role="button" title="More info: Engineering Internationalism"
+                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/engineering-internationalism" role="button" title="More info: Engineering Internationalism"
                                     aria-label="More info: Engineering Internationalism">More Info</a></p>
                         </div>
                     </figure>
