@@ -300,29 +300,6 @@ $randomtwo = $_SESSION['randomtwo'];
             
             <!-- BEGIN CARDS -->
             
-            <!-- CARD 1 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Ted Levin_eventcard-mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Evening Lecture</h2>
-                            <h5 class="box-date box-date-right">Thursday, April 12, 5:30 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">America's Snake</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_subheading_back">The Rise and Fall of the Timber Rattlesnake</h5>
-                            <hr />
-                            <p>Please join us as award-winning nature writer Ted Levin reads from his new work <em>America's Snake: The Rise and Fall of the Timber Rattlesnake</em>, and discusses the joys and frustrations of befriending a venomous reptile.</p>
-                            <p>Thursday, April 12, 5:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/americas-snake" role="button" title="More info: Ostrom Lecture with Ted Levin" aria-label="More info: Ostrom Lecture with Ted Levin">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
             <!-- CARD 1 - ALT -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1_alt">
@@ -388,6 +365,29 @@ $randomtwo = $_SESSION['randomtwo'];
                             <p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
                             <p>On view April 14, 2018.</p>
                             <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- CARD 4 - ALT -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event4_alt">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Laia_Alaska_event card_graphic_2018-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Afternoon Lecture</h2>
+                            <h5 class="box-date box-date-right">Thursday, April 19, 12 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit4_alt_heading_back">Tree-ring Narratives of Environmental Change</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">From the Arctic to the Tropics</h5>
+                            <hr />
+                            <p>Laia Andreu-Hayles explains how tree rings record interactions between the atmosphere and the biosphere over time, and thus are exceptional archives of environmental history.</p>
+                            <p>On view April 14, 2018.</p>
+                            <p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/tree-ring-narratives" role="button" title="More info: Tree-ring Narratives of Environmental Change" aria-label="More info: Tree-ring Narratives of Environmental Change">More Info</a></p>
                         </div>
                     </figure>
                 </div>
