@@ -298,9 +298,11 @@ $randomtwo = $_SESSION['randomtwo'];
 
         <div class="row card-row">
             
-            <!-- CARD 2 -->
+            <!-- BEGIN CARDS -->
+            
+            <!-- CARD 1 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event2">
+                <div class="box-item box" id="card_event1">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Ted Levin_eventcard-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Evening Lecture</h2>
@@ -310,20 +312,20 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit2_heading_back">America's Snake</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">The Rise and Fall of the Timber Rattlesnake</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">America's Snake</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_subheading_back">The Rise and Fall of the Timber Rattlesnake</h5>
                             <hr />
                             <p>Please join us as award-winning nature writer Ted Levin reads from his new work <em>America's Snake: The Rise and Fall of the Timber Rattlesnake</em>, and discusses the joys and frustrations of befriending a venomous reptile.</p>
                             <p>Thursday, April 12, 5:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/americas-snake" role="button" title="More info: Ostrom Lecture with Ted Levin" aria-label="More info: Ostrom Lecture with Ted Levin">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/americas-snake" role="button" title="More info: Ostrom Lecture with Ted Levin" aria-label="More info: Ostrom Lecture with Ted Levin">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
             
-            <!-- CARD 3 -->
+            <!-- CARD 1 - ALT -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event3">
+                <div class="box-item box" id="card_event1_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Lynn_Meskell_event_card_Apr_2018-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Afternoon Lecture</h2>
@@ -333,19 +335,66 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit3_heading_back">Engineering Internationalism</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit3_subheading_back">UNESCO's Victory in Nubia</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit1_alt_heading_back">Engineering Internationalism</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit1_alt_subheading_back">UNESCO's Victory in Nubia</h5>
                             <hr />
                             <p>Join Dr. Lynn Meskell and learn about the Nubian Monuments Campaign in Egypt and Sudan, which represented UNESCO’s utopian desires for world citizenship and global preservation of cultural heritage.</p>
                             <p>Tuesday, April 17, 4:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/engineering-internationalism" role="button" title="More info: Engineering Internationalism"
+                            <p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/engineering-internationalism" role="button" title="More info: Engineering Internationalism"
                                     aria-label="More info: Engineering Internationalism">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
-
+            
+            <!-- CARD 3  -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event3">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/ID_Day_web_card-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">2018 ID Day</h2>
+                            <h5 class="box-date box-date-right">Wednesday, April 18, 11 am &ndash; 3 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Public Program</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit3_heading_back">ID Day at the Peabody</h3>
+                            <hr />
+                            <p>Join us for Identification Day as our Museum experts attempt to identify <em>your</em> artifacts, rocks, feathers, insects, shells and more.  It's also your chance to get up-close and personal with some rarely seen objects and specimens from the collections.</p>
+                            <p>Free with Museum admission.<br />Wednesday, April 18, 11 am &ndash; 3 pm</p>
+                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/id-day" role="button" title="More info: ID Day at the Peabody Museum 2018"
+                                    aria-label="More info: ID Day at the Peabody Museum 2018">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- CARD 4 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event4">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
+                        <div class="front-content">
+                            <h2 class="box-header">California Gold</h2>
+                            <h5 class="box-date box-date-right">On View Saturday, April 14</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Special Exhibition</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">California Gold</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Modern Marvels from the Golden State</h5>
+                            <hr />
+                            <p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
+                            <p>On view April 14, 2018.</p>
+                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
             <!-- CARD 4 - ALT -->
+            <!--
             <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event4_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/AEG_-exhibit_Card_Image_mini.jpg'); background-position: center;">
@@ -367,10 +416,36 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                 </div>
             </div>
-
+            -->
+            
             <!-- CARD 5 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event5">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Spring 2018 Programs for Adults</h2>
+                            <h5 class="box-date box-date-right">Register Now!</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Registration Open</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit5_heading_back">Spring 2018 Programs for Adults</h3>
+                            <!-- <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_subheading_back">Programs in Natural Science Illustration</h5>-->
+                            <hr />
+                            <p>Celebrate springtime with us by participating in a series of new educational programs, unique art classes and workshops.  These nature-themed activities are led by museum staff and local experts, and are sure to interest everyone.</p>
+                            <p>Registrations are limited&mdash;don't miss out!</p>
+                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/programs-adults" role="button" title="More info: Spring 2018 Programs for Adults" aria-label="More info: Spring 2018 Programs for Adults">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+
+            <!-- CARD 5 - ALT -->
+            <!--
+            <div class="col-md-6" style="display: none">
+                <div class="box-item box" id="card_event5_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">Adult Art Classes</h2>
@@ -380,15 +455,16 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit5_heading_back">Adult Art Classes</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_subheading_back">Programs in Natural Science Illustration</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit5_alt_heading_back">Adult Art Classes</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_alt_subheading_back">Programs in Natural Science Illustration</h5>
                             <hr />
                             <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
-                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event5_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/natural-science-illustrators" role="button" title="More info: CT Natural Science Illustrators" aria-label="More info: CT Natural Science Illustrators">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
+            -->
             
             <!-- CARD 6 -->
             <div class="col-md-6">
@@ -396,7 +472,7 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
                         <div class="front-content">
                             <h2 class="box-header">Peabody Birthday Parties</h2>
-                            <h5 class="box-date box-date-right">Book Today</h5>
+                            <h5 class="box-date box-date-right">Book Today!</h5>
                         </div>
                     </figure>
                     <figure class="back">
@@ -411,6 +487,8 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                 </div>
             </div>
+            
+            <!-- END CARDS -->
 
         </div>
 
