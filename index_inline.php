@@ -306,7 +306,7 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">California Gold</h2>
-                            <h5 class="box-date box-date-right">On View Saturday, April 14</h5>
+                            <h5 class="box-date box-date-right">On View Now</h5>
                         </div>
                     </figure>
                     <figure class="back">
@@ -316,7 +316,7 @@ $randomtwo = $_SESSION['randomtwo'];
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Modern Marvels from the Golden State</h5>
                             <hr />
                             <p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
-                            <p>On view April 14, 2018.</p>
+                            <p>On view now.</p>
                             <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
                         </div>
                     </figure>
