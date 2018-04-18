@@ -95,8 +95,7 @@ $randomtwo = $_SESSION['randomtwo'];
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Events" aria-label="Events">Events</a>
                         <ul class="dropdown-menu">
                             <li><a href="http://peabody.yale.edu/events/calendar" title="Calendar" aria-label="Calendar">Calendar</a></li>
-                            <li><a href="http://peabody.yale.edu/events/summer-camps" title="Summer Camps" aria-label="Summer Camps">Summer Camps</a></li>
-                            <li><a href="http://peabody.yale.edu/events/february-vacation-two-day-camp" title="February Vacation Two-Day Camp" aria-label="February Vacation Two-Day Camp">February Vacation Two-Day Camp</a></li>
+                            <li><a href="http://peabody.yale.edu/events/camps" title="Camps" aria-label="Camps">Camps</a></li>
                             <li><a href="http://peabody.yale.edu/events/upcoming-events" title="Upcoming Events" aria-label="Upcoming Events">Upcoming Events</a></li>
                             <li><a href="http://peabody.yale.edu/events/talks" title="Talks" aria-label="Talks">Talks</a></li>
                             <li><a href="http://peabody.yale.edu/visit/facility-rental" title="Facility Rental" aria-label="Facility Rental">Facility Rental</a></li>
@@ -107,7 +106,7 @@ $randomtwo = $_SESSION['randomtwo'];
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Exhibits" aria-label="Exhibits">Exhibits</a>
                         <ul class="dropdown-menu">
-                            <li><a href="http://peabody.yale.edu/exhibits/temporary-exhibits" title="Temporary Exhibits" aria-label="Temporary Exhibits">Temporary Exhibits</a></li>
+                            <li><a href="http://peabody.yale.edu/exhibits/temporary-special-exhibits" title="Temporary & Special Exhibits" aria-label="Temporary & Special Exhibits">Temporary &amp; Special Exhibits</a></li>
                             <li><a href="http://peabody.yale.edu/exhibits/permanent-halls" title="Permanent Halls" aria-label="Permanent Halls">Permanent Halls</a></li>
                             <li><a href="http://peabody.yale.edu/education/discovery-room" title="Discovery Room" aria-label="Discovery Room">Discovery Room</a></li>
                             <li><a href="http://peabody.yale.edu/exhibits/online-exhibits" title="Online Exhibits" aria-label="Online Exhibits">Online Exhibits</a></li>
@@ -342,53 +341,6 @@ $randomtwo = $_SESSION['randomtwo'];
                             <p>This event is 21+.</p>
                             <p>Thursday, May 3, 6-9 pm</p>
                             <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/bones-beer-tickets-44917828434?aff=es2" role="button" title="Tickets and info info: Bones and Beer" aria-label="Tickets and info: Bones and Beer">Tickets &amp; Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
-            <!-- CARD 3 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event3">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Lynn_Meskell_event_card_Apr_2018-mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Afternoon Lecture</h2>
-                            <h5 class="box-date box-date-right">Tuesday, April 17, 4:30 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit3_heading_back">Engineering Internationalism</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit3_subheading_back">UNESCO's Victory in Nubia</h5>
-                            <hr />
-                            <p>Join Dr. Lynn Meskell and learn about the Nubian Monuments Campaign in Egypt and Sudan, which represented UNESCO’s utopian desires for world citizenship and global preservation of cultural heritage.</p>
-                            <p>Tuesday, April 17, 4:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/engineering-internationalism" role="button" title="More info: Engineering Internationalism"
-                                    aria-label="More info: Engineering Internationalism">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
-            <!-- CARD 4  -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event4">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/ID_Day_web_card-mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">2018 ID Day</h2>
-                            <h5 class="box-date box-date-right">Wednesday, April 18, 11 am &ndash; 3 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Public Program</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit4_heading_back">ID Day at the Peabody</h3>
-                            <hr />
-                            <p>Join us for Identification Day as our Museum experts attempt to identify <em>your</em> artifacts, rocks, feathers, insects, shells and more.  It's also your chance to get up-close and personal with some rarely seen objects and specimens from the collections.</p>
-                            <p>Free with Museum admission.<br />Wednesday, April 18, 11 am &ndash; 3 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/id-day" role="button" title="More info: ID Day at the Peabody Museum 2018"
-                                    aria-label="More info: ID Day at the Peabody Museum 2018">More Info</a></p>
                         </div>
                     </figure>
                 </div>
