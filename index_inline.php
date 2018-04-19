@@ -346,31 +346,8 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
             
-            <!-- CARD 5 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event5">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Laia_Alaska_event card_graphic_2018-mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Afternoon Lecture</h2>
-                            <h5 class="box-date box-date-right">Thursday, April 19, 12 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Afternoon Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit5_heading_back">Tree-ring Narratives of Environmental Change</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit45_subheading_back">From the Arctic to the Tropics</h5>
-                            <hr />
-                            <p>Laia Andreu-Hayles explains how tree rings record interactions between the atmosphere and the biosphere over time, and thus are exceptional archives of environmental history.</p>
-                            <p>On view April 14, 2018.</p>
-                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/tree-ring-narratives" role="button" title="More info: Tree-ring Narratives of Environmental Change" aria-label="More info: Tree-ring Narratives of Environmental Change">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
             <!-- CARD 5 - ALT -->
-            <div class="col-md-6" style="display: none">
+            <div class="col-md-6">
                 <div class="box-item box" id="card_event5">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Lee_Dugatkin_eventcard-mini.jpg'); background-position: center;">
                         <div class="front-content">
