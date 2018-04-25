@@ -28,10 +28,10 @@ $randomtwo = $_SESSION['randomtwo'];
     <meta name="description" content="">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="http://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/fonts/fontAwesome/css/font-awesome.d6.css" />
-    <link rel="stylesheet" type="text/css" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.css" />
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap-dialog.css" />
+    <link rel="stylesheet" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/fonts/fontAwesome/css/font-awesome.d6.css" />
+    <link rel="stylesheet" type="text/css" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.css" />
+    <link rel="stylesheet" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap-dialog.css" />
     <style>
         body {
             padding-top: 50px;
@@ -39,11 +39,11 @@ $randomtwo = $_SESSION['randomtwo'];
         }
 
     </style>
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap-theme.min.css" />
-    <link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/fonts_d6.css" />
-    <?php echo '<link rel="stylesheet" href="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/main.css?v=' . $randomone . '" />'; ?>
+    <link rel="stylesheet" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/fonts_d6.css" />
+    <?php echo '<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/css/main.css?v=' . $randomone . '" />'; ?>
 
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
@@ -61,8 +61,8 @@ $randomtwo = $_SESSION['randomtwo'];
 
     <header>
         <div class="container">
-            <a href="http://peabody.yale.edu" title="Peabody Museum: Home" aria-label="Peabody Museum: Home"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/torosaurus.png" width="275" class="toro" />
-                <img class="wordmark" src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/peabodyWordmarkSingle.png" /></a>
+            <a href="http://peabody.yale.edu" title="Peabody Museum: Home" aria-label="Peabody Museum: Home"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/torosaurus.png" width="275" class="toro" />
+                <img class="wordmark" src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/peabodyWordmarkSingle.png" /></a>
         </div>
     </header>
 
@@ -192,28 +192,28 @@ $randomtwo = $_SESSION['randomtwo'];
                 <div class="theSlider" id="theSlider">
                     <!-- BEGIN SLIDER ITEMS -->
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby" aria-label="Giant Squid in Lobby">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby" aria-label="Giant Squid in Lobby">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama" aria-label="Jungle Diorama">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama" aria-label="Jungle Diorama">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
                     </div>
                     <div class="item">
-                        <img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
+                        <img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
                     </div>
                     <!-- END SLIDER ITEMS -->
                 </div>
@@ -263,22 +263,22 @@ $randomtwo = $_SESSION['randomtwo'];
     <div class="container" id="icons">
         <div class="row">
             <div class="col-sm-2 hidden-xs icon-container-col">
-                <p align="center" class="icon-container"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_ent01.png"></p>
+                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_ent01.png"></p>
             </div>
             <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_inv01.png"></p>
+                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_inv01.png"></p>
             </div>
             <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_vp01.png"></p>
+                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_vp01.png"></p>
             </div>
             <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_bot01.png"></p>
+                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_bot01.png"></p>
             </div>
             <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_inv02.png"></p>
+                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_inv02.png"></p>
             </div>
             <div class="col-sm-2 hidden-xs icon-container-col">
-                <p align="center" class="icon-container"><img src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_ant01.png"></p>
+                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/icons/icon_ant01.png"></p>
             </div>
         </div>
     </div>
@@ -302,7 +302,7 @@ $randomtwo = $_SESSION['randomtwo'];
             <!-- CARD 1 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event1">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">California Gold</h2>
                             <h5 class="box-date box-date-right">On View Now</h5>
@@ -325,7 +325,7 @@ $randomtwo = $_SESSION['randomtwo'];
             <!-- CARD 2 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event2">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Bones_and_Beer_Event_card_2018-mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Bones_and_Beer_Event_card_2018-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">Bones &amp; Beer</h2>
                             <h5 class="box-date box-date-right">Thursday, May 3, 6-9 pm</h5>
@@ -349,7 +349,7 @@ $randomtwo = $_SESSION['randomtwo'];
             <!-- CARD 5 - ALT -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event5">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Lee_Dugatkin_eventcard-mini.jpg'); background-position: center;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Lee_Dugatkin_eventcard-mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">Evening Lecture</h2>
                             <h5 class="box-date box-date-right">Thursday, April 26, 5:30 pm</h5>
@@ -371,7 +371,7 @@ $randomtwo = $_SESSION['randomtwo'];
             <!-- CARD 6 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event6">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">Spring 2018 Programs for Adults</h2>
                             <h5 class="box-date box-date-right">Register Now!</h5>
@@ -396,7 +396,7 @@ $randomtwo = $_SESSION['randomtwo'];
             <!--
             <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event5_alt">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">Adult Art Classes</h2>
                             <h5 class="box-date box-date-right">Register Now</h5>
@@ -420,7 +420,7 @@ $randomtwo = $_SESSION['randomtwo'];
             <!--
             <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event6">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
                         <div class="front-content">
                             <h2 class="box-header">Peabody Birthday Parties</h2>
                             <h5 class="box-date box-date-right">Book Today!</h5>
@@ -457,7 +457,7 @@ $randomtwo = $_SESSION['randomtwo'];
         <div class="row card-row" id="actionsRow1">
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
                         <div class="front-content">
                             <h2 class="box-header">Exhibitions</h2>
                         </div>
@@ -474,7 +474,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta2">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
                         <div class="front-content">
                             <h2 class="box-header">Yale Students</h2>
                         </div>
@@ -497,7 +497,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta3">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
                         <div class="front-content">
                             <h2 class="box-header">Collections &amp; Research</h2>
                         </div>
@@ -516,7 +516,7 @@ $randomtwo = $_SESSION['randomtwo'];
         <div class="row card-row" id="actionsRow2">
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta4">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/SCHOOLGROUPS_am.jpg'); background-position:center;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/SCHOOLGROUPS_am.jpg'); background-position:center;">
                         <div class="front-content">
                             <h2 class="box-header">School &amp; Group Visits</h2>
                         </div>
@@ -533,7 +533,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta5">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
                         <div class="front-content">
                             <h2 class="box-header">Connect</h2>
                         </div>
@@ -577,7 +577,7 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta6">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
                         <div class="front-content">
                             <h2 class="box-header">Support</h2>
                         </div>
@@ -676,16 +676,16 @@ $randomtwo = $_SESSION['randomtwo'];
     </div>
     <!-- /container -->
 
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/lodash.min.js"></script>
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap.min.js"></script>
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap-dialog.js"></script>
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/jquery.mobile-events.js"></script>
-    <script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/moment.js"></script>
-    <script type="text/javascript" src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.min.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/jquery-1.11.2.min.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/lodash.min.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap.min.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/bootstrap-dialog.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/jquery.mobile-events.js"></script>
+    <script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/vendor/moment.js"></script>
+    <script type="text/javascript" src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/slick/slick.min.js"></script>
 
 
-    <?php echo '<script src="http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/main.js?v=' . $randomtwo . '"></script>'; ?>
+    <?php echo '<script src="http://sprout027.sprout.yale.edu/AM-testing/peabody-homepage-refresh/js/main.js?v=' . $randomtwo . '"></script>'; ?>
 
 </body>
 
