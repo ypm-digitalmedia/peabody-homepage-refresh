@@ -333,9 +333,9 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>The Beer Collective &amp; Yale Peabody Museum Present:</strong></h5>
+                            <h5 class="box-header">First Thursdays at the Peabody</h5>
                             <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">Bones &amp; Beer</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">First Thursdays at the Peabody</h5>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">Presented by The Beer Collective &amp; Peabody Museum</h5>
                             <hr />
                             <p>Featuring a selection of local brews curated by <a href="http://www.thebeercollectivenhv.com/">The Beer Collective</a>, plus special events and prizes.</p>
                             <p>This event is 21+.</p>
@@ -346,9 +346,9 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
             
-            <!-- CARD 5 - ALT -->
+            <!-- CARD 3 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event5">
+                <div class="box-item box" id="card_event3">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_2018_Lee_Dugatkin_eventcard-mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">Evening Lecture</h2>
@@ -358,19 +358,19 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Evening Lecture</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit5_heading_back">How to Tame a Fox and Build a Dog</h3>
+                            <h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit3_heading_back">How to Tame a Fox and Build a Dog</h3>
                             <hr />
                             <p>For the last six decades a team of researchers in Siberia has been domesticating silver foxes to replay the evolution of the dog in real time. Join us as biologist and historian of science Lee Dugatkin reveals the inner details of this incredible story</p>
                             <p>Thursday, April 26, 5:30 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/tame-fox-build-dog" role="button" title="More info: Ostrom Lecture with Lee Dugatkin" aria-label="More info: Ostrom Lecture with Lee Dugatkin">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/tame-fox-build-dog" role="button" title="More info: Ostrom Lecture with Lee Dugatkin" aria-label="More info: Ostrom Lecture with Lee Dugatkin">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
             
-            <!-- CARD 6 -->
+            <!-- CARD 4 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event6">
+                <div class="box-item box" id="card_event4">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
                         <div class="front-content">
                             <h2 class="box-header">Spring 2018 Programs for Adults</h2>
@@ -380,12 +380,56 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Registration Open</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Spring 2018 Programs for Adults</h3>
-                            <!-- <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">Programs in Natural Science Illustration</h5>-->
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">Spring 2018 Programs for Adults</h3>
+                            <!-- <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Programs in Natural Science Illustration</h5>-->
                             <hr />
                             <p>Celebrate springtime with us by participating in a series of new educational programs, unique art classes and workshops.  These nature-themed activities are led by museum staff and local experts, and are sure to interest everyone.</p>
                             <p>Registrations are limited&mdash;don't miss out!</p>
-                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/programs-adults" role="button" title="More info: Spring 2018 Programs for Adults" aria-label="More info: Spring 2018 Programs for Adults">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/programs-adults" role="button" title="More info: Spring 2018 Programs for Adults" aria-label="More info: Spring 2018 Programs for Adults">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- CARD 5 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event5">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/MothersDayAdventure_webcard_2018-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Mother's Day Mystery Adventure</h2>
+                            <h5 class="box-date box-date-right">Sunday, May 13, 9 am &ndash; noon</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Public Program</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit5_heading_back">Mother's Day Mystery Adventure</h3>
+                            <hr />
+                            <p>Celebrate Mother’s Day the prehistoric way&mdash;with a Museum mystery adventure filled with activities and games for the whole family to enjoy!</p>
+                            <p>Sunday, May 13, 9 am &ndash; noon<br />Tickets and advance registration required.</p>
+                            <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/mothers-day-mystery-adventure" role="button" title="More info: Mother's Day Mystery Adventure" aria-label="More info: Mother's Day Mystery Adventure">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
+            <!-- CARD 6 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event6">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Night_at_the_Peabody_event_card_2018-mini.jpg'); background-position: left;">
+                        <div class="front-content">
+                            <h2 class="box-header">A Night at the Peabody Museum</h2>
+                            <h5 class="box-date box-date-right">Saturday, May 19, 6-9 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Public Program</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">A Night at the Peabody Museum</h3>
+                            <hr/>
+                            <p>Join us for a fun, family-oriented evening — with a touch of gold! Enjoy an exclusive scavenger hunt, live animal demonstrations and much more.</p>
+                            <p>Saturday, May 19, 6-9 pm<br />Tickets and advance registration required.</p>
+                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/night-peabody-museum" role="button" title="More info: A Night at the Peabody Museum" aria-label="More info: A Night at the Peabody Museum">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -416,10 +460,10 @@ $randomtwo = $_SESSION['randomtwo'];
             </div>
             -->
             
-            <!-- CARD 6 -->
+            <!-- CARD 6 - ALT -->
             <!--
             <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event6">
+                <div class="box-item box" id="card_event6_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
                         <div class="front-content">
                             <h2 class="box-header">Peabody Birthday Parties</h2>
@@ -429,11 +473,11 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Peabody Birthday Parties</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">For children 4-10 years of age</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_alt_heading_back">Peabody Birthday Parties</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_alt_subheading_back">For children 4-10 years of age</h5>
                             <hr/>
                             <p>Celebrate your child’s birthday with us! Peabody birthday parties are fun and educational! Four themes to choose from, includes scavenger hunts, hand-on activities and much more.</p>
-                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event6_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -441,6 +485,8 @@ $randomtwo = $_SESSION['randomtwo'];
             -->
             
             <!-- END CARDS -->
+            
+            <!--        http://sprout027.sprout.yale.edu/peabody-homepage-refresh/      -->
 
         </div>
 
