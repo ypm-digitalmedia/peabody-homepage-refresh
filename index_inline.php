@@ -236,10 +236,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Wednesday, April 11</strong>
+                                        <strong>Friday, May 4</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">David Friend Hall is closed for a private event.</p>
+                                    <p class="slider-alert-text">David Friend Hall is closed from 10 am &ndash; 12:30 pm.</p>
                                 </td>
                             </tr>
                         </table>
@@ -322,30 +322,6 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
             
-            <!-- CARD 2 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event2">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Bones_and_Beer_Event_card_2018-mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Bones &amp; Beer</h2>
-                            <h5 class="box-date box-date-right">Thursday, May 3, 6-9 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header">First Thursdays at the Peabody</h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">Bones &amp; Beer</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">Presented by The Beer Collective &amp; Peabody Museum</h5>
-                            <hr />
-                            <p>Featuring a selection of local brews curated by <a href="http://www.thebeercollectivenhv.com/">The Beer Collective</a>, plus special events and prizes.</p>
-                            <p>This event is 21+.</p>
-                            <p>Thursday, May 3, 6-9 pm</p>
-                            <p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/bones-beer-tickets-44917828434?aff=es2" role="button" title="Tickets and info info: Bones and Beer" aria-label="Tickets and info: Bones and Beer">Tickets &amp; Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
             <!-- CARD 5 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event5">
@@ -363,28 +339,6 @@ $randomtwo = $_SESSION['randomtwo'];
                             <p>Celebrate Mother’s Day the prehistoric way&mdash;with a Museum mystery adventure filled with activities and games for the whole family to enjoy!</p>
                             <p>Sunday, May 13, 9 am &ndash; noon<br />Tickets and advance registration required.</p>
                             <p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/mothers-day-mystery-adventure" role="button" title="More info: Mother's Day Mystery Adventure" aria-label="More info: Mother's Day Mystery Adventure">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            
-            <!-- CARD 6 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event6">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Night_at_the_Peabody_event_card_2018-mini.jpg'); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">A Night at the Peabody Museum</h2>
-                            <h5 class="box-date box-date-right">Saturday, May 19, 6-9 pm</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Public Program</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">A Night at the Peabody Museum</h3>
-                            <hr/>
-                            <p>Join us for a fun, family-oriented evening — with a touch of gold! Enjoy an exclusive scavenger hunt, live animal demonstrations and much more.</p>
-                            <p>Saturday, May 19, 6-9 pm<br />Tickets and advance registration required.</p>
-                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/night-peabody-museum" role="button" title="More info: A Night at the Peabody Museum" aria-label="More info: A Night at the Peabody Museum">More Info</a></p>
                         </div>
                     </figure>
                 </div>
@@ -438,9 +392,32 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
             
+            <!-- CARD 6 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event6">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Night_at_the_Peabody_event_card_2018-mini.jpg'); background-position: left;">
+                        <div class="front-content">
+                            <h2 class="box-header">A Night at the Peabody Museum</h2>
+                            <h5 class="box-date box-date-right">Saturday, May 19, 6-9 pm</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Public Program</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">A Night at the Peabody Museum</h3>
+                            <hr/>
+                            <p>Join us for a fun, family-oriented evening — with a touch of gold! Enjoy an exclusive scavenger hunt, live animal demonstrations and much more.</p>
+                            <p>Saturday, May 19, 6-9 pm<br />Tickets and advance registration required.</p>
+                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/night-peabody-museum" role="button" title="More info: A Night at the Peabody Museum" aria-label="More info: A Night at the Peabody Museum">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
             <!-- CARD 6 - ALT -->
             
-            <div class="col-md-6">
+            <!--
+            <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event6_alt">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
                         <div class="front-content">
@@ -460,7 +437,7 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                 </div>
             </div>
-            
+            -->
             
             <!-- END CARDS -->
             
