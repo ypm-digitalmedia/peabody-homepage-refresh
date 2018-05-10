@@ -236,10 +236,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Friday, May 4</strong>
+                                        <strong>Through Wednesday, May 16</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">David Friend Hall is closed from 10 am &ndash; 12:30 pm.</p>
+                                    <p class="slider-alert-text">Flash sale on Night at the Peabody tickets &ndash; 30% off ticket prices!</p>
                                 </td>
                             </tr>
                         </table>
