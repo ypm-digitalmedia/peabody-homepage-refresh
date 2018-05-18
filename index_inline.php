@@ -299,10 +299,33 @@ $randomtwo = $_SESSION['randomtwo'];
             
             <!-- BEGIN CARDS -->
             
+            <!-- CARD 1 -->
+            <div class="col-md-6">
+                <div class="box-item box" id="card_event1">
+                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/ms-sidewalk-sale-web-card-mini.jpg'); background-position: center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Museum Store Sidewalk Sale</h2>
+                            <h5 class="box-date box-date-right">Thursday, May 24 &ndash; Sunday, May 27</h5>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="box-header"><strong>Limited Time Offer</strong></h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Sidewalk Sale</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Yale Peabody Museum Store</h5>
+                            <hr/>
+                            <p>Save up to <strong>50% off</strong> select merchandise, including jewelry, books, home décor, and more.</p>
+                            <p>Thursday, May 24 &ndash; Sunday, May 27<br />Museum admission not required for store entry.</p>
+                            <p class="button-row" style="display: none"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/night-peabody-museum" role="button" title="More info: A Night at the Peabody Museum" aria-label="More info: A Night at the Peabody Museum">More Info</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            
             <!-- CARD 2 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event2">
-                    <figure class="front photo-front photo-front" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Night-at-the-Peabody_event_card-_2018_FLASH-SALE-fade-mini.jpg'); background-position: right;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Night_at_the_Peabody_event_card_2018-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">A Night at the Peabody</h2>
                             <h5 class="box-date box-date-right">Saturday, May 19, 6-9 pm</h5>
@@ -310,7 +333,7 @@ $randomtwo = $_SESSION['randomtwo'];
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="box-header"><strong>Flash Sale - 30% Off Tickets!</strong></h5>
+                            <h5 class="box-header"><strong>Special Event</strong></h5>
                             <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">A Night at the Peabody</h3>
                             <hr/>
                             <p>Join us for a fun, family-orientated evening - with a touch of gold! Enjoy an exclusive scavenger hunt, live animals, face painting and much more! Become the biggest prospector in town and go for gold!</p>
@@ -321,9 +344,9 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
             
-            <!-- CARD 1 -->
+            <!-- CARD 3 -->
             <div class="col-md-6">
-                <div class="box-item box" id="card_event1">
+                <div class="box-item box" id="card_event3">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
                         <div class="front-content">
                             <h2 class="box-header">California Gold</h2>
@@ -333,19 +356,19 @@ $randomtwo = $_SESSION['randomtwo'];
                     <figure class="back">
                         <div class="back-content">
                             <h5 class="box-header"><strong>Special Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">California Gold</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Modern Marvels from the Golden State</h5>
+                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">California Gold</h3>
+                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Modern Marvels from the Golden State</h5>
                             <hr />
                             <p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
                             <p>On view now.</p>
-                            <p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
+                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
                         </div>
                     </figure>
                 </div>
             </div>
             
             <!-- CARD 4 -->
-            <div class="col-md-6">
+            <div class="col-md-6" style="display: none">
                 <div class="box-item box" id="card_event4">
                     <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
                         <div class="front-content">
