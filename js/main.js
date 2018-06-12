@@ -171,7 +171,7 @@ var data_renoBanner = {
 
 // insert switch for siteRoot (localhost vs sprout) - put switch in main.js?
 
-if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
+if (location.host.toString().indexOf("sprout027.sprout.yale.edu") > -1) {
     // console.log("you are on sprout018.");
     // use siteRoot = sprout
 } else if (location.host.toString().indexOf("localhost:8888") > -1) {
@@ -194,7 +194,7 @@ if (location.host.toString().indexOf("sprout018.sprout.yale.edu") > -1) {
     // use siteRoot = localhost
 }
 
-var siteRoot = "http://sprout018.sprout.yale.edu/AM-testing/peabody-homepage-refresh/";
+var siteRoot = "http://sprout027.sprout.yale.edu/peabody-homepage-refresh/";
 
 
 /* =========================== END CUSTOMIZATIONS ================================= */

@@ -285,8 +285,31 @@ $randomtwo = $_SESSION['randomtwo'];
 
     <!-- evolved snippet -->
 
-    <div class="container peabody-evolved-separator">
-        <hr />
+    <!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
+    <hr />
+    <!--             -->
+
+    <div class="container-fluid peabody-evolved-separator" id="masthead2">
+        <!--        <hr />-->
+        <div class="jumbotron" style="background: none;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 col-lg-6">
+                        <p id="evolved-imagelink">
+                            <a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">
+                                <img id="evolving_pic" src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/2018-06-12-YPM---Aerial-Blue.png" style="width: 100%; width: auto;" />
+                            </a>
+                        </p>
+                    </div>
+                    <div class="hidden-xs col-md-1 hidden-lg"></div>
+                    <div class="col-xs-12 col-md-7 col-lg-6" id="evolving_text">
+                        <h2 class="blue-shadow">We're evolving!</h2>
+                        <p id="renoText" class="blue-shadow">Visit our new site, <a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a>, to learn more about the Peabody’s transformative renovation.</p>
+                        <p><a class="btn btn-peabody btn-lg" href="http://peabodyevolved.yale.edu" role="button" title="Peabody Evolved" aria-label="Peabody Evolved">Visit Site</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div class="container">
@@ -322,29 +345,6 @@ $randomtwo = $_SESSION['randomtwo'];
                 </div>
             </div>
 
-            <!-- CARD 4 -->
-            <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event4">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Spring 2018 Programs for Adults</h2>
-                            <h5 class="box-date box-date-right">Registration Ends Soon!</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Registration Open</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit4_heading_back">Spring 2018 Programs for Adults</h3>
-                            <!-- <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_subheading_back">Programs in Natural Science Illustration</h5>-->
-                            <hr />
-                            <p>Celebrate springtime with us by participating in a series of new educational programs, unique art classes and workshops. These nature-themed activities are led by museum staff and local experts, and are sure to interest everyone.</p>
-                            <p>Registrations are limited&mdash;don't miss out!</p>
-                            <p class="button-row"><a data-link-parent="card_event4" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/programs-adults" role="button" title="More info: Spring 2018 Programs for Adults" aria-label="More info: Spring 2018 Programs for Adults">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-
             <!-- CARD 6 -->
             <div class="col-md-6">
                 <div class="box-item box" id="card_event6">
@@ -360,7 +360,7 @@ $randomtwo = $_SESSION['randomtwo'];
                             <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Adult Art Classes</h3>
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">Programs in Natural Science Illustration</h5>
                             <hr/>
-                            <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
+                            <p>Registration for summer courses is now open! Select from a wide variety of nature-themed drawing and painting classes including many outdoor workshops. You’ll be sure to find a topic to engage the budding naturalist in you. </p>
                             <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/natural-science-illustration-courses" role="button" title="More info: Natural Science Illustration Program" aria-label="More info: Natural Science Illustration Program">More Info</a>
                             </p>
                         </div>
