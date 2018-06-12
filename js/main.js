@@ -1,7 +1,7 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
 var show_alert = true;
-var show_alert_until = '2018-05-16'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
+var show_alert_until = '2018-06-21'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
 
 var show_evolved_banner = false;
 
@@ -23,50 +23,114 @@ var data_alert = {
 var data_slider = [{
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     },
     {
         title: "",
         imgURL: "",
-        offsetX: { desktop: 0, tablet: 0, mobile: 0 },
-        offsetY: { desktop: 0, tablet: 0, mobile: 0 }
+        offsetX: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        },
+        offsetY: {
+            desktop: 0,
+            tablet: 0,
+            mobile: 0
+        }
     }
 ];
 
@@ -85,27 +149,6 @@ var data_eventCards = [{
 //          
 //      }
 //
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -173,7 +216,7 @@ var mouseLeaveTimeout;
 
 var sliderHeight = "500px";
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     // device detection
@@ -205,25 +248,25 @@ $(document).ready(function() {
     /* --------------------- INITIALIZE PAGE ELEMENTS --------------------------- */
 
 
-//    if (!data_renoBanner.shown) {
-//        $(".peabody-evolved").hide();
-//        $(".peabody-evolved-separator").show();
-//
-//    } else {
-//        $(".peabody-evolved").show();
-//        $(".peabody-evolved-separator").hide();
-//
-//    }
+    //    if (!data_renoBanner.shown) {
+    //        $(".peabody-evolved").hide();
+    //        $(".peabody-evolved-separator").show();
+    //
+    //    } else {
+    //        $(".peabody-evolved").show();
+    //        $(".peabody-evolved-separator").hide();
+    //
+    //    }
 
     // do we show the alert?
     if (data_alert.shown) {
         // is the alert expiration date valid?
-        if (show_alert_until && typeof(show_alert_until != 'undefined') && show_alert_until != "") {
+        if (show_alert_until && typeof (show_alert_until != 'undefined') && show_alert_until != "") {
             // is the banner expiration date in the future?
             console.warn("the date is: " + moment().format('YYYY-MM-DD') + ".  alert is active, expires " + show_alert_until);
             if (moment().isAfter(show_alert_until, 'day') === false) {
                 console.warn("alert is active.");
-                setTimeout(function() {
+                setTimeout(function () {
                     $("#alert1").fadeIn();
                 }, 1500);
             } else {
@@ -240,7 +283,7 @@ $(document).ready(function() {
     toroImageSwap();
 
     //CHANGE "box-items" to "box-item" TO RESET FUNCTIONALITY
-    $(".box-items").on("tap", function(event) {
+    $(".box-items").on("tap", function (event) {
 
         var target = $(event.target);
 
@@ -293,7 +336,7 @@ $(document).ready(function() {
     });
 
     // var fadeTimeout;
-    $("body").on("tap", function(event) {
+    $("body").on("tap", function (event) {
 
         var target = $(event.target);
         // console.log(target);
@@ -313,24 +356,24 @@ $(document).ready(function() {
 
 
 
-    $(".box-item").mouseover(function() {
+    $(".box-item").mouseover(function () {
         fadeToBack($(this));
     });
 
-    $(".box-item").mouseleave(function() {
+    $(".box-item").mouseleave(function () {
         // flipToFront($(this));
         // fadeToFront($(this));
         // delayedMouseLeave();
     });
 
 
-    $(".box-item").each(function() {
+    $(".box-item").each(function () {
         var card = $(this).attr("id");
         fliplocks[card] = false;
     });
     // console.log(fliplocks);
 
-    $("#contactForm").submit(function(e) {
+    $("#contactForm").submit(function (e) {
         e.preventDefault();
         if (formLock === false) {
             submitForm();
@@ -346,25 +389,25 @@ $(document).ready(function() {
 
 
 
-    var flipToggle = function(e) {
+    var flipToggle = function (e) {
         $(this).toggleClass('flipped');
     }
 
-    var fadeToggle = function(e) {
+    var fadeToggle = function (e) {
         $(this).toggleClass('crossfade');
     }
 
     // =================================== FLIP ANIMATIONS - DEPRECATED =========================================
 
-    var flipToFront = _.debounce(function(e) {
-        setTimeout(function() {
+    var flipToFront = _.debounce(function (e) {
+        setTimeout(function () {
             $(e).removeClass("flipped");
             fliplock = false;
         }, 500);
     }, 100);
 
 
-    var flipToBack = _.debounce(function(e) {
+    var flipToBack = _.debounce(function (e) {
         $(e).addClass("flipped");
         $(".flipped").not(e).removeClass("flipped");
     }, 100);
@@ -372,7 +415,7 @@ $(document).ready(function() {
 
     // =================================== FADE ANIMATIONS - CURRENT =========================================
 
-    var fadeToBack = _.throttle(function(e) {
+    var fadeToBack = _.throttle(function (e) {
 
         var card = $(e).attr("id");
 
@@ -413,7 +456,7 @@ $(document).ready(function() {
 
     function resizeSliderImages() {
 
-        $(".slick-slide img").each(function() {
+        $(".slick-slide img").each(function () {
             if ($(this).height() < $(".slick-list").height()) {
                 console.log("container is too tall!")
                 $(this).css("height", sliderHeight).css("width", "auto");
@@ -450,12 +493,12 @@ $(document).ready(function() {
     }
 
 
-    var headerImageSwapDebounced = _.debounce(function(e) {
+    var headerImageSwapDebounced = _.debounce(function (e) {
         logoImageSwap();
         toroImageSwap();
     }, 25);
 
-    $(window).resize(function() {
+    $(window).resize(function () {
         headerImageSwapDebounced();
     });
 
@@ -476,7 +519,11 @@ function checkEmail(val) {
 
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     var matches = emailRegex.test(val);
-    if (matches === true) { $("#submit").removeClass("disabled"); } else { $("#submit").addClass("disabled"); }
+    if (matches === true) {
+        $("#submit").removeClass("disabled");
+    } else {
+        $("#submit").addClass("disabled");
+    }
     isEmailValid = matches;
 }
 
@@ -495,14 +542,20 @@ function submitForm() {
     // send email
     // notify user with bootstrapDialog modal
     // --> WARNING for error, PEABODY for success
-    var formData = { firstName: $("#first_name").val(), lastName: $("#last_name").val(), email: $("#email").val() };
+    var formData = {
+        firstName: $("#first_name").val(),
+        lastName: $("#last_name").val(),
+        email: $("#email").val()
+    };
 
     console.log(formData);
     // $.post(siteRoot+'signup.php', { jsonData: formData, email: formData.email, firstName: formData.firstName, lastName: formData.lastName }, function(response) {
-    $.post(siteRoot + 'signup.php', { jsonData: formData }, function(response) {
+    $.post(siteRoot + 'signup.php', {
+            jsonData: formData
+        }, function (response) {
             console.log(response);
         })
-        .done(function() {
+        .done(function () {
             console.log("form submit: success");
             BootstrapDialog.show({
                 title: 'Thank you!',
@@ -510,14 +563,14 @@ function submitForm() {
                 type: 'type-success'
             });
             formLock = true;
-            formTimeout = setTimeout(function() {
+            formTimeout = setTimeout(function () {
                 formLock = false;
                 console.log("formLock is reset.");
                 clearTimeout(formTimeout);
             }, formTimeoutLength);
 
         })
-        .fail(function(xhr, status, error) {
+        .fail(function (xhr, status, error) {
             console.log("form submit: error");
             console.warn(xhr);
             console.warn(status);
@@ -528,7 +581,7 @@ function submitForm() {
                 type: 'type-danger'
             });
         })
-        .always(function() {
+        .always(function () {
             console.log("form submit: request finished");
         });
 

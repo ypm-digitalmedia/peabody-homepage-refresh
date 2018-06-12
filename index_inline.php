@@ -236,10 +236,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Through Wednesday, May 16</strong>
+                                        <strong>Thursday, June 21</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">Flash sale on Night at the Peabody tickets &ndash; 30% off ticket prices!</p>
+                                    <p class="slider-alert-text">David Friend Hall will be closed for special events. We apologize for any inconvenience.</p>
                                 </td>
                             </tr>
                         </table>
@@ -361,7 +361,7 @@ $randomtwo = $_SESSION['randomtwo'];
                             <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">Programs in Natural Science Illustration</h5>
                             <hr/>
                             <p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
-                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/nsi" role="button" title="More info: Natural Science Illustration Program" aria-label="More info: Natural Science Illustration Program">More Info</a>
+                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/natural-science-illustration-courses" role="button" title="More info: Natural Science Illustration Program" aria-label="More info: Natural Science Illustration Program">More Info</a>
                             </p>
                         </div>
                     </figure>
