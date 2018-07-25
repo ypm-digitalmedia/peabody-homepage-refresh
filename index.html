@@ -15,7 +15,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="shortcut icon" href="http://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css" />
+    <!--    <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css" />-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-dialog.css" />
@@ -71,6 +72,8 @@
                         <ul class="dropdown-menu">
                             <li><a href="http://peabody.yale.edu/visit/admission-hours" title="Admission and Hours" aria-label="Admission and Hours">Admission &amp; Hours</a></li>
                             <li><a href="http://peabody.yale.edu/visit/directions-parking" title="Directions and Parking" aria-label="Directions and Parking">Directions &amp; Parking</a></li>
+                            <li><a href="https://shop.peabody.yale.edu/#/Admission" title="Buy Tickets Online" aria-label="Buy Tickets Online"><strong style="color: red; text-transform: uppercase;">NEW!</strong>&nbsp;&nbsp;Buy Tickets</a></li>
+                            <li><a href="http://peabody.yale.edu/members" title="Become a Member" aria-label="Become a Member">Become a Member</a></li>
                             <li><a href="http://peabody.yale.edu/visit/museum-tours" title="Museum Tours" aria-label="Museum Tours">Museum Tours</a></li>
                             <li><a href="http://peabody.yale.edu/visit/visit-free" title="Visit For Free" aria-label="Visit For Free">Visit For Free</a></li>
                             <li><a href="http://peabody.yale.edu/visit/area-dining" title="Area Dining" aria-label="Area Dining">Area Dining</a></li>
@@ -164,6 +167,7 @@
                             <li><a href="http://peabody.yale.edu/members/peabody-museum-charitable-donation-policy" title="Charitable Donation Policy" aria-label="Charitable Donation Policy">Charitable Donation Policy</a></li>
                         </ul>
                     </li>
+                    <li class="no-dropdown"><a href="https://shop.peabody.yale.edu/#/Retail/" title="Peabody Musuem Online Store" aria-label="Peabody Musuem Online Store" class="no-dropdown-link">Store</a></li>
                 </ul>
             </div>
             <!--/.navbar-collapse -->
@@ -241,8 +245,33 @@
 
     <div class="jumbotron" id="masthead">
         <div class="container">
-            <h1 class="bigTitle" id="mainHeader">Our Mission</h1>
-            <p class="jumbotron-paragraph">To serve Yale University by advancing our understanding of Earth’s history through geological, biological, and anthropological research, and by communicating the results of this research to the widest possible audience through publication, exhibition, and educational programs.</p>
+            <h1 class="bigTitle" id="mainHeader">Discover Your World</h1>
+            <p class="jumbotron-paragraph">
+                <strong>Welcome to the Peabody Museum of Natural History!</strong>
+            </p>
+            <p class="jumbotron-paragraph">
+                We're home to outstanding collections that tell the story of our Earth, its life, history and cultures.
+                <!--            </p>-->
+                <!--            <p class="jumbotron-paragraph">-->
+                Our amazing exhibitions, exciting events and fantastic educational programs have enriched the New Haven and Yale communities, and beyond, since 1866. Through our doors you'll share in the discoveries of generations of scientists and adventurers past, present and future.
+            </p>
+            <p class="jumbotron-paragraph">
+                Come visit and explore the treasures of the Peabody today... we hope to see you soon!
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container" id="icons">
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 two-column">
+                <p class="button-row"><a class="btn btn-peabody btn-lg" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online" aria-label="Buy Tickets Online"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Tickets Online</a></p>
+                <p class="jumbotron-paragraph"><strong style="color: red">NEW!</strong> Skip the line and purchase your admission tickets right from your web browser. Tickets are valid for one year from purchase. Click the button above to get started!</p>
+            </div>
+            <div class="col-sm-6 col-xs-12 two-column">
+                <p class="button-row"><a class="btn btn-peabody-green btn-lg" href="http://peabody.yale.edu/members" role="button" title="Become a Member" aria-label="Become a Member"><i class="fas fa-user"></i>&nbsp;&nbsp;Become a Member</a></p>
+                <p class="jumbotron-paragraph">Your support unlocks a world of benefits! FREE unlimited admission and parking at the Peabody; 10% Museum Store discounts; Exclusive invitations to exhibition openings; Discounts on camps, programs and events... and more!</p>
+            </div>
         </div>
     </div>
 
@@ -269,16 +298,16 @@
         </div>
     </div>
 
-<!-- evolved snippet -->
+    <!-- evolved snippet -->
 
-<!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
-<hr />
-<!--             -->
-    
-    
+    <!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
+    <!--    <hr />-->
+    <!--             -->
+
+
     <div class="container-fluid peabody-evolved-separator" id="masthead2">
         <!--        <hr />-->
-        <div class="jumbotron" style="background: none;">
+        <div class="jumbotron peabody-evolved-banner">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-md-4 col-lg-6">
@@ -292,7 +321,7 @@
                     <div class="col-xs-12 col-md-7 col-lg-6" id="evolving_text">
                         <h2 class="blue-shadow">We're evolving!</h2>
                         <p id="renoText" class="blue-shadow">Visit our new site, <a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a>, to learn more about the Peabody’s transformative renovation.</p>
-                        <p><a class="btn btn-peabody btn-lg" href="http://peabodyevolved.yale.edu" role="button" title="Peabody Evolved" aria-label="Peabody Evolved">Visit Site</a></p>
+                        <p><a class="btn btn-peabody btn-lg" href="http://peabodyevolved.yale.edu" role="button" title="Peabody Evolved" aria-label="Peabody Evolved"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Learn More</a></p>
                     </div>
                 </div>
             </div>
@@ -383,7 +412,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <p class="button-row"><a class="btn btn-peabody btn-lg" href="http://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar">View Calendar</a></p>
+                <p class="button-row"><a class="btn btn-peabody btn-lg" href="http://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar"><i class="far fa-calendar-alt"></i> View Calendar</a></p>
             </div>
         </div>
 
@@ -396,15 +425,15 @@
                 <div class="box-item box" id="card_cta1">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
                         <div class="front-content">
-                            <h2 class="box-header">Exhibitions</h2>
+                            <h2 class="box-header">Visit</h2>
                         </div>
                     </figure>
                     <figure class="back">
                         <div class="back-content">
-                            <h5 class="event-back-heading">Exhibitions</h5>
-                            <p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof.</p>
-                            <p>From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
-                            <p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
+                            <h5 class="event-back-heading">Visit</h5>
+                            <p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof. From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
+                            <p><a href="http://peabody.yale.edu/exhibits/">Learn more about our exhibitions</a></p>
+                            <p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online" aria-label="Buy Tickets Online">Buy Tickets Online</a>&nbsp;<strong style="color: red">New!</strong></p>
                         </div>
                     </figure>
                 </div>
@@ -453,7 +482,7 @@
         <div class="row card-row" id="actionsRow2">
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta4">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/SCHOOLGROUPS_am.jpg'); background-position:center;">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_GROUPSALES_SCHOOL-GROUPVISITS_HOMEPAGE.jpg'); background-position:center;">
                         <div class="front-content">
                             <h2 class="box-header">School &amp; Group Visits</h2>
                         </div>
@@ -463,13 +492,65 @@
                             <h5 class="event-back-heading">School &amp; Group Visits</h5>
                             <p>Learn about our many offerings and schedule your field trip here. Field trip planning made easy.</p>
                             <p><a href="http://peabody.yale.edu/education/general-information-reservations" title="Field trip information and fees" aria-label="Field trip information and fees" class="back-link" data-link-parent="card_cta4">General information and fees</a></p>
-                            <a href="http://peabody.yale.edu/education/school-program-registration-form" title="Register for a field trip" aria-label="Register for a field trip" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
+                            <a href="https://shop.peabody.yale.edu/#/GroupSales" title="Register for a school or group visit" aria-label="Register for a school or group visit" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
                         </div>
                     </figure>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="box-item box" id="card_cta5">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_GROUPSALES_BIRTHDAYPARTIES_DINOSAUR-DISCOVERY.jpg'); background-position:center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Birthday Parties</h2>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="event-back-heading" rel="card">Birthday Parties</h5>
+                            <p>Join us for a birthday party your child will remember at one of the premier university natural history museums in the world. </p>
+                            <a href="http://peabody.yale.edu/education/birthday-parties" title="Request a birthday party" aria-label="Request a birthday party" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
+                        </div>
+                    </figure>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="box-item box" id="card_cta6">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_MEMBERSHIP_HOMEPAGE.jpg'); background-position:center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Become a Member</h2>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="event-back-heading" rel="card">Become a Member</h5>
+                            <p>Become a member of the Peabody today! Help support our mission, programs and exhibitions, and discover a world of benefits. </p>
+                            <p class="button-row"><a href="https://shop.peabody.yale.edu/#/Membership" title="Become a member" aria-label="Become a member" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Browse plans</a>&nbsp;<strong style="color: red">New!</strong></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="row card-row" id="actionsRow3">
+            <div class="col-md-4">
+                <div class="box-item box" id="card_cta7">
+                    <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_RETAIL_HOMEPAGE_WG_2018.jpg'); background-position:center;">
+                        <div class="front-content">
+                            <h2 class="box-header">Museum Store</h2>
+                        </div>
+                    </figure>
+                    <figure class="back">
+                        <div class="back-content">
+                            <h5 class="event-back-heading">Museum Store</h5>
+                            <p>Shop the Peabody Museum store online and find something for every natural history lover!</p>
+                            <p class="button-row"><a href="https://shop.peabody.yale.edu/#/Retail" title="Shop the Peabody Museum online store" aria-label="Shop the Peabody Museum online store" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Shop Now</a></p>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="box-item box" id="card_cta8">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
                         <div class="front-content">
                             <h2 class="box-header">Connect</h2>
@@ -484,17 +565,17 @@
                                     <div id="signup_textfields" rel="card">
                                         <div class="form-group" rel="card">
                                             <div class="col-xs-12" rel="card">
-                                                <input rel="card" data-form-parent="card_cta5" id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
+                                                <input rel="card" data-form-parent="card_cta8" id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group" rel="card">
                                             <div class="col-xs-12" rel="card">
-                                                <input data-form-parent="card_cta5" rel="card" id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
+                                                <input data-form-parent="card_cta8" rel="card" id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
                                             </div>
                                         </div>
                                         <div class="form-group" rel="card">
                                             <div class="col-xs-12" rel="card">
-                                                <input rel="card" data-form-parent="card_cta5" id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onchange="checkEmail(this.value)" onkeyup="checkEmail(this.value)">
+                                                <input rel="card" data-form-parent="card_cta8" id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onchange="checkEmail(this.value)" onkeyup="checkEmail(this.value)">
                                             </div>
                                         </div>
                                     </div>
@@ -502,7 +583,7 @@
                                     <div class="form-group" rel="card">
                                         <label class="col-md-4 control-label" for="submit" rel="card"></label>
                                         <div class="col-md-8" rel="card">
-                                            <button rel="card" id="submit" data-form-parent="card_cta5" name="submit" type="submit" class="btn btn-peabody disabled back-submit" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list">Sign Up</button>
+                                            <button rel="card" id="submit" data-form-parent="card_cta8" name="submit" type="submit" class="btn btn-peabody disabled back-submit" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list">Sign Up</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -513,47 +594,23 @@
 
             </div>
             <div class="col-md-4">
-                <div class="box-item box" id="card_cta6">
+                <div class="box-item box" id="card_cta9">
                     <figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
                         <div class="front-content">
                             <h2 class="box-header">Support</h2>
                         </div>
                     </figure>
-                    <figure class="back diagonal-back">
+                    <figure class="back">
                         <div class="back-content">
-                            <div class="back-top back-left">
-                                <h5 class="event-back-heading-double">Donate to the Peabody</h5>
-                                <p>Every contribution counts!</p>
-                                <a href="https://yale.edu/givepeabody" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Donate now</button></a>
-                            </div>
-                            <div class="back-bottom back-right">
-                                <h5 class="event-back-heading-double">Become a Member</h5>
-                                <a href="http://peabody.yale.edu/members" title="Membership information" aria-label="Membership information" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Learn more</button></a>
-                            </div>
+                            <h5 class="event-back-heading-double">Donate to the Peabody</h5>
+                            <p>Thanks to donors like you, the Peabody Museum is able to pursue its mission of advancing our understanding of earth’s history and sharing the results of this research with the widest possible audience. </p>
+                            <p class="button-row"><a href="https://yale.edu/givepeabody" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta9" role="button">Donate now</button></a></p>
                         </div>
                     </figure>
                 </div>
             </div>
         </div>
 
-        <!--
-        <div class="jumbotron special-events" id="masthead3" style="display: none">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-sm-3 hidden-xs" style="text-align: right">
-                        <img id="evolving_pic" src="img/tower_drawing_crop_paleblue_large_test2.jpg" />
-
-                    </div>
-                    <div class="col-md-8 col-sm-9 col-xs-12" id="special_events_text">
-                        <h2 class="blue-shadow">Special Events at The Peabody</h2>
-                        <p class="blue-shadow" id="renoText">Visit <a href="#" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    -->
-
-        <!--<hr />-->
 
 
         <!-- Hours & Admission -->
@@ -600,10 +657,10 @@
         <div class="row">
             <div class="col-xs-12">
                 <ul class="social-icons">
-                    <li class="social-icon-facebook"><a href="https://www.facebook.com/YalePeabodyMuseum/" target="_blank" title="Peabody Museum on Facebook" aria-label="Peabody Museum on Facebook"><i class="fa fa-facebook"></i></a></li>
-                    <li class="social-icon-instagram"><a href="https://www.instagram.com/yalepeabodymuseum/" target="_blank" title="Peabody Museum on Instagram" aria-label="Peabody Museum on Instagram"><i class="fa fa-instagram"></i></a></li>
-                    <li class="social-icon-twitter"><a href="https://twitter.com/yalepeabody" target="_blank" title="Peabody Museum on Twitter" aria-label="Peabody Museum on Twitter"><i class="fa fa-twitter"></i></a></li>
-                    <li class="social-icon-youtube"><a href="https://www.youtube.com/user/yalepeabodymuseum" target="_blank" title="Peabody Museum's YouTube channel" aria-label="Peabody Museum YouTube channel"><i class="fa fa-youtube"></i></a></li>
+                    <li class="social-icon-facebook"><a href="https://www.facebook.com/YalePeabodyMuseum/" target="_blank" title="Peabody Museum on Facebook" aria-label="Peabody Museum on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social-icon-instagram"><a href="https://www.instagram.com/yalepeabodymuseum/" target="_blank" title="Peabody Museum on Instagram" aria-label="Peabody Museum on Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li class="social-icon-twitter"><a href="https://twitter.com/yalepeabody" target="_blank" title="Peabody Museum on Twitter" aria-label="Peabody Museum on Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social-icon-youtube"><a href="https://www.youtube.com/user/yalepeabodymuseum" target="_blank" title="Peabody Museum's YouTube channel" aria-label="Peabody Museum YouTube channel"><i class="fab fa-youtube"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -637,6 +694,7 @@
     <script src="js/vendor/jquery.mobile-events.js"></script>
     <script src="js/vendor/moment.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+
 
 
     <script src="js/main.js?1"></script>
