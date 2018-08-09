@@ -84,6 +84,8 @@ $randomtwo = $_SESSION['randomtwo'];
                         <ul class="dropdown-menu">
                             <li><a href="http://peabody.yale.edu/visit/admission-hours" title="Admission and Hours" aria-label="Admission and Hours">Admission &amp; Hours</a></li>
                             <li><a href="http://peabody.yale.edu/visit/directions-parking" title="Directions and Parking" aria-label="Directions and Parking">Directions &amp; Parking</a></li>
+							<li><a href="https://shop.peabody.yale.edu/#/Admission" title="Buy Tickets Online" aria-label="Buy Tickets Online"><strong style="color: red; text-transform: uppercase;">NEW!</strong>&nbsp;&nbsp;Buy Tickets</a></li>
+							<li><a href="http://peabody.yale.edu/members" title="Become a Member" aria-label="Become a Member">Become a Member</a></li>
                             <li><a href="http://peabody.yale.edu/visit/museum-tours" title="Museum Tours" aria-label="Museum Tours">Museum Tours</a></li>
                             <li><a href="http://peabody.yale.edu/visit/visit-free" title="Visit For Free" aria-label="Visit For Free">Visit For Free</a></li>
                             <li><a href="http://peabody.yale.edu/visit/area-dining" title="Area Dining" aria-label="Area Dining">Area Dining</a></li>
@@ -236,10 +238,10 @@ $randomtwo = $_SESSION['randomtwo'];
                                 </td>
                                 <td>
                                     <p style="padding-top: 5px;">
-                                        <strong>Thursday, June 21</strong>
+                                        <strong>Alert date</strong>
                                         <span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
                                     </p>
-                                    <p class="slider-alert-text">David Friend Hall will be closed for special events. We apologize for any inconvenience.</p>
+                                    <p class="slider-alert-text">Alert text</p>
                                 </td>
                             </tr>
                         </table>
@@ -254,302 +256,412 @@ $randomtwo = $_SESSION['randomtwo'];
 
 
     <div class="jumbotron" id="masthead">
-        <div class="container">
-            <h1 class="bigTitle" id="mainHeader">Our Mission</h1>
-            <p class="jumbotron-paragraph">To serve Yale University by advancing our understanding of Earth’s history through geological, biological, and anthropological research, and by communicating the results of this research to the widest possible audience through publication, exhibition, and educational programs.</p>
-        </div>
-    </div>
+		<div class="container">
+			<h1 class="bigTitle" id="mainHeader">Discover Your World</h1>
+			<p class="jumbotron-paragraph">
+				<strong>Welcome to the Peabody Museum of Natural History!</strong>
+			</p>
+			<p class="jumbotron-paragraph">
+				We're home to ten scientific collections that tell the story of our Earth, its life, history and cultures. Our exhibitions, events and educational programs have enriched the Yale and New Haven communities, and beyond, since 1866. Through our doors you'll share in the discoveries of generations of scientists and adventurers past, present and future.
+			</p>
+		</div>
+	</div>
 
-    <div class="container" id="icons">
-        <div class="row">
-            <div class="col-sm-2 hidden-xs icon-container-col">
-                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_ent01.png"></p>
-            </div>
-            <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_inv01.png"></p>
-            </div>
-            <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_vp01.png"></p>
-            </div>
-            <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_bot01.png"></p>
-            </div>
-            <div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_inv02.png"></p>
-            </div>
-            <div class="col-sm-2 hidden-xs icon-container-col">
-                <p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_ant01.png"></p>
-            </div>
-        </div>
-    </div>
 
-    <!-- evolved snippet -->
+	<div class="container" id="icons">
+		<div class="row">
+			<div class="col-sm-6 col-xs-12 two-column">
+				<p align="center"><a class="btn btn-peabody btn-lg" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online" aria-label="Buy Tickets Online"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Tickets Online</a></p>
+				<p class="jumbotron-paragraph"><strong style="color: red">NEW!</strong> Skip the line and purchase your admission tickets right from your web browser. Tickets are valid for one year from purchase. Click the button above to get started!</p>
+			</div>
+			<div class="col-sm-6 col-xs-12 two-column">
+				<p align="center"><a class="btn btn-peabody-green btn-lg" href="http://peabody.yale.edu/members" role="button" title="Become a Member" aria-label="Become a Member"><i class="fas fa-user"></i>&nbsp;&nbsp;Become a Member</a></p>
+				<p class="jumbotron-paragraph">Your support unlocks a world of benefits! FREE unlimited admission and parking at the Peabody; 10% Museum Store discounts; Exclusive invitations to exhibition openings; Discounts on camps, programs and events... and more!</p>
+			</div>
+		</div>
+	</div>
 
-    <!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
-    <hr />
-    <!--             -->
+	<div class="container" id="icons">
+		<div class="row">
+			<div class="col-sm-2 hidden-xs icon-container-col">
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_ent01.png"></p>
+			</div>
+			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_inv01.png"></p>
+			</div>
+			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_vp01.png"></p>
+			</div>
+			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_bot01.png"></p>
+			</div>
+			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_inv02.png"></p>
+			</div>
+			<div class="col-sm-2 hidden-xs icon-container-col">
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_ant01.png"></p>
+			</div>
+		</div>
+		<!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
+		<hr />
+		<!--             -->
+	</div>
 
-    <div class="container-fluid peabody-evolved-separator" id="masthead2">
-        <!--        <hr />-->
-        <div class="jumbotron" style="background: none;">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4 col-lg-6">
-                        <p id="evolved-imagelink">
-                            <a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">
+
+	<div class="container-fluid peabody-evolved-separator" id="masthead2" style="display:none!important; height:0px!important; opacity: 0!important" aria-hidden="true">
+		<!--        <hr />-->
+		<div class="jumbotron peabody-evolved-banner">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-lg-6">
+						<p id="evolved-imagelink">
+							<a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">
                                 <img id="evolving_pic" src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/2018-06-12-YPM---Aerial-Blue.png" style="width: 100%; width: auto;" />
                             </a>
-                        </p>
-                    </div>
-                    <div class="hidden-xs col-md-1 hidden-lg"></div>
-                    <div class="col-xs-12 col-md-7 col-lg-6" id="evolving_text">
-                        <h2 class="blue-shadow">We're evolving!</h2>
-                        <p id="renoText" class="blue-shadow">Visit our new site, <a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a>, to learn more about the Peabody’s transformative renovation.</p>
-                        <p><a class="btn btn-peabody btn-lg" href="http://peabodyevolved.yale.edu" role="button" title="Peabody Evolved" aria-label="Peabody Evolved">Visit Site</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						</p>
+					</div>
+					<div class="hidden-xs col-md-1 hidden-lg"></div>
+					<div class="col-xs-12 col-md-7 col-lg-6" id="evolving_text">
+						<h2 class="blue-shadow">We're evolving!</h2>
+						<p id="renoText" class="blue-shadow">Visit our new site, <a href="http://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a>, to learn more about the Peabody’s transformative renovation.</p>
+						<p><a class="btn btn-peabody btn-lg" href="http://peabodyevolved.yale.edu" role="button" title="Peabody Evolved" aria-label="Peabody Evolved"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Learn More</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="container">
+	<div class="container">
 
 
-        <h1 class="mediumTitle" id="upcomingEvents">Featured Exhibitions &amp; Programs</h1>
-        <!--<hr />-->
+		<h1 class="mediumTitle" id="upcomingEvents">Featured Exhibitions &amp; Programs</h1>
+		<!--<hr />-->
 
-        <div class="row card-row">
+		<div class="row card-row">
 
-            <!-- BEGIN CARDS -->
+			<!-- BEGIN CARDS -->
 
-            <!-- CARD 3 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event3">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
-                        <div class="front-content">
-                            <h2 class="box-header">California Gold</h2>
-                            <h5 class="box-date box-date-right">On View Now</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Special Exhibition</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">California Gold</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Modern Marvels from the Golden State</h5>
-                            <hr />
-                            <p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
-                            <p>On view now.</p>
-                            <p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
+			<!-- CARD 3 -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event3">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
+						<div class="front-content">
+							<h2 class="box-header">California Gold</h2>
+							<h5 class="box-date box-date-right">On View Now</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>Special Exhibition</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit3_heading_back">California Gold</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit3_subheading_back">Modern Marvels from the Golden State</h5>
+							<hr />
+							<p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
+							<p>On view now.</p>
+							<p class="button-row"><a data-link-parent="card_event3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
 
-            <!-- CARD 6 -->
-            <div class="col-md-6">
-                <div class="box-item box" id="card_event6">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Adult Art Classes</h2>
-                            <h5 class="box-date box-date-right">Register Now</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Adult Art Classes</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">Programs in Natural Science Illustration</h5>
-                            <hr/>
-                            <p>Registration for summer courses is now open! Select from a wide variety of nature-themed drawing and painting classes including many outdoor workshops. You’ll be sure to find a topic to engage the budding naturalist in you. </p>
-                            <p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/natural-science-illustration-courses" role="button" title="More info: Natural Science Illustration Program" aria-label="More info: Natural Science Illustration Program">More Info</a>
-                            </p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
+			<!-- CARD 2 -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event2">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/artists_eye_web_cardREV-mini.jpg'); background-position: left;">
+						<div class="front-content">
+							<h2 class="box-header">The Artist's Eye: Figurines of the Paleolithic</h2>
+							<h5 class="box-date box-date-right">On View August 11</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>Temporary Exhibition</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_heading_back">The Artist's Eye</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_subheading_back">Figurines of the Paleolithic</h5>
+							<hr />
+							<p>Featuring sculptures inspired by figures created between 40,000 and 15,000 BCE, which are some of the first 3D representations of the female form ever discovered.</p>
+							<p>August 11, 2018 &ndash; March 17, 2019</p>
+							<p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/exhibits/the-artists-eye" role="button" title="More info: The Artist's Eye" aria-label="More info: The Artist's Eye">More Info</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
 
-            <!-- CARD 6 - ALT -->
-            <div class="col-md-6" style="display: none">
-                <div class="box-item box" id="card_event6_alt">
-                    <figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg '); background-position: left;">
-                        <div class="front-content">
-                            <h2 class="box-header">Peabody Birthday Parties</h2>
-                            <h5 class="box-date box-date-right">Book Today!</h5>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="box-header"><strong>Ongoing</strong></h5>
-                            <h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_alt_heading_back">Peabody Birthday Parties</h3>
-                            <h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_alt_subheading_back">For children 4-10 years of age</h5>
-                            <hr/>
-                            <p>Celebrate your child’s birthday with us! Peabody birthday parties are fun and educational! Four themes to choose from, includes scavenger hunts, hand-on activities and much more.</p>
-                            <p class="button-row"><a data-link-parent="card_event6_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
+			<!-- CARD 1 -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event1">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/summers_last_roar_web_card_2018-mini.jpg'); background-position: right;">
+						<div class="front-content">
+							<h2 class="box-header">Summer's Last Roar</h2>
+							<h5 class="box-date box-date-right">Saturday, August 25</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>Public Program</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Summer's Last Roar!</h3>
+							<hr />
+							<p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody! Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
+							<p>Saturday, August 25, 2018 from 10 am to 4 pm.</p>
+							<p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
 
-            <!-- END CARDS -->
+			<!-- CARD 6 -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event6">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+						<div class="front-content">
+							<h2 class="box-header">Adult Art Classes</h2>
+							<h5 class="box-date box-date-right">Register Now</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>Ongoing</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Adult Art Classes</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">Programs in Natural Science Illustration</h5>
+							<hr/>
+							<p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
+							<p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/natural-science-illustration-courses" role="button" title="More info: Natural Science Illustration Program" aria-label="More info: Natural Science Illustration Program">More Info</a>
+							</p>
+						</div>
+					</figure>
+				</div>
+			</div>
 
-            <!--        http://sprout027.sprout.yale.edu/peabody-homepage-refresh/      -->
+			<!-- CARD 6 - ALT -->
+			<div class="col-md-6" style="display: none">
+				<div class="box-item box" id="card_event6_alt">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/birthday-party-web-card-edit-mini.jpg'); background-position: left;">
+						<div class="front-content">
+							<h2 class="box-header">Peabody Birthday Parties</h2>
+							<h5 class="box-date box-date-right">Book Today!</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>Ongoing</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_alt_heading_back">Peabody Birthday Parties</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_alt_subheading_back">For children 4-10 years of age</h5>
+							<hr/>
+							<p>Registration for summer courses is now open! Select from a wide variety of nature-themed drawing and painting classes including many outdoor workshops. You’ll be sure to find a topic to engage the budding naturalist in you. </p>
+							<p class="button-row"><a data-link-parent="card_event6_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/education/birthday-parties" role="button" title="More info: Peabody Birthday Parties" aria-label="More info: Peabody Birthday Parties">More Info</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
 
-        </div>
+			<!-- END CARDS -->
 
-        <div class="row">
-            <div class="col-md-12">
-                <p class="button-row"><a class="btn btn-peabody btn-lg" href="http://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar"><!--<i class="fa fa-calendar"></i> -->View Calendar</a></p>
-            </div>
-        </div>
+		</div>
 
-        <hr />
+		<div class="row">
+			<div class="col-md-12">
+				<p class="button-row"><a class="btn btn-peabody btn-lg" href="http://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar"><i class="far fa-calendar-alt"></i> View Calendar</a></p>
+			</div>
+		</div>
 
-        <!-- 3-column main call-to-action panels -->
-        <h1 class="mediumTitle" id="explore">Explore the Peabody</h1>
-        <div class="row card-row" id="actionsRow1">
-            <div class="col-md-4">
-                <div class="box-item box" id="card_cta1">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/EXHIBITS_am.jpg '); background-position:right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Exhibitions</h2>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="event-back-heading">Exhibitions</h5>
-                            <p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof.</p>
-                            <p>From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
-                            <p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/exhibits/" role="button" title="Peabody Museum exhibitions" aria-label="Peabody museum exhibitions">Learn more</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box-item box" id="card_cta2">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Yale Students</h2>
-                        </div>
-                    </figure>
-                    <figure class="back diagonal-back">
-                        <div class="back-content">
-                            <div class="back-top back-left">
-                                <h5 class="event-back-heading-double">Yale Students</h5>
-                                <p>The Peabody is YOUR natural history museum. Join our community today.</p>
-                                <p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs">More info</a></p>
-                            </div>
-                            <div class="back-bottom back-right" id="card_cta2_customtext">
-                                <h5 class="event-back-heading-double">Study Gallery</h5>
-                                <p>Our new exhibition enriches Yale courses each semester specimens and artifacts from our collections.</p>
-                                <a href="http://peabody.yale.edu/exhibits/object-study-gallery" title="Object Study Gallery" aria-label="Object Study Gallery" class="btn btn-peabody back-link" data-link-parent="card_cta2b" role="button">Learn more</button></a>
-                            </div>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box-item box" id="card_cta3">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
-                        <div class="front-content">
-                            <h2 class="box-header">Collections &amp; Research</h2>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="event-back-heading">Collections &amp; Research</h5>
-                            <p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="http://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database" class="back-link" data-link-parent="card_cta3">search the database</a> for over 8.5 million objects.</p>
-                            <p class="button-row"><a data-link-parent="card_cta3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/collections/the-collections" role="button" title="Explore the Collections" aria-label="Explore the Collections">Explore the Collections</a></p>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-        </div>
+		<hr />
 
-        <div class="row card-row" id="actionsRow2">
-            <div class="col-md-4">
-                <div class="box-item box" id="card_cta4">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/SCHOOLGROUPS_am.jpg'); background-position:center;">
-                        <div class="front-content">
-                            <h2 class="box-header">School &amp; Group Visits</h2>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <h5 class="event-back-heading">School &amp; Group Visits</h5>
-                            <p>Learn about our many offerings and schedule your field trip here. Field trip planning made easy.</p>
-                            <p><a href="http://peabody.yale.edu/education/general-information-reservations" title="Field trip information and fees" aria-label="Field trip information and fees" class="back-link" data-link-parent="card_cta4">General information and fees</a></p>
-                            <a href="http://peabody.yale.edu/education/school-program-registration-form" title="Register for a field trip" aria-label="Register for a field trip" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="box-item box" id="card_cta5">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
-                        <div class="front-content">
-                            <h2 class="box-header">Connect</h2>
-                        </div>
-                    </figure>
-                    <figure class="back">
-                        <div class="back-content">
-                            <form class="form-horizontal form-contact" name="contact" id="contactForm" action="javascript:void(0)">
-                                <fieldset rel="card">
-                                    <h5 class="event-back-heading" rel="card">Sign up for our mailing list</h5>
+		<!-- 3-column main call-to-action panels -->
+		<h1 class="mediumTitle" id="explore">Explore the Peabody</h1>
+		<div class="row card-row" id="actionsRow1">
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta1">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
+						<div class="front-content">
+							<h2 class="box-header">Visit</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading">Visit</h5>
+							<p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof. From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
+							<p><a href="http://peabody.yale.edu/exhibits/">Learn more about our exhibitions</a></p>
+							<p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online" aria-label="Buy Tickets Online">Buy Tickets Online</a>&nbsp;<strong style="color: red">New!</strong></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta2">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
+						<div class="front-content">
+							<h2 class="box-header">Yale Students</h2>
+						</div>
+					</figure>
+					<figure class="back diagonal-back">
+						<div class="back-content">
+							<div class="back-top back-left">
+								<h5 class="event-back-heading-double">Yale Students</h5>
+								<p>The Peabody is YOUR natural history museum. Join our community today.</p>
+								<p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody back-link" href="http://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs">More info</a></p>
+							</div>
+							<div class="back-bottom back-right" id="card_cta2_customtext">
+								<h5 class="event-back-heading-double">Study Gallery</h5>
+								<p>Our new exhibition enriches Yale courses each semester specimens and artifacts from our collections.</p>
+								<a href="http://peabody.yale.edu/exhibits/object-study-gallery" title="Object Study Gallery" aria-label="Object Study Gallery" class="btn btn-peabody back-link" data-link-parent="card_cta2b" role="button">Learn more</button></a>
+							</div>
+						</div>
+					</figure>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta3">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
+						<div class="front-content">
+							<h2 class="box-header">Collections &amp; Research</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading">Collections &amp; Research</h5>
+							<p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="http://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database" class="back-link" data-link-parent="card_cta3">search the database</a> for over 8.5 million objects.</p>
+							<p class="button-row"><a data-link-parent="card_cta3" class="btn btn-peabody back-link" href="http://peabody.yale.edu/collections/the-collections" role="button" title="Explore the Collections" aria-label="Explore the Collections">Explore the Collections</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
 
-                                    <div id="signup_textfields" rel="card">
-                                        <div class="form-group" rel="card">
-                                            <div class="col-xs-12" rel="card">
-                                                <input data-form-parent="card_cta5" rel="card" id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="form-group" rel="card">
-                                            <div class="col-xs-12" rel="card">
-                                                <input data-form-parent="card_cta5" rel="card" id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
-                                            </div>
-                                        </div>
-                                        <div class="form-group" rel="card">
-                                            <div class="col-xs-12" rel="card">
-                                                <input data-form-parent="card_cta5" rel="card" id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onchange="checkEmail(this.value)" onkeyup="checkEmail(this.value)">
-                                            </div>
-                                        </div>
-                                    </div>
+		<div class="row card-row" id="actionsRow2">
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta4">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_GROUPSALES_SCHOOL-GROUPVISITS_HOMEPAGE.jpg'); background-position:center;">
+						<div class="front-content">
+							<h2 class="box-header">School &amp; Group Visits</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading">School &amp; Group Visits</h5>
+							<p>Learn about our many offerings and schedule your field trip here. Field trip planning made easy.</p>
+							<p><a href="http://peabody.yale.edu/education/general-information-reservations" title="Field trip information and fees" aria-label="Field trip information and fees" class="back-link" data-link-parent="card_cta4">General information and fees</a></p>
+							<a href="http://peabody.yale.edu/education/school-program-registration-form" title="Register for a school or group visit" aria-label="Register for a school or group visit" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
+						</div>
+					</figure>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta5">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_GROUPSALES_BIRTHDAYPARTIES_DINOSAUR-DISCOVERY.jpg'); background-position:center;">
+						<div class="front-content">
+							<h2 class="box-header">Birthday Parties</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading" rel="card">Birthday Parties</h5>
+							<p>Join us for a birthday party your child will remember at one of the premier university natural history museums in the world. </p>
+							<p><strong>NOTE:</strong> Birthday parties resume in September.</p>
+							<a href="http://peabody.yale.edu/education/birthday-parties" title="Request a birthday party" aria-label="Request a birthday party" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
+						</div>
+					</figure>
+				</div>
 
-                                    <div class="form-group" rel="card">
-                                        <label class="col-md-4 control-label" for="submit" rel="card"></label>
-                                        <div class="col-md-8" rel="card">
-                                            <button id="submit" rel="card" name="submit" type="submit" data-form-parent="card_cta5" class="btn btn-peabody disabled back-submit" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list">Sign Up</button>
-                                        </div>
-                                    </div>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </figure>
-                </div>
+			</div>
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta6">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_MEMBERSHIP_HOMEPAGE.jpg'); background-position:center;">
+						<div class="front-content">
+							<h2 class="box-header">Become a Member</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading" rel="card">Become a Member</h5>
+							<p>Become a member of the Peabody today! Help support our mission, programs and exhibitions, and discover a world of benefits. </p>
+							<p class="button-row"><a href="https://shop.peabody.yale.edu/#/Membership" title="Become a member" aria-label="Become a member" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Browse plans</a>&nbsp;<strong style="color: red">New!</strong></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
 
-            </div>
-            <div class="col-md-4">
-                <div class="box-item box" id="card_cta6">
-                    <figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
-                        <div class="front-content">
-                            <h2 class="box-header">Support</h2>
-                        </div>
-                    </figure>
-                    <figure class="back diagonal-back">
-                        <div class="back-content">
-                            <div class="back-top back-left">
-                                <h5 class="event-back-heading-double">Donate to the Peabody</h5>
-                                <p>Every contribution counts!</p>
-                                <a href="https://yale.edu/givepeabody" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Donate now</button></a>
-                            </div>
-                            <div class="back-bottom back-right">
-                                <h5 class="event-back-heading-double">Become a Member</h5>
-                                <a href="http://peabody.yale.edu/members" title="Membership information" aria-label="Membership information" class="btn btn-peabody back-link" data-link-parent="card_cta6" role="button">Learn more</button></a>
-                            </div>
-                        </div>
-                    </figure>
-                </div>
-            </div>
-        </div>
+		<div class="row card-row" id="actionsRow3">
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta7">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_RETAIL_HOMEPAGE_WG_2018.jpg'); background-position:center;">
+						<div class="front-content">
+							<h2 class="box-header">Museum Store</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading">Museum Store</h5>
+							<p>Shop the Peabody Museum store online and find something for every natural history lover!</p>
+							<p class="button-row">
+								<!--                                <a href="https://shop.peabody.yale.edu/#/Retail" title="Shop the Peabody Museum online store" aria-label="Shop the Peabody Museum online store" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Shop Now</a>-->
+								<strong>Coming soon!</strong>
+							</p>
+						</div>
+					</figure>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta8">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
+						<div class="front-content">
+							<h2 class="box-header">Connect</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<form class="form-horizontal form-contact" name="contact" id="contactForm" action="javascript:void(0)">
+								<fieldset rel="card">
+									<h5 class="event-back-heading" rel="card">Sign up for our mailing list</h5>
+
+									<div id="signup_textfields" rel="card">
+										<div class="form-group" rel="card">
+											<div class="col-xs-12" rel="card">
+												<input rel="card" data-form-parent="card_cta8" id="first_name" name="first_name" placeholder="First Name" class="form-control input-md" required="" type="text">
+											</div>
+										</div>
+										<div class="form-group" rel="card">
+											<div class="col-xs-12" rel="card">
+												<input data-form-parent="card_cta8" rel="card" id="last_name" name="last_name" placeholder="Last Name" class="form-control input-md" required="" type="text">
+											</div>
+										</div>
+										<div class="form-group" rel="card">
+											<div class="col-xs-12" rel="card">
+												<input rel="card" data-form-parent="card_cta8" id="email" name="email" placeholder="Email Address" class="form-control input-md" required="" type="text" onchange="checkEmail(this.value)" onkeyup="checkEmail(this.value)">
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group" rel="card">
+										<label class="col-md-4 control-label" for="submit" rel="card"></label>
+										<div class="col-md-8" rel="card">
+											<button rel="card" id="submit" data-form-parent="card_cta8" name="submit" type="submit" class="btn btn-peabody disabled back-submit" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list">Sign Up</button>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</figure>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+				<div class="box-item box" id="card_cta9">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
+						<div class="front-content">
+							<h2 class="box-header">Support</h2>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="event-back-heading-double">Donate to the Peabody</h5>
+							<p>Thanks to donors like you, the Peabody Museum is able to pursue its mission of advancing our understanding of earth’s history and sharing the results of this research with the widest possible audience. </p>
+							<p class="button-row"><a href="https://yale.edu/givepeabody" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta9" role="button">Donate now</button></a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
 
         <!--<hr />-->
 
