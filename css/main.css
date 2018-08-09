@@ -828,7 +828,14 @@ ul.social-icons li {
 	min-width: 1.8em;
 	text-align: center;
 	height: 24px;
-	padding-top: 10px;
+}
+
+/* google chrome only hack */
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	ul.social-icons li {
+		padding-top: 10px;
+	}
 }
 
 ul.social-icons li a {
