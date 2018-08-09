@@ -28,7 +28,7 @@ $randomtwo = $_SESSION['randomtwo'];
 	<meta name="description" content="">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="http://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
-	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/fonts/fontAwesome5/css/font-awesome.d6.css" />
+	<!--	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/fonts/fontAwesome5/css/font-awesome.d6.css" />-->
 	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/fonts/fontAwesome5/css/all.d6.css" />
 	<link rel="stylesheet" type="text/css" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/slick/slick.css" />
 	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/css/bootstrap.min.css" />
@@ -733,10 +733,10 @@ $randomtwo = $_SESSION['randomtwo'];
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="social-icons">
-					<li class="social-icon-facebook"><a href="https://www.facebook.com/YalePeabodyMuseum/" target="_blank" title="Peabody Museum on Facebook" aria-label="Peabody Museum on Facebook"><i class="fa fa-facebook"></i></a></li>
-					<li class="social-icon-instagram"><a href="https://www.instagram.com/yalepeabodymuseum/" target="_blank" title="Peabody Museum on Instagram" aria-label="Peabody Museum on Instagram"><i class="fa fa-instagram"></i></a></li>
-					<li class="social-icon-twitter"><a href="https://twitter.com/yalepeabody" target="_blank" title="Peabody Museum on Twitter" aria-label="Peabody Museum on Twitter"><i class="fa fa-twitter"></i></a></li>
-					<li class="social-icon-youtube"><a href="https://www.youtube.com/user/yalepeabodymuseum" target="_blank" title="Peabody Museum's YouTube channel" aria-label="Peabody Museum YouTube channel"><i class="fa fa-youtube"></i></a></li>
+					<li class="social-icon-facebook"><a href="https://www.facebook.com/YalePeabodyMuseum/" target="_blank" title="Peabody Museum on Facebook" aria-label="Peabody Museum on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="social-icon-instagram"><a href="https://www.instagram.com/yalepeabodymuseum/" target="_blank" title="Peabody Museum on Instagram" aria-label="Peabody Museum on Instagram"><i class="fab fa-instagram"></i></a></li>
+					<li class="social-icon-twitter"><a href="https://twitter.com/yalepeabody" target="_blank" title="Peabody Museum on Twitter" aria-label="Peabody Museum on Twitter"><i class="fab fa-twitter"></i></a></li>
+					<li class="social-icon-youtube"><a href="https://www.youtube.com/user/yalepeabodymuseum" target="_blank" title="Peabody Museum's YouTube channel" aria-label="Peabody Museum YouTube channel"><i class="fab fa-youtube"></i></a></li>
 				</ul>
 			</div>
 		</div>
