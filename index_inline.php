@@ -725,7 +725,7 @@ $randomtwo = $_SESSION['randomtwo'];
 				<p align="center"><br />Openings subject to inclement weather and holiday schedules.<br />Please check our <a href="http://peabody.yale.edu/visit/admission-hours" title="Admissions information" aria-label="Admissions information">admissions</a> page for more information.<br /><br /></p>
 
 				<p align="center">
-					<a href="https://www.google.com/maps/place/Yale+Peabody+Museum+of+Natural+History/@41.31611,-72.920938,15z/data=!4m5!3m4!1s0x89e7d9c874e11dd1:0x368793b0d438047!8m2!3d41.315785!4d-72.921048?hl=en" class="btn btn-peabody" target="_blank" title="Directions to the Peabody" aria-label="Directions to the Peabody"><i class="fa fa-map-marker" aria-hidden="true"></i> Directions</a>
+					<a href="https://www.google.com/maps/place/Yale+Peabody+Museum+of+Natural+History/@41.31611,-72.920938,15z/data=!4m5!3m4!1s0x89e7d9c874e11dd1:0x368793b0d438047!8m2!3d41.315785!4d-72.921048?hl=en" class="btn btn-peabody" target="_blank" title="Directions to the Peabody" aria-label="Directions to the Peabody"><i class="fas fa-directions" aria-hidden="true"></i> Directions</a>
 				</p>
 			</div>
 		</div>
