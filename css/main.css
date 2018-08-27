@@ -490,9 +490,9 @@ strong {
 }*/
 
 .blue-shadow {
-	-webkit-text-shadow: 0px 0px 15px #dde6ee;
-	-moz-text-shadow: 0px 0px 15px #dde6ee;
-	text-shadow: 0px 0px 15px #dde6ee;
+	-webkit-text-shadow: 0px 0px 10px #dde6ee;
+	-moz-text-shadow: 0px 0px 10px #dde6ee;
+	text-shadow: 0px 0px 10px #dde6ee;
 }
 
 #masthead {
@@ -503,12 +503,58 @@ strong {
 	padding-top: 20px;
 }
 
-#masthead2 {
+#evolved-banner {
 	/*background: #eeeeee;*/
-	padding-top: 24px !important;
-	padding-bottom: 0 !important;
-	margin-bottom: 20px;
-	background: #dde6ee;
+	/*	padding: 24px 0 0 0;*/
+	padding: 0;
+	margin: 24px 0;
+	/*	background: #dde6ee;*/
+	height: 350px;
+	position: relative;
+}
+
+#evolved-banner-inner {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-image: url(../img/Terrace-View-wo-Mastodon---Final---rightFade.jpg);
+	background-size: cover;
+	background-position: 0% 0%;
+	-moz-animation-name: MOVE-BG;
+	-moz-animation-duration: 30s;
+	-moz-animation-timing-function: linear;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-name: MOVE-BG;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-name: MOVE-BG;
+	-o-animation-duration: 30s;
+	-o-animation-timing-function: linear;
+	-o-animation-iteration-count: infinite;
+	animation-name: MOVE-BG;
+	animation-duration: 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes MOVE-BG {
+	0% {
+		background-position: 0% 0%;
+		opacity: 0;
+	}
+	5% {
+		background-position: 0% 5%;
+		opacity: 1;
+	}
+	95% {
+		background-position: 0% 95%;
+		opacity: 1;
+	}
+	100% {
+		background-position: 0% 100%;
+		opacity: 0;
+	}
 }
 
 
@@ -876,15 +922,12 @@ a {
 	font-family: "Mallory MP Bold";
 }
 
-/*
-#evolving_text {
-    padding-left: 2em;
-}
-*/
+#evolving_text {}
 
 #evolving_text h2 {
 	font-size: 2.8em;
 	padding-top: 1em;
+	/*	text-shadow: 0px 0px 5px #dde6ee;*/
 }
 
 #evolving_pic {
@@ -1009,6 +1052,7 @@ a {
 		width: 80%;
 		height: auto;
 	}
+
 	.wordmark {
 		margin: 0;
 		width: 100%;
@@ -1086,13 +1130,22 @@ a {
 	#evolving_text {
 		text-align: center;
 	}
+
+
+
+	#evolved-banner-inner {
+		background-image: url(../img/Terrace-View-wo-Mastodon---Final---topFadeSmall.jpg);
+	}
+
+
 	.main-slider {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	#masthead2 {
+	#evolved-banner {
 		padding-bottom: 24px !important;
 	}
+	#evolved-banner-inner {}
 	.slick-list {
 		height: 400px;
 	}
