@@ -310,7 +310,7 @@ $randomtwo = $_SESSION['randomtwo'];
 	</div>
 
 
-	<div class="container-fluid peabody-evolved-separator" id="evolved-banner" aria-hidden="true" style="display: none;">
+	<div class="container-fluid peabody-evolved-separator" id="evolved-banner" aria-hidden="true">
 
 		<div id="evolved-banner-inner"></div>
 
