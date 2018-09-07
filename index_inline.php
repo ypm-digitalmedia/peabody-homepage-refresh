@@ -338,68 +338,23 @@ $randomtwo = $_SESSION['randomtwo'];
 
 			<!-- BEGIN CARDS -->
 
-			<!-- CARD 4 - ALT -->
-			<div class="col-md-6">
-				<div class="box-item box" id="card_event4_alt">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/back_to_school_member_promo_web_card-mini.jpg'); background-position: center;">
-						<div class="front-content">
-							<h2 class="box-header">Back-to-School Bonus</h2>
-							<h5 class="box-date box-date-right">Through August 31, 2018</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header"><strong>Membership Promotion</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit4_alt_heading_back">Back-to-School Bonus</h3>
-							<!--							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit4_alt_subheading_back">Join today and get a month free!</h5>-->
-							<hr />
-							<p>If you renew your membership before August 31, 2018 you get an extra month free!</p>
-							<p>EXTRA Bonus for September 2018: Visit Mystic Aquarium and Mystic Seaport Museum with your Peabody Membership card (temporary cards not accepted). <a href="peabody.yale.edu/members/reciprocity-bonus-september-2018" title="restritions: september 2018 reciprocity bonus">Restrictions apply.</a></p>
-							<p class="button-row"><a data-link-parent="card_event4_alt" class="btn btn-peabody back-link" href="https://shop.peabody.yale.edu/#/Membership" role="button" title="Buy Now: Membership Back-to-school Bonus" aria-label="Buy now: Membership Back-to-school Bonus">Buy Now</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<!-- CARD 7 -->
-			<div class="col-md-6">
-				<div class="box-item box" id="card_event7">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url( 'http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Bones_and_Beer_BBQ_webcard-mini.jpg'); background-position: center;">
-						<div class="front-content">
-							<h2 class="box-header">Bones &amp; Beer</h2>
-							<h5 class="box-date box-date-right">Thursday, September 6, 6pm&ndash;9pm</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header"><strong>Presented by Yale Peabody Museum and The Beer Collective</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit7_heading_back">Bones &amp; Beer: BBQ Edition</h3>
-							<hr />
-							<p>Featuring a selection of local brews and cider curated by The Beer Collective! Come and enjoy an evening full of after-hours museum access, music, drinks, educational games &amp; experiences, specimen interactions, &amp; prizes.</p>
-							<p>Thursday, September 6, 6pm&ndash;9pm</p>
-							<p class="button-row"><a data-link-parent="card_event7" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/bones-beer-bbq-edition-tickets-48889892986" role="button" title="Tickets & info: Bones & Beer BBQ Edition" aria-label="Tickets & info: Bones & Beer BBQ Edition">Tickets &amp; Info</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
-
 			<!-- CARD 1 -->
-			<div class="col-md-6" style="display: none">
+			<div class="col-md-6">
 				<div class="box-item box" id="card_event1">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/summers_last_roar_web_card_2018-mini.jpg'); background-position: right;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_Lisa_Gardiner_event_card_Fall_2018-mini.jpg'); background-position: center;">
 						<div class="front-content">
-							<h2 class="box-header">Summer's Last Roar</h2>
-							<h5 class="box-date box-date-right">Saturday, August 25</h5>
+							<h2 class="box-header">Evening Lecture</h2>
+							<h5 class="box-date box-date-right">Thursday, September 27, 5:30 pm</h5>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
-							<h5 class="box-header"><strong>Public Program</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Summer's Last Roar!</h3>
+							<h5 class="box-header"><strong>Evening Lecture</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">Tales From an Uncertain World</h3>
 							<hr />
-							<p>Celebrate the end of summer with a <strong>free</strong> day at the Peabody! Explore billions of years of Earth history, engage in a craft activity, win prizes, and interact with real specimens on our SciCarts.</p>
-							<p>Saturday, August 25, 2018 from 10 am to 4 pm.</p>
-							<p class="button-row"><a class="btn btn-peabody" href="http://peabody.yale.edu/events/summers-last-roar" role="button" title="More info: Summer's Last Roar" aria-label="More info: Summer's Last Roar">More Info</a></p>
+							<p>Join veteran science educator L. S. Gardiner as she explains how scientific uncertainty and risk complicate our decision making, and how we can do better.</p>
+							<p>Thursday, September 27, 2018 at 5:30 pm.<br />Book signing to follow.</p>
+							<p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/tales-uncertain-world" role="button" title="More info: Ostrom Lecture with L. S. Gardiner" aria-label="More info: Ostrom Lecture with L. S. Gardiner">More Info</a></p>
 						</div>
 					</figure>
 				</div>
@@ -429,7 +384,7 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 
 			<!-- CARD 3 -->
-			<div class="col-md-6" style="display: none">
+			<div class="col-md-6">
 				<div class="box-item box" id="card_event3">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
 						<div class="front-content">
