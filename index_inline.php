@@ -360,6 +360,34 @@ $randomtwo = $_SESSION['randomtwo'];
 				</div>
 			</div>
 
+			<!-- CARD 8 -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event8">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Spring_2018_Programs_for_adults_event_card-mini.jpg'); background-position: center;">
+						<div class="front-content">
+							<h2 class="box-header">Programs for Adults</h2>
+							<h5 class="box-date box-date-right">September 2018</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>September 2018</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading super-compress-h3" id="exhibit8_heading_back">Programs for Adults</h3>
+							<hr />
+							<p><strong>Identifying Hawks in Flight</strong>
+								<br />Learn to identify the birds of prey migrating through Connecticut each fall.
+								<br />September 20 &amp; 27, 2018
+							</p>
+							<p><strong>Horse Island Field Trip</strong>
+								<br />Visit an interesting and unusal coastal ecosystem in the nearby Thimble Islands.
+								<br />September 23, 2018
+							</p>
+							<p class="button-row"><a class="btn btn-peabody" href="https://shop.peabody.yale.edu/#/SpecialEvents/AdultProgram" role="button" title="More info: Programs for Adults" aria-label="More info: Programs for Adults">Register Now</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+
 			<!-- CARD 2 -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event2">
@@ -384,7 +412,7 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 
 			<!-- CARD 3 -->
-			<div class="col-md-6">
+			<div class="col-md-6" style="display: none">
 				<div class="box-item box" id="card_event3">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
 						<div class="front-content">
