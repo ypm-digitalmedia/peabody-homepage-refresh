@@ -341,20 +341,21 @@ $randomtwo = $_SESSION['randomtwo'];
 			<!-- CARD 1 -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event1">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_Lisa_Gardiner_event_card_Fall_2018-mini.jpg'); background-position: center;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Monters_Myths_Maniacs_webcard_2018-mini.jpg'); background-position: center;">
 						<div class="front-content">
-							<h2 class="box-header">Evening Lecture</h2>
-							<h5 class="box-date box-date-right">Thursday, September 27, 5:30 pm</h5>
+							<h2 class="box-header">Monsters, Myths &amp; Maniacs</h2>
+							<h5 class="box-date box-date-right">September 26 &amp 27th, 2018</h5>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
-							<h5 class="box-header"><strong>Evening Lecture</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">Tales From an Uncertain World</h3>
+							<h5 class="box-header"><strong>Halloween Weekend Parties</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_heading_back">Monsters, Myths &amp; Maniacs</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_subheading_back">Wicked Weekend Events at the Peabody</h5>
 							<hr />
-							<p>Join veteran science educator L. S. Gardiner as she explains how scientific uncertainty and risk complicate our decision making, and how we can do better.</p>
-							<p>Thursday, September 27, 2018 at 5:30 pm.<br />Book signing to follow.</p>
-							<p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/tales-uncertain-world" role="button" title="More info: Ostrom Lecture with L. S. Gardiner" aria-label="More info: Ostrom Lecture with L. S. Gardiner">More Info</a></p>
+							<p>By popular demand, we've brought a frighteningly fun pair of ghoulish good times back from the grave this Halloween weekend.</p>
+							<p>These tickets won't live forever... get yours now!</p>
+							<p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/monsters-myths-maniacs-halloween-2018" role="button" title="More info: Monsters, Myths & Maniacs" aria-label="More info: Monsters, Myths & Maniacs">Tickets &amp; Info</a></p>
 						</div>
 					</figure>
 				</div>
