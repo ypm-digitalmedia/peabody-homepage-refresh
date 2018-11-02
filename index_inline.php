@@ -338,6 +338,29 @@ $randomtwo = $_SESSION['randomtwo'];
 
 			<!-- BEGIN CARDS -->
 
+			<!-- CARD 5 -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event5">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/bass_lecture_webcard_2108-10-18-mini.jpg'); background-position: left;">
+						<div class="front-content">
+							<h2 class="box-header">The Battle for the Soul of Biodiversity</h2>
+							<h5 class="box-date box-date-right">Wednesday, November 14, 5 pm</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>Special Lecture</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit5_heading_back">The Battle for the Soul of Biodiversity</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_subheading_back">A conversation with Eleanor Sterling &amp; Tom Lovejoy</h5>
+							<hr />
+							<p>Presented by the Edward P. Bass Distinguished Scholars Forum. The event is free and open to the public but seats are limited; please register in advance. Free cocktail reception to follow.</p>
+							<p>Wednesday, November 14, 5 pm</p>
+							<p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/the-battle-for-the-soul-of-biodiversity-a-conversation-with-eleanor-sterling-tom-lovejoy-tickets-52152202642" role="button" title="More info: The Battle for the Soul of Biodiversity" aria-label="More info: The Battle for the Soul of Biodiversity">Info &amp; Tickets</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+
 			<!-- CARD 8 -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event8">
@@ -406,7 +429,7 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 
 			<!-- CARD 6 -->
-			<div class="col-md-6">
+			<div class="col-md-6" style="display: none">
 				<div class="box-item box" id="card_event6">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
 						<div class="front-content">
