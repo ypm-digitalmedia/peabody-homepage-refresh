@@ -338,98 +338,33 @@ $randomtwo = $_SESSION['randomtwo'];
 
 			<!-- BEGIN CARDS -->
 
-			<!-- CARD 5 -->
-			<div class="col-md-6">
-				<div class="box-item box" id="card_event5">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/bass_lecture_webcard_2108-10-18-mini.jpg'); background-position: left;">
-						<div class="front-content">
-							<h2 class="box-header">The Battle for the Soul of Biodiversity</h2>
-							<h5 class="box-date box-date-right">Wednesday, November 14, 5 pm</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header"><strong>Special Lecture</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit5_heading_back">The Battle for the Soul of Biodiversity</h3>
-							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit5_subheading_back">A conversation with Eleanor Sterling &amp; Tom Lovejoy</h5>
-							<hr />
-							<p>Presented by the Edward P. Bass Distinguished Scholars Forum. The event is free and open to the public but seats are limited; please register in advance. Free cocktail reception to follow.</p>
-							<p>Wednesday, November 14, 5 pm</p>
-							<p class="button-row"><a data-link-parent="card_event5" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/the-battle-for-the-soul-of-biodiversity-a-conversation-with-eleanor-sterling-tom-lovejoy-tickets-52152202642" role="button" title="More info: The Battle for the Soul of Biodiversity" aria-label="More info: The Battle for the Soul of Biodiversity">Info &amp; Tickets</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
 
-			<!-- CARD 8 -->
-			<div class="col-md-6">
-				<div class="box-item box" id="card_event8">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Todd_McLeish_2018_Webcard-mini.jpg'); background-position: center;">
-						<div class="front-content">
-							<h2 class="box-header">Evening Lecture</h2>
-							<h5 class="box-date box-date-right">Thursday, November 15, 5:30 pm</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header"><strong>Evening Lecture</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit8_heading_back">Return of the Sea Otter</h3>
-							<hr />
-							<p>Join science writer Todd McLeish as he recounts tales of his journeys from California to Alaska to track the status, health, habits, and viability of sea otters from his book <em>Return of the Sea Otter: The Story of the Animal That Evaded Extinction on the Pacific Coast</em>.</p>
-							<p>Thursday, November 15, 5:30 pm</p>
-							<p class="button-row"><a data-link-parent="card_event8" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/ostrom-talk/return-sea-otter" role="button" title="More info: Ostrom Lecture with Todd McLeish" aria-label="More info: Ostrom Lecture with Todd McLeish">More Info</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
 
-			<!-- CARD 9 -->
+			<!-- CARD 1  -->
 			<div class="col-md-6">
-				<div class="box-item box" id="card_event9">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Roger_Colten_Gallery_2018_webcard-mini.jpg'); background-position: center;">
+				<div class="box-item box" id="card_event1_alt">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/MLK_web_card_2018-11-19-mini.jpg'); background-position: left;">
 						<div class="front-content">
-							<h2 class="box-header">Gallery Talk</h2>
-							<h5 class="box-date box-date-right">Thursday, November 15, 4 pm</h5>
+							<h2 class="box-header">2019 MLK Day</h2>
+							<h5 class="box-date box-date-right">Sunday &amp; Monday, January 20 &amp; 21</h5>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
-							<h5 class="box-header"><strong>Gallery Talk</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit9_heading_back">Flaked Stone Tools</h3>
-							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit9_subheading_back">The World's Oldest Preserved Technology</h5>
+							<h5 class="box-header"><strong>23nd Annual Celebration</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_alt_heading_back">Dr. Martin Luther King, Jr.'s</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_alt_subheading_back">Legacy of Environmental &amp; Social Justice 2019</h5>
 							<hr />
-							<p>Join Senior Collections Manager Roger Colten in a discussion about the patterns of flaked stone tool technology from Africa and Europe, with examples from our collections and insights in differences between rocks from artifacts.</p>
-							<p>Thursday, November 15, 5:30 pm</p>
-							<p class="button-row"><a data-link-parent="card_event9" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/museum-talk/flaked-stone-tools" role="button" title="More info: Gallery Talk with Roger Colten" aria-label="More info: Gallery Talk with Roger Colten">More Info</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<!-- CARD 1 -->
-			<div class="col-md-6">
-				<div class="box-item box" id="card_event1">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/dinosnore_web_card-mini.jpg'); background-position: right;">
-						<div class="front-content">
-							<h2 class="box-header">Dino-Snore Sleepover</h2>
-							<h5 class="box-date box-date-right">Saturday &ndash; Sunday, November 17 &ndash; 18</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header"><strong>Family Night</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit1_heading_back">Dino-Snore Sleepover</h3>
-							<hr />
-							<p>Grab your pajamas and sleeping bags and head down to the Peabody for a night under the dinosaurs you and your kids will never forget!</p>
-							<p>Saturday, November 17 &ndash; Sunday, November 18<br />6 pm &ndash; 10 am</p>
-							<p class="button-row"><a data-link-parent="card_event1" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/peabody-museum-dino-snore-sleepover-tickets-52061548493" role="button" title="More info: Dino-Snore Sleepover" aria-label="More info: Dino-Snore Sleepover">Tickets &amp; Info</a></p>
+							<p>Join us for our 23nd annual 2-day celebration, including music &amp; dance, hands-on activities, professional poetry slam and much more!</p>
+							<p>Sunday &amp; Monday, January 20 &amp; 21</p>
+							<p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/dr-martin-luther-king-jrs-legacy-environmental-and-social-justice" role="button" title="More info: Dr. Martin Luther King, Jr.'s Legacy of Environmental & Social Justice 2018" aria-label="More info: Dr. Martin Luther King, Jr.'s Legacy of Environmental & Social Justice 2018">More Info</a></p>
 						</div>
 					</figure>
 				</div>
 			</div>
 
 			<!-- CARD 6 -->
-			<div class="col-md-6" style="display: none">
+			<div class="col-md-6">
 				<div class="box-item box" id="card_event6">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
 						<div class="front-content">
@@ -599,7 +534,7 @@ $randomtwo = $_SESSION['randomtwo'];
 						<div class="back-content">
 							<h5 class="event-back-heading" rel="card">Birthday Parties</h5>
 							<p>Join us for a birthday party your child will remember at one of the premier university natural history museums in the world. </p>
-							<p><strong>NOTE:</strong> Birthday parties resume in September.</p>
+							<!--							<p><strong>NOTE:</strong> Birthday parties resume in September.</p>-->
 							<a href="http://peabody.yale.edu/education/birthday-parties" title="Request a birthday party" aria-label="Request a birthday party" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
 						</div>
 					</figure>
