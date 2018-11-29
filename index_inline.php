@@ -338,7 +338,28 @@ $randomtwo = $_SESSION['randomtwo'];
 
 			<!-- BEGIN CARDS -->
 
-
+			<!-- CARD 2  -->
+			<div class="col-md-6">
+				<div class="box-item box" id="card_event2_alt">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Bones_Cheer_iceage_webcard-mini.jpg'); background-position: center;">
+						<div class="front-content">
+							<h2 class="box-header">Bones &amp; Cheer</h2>
+							<h5 class="box-date box-date-right">Saturday, December 8, 6&ndash;9 pm</h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header"><strong>The Beer Collective and Yale Peabody Museum Present</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit2_alt_heading_back">Bones &amp; Cheer</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit2_alt_subheading_back">Ice Age Edition</h5>
+							<hr />
+							<p>Featuring food from Olmo and a selection of local brews and cider curated by The Beer Collective. Ticket price includes THREE 12oz. drafts and unlimited nonalcoholic beverages. <strong>This is a 21+ event.</strong></p>
+							<p>Saturday, December 8, 6&ndash;9 pm</p>
+							<p class="button-row"><a data-link-parent="card_event2_alt" class="btn btn-peabody back-link" href="https://www.eventbrite.com/e/bones-cheer-ice-age-edition-tickets-52724084155" role="button" title="Buy Tickets: Bones & Cheer Ice Age Edition" aria-label="Buy Tickets: Bones & Cheer Ice Age Edition">Buy Tickets</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
 
 			<!-- CARD 1  -->
 			<div class="col-md-6">
@@ -364,7 +385,7 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 
 			<!-- CARD 6 -->
-			<div class="col-md-6">
+			<div class="col-md-6" style="display: none">
 				<div class="box-item box" id="card_event6">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
 						<div class="front-content">
