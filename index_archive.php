@@ -1,3 +1,16 @@
+<?php header("access-control-allow-origin: *"); ?>
+
+
+<?php  
+session_start(); 
+if(!isset($_SESSION['random'])){  
+     $_SESSION['randomone'] = mt_rand(100000, 999999);  
+     $_SESSION['randomtwo'] = mt_rand(100000, 999999);  
+}  
+$randomone = $_SESSION['randomone'];  
+$randomtwo = $_SESSION['randomtwo'];  
+?>
+
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -8,18 +21,18 @@
 
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">  -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 	<!-- <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"> -->
 	<meta charset="utf-8">
 	<title>Yale Peabody Museum of Natural History</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
 	<link rel="shortcut icon" href="http://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
-	<!--    <link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.min.css" />-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="slick/slick.css" />
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/bootstrap-dialog.css" />
+	<!--	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/fonts/fontAwesome5/css/font-awesome.d6.css" />-->
+	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/fonts/fontAwesome5/css/all.d6.css" />
+	<link rel="stylesheet" type="text/css" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/slick/slick.css" />
+	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/css/bootstrap-dialog.css" />
 	<style>
 		body {
 			padding-top: 50px;
@@ -27,11 +40,11 @@
 		}
 
 	</style>
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css" />
-	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="css/main.css?1" />
+	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/css/fonts_d6.css" />
+	<?php echo '<link rel="stylesheet" href="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/css/main.css?v=' . $randomone . '" />'; ?>
 
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
@@ -49,8 +62,8 @@
 
 	<header>
 		<div class="container">
-			<a href="http://peabody.yale.edu" title="Peabody Museum: Home" aria-label="Peabody Museum: Home"><img src="img/torosaurus.png" width="275" class="toro" />
-                <img class="wordmark" src="img/peabodyWordmarkSingle.png" /></a>
+			<a href="http://peabody.yale.edu" title="Peabody Museum: Home" aria-label="Peabody Museum: Home"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/torosaurus.png" width="275" class="toro" />
+                <img class="wordmark" src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/peabodyWordmarkSingle.png" /></a>
 		</div>
 	</header>
 
@@ -166,9 +179,9 @@
 							<li><a href="http://peabody.yale.edu/support/peabody-overview" title="Peabody Overview" aria-label="Peabody Overview">Peabody Overview</a></li>
 							<li><a href="http://peabody.yale.edu/members/1866-society" title="1866 Society" aria-label="1866 Society">1866 Society</a></li>
 							<li><a href="http://peabody.yale.edu/members/peabody-museum-charitable-donation-policy" title="Charitable Donation Policy" aria-label="Charitable Donation Policy">Charitable Donation Policy</a></li>
+
 						</ul>
 					</li>
-					<li class="no-dropdown"><a href="https://shop.peabody.yale.edu/#/Retail/" title="Peabody Musuem Online Store" aria-label="Peabody Musuem Online Store" class="no-dropdown-link">Store</a></li>
 				</ul>
 			</div>
 			<!--/.navbar-collapse -->
@@ -183,28 +196,28 @@
 				<div class="theSlider" id="theSlider">
 					<!-- BEGIN SLIDER ITEMS -->
 					<div class="item">
-						<img src="img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby" aria-label="Giant Squid in Lobby">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby" aria-label="Giant Squid in Lobby">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama" aria-label="Jungle Diorama">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama" aria-label="Jungle Diorama">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
 					</div>
 					<div class="item">
-						<img src="img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
+						<img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
 					</div>
 					<!-- END SLIDER ITEMS -->
 				</div>
@@ -227,10 +240,10 @@
 								</td>
 								<td>
 									<p style="padding-top: 5px;">
-										<strong>November 2, 2018</strong>
+										<strong>MLK Day: Monday 1/21</strong>
 										<span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
 									</p>
-									<p class="slider-alert-text">David Friend Hall will be closed from 12&ndash;2 pm.</p>
+									<p class="slider-alert-text">Due to inclement weather, we will be opening at 12pm and extending MLK Day activities through 5pm.</p>
 								</td>
 							</tr>
 						</table>
@@ -273,22 +286,22 @@
 	<div class="container" id="icons">
 		<div class="row">
 			<div class="col-sm-2 hidden-xs icon-container-col">
-				<p align="center" class="icon-container"><img src="img/icons/icon_ent01.png"></p>
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_ent01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="img/icons/icon_inv01.png"></p>
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_inv01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="img/icons/icon_vp01.png"></p>
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_vp01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="img/icons/icon_bot01.png"></p>
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_bot01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="img/icons/icon_inv02.png"></p>
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_inv02.png"></p>
 			</div>
 			<div class="col-sm-2 hidden-xs icon-container-col">
-				<p align="center" class="icon-container"><img src="img/icons/icon_ant01.png"></p>
+				<p align="center" class="icon-container"><img src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/icons/icon_ant01.png"></p>
 			</div>
 		</div>
 		<!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
@@ -328,20 +341,21 @@
 			<!-- CARD 1  -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event1_alt">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('img/cards/events_exhibitions/Peabody_Naturalists_1-mini.jpg'); background-position: center;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/MLK_web_card_2018-11-19-mini.jpg'); background-position: left;">
 						<div class="front-content">
-							<h2 class="box-header">2019 Summer Camps</h2>
-							<h5 class="box-date box-date-right">Registration Opens Soon</h5>
+							<h2 class="box-header">2019 MLK Day</h2>
+							<h5 class="box-date box-date-right">Sunday &amp; Monday, January 20 &amp; 21</h5>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
-							<h5 class="box-header"><strong>Registration Opens Soon</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_alt_heading_back">2019 Summer Camps</h3>
+							<h5 class="box-header"><strong>23nd Annual Celebration</strong></h5>
+							<h3 class="left plain-case mallory-thin exhibit-heading compress-h3" id="exhibit1_alt_heading_back">Dr. Martin Luther King, Jr.'s</h3>
+							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit1_alt_subheading_back">Legacy of Environmental &amp; Social Justice 2019</h5>
 							<hr />
-							<p>Our fun and educational summer camps are real family favorites! With a wide selection of themes and dates, for children entering grades 1-7, you are sure to find an incredible experience for your child here at the Peabody.  Don't wait, these camps fill up quickly!</p>
-							<p>Registration for Museum Members opens on Monday, February 4 at 9 AM.</p>
-							<p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/camps" role="button" title="More info: 2019 Summer Camps" aria-label="More info: 2019 Summer Camps">More Info</a></p>
+							<p>Join us for our 23nd annual 2-day celebration, including music &amp; dance, hands-on activities, professional poetry slam and much more!</p>
+							<p>Sunday &amp; Monday, January 20 &amp; 21</p>
+							<p class="button-row"><a data-link-parent="card_event1_alt" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/dr-martin-luther-king-jrs-legacy-environmental-and-social-justice" role="button" title="More info: Dr. Martin Luther King, Jr.'s Legacy of Environmental & Social Justice 2018" aria-label="More info: Dr. Martin Luther King, Jr.'s Legacy of Environmental & Social Justice 2018">More Info</a></p>
 						</div>
 					</figure>
 				</div>
@@ -350,7 +364,7 @@
 			<!-- CARD 8 -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event8">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('img/cards/events_exhibitions/Ostrom_Weintraub eventcard_Winter_2019-mini.jpg'); background-position: left;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Ostrom_Weintraub eventcard_Winter_2019-mini.jpg'); background-position: left;">
 						<div class="front-content">
 							<h2 class="box-header">Evening Lecture</h2>
 							<h5 class="box-date box-date-right">Thursday, January 31, 5:30 pm</h5>
@@ -370,33 +384,10 @@
 				</div>
 			</div>
 
-			<!-- CARD 5 -->
-			<div class="col-md-6">
-				<div class="box-item box" id="card_event6">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('img/cards/events_exhibitions/Tropical_Vaction_Family_webcard_2019-mini.jpg'); background-position: center;">
-						<div class="front-content">
-							<h2 class="box-header">Tropical Vacation at the Peabody!</h2>
-							<h5 class="box-date box-date-right">Register Now</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header"><strong>February School Break Programs</strong></h5>
-							<h3 class="left plain-case mallory-thin exhibit-heading" id="exhibit6_heading_back">Tropical Vacation at the Peabody!</h3>
-							<hr/>
-							<p>Shake off the winter chill and spend Presidents’ Day weekend with us on a trip to the tropics!  Discover the Museum’s hidden collection of tropical wonders in this family-friendly weekend at the Peabody.</p>
-							<p>February 16&ndash;18, 2019</p>
-							<p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="http://peabody.yale.edu/events/tropical-vacation-peabody" role="button" title="More info: Tropical Vacation at the Peabody!" aria-label="More info: Tropical Vacation at the Peabody!">More Info</a>
-							</p>
-						</div>
-					</figure>
-				</div>
-			</div>
-
 			<!-- CARD 6 -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event6">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/YPM_NSI_EventCard_2017-mini.jpg'); background-position: center;">
 						<div class="front-content">
 							<h2 class="box-header">Adult Art Classes</h2>
 							<h5 class="box-date box-date-right">Register Now</h5>
@@ -419,7 +410,7 @@
 			<!-- CARD 2 -->
 			<div class="col-md-6">
 				<div class="box-item box" id="card_event2">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('img/cards/events_exhibitions/artists_eye_web_cardREV-mini.jpg'); background-position: left;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/artists_eye_web_cardREV-mini.jpg'); background-position: left;">
 						<div class="front-content">
 							<h2 class="box-header">The Artist's Eye: Figurines of the Paleolithic</h2>
 							<h5 class="box-date box-date-right">On View Now</h5>
@@ -440,9 +431,9 @@
 			</div>
 
 			<!-- CARD 3 -->
-			<div class="col-md-6">
+			<div class="col-md-6" style="display: none">
 				<div class="box-item box" id="card_event3">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
+					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
 						<div class="front-content">
 							<h2 class="box-header">California Gold</h2>
 							<h5 class="box-date box-date-right">On View Now</h5>
@@ -479,7 +470,7 @@
 		<div class="row card-row" id="actionsRow1">
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta1">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
 						<div class="front-content">
 							<h2 class="box-header">Visit</h2>
 						</div>
@@ -496,7 +487,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta2">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
 						<div class="front-content">
 							<h2 class="box-header">Yale Students</h2>
 						</div>
@@ -519,7 +510,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta3">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
 						<div class="front-content">
 							<h2 class="box-header">Collections &amp; Research</h2>
 						</div>
@@ -538,7 +529,7 @@
 		<div class="row card-row" id="actionsRow2">
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta4">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_GROUPSALES_SCHOOL-GROUPVISITS_HOMEPAGE.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_GROUPSALES_SCHOOL-GROUPVISITS_HOMEPAGE.jpg'); background-position:center;">
 						<div class="front-content">
 							<h2 class="box-header">School &amp; Group Visits</h2>
 						</div>
@@ -555,7 +546,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta5">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_GROUPSALES_BIRTHDAYPARTIES_DINOSAUR-DISCOVERY.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_GROUPSALES_BIRTHDAYPARTIES_DINOSAUR-DISCOVERY.jpg'); background-position:center;">
 						<div class="front-content">
 							<h2 class="box-header">Birthday Parties</h2>
 						</div>
@@ -573,7 +564,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta6">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_MEMBERSHIP_HOMEPAGE.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_MEMBERSHIP_HOMEPAGE.jpg'); background-position:center;">
 						<div class="front-content">
 							<h2 class="box-header">Become a Member</h2>
 						</div>
@@ -592,7 +583,7 @@
 		<div class="row card-row" id="actionsRow3">
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta7">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CARD_RETAIL_HOMEPAGE_WG_2018.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CARD_RETAIL_HOMEPAGE_WG_2018.jpg'); background-position:center;">
 						<div class="front-content">
 							<h2 class="box-header">Museum Store</h2>
 						</div>
@@ -611,7 +602,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta8">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
 						<div class="front-content">
 							<h2 class="box-header">Connect</h2>
 						</div>
@@ -655,7 +646,7 @@
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta9">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('http://sprout027.sprout.yale.edu/peabody-homepage-refresh/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
 						<div class="front-content">
 							<h2 class="box-header">Support</h2>
 						</div>
@@ -671,6 +662,7 @@
 			</div>
 		</div>
 
+		<!--<hr />-->
 
 
 		<!-- Hours & Admission -->
@@ -747,17 +739,16 @@
 	</div>
 	<!-- /container -->
 
-	<script src="js/vendor/jquery-1.11.2.min.js"></script>
-	<script src="js/vendor/lodash.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/vendor/bootstrap-dialog.js"></script>
-	<script src="js/vendor/jquery.mobile-events.js"></script>
-	<script src="js/vendor/moment.js"></script>
-	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/lodash.min.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/bootstrap.min.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/bootstrap-dialog.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/jquery.mobile-events.js"></script>
+	<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/vendor/moment.js"></script>
+	<script type="text/javascript" src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/slick/slick.min.js"></script>
 
 
-
-	<script src="js/main.js?1"></script>
+	<?php echo '<script src="http://sprout027.sprout.yale.edu/peabody-homepage-refresh/js/main.js?v=' . $randomtwo . '"></script>'; ?>
 
 </body>
 
