@@ -1,7 +1,7 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
 var show_alert = true;
-var show_alert_until = '2018-11-02'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
+var show_alert_until = '2019-10-26'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
 
 var show_evolved_banner = false;
 
@@ -161,7 +161,7 @@ var data_eventCards = [{
 // PEABODY EVOLVED BANNER
 var data_renoBanner = {
 	shown: show_evolved_banner,
-	text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='http://peabodyevolved.yale.edu' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
+	text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='https://peabodyevolved.yale.edu' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
 };
 
 /* =========================== END CUSTOMIZATIONS  ================================= */
@@ -177,6 +177,11 @@ if (location.host.toString().indexOf("sprout027.sprout.yale.edu") > -1) {
 } else if (location.host.toString().indexOf("localhost:8888") > -1) {
 	// console.log("you are on localhost (port 8888).");
 	// use siteRoot = localhost
+	var siteRoot = "http://localhost:8888/";
+} else if (location.host.toString().indexOf("localhost:8080") > -1) {
+	// console.log("you are on localhost (port 8888).");
+	// use siteRoot = localhost
+	var siteRoot = "http://localhost:8080/";
 } else if (location.host.toString().indexOf("peabody.yale.edu") > -1) {
 
 
@@ -187,15 +192,15 @@ if (location.host.toString().indexOf("sprout027.sprout.yale.edu") > -1) {
 
 
 	$(".slider-alert-text").css("font-size", "14px!important");
-
+	var siteRoot = "https://peabody.yale.edu/sites/default/files/2017/frontpage/";
 
 } else {
 	// console.log("you are lost.")
 	// use siteRoot = localhost
 }
 
-var siteRoot = "http://sprout027.sprout.yale.edu/peabody-homepage-refresh/";
-
+//var siteRoot = "http://sprout027.sprout.yale.edu/peabody-homepage-refresh/";
+//var siteRoot = "http://peabody.yale.edu/sites/default/files/2017/frontpage/";
 
 /* =========================== END CUSTOMIZATIONS ================================= */
 
@@ -225,7 +230,8 @@ $(document).ready(function () {
 
 	// console.log(isMobile ? "MOBILE DEVICE" : "DESKTOP DEVICE");
 
-
+	$("#countdown").html(countdown( new Date('2020-07-01'), null, countdown.DAYS).toString());
+	
 	$('.theSlider').slick({
 		dots: false,
 		infinite: true,
@@ -373,19 +379,19 @@ $(document).ready(function () {
 	});
 	// console.log(fliplocks);
 
-	$("#contactForm").submit(function (e) {
-		e.preventDefault();
-		if (formLock === false) {
-			submitForm();
-		} else {
-			BootstrapDialog.show({
-				title: 'Please wait',
-				message: 'You have recently submitted an email signup request.  Please try again shortly.',
-				type: 'type-warning'
-			});
-		}
-		return false;
-	});
+//	$("#contactForm").submit(function (e) {
+//		e.preventDefault();
+//		if (formLock === false) {
+//			submitForm();
+//		} else {
+//			BootstrapDialog.show({
+//				title: 'Please wait',
+//				message: 'You have recently submitted an email signup request.  Please try again shortly.',
+//				type: 'type-warning'
+//			});
+//		}
+//		return false;
+//	});
 
 
 
@@ -536,7 +542,7 @@ function emailValid() {
 
 
 function submitForm() {
-
+/*
 	// take in form variables
 	// send to signup.php
 	// send email
@@ -585,6 +591,9 @@ function submitForm() {
 			console.log("form submit: request finished");
 		});
 
+alert("Sorry, something is wrong with this form.  Don't worry!  You can still send an email to peabody.webmaster AT yale.edu if you would like to join our mailing list!");
+
 	$("#contactForm").find("input[type=text]").val("");
 	return false;
+*/
 }

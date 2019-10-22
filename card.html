@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Card Editor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	
+<script type="text/javascript" src="js/vendor/lodash.min.js"></script>
+<script type="text/javascript" src="js/vendor/beautify.js"></script>
+<script type="text/javascript" src="js/vendor/beautify-css.js"></script>
+<script type="text/javascript" src="js/vendor/beautify-html.js"></script>
+	
+	
+	
+  <style type="text/css">
+	
+	  h1, h2, h3, h4, h5, h6, strong, label {
+		  font-family: "Mallory Bold";
+		  text-transform: uppercase;
+	  }
+	  
+	  a {
+		  font-family: "Mallory MP Medium";
+	  }
+	  
+	  p {
+		  font-family: "Mallory MP Light";
+	  }
+	  
+	  #input {
+		  background-color: #eee;
+	  }
+	  
+	  .btn {
+			visibility: visible;
+			background-color: #6788b2;
+			font-family: "Mallory Bold";
+			color: white;
+			text-decoration: none;
+			font-size: 1.25em;
+			padding: 0.25em 0.5em;
+			text-transform: uppercase;
+			border: 0px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		.btn:hover, .btn:focus, .btn:active {
+			background-color: slategray;
+			color: white;
+		}
+	  
+	  textarea {
+		  width: 100%;
+		  height: 400px;
+		  overflow-y: scroll;
+		  font-family: 'Courier New',monospace!important;
+	  }
+	  
+	  .find {
+		  background-color: salmon;
+		  color: red;
+		  font-weight: bold;
+	  }
+	  
+	  .replace {
+		  background-color: darkseagreen;
+		  color: darkgreen;
+		  font-weight: bold;
+	  }
+	
+	  .fade-color {
+		  -webkit-animation-name: fader; /* Safari 4.0 - 8.0 */
+		  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+		  animation-name: fader;
+		  animation-duration: 2s;
+		  animation-iteration-count: 1;
+	  }
+	  
+	  @-webkit-keyframes fader {
+		  from {background-color: palegreen;}
+		  to {background-color: white;}
+		}
+	  @keyframes fader {
+		  from {background-color: palegreen;}
+		  to {background-color: white;}
+		}
+	  
+	</style>
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+<body>
+
+<div class="jumbotron text-center">
+<h1>Card Editor</h1>
+<p><a href="localhost:8888/node/add/card" target="_blank">CREATE A CARD</a></p> 
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6">
+			<h3 align="center">Input Card HTML</h3>
+			<textarea id="input" placeholder="PASTE CODE HERE"></textarea>
+		</div>
+		<div class="col-sm-6">
+			<h3 align="center">Output Card HTML</h3>
+			<textarea id="output" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+		</div>
+	</div>
+</div>
+	
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12">&nbsp;</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">&nbsp;</div>
+	</div>
+	<div class="row">
+		<div id="cardRender" class="card-row"></div>
+		<div class="col-md-6" id="instructions"></div>
+	</div>
+</div>
+
+
+	
+	
+	
+		
+<script type="text/javascript">
+	
+var fadeToBack;
+var fliplocks = {};	
+var locked_card = null;
+	
+	var i = "";
+	var o = "";
+	
+	$(document).ready(function() {
+		$("#input").focus();
+		
+		$("#input").on("change keyup blur",function() {
+			$("#instructions").html("");
+			
+			i = $("#input").val().replace(/&quot;/gi,"'");
+			
+			// <h4>		=>		<h5>
+			o = i.replace(/(<\s*\/?\s*)h4(\s*([^>]*)?\s*>)/gi ,'$1h5$2');
+			
+			
+			// <h3>		=>		<h2> (1st instance ONLY)
+			var nth = 0;
+			o = o.replace(/<h3 class="box-header">/gi ,function(match, i, original) {
+				nth++;
+				return (nth === 1) ? '<h2 class="box-header">' : match;
+			});
+			
+			
+			
+			nth = 0;
+			o = o.replace(/<\/h3>/gi ,function(match, i, original) {
+				nth++;
+				return (nth === 1) ? '</h2>' : match;
+			});
+			
+			// <strong>	=>		<h5>
+			o = o.replace(/(<\s*\/?\s*)strong(\s*([^>]*)?\s*>)/gi ,'$1h5$2');
+			
+			// manual edits
+			o = o.replace(/opacity: 0;/g, '');
+			o = o.replace(/opacity: 1;/g, '');
+			o = o.replace(/<hr>/g, '<hr />');
+			o = o.replace(/<hr>/g, '<hr />');
+			o = o.replace(/<svg/g, '<svg style="width: 14px"');
+			o = o.replace(/\/sites\/default\/files\/cards\//g,"https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/");
+			o = o.replace(/exhibit-heading/g,"exhibit-heading compress-h3");
+			o = o.replace(/style=""/g,"");
+			
+			$("#output").html(html_beautify(o));
+			$("#input").val(html_beautify(i));
+			
+			$("#cardRender").html($("#output").val());
+//			$("#output").focus().select();
+			$("#instructions").html("<h3>Hit COPY</h3>");
+			
+			
+			$(".box-item").each(function () {
+				var card = $(this).attr("id");
+				fliplocks[card] = false;
+			});
+			
+			$(".box-item").mouseover(function () {
+				fadeToBack($(this));
+			});
+			
+			$(".box-items").on("click", function (event) {
+
+				var target = $(event.target);
+
+				if (target.not("[rel=card]")) {
+					event.preventDefault();
+				}
+
+				var card = $(this).attr("id");
+
+				// console.error(card)
+
+				//check to see if user has clicked a link inside a card
+				var isLink = target.attr('data-link-parent');
+				var isForm = target.attr('data-form-parent');
+				if (typeof isLink !== typeof undefined && isLink !== false) {
+					// CLICKED ON A LINK
+					// console.warn("THIS IS A LINK", target);
+					var link = target.attr("href");
+
+					// IS THIS LINK HIDDEN FROM VIEW?
+					if (!locked_card || locked_card != card) {
+						// console.log("this card is not already shown.  flip to back.");
+						fadeToBack($(this));
+						locked_card = card;
+					} else {
+						// console.log("this card is already shown.  resolve URL.")
+						document.location = link;
+					}
+
+				} else if (typeof isForm !== typeof undefined && isForm !== false) {
+					// console.warn("YOU CLICKED ON A FORM ELEMENT");
+					$(this).focus();
+				} else {
+					// console.log("not a link", target);
+					// CLICKED ON AN INERT PART OF THE CARD
+					if (!locked_card || locked_card != card) {
+						// console.log("this card is not already shown.  flip to back.");
+						fadeToBack($(this));
+						locked_card = card;
+					} else {
+						if (target.is(".back-submit")) {
+							console.warn("submit!")
+						} else {
+							locked_card = null;
+							fadeToFront();
+						}
+					}
+				}
+
+			});
+
+			// var fadeTimeout;
+			$("body").on("click", function (event) {
+
+				var target = $(event.target);
+				// console.log(target);
+
+				if (target.not(".card-row") || target.parents('.card-row').length < 1) {
+					// clearTimeout(fadeTimeout);
+					// $("body").addClass("colorchange");
+					// fadeTimeout = setTimeout(function() {
+					//     $("body").removeClass("colorchange");
+					// }, 5000);
+					locked_card = null;
+					fadeToFront();
+				}
+
+			});
+
+			
+		});
+		
+		
+			// =================================== FADE ANIMATIONS - CURRENT =========================================
+
+		var fadeToBack = _.throttle(function (e) {
+			var card = $(e).attr("id");
+
+			if (locked_card == card) {
+				// console.log("DENIED | locked card: " + card);
+			} else {
+				locked_card = card;
+				// console.log("SWITCHING locked card: " + card);
+
+				$(e).addClass("shadow");
+				$(e).addClass("faded");
+				$(e).find(".front").css("opacity", 0);
+				$(e).find(".back").css("opacity", 1);
+
+				$(".faded").not(e).find(".front").css("opacity", 1);
+				$(".faded").not(e).find(".back").css("opacity", 0);
+				$(".faded").not(e).removeClass("shadow");
+
+			}
+
+		}, 100);
+
+		// var fadeToFront = _.debounce(function(e) {
+		//     $(e).removeClass("shadow");
+		//     $(e).removeClass("faded");
+		//     $(e).find(".front").css("opacity", 1);
+		//     $(e).find(".back").css("opacity", 0);
+		// }, 0);
+
+		function fadeToFront() {
+			$(".faded").find(".front").css("opacity", 1);
+			$(".faded").find(".back").css("opacity", 0);
+			$(".faded").removeClass("shadow");
+		}
+		
+		
+
+		
+	});
+
+	
+	
+	function copyToClipboard(elementId) {
+
+	  // Create an auxiliary hidden input
+	  var aux = document.createElement("input");
+		
+		var t = html_beautify(document.getElementById(elementId).value)
+		
+		
+	  // Get the text from the element passed into the input
+	  aux.setAttribute("value", html_beautify(t));
+
+	  // Append the aux input to the body
+	  document.body.appendChild(aux);
+
+	  // Highlight the content
+	  aux.select();
+
+	  // Execute the copy command
+	  document.execCommand("copy");
+		
+		console.warn(html_beautify(t));	
+
+	  // Remove the input from the body
+	  document.body.removeChild(aux);
+		
+		
+		
+	}
+	
+	
+		
+	function selectIt(elementId) {
+
+	  // Create an auxiliary hidden input
+	  var aux = document.createElement("input");
+		
+		aux.select();
+		
+	}
+		
+	
+	
+	
+</script>
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
