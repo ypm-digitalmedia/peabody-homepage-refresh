@@ -72,7 +72,7 @@ $randomtwo = $_SESSION['randomtwo'];
 			<br />
 			<!-- NEW COVID-19 CLOSURE MESSAGE -->
 			<p align="center" class="static-header-alert-headline"><i class="fas fa-exclamation-triangle"></i>&nbsp;<strong>Notice to Visitors</strong>&nbsp;<i class="fas fa-exclamation-triangle"></i>
-				<br /><p style="text-align: center">The Peabody Museum is closed to the public until <strong>April 15.</strong><br /><br /><strong><a href="/about-us/updates/2020-03-12--covid-19">Click Here</a></strong> for a message from Director David Skelly.</p>
+				<br /><p style="text-align: center">The Peabody Museum is closed to the public until <strong>April 15 at the earliest.</strong><br /><br /><strong><a href="/about-us/updates/2020-03-12--covid-19">Click Here</a></strong> for a message from Director David Skelly.</p>
 			</p><hr /><p style="text-align: center">The Museum will be closed to the public for renovation starting <strong>July 1, 2020.</strong>&nbsp;<a href="https://peabodyevolved.yale.edu" target="_blank" style="font-size: 12px;" title="Peabody Evolved: Our Upcoming Transformative Renovation">Learn More</a></p>
 			<!-- END NEW COVID-19 CLOSURE MESSAGE -->
 			<!-- ORIGINAL CLOSURE MESSAGE -->
@@ -560,7 +560,7 @@ $randomtwo = $_SESSION['randomtwo'];
 		<div class="row">
 			<div class="col-md-12">
 				<p align="center" style="text-align: center">
-				<strong>NOTE:</strong> The Peabody Museum will be closed, and postponing or canceling all public events and tours until <strong>April 15th.</strong><br />
+				<strong>NOTE:</strong> The Peabody Museum will be closed, and postponing or canceling all public events and tours until <strong>April 15th at the earliest.</strong><br />
 					<a href="/about-us/updates/2020-03-12--covid-19" title="More info: Event and tour cancellation">More Info</a>
 				</p>
 				<p class="button-row"><a class="btn btn-peabody btn-lg" href="/events/upcoming-events" role="button" title="View Calendar"><i class="far fa-calendar-alt"></i> View Calendar</a></p>
@@ -786,7 +786,7 @@ $randomtwo = $_SESSION['randomtwo'];
 				<span id="tableDesc" class="sr-only">Peabody Museum Operating Hours</span>
 			</div>
 		</div>
-			<p style="text-align: center; background: yellow; padding:1em;"><strong>Closed Through April 15</strong></p>
+			<p style="text-align: center; background: yellow; padding:1em;"><strong>Closed Through April 15 at the earliest</strong></p>
 		<div class="row" style="color: #999; font-style: italic;">
 			<div class="col-xs-6" role="row">
 				<p style="text-align: right;">
