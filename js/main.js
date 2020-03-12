@@ -1,7 +1,7 @@
 /* =========================== BEGIN CUSTOMIZATIONS ================================= */
 
 var show_alert = true;
-var show_alert_until = '2019-10-26'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
+var show_alert_until = '2019-10-31'; // FORMAT 'YYYY-MM-DD' - Enter the last day it should be visible
 
 var show_evolved_banner = false;
 
@@ -161,7 +161,7 @@ var data_eventCards = [{
 // PEABODY EVOLVED BANNER
 var data_renoBanner = {
 	shown: show_evolved_banner,
-	text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='https://peabodyevolved.yale.edu' title='Peabody Evolved' aria-label='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
+	text: "<h2 class='blue-shadow'>We're evolving!</h2><p id='renoText' class='blue-shadow'>Visit <a href='https://peabodyevolved.yale.edu' title='Peabody Evolved'>Peabody Evolved</a> to learn more about the Peabody’s transformative renovation.</p>"
 };
 
 /* =========================== END CUSTOMIZATIONS  ================================= */
@@ -177,11 +177,10 @@ if (location.host.toString().indexOf("sprout027.sprout.yale.edu") > -1) {
 } else if (location.host.toString().indexOf("localhost:8888") > -1) {
 	// console.log("you are on localhost (port 8888).");
 	// use siteRoot = localhost
-	var siteRoot = "http://localhost:8888/";
-} else if (location.host.toString().indexOf("localhost:8080") > -1) {
+} else if (location.host.toString().indexOf("localhost:1234") > -1) {
 	// console.log("you are on localhost (port 8888).");
 	// use siteRoot = localhost
-	var siteRoot = "http://localhost:8080/";
+	var siteRoot = "http://localhost:1234/";
 } else if (location.host.toString().indexOf("peabody.yale.edu") > -1) {
 
 
@@ -194,13 +193,12 @@ if (location.host.toString().indexOf("sprout027.sprout.yale.edu") > -1) {
 	$(".slider-alert-text").css("font-size", "14px!important");
 	var siteRoot = "https://peabody.yale.edu/sites/default/files/2017/frontpage/";
 
+} else if(location.host.toString().indexOf("2-17-2020-yalesite703.pantheonsite.io") > -1) {
+	var siteRoot = "https://2-17-2020-yalesite703.pantheonsite.io/sites/default/files/2017/frontpage/";
 } else {
 	// console.log("you are lost.")
 	// use siteRoot = localhost
 }
-
-//var siteRoot = "http://sprout027.sprout.yale.edu/peabody-homepage-refresh/";
-//var siteRoot = "http://peabody.yale.edu/sites/default/files/2017/frontpage/";
 
 /* =========================== END CUSTOMIZATIONS ================================= */
 
@@ -215,6 +213,8 @@ var formTimeoutLength = 30000;
 var formTimeout;
 var formLock = false;
 var locked_card = null;
+
+var headerWarningShown = true;
 
 
 var mouseLeaveTimeout;
@@ -232,6 +232,37 @@ $(document).ready(function () {
 
 	$("#countdown").html(countdown( new Date('2020-07-01'), null, countdown.DAYS).toString());
 	
+	// $("#countdownGreatHall").html(countdown( new Date('2020-01-01'), null, countdown.DAYS).toString());
+	
+	$("#toggleCountdown").click(function() {
+		if( headerWarningShown ) {
+			$("#static-header-alert-content").slideUp();
+			$("#closureInfoHeading").css("display","inline-block");
+			$("#toggleCountdown").html("<i class='fas fa-chevron-down'></i> Show");
+			$(this).attr('aria-expanded', 'false');
+			headerWarningShown = false;
+		} else {
+			$("#static-header-alert-content").slideDown();
+			$("#closureInfoHeading").css("display","none");
+			$("#toggleCountdown").html("<i class='fas fa-times'></i> Hide");
+			$(this).attr('aria-expanded', 'true');
+			headerWarningShown = true;
+		}
+
+	});
+	
+	$('.theSlider').on('init', function(e, s){
+		setTimeout(
+			function(){
+				$('.slick-list').attr('aria-live', 'off');
+				$('.slick-track').attr('role', 'presentation');
+				$('#theSlider div.item').attr({'role': 'group', 'aria-roledescription': 'slide'});
+				$.each($('#theSlider div.item'), function(i){
+					$(this).attr({'role': 'group', 'aria-roledescription': 'slide', 'aria-label': 'Slide '+ (i+1) + ' of ' + $('#theSlider div.item').length});
+				})
+			}, 50);
+	});
+
 	$('.theSlider').slick({
 		dots: false,
 		infinite: true,
@@ -241,10 +272,15 @@ $(document).ready(function () {
 		cssEase: 'ease',
 		autoplay: true,
 		autoplaySpeed: 5000,
-		arrows: false,
+		arrows: true,
 		adaptiveHeight: false,
-		pauseOnFocus: false,
-		pauseOnHover: false
+		pauseOnFocus: true,
+		pauseOnHover: true,
+		accessibility: false,
+		nextArrow: '<button type="button" class="slick-next" aria-label="Next" aria-controls="theSlider"><i class="fas fa-angle-right"></i></button>',
+		prevArrow: '<button type="button" class="slick-prev" aria-label="Previous" aria-controls="theSlider"><i class="fas fa-angle-left"></i></button>',
+		appendDots: $('.dotsHolder'), 
+		appendArrows: $('.arrowsHolder')
 	});
 
 
@@ -378,8 +414,86 @@ $(document).ready(function () {
 		fliplocks[card] = false;
 	});
 	// console.log(fliplocks);
+	
+	
+	/*******MA A11Y Additions BEGIN*******************/
+	$(document).on('focusin', '.box-item .front, .box-item .back', function(i){
+		var side = $(this).hasClass('front') ? '.front' : '.back';
+		$(this).css('opacity', '1');
+		$(this).siblings(side).css('opacity', '0');
+	});
+	
+	$(document).on('focusout', '.box-item', function(i){
+		$(this).find('.front').css('opacity', '1');
+		$(this).find('.back').css('opacity', '0');
+	});
 
-//	$("#contactForm").submit(function (e) {
+	$('.box-item .front').attr('tabindex', '0');
+	$('.box-item .back').attr('role','none');
+	
+	
+	$('.btnHolder').append('<button id="slideCtrl" class="play-pause-btn pause" aria-label="Pause" aria-controls="theSlider"><i class="fas fa-pause"></i></button>');
+	
+	$(document).on('click', '#slideCtrl', function(e){
+		var slideAction = $('.theSlider').slick('slickGetOption', 'autoplay') ? 'slickPause' : 'slickPlay';
+		var slideLabel = (slideAction == 'slickPause') ? 'Play' : 'Pause';
+		$('.theSlider').slick(slideAction)
+		if(slideAction == 'slickPause'){ 
+			$('.theSlider').slick('slickSetOption', 'autoplay', false, false);
+			$('.slick-list').attr('aria-live', 'polite');
+		}else{
+			$('.theSlider').slick('slickSetOption', 'autoplay', true, false);
+			$('.slick-list').attr('aria-live', 'off');
+		}
+		$('#slideCtrl').attr('aria-label', slideLabel).find('i.fas').toggleClass('fa-pause fa-play');
+	});
+
+
+	$(document).on('keypress', '#slideCtrl', function(e){
+		var rightKeys = (e.keyCode == '13' || e.keyCode == '32') ? true : false;
+		if(rightKeys){
+			e.preventDefault();
+			e.stopPropagation();
+			$(this).click();
+		}
+	});
+	
+	$(document).on('mouseover focus', '.slick-prev, .slick-next', function(e){
+		$(this).parents('#slider').find('.slick-list').attr('aria-live', 'polite');
+		$('.theSlider').slick('slickPause');
+	}).on('mouseout blur', '.slick-prev, .slick-next', function(e){
+		if($('.theSlider').slick('slickGetOption', 'autoplay')){
+			$(this).parents('#slider').find('.slick-list').attr('aria-live', 'off');
+			$('.theSlider').slick('slickPlay');
+		}
+	});
+	
+	$('#evolved-banner').prepend('<button id="bgCtrl" class="play-pause-btn pause" aria-label="Pause Scrolling Background" aria-controls="evolved-banner-inner"><i class="fas fa-pause"></i></button>');
+	$(document).on('click', '#bgCtrl', function(){
+            var isPlaying = $(this).hasClass('pause') ? true : false;
+            if(isPlaying){
+                $('#evolved-banner-inner').css({'animation-name':'none', '-moz-animation-name':'none', '-webkit-animation-name':'none', '-o-animation-name':'none'});
+				$(this).attr('aria-label', 'Resume Scrolling Background');
+            }else{
+                $('#evolved-banner-inner').css({'animation-name':'MOVE-BG', '-moz-animation-name':'MOVE-BG', '-webkit-animation-name':'MOVE-BG', '-o-animation-name':'MOVE-BG'});
+				$(this).attr('aria-label', 'Pause Scrolling Background');
+            }
+            $(this).toggleClass('play pause');
+            $(this).find('i').toggleClass('fa-pause fa-play');
+	});
+	
+	$(document).on('keypress', '#bgCtrl', function(e){
+        var rightKeys = (e.keyCode == '13' || e.keyCode == '32') ? true : false;
+        if(rightKeys){
+            e.preventDefault();
+            e.stopPropagation();
+            $(this).click();
+        }
+    });
+	
+	/*******MA A11Y Additions END*******************/
+	
+//$("#contactForm").submit(function (e) {
 //		e.preventDefault();
 //		if (formLock === false) {
 //			submitForm();
@@ -590,6 +704,7 @@ function submitForm() {
 		.always(function () {
 			console.log("form submit: request finished");
 		});
+
 
 alert("Sorry, something is wrong with this form.  Don't worry!  You can still send an email to peabody.webmaster AT yale.edu if you would like to join our mailing list!");
 

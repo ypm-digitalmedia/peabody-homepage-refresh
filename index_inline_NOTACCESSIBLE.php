@@ -25,7 +25,7 @@ $randomtwo = $_SESSION['randomtwo'];
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="en">
+<html class="no-js" lang="">
 <!--<![endif]-->
 
 <head>
@@ -36,12 +36,12 @@ $randomtwo = $_SESSION['randomtwo'];
 	<title>Yale Peabody Museum of Natural History</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" href="/sites/default/files/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="https://peabody.yale.edu/sites/default/files/favicon.ico" type="image/x-icon" />
 	<!--	<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/fonts/fontAwesome5/css/font-awesome.d6_s.css" />-->
-	<link rel="stylesheet" href="/sites/default/files/2017/frontpage/fonts/fontAwesome5/css/all.d6_s.css" />
-	<link rel="stylesheet" type="text/css" href="/sites/default/files/2017/frontpage/slick/slick.css" />
-	<link rel="stylesheet" href="/sites/default/files/2017/frontpage/css/bootstrap.css" />
-	<link rel="stylesheet" href="/sites/default/files/2017/frontpage/css/bootstrap-dialog.css" />
+	<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/fonts/fontAwesome5/css/all.d6_s.css" />
+	<link rel="stylesheet" type="text/css" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/slick/slick.css" />
+	<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/css/bootstrap.css" />
+	<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/css/bootstrap-dialog.css" />
 	<style>
 		body {
 			padding-top: 50px;
@@ -49,9 +49,9 @@ $randomtwo = $_SESSION['randomtwo'];
 		}
 
 	</style>
-	<link rel="stylesheet" href="/sites/default/files/2017/frontpage/css/bootstrap-theme.css" />
-	<link rel="stylesheet" href="/sites/default/files/2017/frontpage/css/fonts_d6_s.css" />
-	<?php echo '<link rel="stylesheet" href="/sites/default/files/2017/frontpage/css/main.css?v=' . $randomone . '" />'; ?>
+	<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/css/bootstrap-theme.css" />
+	<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/css/fonts_d6_s.css" />
+	<?php echo '<link rel="stylesheet" href="https://peabody.yale.edu/sites/default/files/2017/frontpage/css/main.css?v=' . $randomone . '" />'; ?>
 	
 	<!-- use JS injector instead -->
 <!--	<script src="https://10.5.33.98/peabody-homepage-refresh/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>-->
@@ -62,149 +62,140 @@ $randomtwo = $_SESSION['randomtwo'];
 	<!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-	<div id="skipLinkContainer" role="complementary" aria-label="Skip Link"><a href="#main" class="skip-link">Skip to Main</a></div>
-	<div class="container-fluid static-header-alert" id="alertBox" role="complementary" aria-label="Exhibition Closing Message" style="position: inherit!important; min-height: 3.5em; background: yellow!important">
+	
+	<div class="container-fluid static-header-alert" style="position: inherit!important; min-height: 3.5em;">
 		<span style="clear: both;">
 			<p id="closureInfoHeading" align="center" style="display: none; text-align: left; margin: 0 auto; max-width: 70%; position:absolute; top: 5px; left: 5px; z-index: 900"><i class="fas fa-info-circle" aria-hidden="true"></i> <strong>Important Museum Closure Information</strong></p>
-			<button id="toggleCountdown" aria-label="Show/Hide Important Museum Closure Information" aria-haspopup="true" aria-expanded="true" style="position: absolute; top: 5px; right: 5px" aria-controls="alertBox"><i class="fas fa-times" aria-hidden="true"></i> Hide</button>
+			<button id="toggleCountdown" aria-label="Show/Hide Important Museum Closure Information" style="position: absolute; top: 5px; right: 5px"><i class="fas fa-times" aria-hidden="true"></i> Hide</button>
 		</span>
 		<div id="static-header-alert-content">
 			<br />
-			<!-- NEW COVID-19 CLOSURE MESSAGE -->
-			<p align="center" class="static-header-alert-headline"><i class="fa fa-heartbeat"></i>&nbsp;<strong>Yale Coronavirus (COVID-19) Response</strong>&nbsp;<i class="fa fa-heartbeat"></i>
-				<br /><p style="text-align: center">The Peabody Museum’s galleries are <strong>open.</strong><br />We are postponing or canceling all public events and tours until <strong>April 5th.</strong><br /><br /><strong><a href="/about-us/updates/2020-03-11--covid-19">Click Here</a></strong> for a message from Director David Skelly and check our calendar for programs that we will be broadcasting online.</p>
-			</p><hr /><p style="text-align: center">The Museum will be closed to the public for renovation starting <strong>July 1, 2020.</strong>&nbsp;<a href="https://peabodyevolved.yale.edu" target="_blank" style="font-size: 12px;" title="Peabody Evolved: Our Upcoming Transformative Renovation">Learn More</a></p>
-			<!-- END NEW COVID-19 CLOSURE MESSAGE -->
-			<!-- ORIGINAL CLOSURE MESSAGE -->
-<!--
 			<p align="center" class="static-header-alert-headline"><i class="far fa-clock"></i><strong id="countdown" style="padding-left: 0.25em"></strong> until our exhibitions close!
 				<br /><p style="text-align: center">The <strong>Dinosaur and Mammal Halls are already closed</strong>; all other galleries are open.</p><p style="text-align: center">The Museum will be closed to the public for renovation starting <strong>July 1, 2020.</strong></p>
 			</p>
 			<p align="center" style="font-size:12px; margin-bottom: 5px;"><a href="https://peabodyevolved.yale.edu" target="_blank" class="btn btn-peabody" style="font-size: 12px;" title="Peabody Evolved: Our Upcoming Transformative Renovation">Learn More</a></p>
--->
-			<!-- END ORIGINAL CLOSURE MESSAGE -->
 		</div>
 	</div>
 	
 	<header>
 		<div class="container" style="margin-top: -51px">
-			<a href="https://peabody.yale.edu" class="homeLogo" title="Peabody Museum: Home"><img src="/sites/default/files/2017/frontpage/img/torosaurus.png" width="275" class="toro" alt="" />
-                <img class="wordmark" src="/sites/default/files/2017/frontpage/img/peabodyWordmarkSingle.png" alt="Peabody Museum: Home" /></a>
+			<a href="https://peabody.yale.edu" title="Peabody Museum: Home" aria-label="Peabody Museum: Home"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/torosaurus.png" width="275" class="toro" />
+                <img class="wordmark" src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/peabodyWordmarkSingle.png" /></a>
 		</div>
 	</header>
 
-	<nav class="navbar" role="navigation" aria-label="Main Menu Container">
+	<nav class="navbar" role="navigation">
 		<div class="container">
 
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" title="Toggle navigation" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
             <span><h5 style="display: inline;">Menu </h5> <i class="fa fa-bars"></i></span>
           </button>
 
 			</div>
 			<div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right" role="menubar" aria-label="Main Menu">
+				<ul class="nav navbar-nav navbar-right">
 					<li class="spacer"></li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" aria-controls="submenu1" title="Visit">Visit</a>
-						<ul class="dropdown-menu" role="menu" id="submenu1">
-							<li><a href="/visit/admission-hours" title="Admission and Hours" role="menuitem">Admission &amp; Hours</a></li>
-							<li><a href="/visit/directions-parking" title="Directions and Parking" role="menuitem">Directions &amp; Parking</a></li>
-							<li><a href="https://shop.peabody.yale.edu/#/Admission" title="Buy Tickets Online" role="menuitem"><strong class="newStrong">NEW!</strong>&nbsp;&nbsp;Buy Tickets</a></li>
-							<li><a href="/members" title="Become a Member" role="menuitem">Become a Member</a></li>
-							<li><a href="/visit/museum-tours" title="Museum Tours" role="menuitem">Museum Tours</a></li>
-							<li><a href="/visit/visit-free" title="Visit For Free" role="menuitem">Visit For Free</a></li>
-							<li><a href="/visit/area-dining" title="Area Dining" role="menuitem">Area Dining</a></li>
-							<li><a href="/visit/audio-tour" title="Audio Tour" role="menuitem">Audio Tour</a></li>
-							<li><a href="https://www.yale.edu/newhaven/" target="_blank" title="Yale and New Haven" role="menuitem">Yale &amp; New Haven</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Visit" aria-label="Visit">Visit</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://peabody.yale.edu/visit/admission-hours" title="Admission and Hours" aria-label="Admission and Hours">Admission &amp; Hours</a></li>
+							<li><a href="https://peabody.yale.edu/visit/directions-parking" title="Directions and Parking" aria-label="Directions and Parking">Directions &amp; Parking</a></li>
+							<li><a href="https://shop.peabody.yale.edu/#/Admission" title="Buy Tickets Online" aria-label="Buy Tickets Online"><strong style="color: red; text-transform: uppercase;">NEW!</strong>&nbsp;&nbsp;Buy Tickets</a></li>
+							<li><a href="https://peabody.yale.edu/members" title="Become a Member" aria-label="Become a Member">Become a Member</a></li>
+							<li><a href="https://peabody.yale.edu/visit/museum-tours" title="Museum Tours" aria-label="Museum Tours">Museum Tours</a></li>
+							<li><a href="https://peabody.yale.edu/visit/visit-free" title="Visit For Free" aria-label="Visit For Free">Visit For Free</a></li>
+							<li><a href="https://peabody.yale.edu/visit/area-dining" title="Area Dining" aria-label="Area Dining">Area Dining</a></li>
+							<li><a href="https://peabody.yale.edu/visit/audio-tour" title="Audio Tour" aria-label="Audio Tour">Audio Tour</a></li>
+							<li><a href="https://www.yale.edu/newhaven/" target="_blank" title="Yale and New Haven" aria-label="Yale and New Haven">Yale &amp; New Haven</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="submenu2" role="button" aria-haspopup="true" aria-expanded="false" title="Events">Events</a>
-						<ul class="dropdown-menu" role="menu" id="submenu2">
-							<li><a href="/events/calendar" title="Calendar" role="menuitem">Calendar</a></li>
-							<li><a href="/events/camps" title="Camps" role="menuitem">Camps</a></li>
-							<li><a href="/events/upcoming-events" title="Upcoming Events" role="menuitem">Upcoming Events</a></li>
-							<li><a href="/events/talks" title="Talks" role="menuitem">Talks</a></li>
-							<li><a href="/visit/facility-rental" title="Facility Rental" role="menuitem">Facility Rental</a></li>
-							<li><a href="https://calendar.yale.edu" target="_blank" title="Other Events at Yale" role="menuitem">Other Events at Yale</a></li>
-							<li><a href="/visit/museum-tours" title="Museum Tours" role="menuitem">Museum Tours</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Events" aria-label="Events">Events</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://peabody.yale.edu/events/calendar" title="Calendar" aria-label="Calendar">Calendar</a></li>
+							<li><a href="https://peabody.yale.edu/events/camps" title="Camps" aria-label="Camps">Camps</a></li>
+							<li><a href="https://peabody.yale.edu/events/upcoming-events" title="Upcoming Events" aria-label="Upcoming Events">Upcoming Events</a></li>
+							<li><a href="https://peabody.yale.edu/events/talks" title="Talks" aria-label="Talks">Talks</a></li>
+							<li><a href="https://peabody.yale.edu/visit/facility-rental" title="Facility Rental" aria-label="Facility Rental">Facility Rental</a></li>
+							<li><a href="https://calendar.yale.edu" target="_blank" title="Other Events at Yale" aria-label="Other Events at Yale">Other Events at Yale</a></li>
+							<li><a href="https://peabody.yale.edu/visit/museum-tours" title="Museum Tours" aria-label="Museum Tours">Museum Tours</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="submenu3" role="button" aria-haspopup="true" aria-expanded="false" title="Exhibits">Exhibits</a>
-						<ul class="dropdown-menu" role="menu" id="submenu3">
-							<li><a href="/exhibits/temporary-special-exhibits" title="Temporary & Special Exhibits" role="menuitem">Temporary &amp; Special Exhibits</a></li>
-							<li><a href="/exhibits/permanent-halls" title="Permanent Halls" role="menuitem">Permanent Halls</a></li>
-							<li><a href="/education/discovery-room" title="Discovery Room" role="menuitem">Discovery Room</a></li>
-							<li><a href="/exhibits/online-exhibits" title="Online Exhibits" role="menuitem">Online Exhibits</a></li>
-							<li><a href="/exhibits/floor-plans" title="Floor Plans" role="menuitem">Floor Plans</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Exhibits" aria-label="Exhibits">Exhibits</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://peabody.yale.edu/exhibits/temporary-special-exhibits" title="Temporary & Special Exhibits" aria-label="Temporary & Special Exhibits">Temporary &amp; Special Exhibits</a></li>
+							<li><a href="https://peabody.yale.edu/exhibits/permanent-halls" title="Permanent Halls" aria-label="Permanent Halls">Permanent Halls</a></li>
+							<li><a href="https://peabody.yale.edu/education/discovery-room" title="Discovery Room" aria-label="Discovery Room">Discovery Room</a></li>
+							<li><a href="https://peabody.yale.edu/exhibits/online-exhibits" title="Online Exhibits" aria-label="Online Exhibits">Online Exhibits</a></li>
+							<li><a href="https://peabody.yale.edu/exhibits/floor-plans" title="Floor Plans" aria-label="Floor Plans">Floor Plans</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="submenu4" role="button" aria-haspopup="true" aria-expanded="false" title="Education" >Education</a>
-						<ul class="dropdown-menu" role="menu" id="submenu4">
-							<li><a href="/education/school-group-visits" title="School and Group Visits" role="menuitem">School &amp; Group Visits</a></li>
-							<li><a href="/education/west-campus-programs" title="West Campus" role="menuitem">West Campus</a></li>
-							<li><a href="/teachers" title="Teachers" role="menuitem">Teachers</a></li>
-							<li><a href="/education/evolutions" title="After School Program" role="menuitem">After School Program</a></li>
-							<li><a href="/education/peabody-road-program" title="Outreach" role="menuitem"">Outreach</a></li>
-							<li><a href="/education/birthday-parties" title="Birthday Parties" role="menuitem">Birthday Parties</a></li>
-							<li><a href="/yale-students" title="Yale Students" role="menuitem">Yale Students</a></li>
-							<li><a href="/education/programs-adults" title="Programs for Adults" role="menuitem"">Programs for Adults</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Education" aria-label="Education">Education</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://peabody.yale.edu/education/school-group-visits" title="School and Group Visits" aria-label="School and Group Visits">School &amp; Group Visits</a></li>
+							<li><a href="https://peabody.yale.edu/education/west-campus-programs" title="West Campus" aria-label="West Campus">West Campus</a></li>
+							<li><a href="https://peabody.yale.edu/teachers" title="Teachers" aria-label="Teachers">Teachers</a></li>
+							<li><a href="https://peabody.yale.edu/education/evolutions" title="After School Program" aria-label="After School Program">After School Program</a></li>
+							<li><a href="https://peabody.yale.edu/education/peabody-road-program" title="Outreach" aria-label="Outreach">Outreach</a></li>
+							<li><a href="https://peabody.yale.edu/education/birthday-parties" title="Birthday Parties" aria-label="Birthday Parties">Birthday Parties</a></li>
+							<li><a href="https://peabody.yale.edu/yale-students" title="Yale Students" aria-label="Yale Students">Yale Students</a></li>
+							<li><a href="https://peabody.yale.edu/education/programs-adults" title="Programs for Adults" aria-label="Programs for Adults">Programs for Adults</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="submenu5" role="button" aria-haspopup="true" aria-expanded="false" title="Collections">Collections</a>
-						<ul class="dropdown-menu" role="menu" id="submenu5">
-							<li><a href="https://collections.peabody.yale.edu/search/" title="Search the Collections" role="menuitem">Search the Collections</a></li>
-							<li><a href="/collections/the-collections" title="The Collections" role="menuitem">The Collections</a></li>
-							<li><a href="/collections/collection-contacts" title="Collection Contacts" role="menuitem">Collection Contacts</a></li>
-							<li><a href="/collections/using-collections" title="Using the Collections" role="menuitem">Using the Collections</a></li>
-							<li><a href="/collections/office-collections-and-research" title="Office of Collections and Research" role="menuitem">Office of Collections &amp; Research</a></li>
-							<li><a href="/collections/facilities" title="Facilities" role="menuitem">Facilities</a></li>
-							<li><a href="/collections/collections-policies" title="Collections Policies" role="menuitem">Collections Policies</a></li>
-							<li><a href="/collections/opportunities" title="Opportunities" role="menuitem">Opportunities</a></li>
-							<li><a href="/scientific-publications" title="Scientific Publications" role="menuitem">Scientific Publications</a></li>
-							<li><a href="/education/specimen-identifications" title="Specimen Identifications" role="menuitem">Specimen Identifications</a></li>
-							<li><a href="/collections/systems-database-admin" title="Systems/Database Admin" role="menuitem">Systems/Database Admin</a></li>
-							<li><a href="/collections/informatics" title="Informatics" role="menuitem">Informatics</a></li>
-							<li><a href="/collections/conservation-lab" title="Conservation Lab" role="menuitem">Conservation Lab</a></li>
-							<li><a href="/collections/blog" title="Collections Blog" role="menuitem">Collections Blog</a></li>
-							<li><a href="/collections/spnhc2012" title="SPNHC 2012" role="menuitem">SPNHC 2012</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Collections" aria-label="Collections">Collections</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://collections.peabody.yale.edu/search/" title="Search the Collections" aria-label="Search the Collections">Search the Collections</a></li>
+							<li><a href="https://peabody.yale.edu/collections/the-collections" title="The Collections" aria-label="The Collections">The Collections</a></li>
+							<li><a href="https://peabody.yale.edu/collections/collection-contacts" title="Collection Contacts" aria-label="Collection Contacts">Collection Contacts</a></li>
+							<li><a href="https://peabody.yale.edu/collections/using-collections" title="Using the Collections" aria-label="Using the Collections">Using the Collections</a></li>
+							<li><a href="https://peabody.yale.edu/collections/office-collections-and-research" title="Office of Collections and Research" aria-label="Office of Collections and Research">Office of Collections &amp; Research</a></li>
+							<li><a href="https://peabody.yale.edu/collections/facilities" title="Facilities" aria-label="Facilities">Facilities</a></li>
+							<li><a href="https://peabody.yale.edu/collections/collections-policies" title="Collections Policies" aria-label="Collections Policies">Collections Policies</a></li>
+							<li><a href="https://peabody.yale.edu/collections/opportunities" title="Opportunities" aria-label="Opportunities">Opportunities</a></li>
+							<li><a href="https://peabody.yale.edu/scientific-publications" title="Scientific Publications" aria-label="Scientific Publications">Scientific Publications</a></li>
+							<li><a href="https://peabody.yale.edu/education/specimen-identifications" title="Specimen Identifications" aria-label="Specimen Identifications">Specimen Identifications</a></li>
+							<li><a href="https://peabody.yale.edu/collections/systems-database-admin" title="Systems/Database Admin" aria-label="Systems/Database Admin">Systems/Database Admin</a></li>
+							<li><a href="https://peabody.yale.edu/collections/informatics" title="Informatics" aria-label="Informatics">Informatics</a></li>
+							<li><a href="https://peabody.yale.edu/collections/conservation-lab" title="Conservation Lab" aria-label="Conservation Lab">Conservation Lab</a></li>
+							<li><a href="https://peabody.yale.edu/collections/blog" title="Collections Blog" aria-label="Collections Blog">Collections Blog</a></li>
+							<li><a href="https://peabody.yale.edu/collections/spnhc2012" title="SPNHC 2012" aria-label="SPNHC 2012">SPNHC 2012</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="submenu6" role="button" aria-haspopup="true" aria-expanded="false" title="About Us">About Us</a>
-						<ul class="dropdown-menu" role="menu" id="submenu6">
-							<li><a href="/about-us/directors-welcome" title="Director's Welcome" role="menuitem">Director's Welcome</a></li>
-							<li><a href="/about-us/mission-history" title="Mission and History" role="menuitem">Mission &amp; History</a></li>
-							<li><a href="/about-us/contact-us" title="Contact Us" role="menuitem">Contact Us</a></li>
-							<li><a href="/about-us/administrative-staff" title="Administrative Staff" role="menuitem">Administrative Staff</a></li>
-							<li><a href="/collections/collection-contacts" title="Divisional Staff" role="menuitem">Divisional Staff</a></li>
-							<li><a href="/about-us/get-involved" title="Get Involved" role="menuitem">Get Involved</a></li>
-							<li><a href="/about-us/press-room" title="Press Room" role="menuitem">Press Room</a></li>
-							<li><a href="/about-us/museum-policies" title="Museum Policies" role="menuitem">Museum Policies</a></li>
-							<li><a href="/about-us/board-curators" title="Board of Curators" role="menuitem">Board of Curators</a></li>
-							<li><a href="/about-us/employment-opportunities" title="Employment Opportunities" role="menuitem">Employment Opportunities</a></li>
-							<li><a href="/about-us/connecticut-dinosaur-trail" title="CT Dino Trail" role="menuitem">CT Dino Trail</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="About Us" aria-label="About Us">About Us</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://peabody.yale.edu/about-us/directors-welcome" title="Director's Welcome" aria-label="Director's Welcome">Director's Welcome</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/mission-history" title="Mission and History" aria-label="Mission and History">Mission &amp; History</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/contact-us" title="Contact Us" aria-label="Contact Us">Contact Us</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/administrative-staff" title="Administrative Staff" aria-label="Administrative Staff">Administrative Staff</a></li>
+							<li><a href="https://peabody.yale.edu/collections/collection-contacts" title="Divisional Staff" aria-label="Divisional Staff">Divisional Staff</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/get-involved" title="Get Involved" aria-label="Get Involved">Get Involved</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/press-room" title="Press Room" aria-label="Press Room">Press Room</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/museum-policies" title="Museum Policies" aria-label="Museum Policies">Museum Policies</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/board-curators" title="Board of Curators" aria-label="Board of Curators">Board of Curators</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/employment-opportunities" title="Employment Opportunities" aria-label="Employment Opportunities">Employment Opportunities</a></li>
+							<li><a href="https://peabody.yale.edu/about-us/connecticut-dinosaur-trail" title="CT Dino Trail" aria-label="CT Dino Trail">CT Dino Trail</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-controls="submenu7" role="button" aria-haspopup="true" aria-expanded="false" title="Support">Support</a>
-						<ul class="dropdown-menu" role="menu" id="submenu7">
-							<li><a href="https://yale.edu/givepeabody" target="_blank" title="Make a Donation Now" role="menuitem">Make a Donation Now!</a></li>
-							<li><a href="/support/we-appreciate-our-supporters" title="Past Supporters" role="menuitem">Past Supporters</a></li>
-							<li><a href="/support/peabody-renovation" title="Peabody Renovation" role="menuitem">Peabody Renovation</a></li>
-							<li><a href="/support/giving-opportunities-planned-giving" title="Giving Opportunities and Planned Giving" role="menuitem">Giving Opportunities &amp; Planned Giving</a></li>
-							<li><a href="/members" title="Become a Member" role="menuitem">Become a Member</a></li>
-							<li><a href="/support/current-past-projects" title="Current and Past Projects" role="menuitem">Current &amp; Past Projects</a></li>
-							<li><a href="/volunteer" title="Become a Volunteer" role="menuitem">Become a Volunteer</a></li>
-							<li><a href="/support/peabody-institutional-partners" title="Peabody Institutional Partners" role="menuitem">Peabody Institutional Partners</a></li>
-							<li><a href="/support/peabody-overview" title="Peabody Overview" role="menuitem">Peabody Overview</a></li>
-							<li><a href="/members/1866-society" title="1866 Society" role="menuitem">1866 Society</a></li>
-							<li><a href="/members/peabody-museum-charitable-donation-policy" title="Charitable Donation Policy" role="menuitem">Charitable Donation Policy</a></li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" title="Support" aria-label="Support">Support</a>
+						<ul class="dropdown-menu">
+							<li><a href="https://yale.edu/givepeabody" target="_blank" title="Make a Donation Now" aria-label="Make a Donation Now">Make a Donation Now!</a></li>
+							<li><a href="https://peabody.yale.edu/support/we-appreciate-our-supporters" title="Past Supporters" aria-label="Past Supporters">Past Supporters</a></li>
+							<li><a href="https://peabody.yale.edu/support/peabody-renovation" title="Peabody Renovation" aria-label="Peabody Renovation">Peabody Renovation</a></li>
+							<li><a href="https://peabody.yale.edu/support/giving-opportunities-planned-giving" title="Giving Opportunities and Planned Giving" aria-label="Giving Opportunities and Planned Giving">Giving Opportunities &amp; Planned Giving</a></li>
+							<li><a href="https://peabody.yale.edu/members" title="Become a Member" aria-label="Become a Member">Become a Member</a></li>
+							<li><a href="https://peabody.yale.edu/support/current-past-projects" title="Current and Past Projects" aria-label="Current and Past Projects">Current &amp; Past Projects</a></li>
+							<li><a href="https://peabody.yale.edu/volunteer" title="Become a Volunteer" aria-label="Become a Volunteer">Become a Volunteer</a></li>
+							<li><a href="https://peabody.yale.edu/support/peabody-institutional-partners" title="Peabody Institutional Partners" aria-label="Peabody Institutional Partners">Peabody Institutional Partners</a></li>
+							<li><a href="https://peabody.yale.edu/support/peabody-overview" title="Peabody Overview" aria-label="Peabody Overview">Peabody Overview</a></li>
+							<li><a href="https://peabody.yale.edu/members/1866-society" title="1866 Society" aria-label="1866 Society">1866 Society</a></li>
+							<li><a href="https://peabody.yale.edu/members/peabody-museum-charitable-donation-policy" title="Charitable Donation Policy" aria-label="Charitable Donation Policy">Charitable Donation Policy</a></li>
 
 						</ul>
 					</li>
@@ -214,40 +205,39 @@ $randomtwo = $_SESSION['randomtwo'];
 		</div>
 	</nav>
 
-   <main id="main">
+
 	<div class="jumbotron main-slider">
 		<div class="container-fluid slider-container">
 
-			<div id="slider" role="region" aria-label="Image Carousel" aria-roledescription="carousel">
+			<div id="slider">
 				<div class="theSlider" id="theSlider">
 					<!-- BEGIN SLIDER ITEMS -->
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="1 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_exteriorToro_am_lq_mini.jpg" alt="Museum Exterior with Torosaurus Statue" aria-label="Museum Exterior with Torosaurus Statue">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="2 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_giantSquid_am_lq_mini.jpg" alt="Giant Squid in Lobby" aria-label="Giant Squid in Lobby">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="3 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_olmecHead_ALT_kz_lq_mini.jpg" alt="Olmec Head" aria-label="Olmec Head">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="4 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_fluidCollection_kz_lq_mini.jpg" alt="Fluid Collections Storage" aria-label="Fluid Collections Storage">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="5 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_horseFossils_kz_lq_mini.jpg" alt="Horse Fossils" aria-label="Horse Fossils">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="6 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_jungleDiorama_am_lq_mini.jpg" alt="Jungle Diorama" aria-label="Jungle Diorama">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="7 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_davidFriendHall_am_lq_mini.jpg" alt="David Friend Hall" aria-label="David Friend Hall">
 					</div>
-					<div class="item"  role="group" aria-roledescription="slide" aria-label="8 of 8">
-						<img src="/sites/default/files/2017/frontpage/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural">
+					<div class="item">
+						<img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/slider/slider_ageOfMammals_am_lq_mini.jpg" alt="The Age of Mammals Mural" aria-label="The Age of Mammals Mural">
 					</div>
 					<!-- END SLIDER ITEMS -->
 				</div>
-				<span id="sliderCtrlContainer"><span class="btnHolder"></span><span class="arrowsHolder"></span><span class="dotsHolder"></span></span>
 			</div>
 		</div>
 	</div>
@@ -260,17 +250,17 @@ $randomtwo = $_SESSION['randomtwo'];
 					<div class="container-fluid">
 
 
-						<table cellpadding="0" cellspacing="0" border="0" width="100%" role="presentation">
+						<table cellpadding="0" cellspacing="0" border="0" width="100%">
 							<tr>
 								<td width="60" style="text-align: left;">
-									<div style="margin-top: 0" class="h1"><i class="fa fa-comment speech-bubble" aria-hidden="true"></i></div>
+									<h1 style="margin-top: 0"><i class="fa fa-comment speech-bubble" aria-hidden="true"></i></h1>
 								</td>
 								<td>
 									<p style="padding-top: 5px;">
 <!-- ALERT DATE -->
 <strong>Friday, October 25</strong>
 <!-- /DATE -->
-										<span style="float: right"><a href="javascript:dismissAlert('#alert1')"><span class="sr-only">Close</span><i class="fa fa-close" aria-hidden="true"></i></a></span>
+										<span style="float: right"><a href="javascript:dismissAlert('#alert1')"><i class="fa fa-close" aria-hidden="true"></i></a></span>
 									</p>
 <!-- ALERT TEXT -->
 <p class="slider-alert-text">The third floor of the Peabody will close at noon. The Museum will close at 3 PM.</p>
@@ -304,11 +294,11 @@ $randomtwo = $_SESSION['randomtwo'];
 	<div class="container" id="topCta">
 		<div class="row">
 			<div class="col-sm-6 col-xs-12 two-column">
-				<p align="center"><a class="btn btn-peabody btn-lg" href="https://shop.peabody.yale.edu/#/Admission" role="button" aria-label="Buy Tickets Online"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Tickets Online</a></p>
-				<p class="jumbotron-paragraph"><strong style="color: #EE0000">NEW!</strong> Skip the line and purchase your admission tickets right from your web browser. Tickets are valid for one year from purchase. Click the button above to get started!</p>
+				<p align="center"><a class="btn btn-peabody btn-lg" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online" aria-label="Buy Tickets Online"><i class="fas fa-ticket-alt"></i>&nbsp;&nbsp;Buy Tickets Online</a></p>
+				<p class="jumbotron-paragraph"><strong style="color: red">NEW!</strong> Skip the line and purchase your admission tickets right from your web browser. Tickets are valid for one year from purchase. Click the button above to get started!</p>
 			</div>
 			<div class="col-sm-6 col-xs-12 two-column">
-				<p align="center"><a class="btn btn-peabody-green btn-lg" href="/members" role="button" aria-label="Become a Member"><i class="fas fa-user"></i>&nbsp;&nbsp;Become a Member</a></p>
+				<p align="center"><a class="btn btn-peabody-green btn-lg" href="https://peabody.yale.edu/members" role="button" title="Become a Member" aria-label="Become a Member"><i class="fas fa-user"></i>&nbsp;&nbsp;Become a Member</a></p>
 				<p class="jumbotron-paragraph">Your support unlocks a world of benefits! FREE unlimited admission and parking at the Peabody; 10% Museum Store discounts; Exclusive invitations to exhibition openings; Discounts on programs and events, store items, and more!</p>
 			</div>
 		</div>
@@ -317,22 +307,22 @@ $randomtwo = $_SESSION['randomtwo'];
 	<div class="container" id="icons">
 		<div class="row">
 			<div class="col-sm-2 hidden-xs icon-container-col">
-				<p align="center" class="icon-container"><img src="/sites/default/files/2017/frontpage/img/icons/icon_ent01.png" alt=""></p>
+				<p align="center" class="icon-container"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/icons/icon_ent01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="/sites/default/files/2017/frontpage/img/icons/icon_inv01.png" alt=""></p>
+				<p align="center" class="icon-container"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/icons/icon_inv01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="/sites/default/files/2017/frontpage/img/icons/icon_vp01.png" alt=""></p>
+				<p align="center" class="icon-container"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/icons/icon_vp01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="/sites/default/files/2017/frontpage/img/icons/icon_bot01.png" alt=""></p>
+				<p align="center" class="icon-container"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/icons/icon_bot01.png"></p>
 			</div>
 			<div class="col-sm-2 col-xs-3 icon-container-col icon-container-col-mobile">
-				<p align="center" class="icon-container"><img src="/sites/default/files/2017/frontpage/img/icons/icon_inv02.png" alt=""></p>
+				<p align="center" class="icon-container"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/icons/icon_inv02.png"></p>
 			</div>
 			<div class="col-sm-2 hidden-xs icon-container-col">
-				<p align="center" class="icon-container"><img src="/sites/default/files/2017/frontpage/img/icons/icon_ant01.png" alt=""></p>
+				<p align="center" class="icon-container"><img src="https://peabody.yale.edu/sites/default/files/2017/frontpage/img/icons/icon_ant01.png"></p>
 			</div>
 		</div>
 		<!-- HIDE THIS WHEN THE SNIPPET GOES LIVE -->
@@ -341,7 +331,7 @@ $randomtwo = $_SESSION['randomtwo'];
 	</div>
 
 
-	<div class="container-fluid peabody-evolved-separator" id="evolved-banner">
+	<div class="container-fluid peabody-evolved-separator" id="evolved-banner" aria-hidden="true">
 
 		<div id="evolved-banner-inner"></div>
 
@@ -351,8 +341,8 @@ $randomtwo = $_SESSION['randomtwo'];
 					<div class="col-hidden-xs col-sm-6 col-md-7"></div>
 					<div class="col-xs-12 col-sm-6 col-md-5" id="evolving_text">
 						<h2 class="blue-shadow">We're evolving!</h2>
-						<p id="renoText" class="blue-shadow">Visit our new site, <a href="https://peabodyevolved.yale.edu" title="Peabody Evolved">Peabody Evolved</a>, to learn more about the Peabody’s transformative renovation.</p>
-						<p><a class="btn btn-peabody btn-lg" href="https://peabodyevolved.yale.edu" role="button" aria-label="Peabody Evolved, Learn More"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Learn More</a></p>
+						<p id="renoText" class="blue-shadow">Visit our new site, <a href="https://peabodyevolved.yale.edu" title="Peabody Evolved" aria-label="Peabody Evolved">Peabody Evolved</a>, to learn more about the Peabody’s transformative renovation.</p>
+						<p><a class="btn btn-peabody btn-lg" href="https://peabodyevolved.yale.edu" role="button" title="Peabody Evolved" aria-label="Peabody Evolved"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Learn More</a></p>
 					</div>
 				</div>
 			</div>
@@ -367,37 +357,60 @@ $randomtwo = $_SESSION['randomtwo'];
 
 		<div class="row card-row">
 
-			<!-- BEGIN CARDS -->
+			<!-- BEGIN CARDS -->	
 			
-			<!-- CARD 2013953340 -->
+			<!-- CARD 1874512421 -->
 			<div class="col-md-6">
-				<div class="box-item box faded" id="card_96_2013953340">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/summercamp2020_IMG_9869_webcard-mini.jpg'); background-position: center center; ">
+				<div class="box-item box faded" id="card_101_1874512421">
+					<figure alt="Women at the Dawn of History" class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/women_dawn_history_webcard2-mini.jpg'); background-position: left center; ">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">2020 Summer Camps</h2></figcaption>
-							<h5 class="box-date box-date-right">Registration Open!</h5>
+							<h2 class="box-header">Women at the Dawn of History</h2>
+							<h5 class="box-date box-date-right">Saturday, February 29 </h5>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
-							<h5 class="box-header">Registration Open!</h5>
-							<h3 class="left plain-case normal-weight mallory-thin exhibit-heading compress-h3" id="card_evex_title96_2013953340">2020 Summer Camps</h3>
-							<div class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle96_2013953340"></div>
+							<h5 class="box-header">Special Full-Day Symposium</h5>
+							<h3 class="left plain-case normal-weight mallory-thin exhibit-heading compress-h3" id="card_evex_title101_1874512421">Women at the Dawn of History</h3>
+							<h5 class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle101_1874512421">Yale Babylonian Collection</h5>
 							<hr />
-							<p>Join us for an exciting Summer of learning and exploration!  Our summer camps for grades 3-7 include a mix of classroom-based activities, collections visits, field trips and more!</p></p>
+							<p>Join us for an in-depth exploration of the many roles and representations of women in the patriarchal world of ancient Mesopotamia.  This full-day symposium features talks, discussions, museum displays of artifacts, texts and images, and much more.</p>
+							<p><i class="far fa-clock"></i> Saturday, February 29, 9:30 am - 4:30 pm</p>
+							<p class="button-row"><a data-link-parent="card_evex_101_1874512421" class="btn btn-peabody back-link" href="https://peabody.yale.edu/events/women-dawn-history-symposium" role="button" title="More info: Women at the Dawn of History" aria-label="More info: Women at the Dawn of History">More Info</a></p>
+						</div>
+					</figure>
+				</div>
+			</div>
+			
+			<!-- CARD 2013953340 -->
+			<div class="col-md-6">
+				<div class="box-item box faded" id="card_96_2013953340">
+					<figure alt="2020 Summer Camps" class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/summercamp2020_IMG_9869_webcard-mini.jpg'); background-position: center center; ">
+						<div class="front-content">
+							<h2 class="box-header">2020 Summer Camps</h2>
+							<h5 class="box-date box-date-right">Registration opens soon! </h5>
+						</div>
+					</figure>
+					<figure class="back">
+						<div class="back-content">
+							<h5 class="box-header">Fun &amp; educational activities</h5>
+							<h3 class="left plain-case normal-weight mallory-thin exhibit-heading compress-h3" id="card_evex_title96_2013953340">2020 Summer Camps</h3>
+							<h5 class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle96_2013953340"></h5>
+							<hr />
+							<p>Camp registration opens in February.  Join us for an exciting Summer of learning and exploration!</p>
 							<p><i class="far fa-clock"></i> July 6 through August 14, 2020</p>
-							<p class="button-row"><a data-link-parent="card_evex_96_2013953340" class="btn btn-peabody back-link" href="/events/camps" role="button" aria-label="More info: Summer Camps 2020">More Info</a></p>
+							<p class="button-row"><a data-link-parent="card_evex_96_2013953340" class="btn btn-peabody back-link" href="https://peabody.yale.edu/events/camps" role="button" title="More info: Summer Camps 2020" aria-label="More info: Summer Camps 2020">More Info</a></p>
 						</div>
 					</figure>
 				</div>
 			</div>
 			
 			<!-- CARD 1172760170 -->
-			<div class="col-md-6" style="display: none">
+			<div class="col-md-6">
 				<div class="box-item box faded" id="card_97_1172760170">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/Gray-Tree-Frog-TLeenders-mini.jpg'); background-position: center center; ">
+					<figure alt="Frogwatch Training Workshops" class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/Gray-Tree-Frog-TLeenders-mini.jpg'); background-position: center center; ">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Frogwatch Training Workshops</h2></figcaption>
+							<h2 class="box-header">Frogwatch Training Workshops</h2>
 							<h5 class="box-date box-date-right">Evenings in March </h5>
 						</div>
 					</figure>
@@ -405,57 +418,11 @@ $randomtwo = $_SESSION['randomtwo'];
 						<div class="back-content">
 							<h5 class="box-header">Evening Workshops</h5>
 							<h3 class="left plain-case normal-weight mallory-thin exhibit-heading compress-h3" id="card_evex_title97_1172760170">Become a FrogWatch Citizen Scientist!</h3>
-							<div class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle97_1172760170"></div>
+							<h5 class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle97_1172760170"></h5>
 							<hr />
-							<p>The Museum is looking for volunteers to help monitor frog populations in nearby wetlands during the spring and summer.  Sign up for one of three evening workshops in March!</p>
+							<p>The Museum is looking for volunteers to help monitor frog populations in nearby wetlands during the spring and summer.  Sign up for one of three evening workshops in March!</p>
 							<p><i class="far fa-clock"></i> March 4th, 6th, &amp; 13th, 2020</p>
-							<p class="button-row"><a data-link-parent="card_evex_97_1172760170" class="btn btn-peabody back-link" href="/events/become-a-frogwatch-citizen-scientist" role="button" title="More info: Frogwatch Training Workshops" aria-label="Register Now: Frogwatch Training Workshops">Register Now</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<!-- CARD 9879165194 -->
-			<div class="col-md-6" style="display: none">
-				<div class="box-item box faded" id="card_97_9879165194">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/akitu-webcard-2020-02-24-mini.jpg'); background-position: center center; ">
-						<div class="front-content">
-							<figcaption><h2 class="box-header">Akitu: A Celebration of the Babylonian New Year</h2></figcaption>
-							<h5 class="box-date box-date-right">Saturday, March 21 </h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header">Family Day</h5>
-							<h3 class="left plain-case normal-weight mallory-thin exhibit-heading compress-h3" id="card_evex_title97_9879165194">Akitu</h3>
-							<div class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle97_9879165194">A Celebration of the Babylonian New Year</div>
-							<hr />
-							<p>Join us for a fun family day and engage with the daily lives of ancient Mesopotamians in celebration of Akitu, the Babylonian New Year! Experience recipes, demonstrations, activities and more.</p>
-							<p><i class="far fa-clock"></i> Saturday, March 21, 10:00 am &ndash; 4:00 pm</p>
-							<p class="button-row"><a data-link-parent="card_evex_97_9879165194" class="btn btn-peabody back-link" href="/events/akitu-celebration-babylonian-new-year" role="button" title="More info: Akitu: A Celebration of the Babylonian New Year" aria-label="More Info: Akitu: A Celebration of the Babylonian New Year">More Info</a></p>
-						</div>
-					</figure>
-				</div>
-			</div>
-
-			<!-- CARD 6516516195 -->
-			<div class="col-md-6" style="display: none">
-				<div class="box-item box faded" id="card_97_6516516195">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/Kirk_Johnson_webcard_2_26_20-mini.jpg'); background-position: left center; ">
-						<div class="front-content">
-							<figcaption><h2 class="box-header">Polar Crocodiles, Pickled Gorillas...</h2></figcaption>
-							<h5 class="box-date box-date-right">Tuesday, March 24</h5>
-						</div>
-					</figure>
-					<figure class="back">
-						<div class="back-content">
-							<h5 class="box-header">Special Lecture</h5>
-							<h3 class="left plain-case normal-weight mallory-thin exhibit-heading compress-h3" id="card_evex_title97_6516516195">Polar Crocodiles, Pickled Gorillas</h3>
-							<div class="left plain-case normal-weight mallory-mp-light exhibit-subheading" id="card_evex_subtitle97_6516516195">and the Future of Natural History Museums</div>
-							<hr />
-							<p>Big urban natural history museums became popular long ago, yet remain relevant in our digital age. Kirk Johnson, the director of the Smithsonian’s largest museum, will tell us why he thinks these museums will provide solutions to 21st-century challenges.</p>
-							<p><i class="far fa-clock"></i> Tuesday, March 24 at 4:30 pm</p>
-							<p class="button-row"><a data-link-parent="card_evex_97_6516516195" class="btn btn-peabody back-link" href="events/special-lecture/polar-crocodiles-pickled-gorillas-and-future-natural-history-museums" role="button" title="More info: Special Lecture with Kirk Johnson" aria-label="More Info: Special Lecture with Kirk Johnson">More Info</a></p>
+							<p class="button-row"><a data-link-parent="card_evex_97_1172760170" class="btn btn-peabody back-link" href="https://peabody.yale.edu/events/become-a-frogwatch-citizen-scientist" role="button" title="More info: Frogwatch Training Workshops" aria-label="More info: Frogwatch Training Workshops">Register Now</a></p>
 						</div>
 					</figure>
 				</div>
@@ -464,9 +431,9 @@ $randomtwo = $_SESSION['randomtwo'];
 			<!-- CARD 1690031384 -->
 			<div class="col-md-6">
 				<div class="box-item box faded" id="card_75_1690031384">
-					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/NSI_exh_webcard_2019-mini.jpg'); background-position: right center; ">
+					<figure alt="Seeing Nature Through Art" class="front photo-front photo-front-shadow-topbottom" style="background-image: url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/NSI_exh_webcard_2019-mini.jpg'); background-position: right center; ">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Seeing Nature Through Art</h2></figcaption>
+							<h2 class="box-header">Seeing Nature Through Art</h2>
 							<h5 class="box-date box-date-right">On View Now </h5>
 						</div>
 					</figure>
@@ -478,7 +445,7 @@ $randomtwo = $_SESSION['randomtwo'];
 							<hr />
 							<p>Representing a wide range of artistic styles and media, this impactful exhibit features the work of the Museum’s Natural Science Illustration Program instructors.</p>
 							<p><i class="far fa-clock"></i> On view through June 2020</p>
-							<p class="button-row"><a data-link-parent="card_evex_75_1690031384" class="btn btn-peabody back-link" href="/exhibits/seeing-nature-through-art" role="button" aria-label="Artists & Info: Seeing Nature Through Art">Artists &amp; Info</a></p>
+							<p class="button-row"><a data-link-parent="card_evex_75_1690031384" class="btn btn-peabody back-link" href="https://peabody.yale.edu/exhibits/seeing-nature-through-art" role="button" title="More info: Seeing Nature Through Art" aria-label="More info: Seeing Nature Through Art">Artists &amp; Info</a></p>
 						</div>
 					</figure>
 				</div>
@@ -489,7 +456,7 @@ $randomtwo = $_SESSION['randomtwo'];
 				<div class="box-item box" id="card_event6">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/NSI_258_WATERCOLOR-II.jpg'); background-position: center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Adult Art Classes</h2></figcaption>
+							<h2 class="box-header">Adult Art Classes</h2>
 							<h5 class="box-date box-date-right">Register Now</h5>
 						</div>
 					</figure>
@@ -500,7 +467,7 @@ $randomtwo = $_SESSION['randomtwo'];
 							<h5 class="left plain-case mallory-mp-light exhibit-subheading" id="exhibit6_subheading_back">Programs in Natural Science Illustration</h5>
 							<hr/>
 							<p>Join us for our unique art classes and workshops! Select from a wide range of nature-themed drawing and painting classes to help capture your love of nature.</p>
-							<p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="/education/natural-science-illustration-courses" role="button" aria-label="More info: Natural Science Illustration Program">More Info</a>
+							<p class="button-row"><a data-link-parent="card_event6" class="btn btn-peabody back-link" href="https://peabody.yale.edu/education/natural-science-illustration-courses" role="button" title="More info: Natural Science Illustration Program" aria-label="More info: Natural Science Illustration Program">More Info</a>
 							</p>
 						</div>
 					</figure>
@@ -512,7 +479,7 @@ $randomtwo = $_SESSION['randomtwo'];
 				<div class="box-item box" id="card_event2">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/ancient_mesopotamia_speaks_NCBS00021_silo-mini.jpg'); background-position: center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Ancient Mesopotamia Speaks</h2></figcaption>
+							<h2 class="box-header">Ancient Mesopotamia Speaks</h2>
 							<h5 class="box-date box-date-right">On view now</h5>
 						</div>
 					</figure>
@@ -523,8 +490,8 @@ $randomtwo = $_SESSION['randomtwo'];
 							<h5 class="left plain-case mallory-mp-light exhibit-subheading compress-h5" id="exhibit2_subheading_back">Highlights from the Yale Babylonian Collection</h5>
 							<hr />
 							<p>Ancient Mesopotamia, “the Land Between the Rivers,” was the birthplace of writing, urban culture, the state, and many other concepts and institutions that shape our world to this day.  This groundbreaking exhibition brings that ancient world to life.</p>
-							<p><i class="far fa-clock"></i> On view through June 2020.</p>
-							<p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="/exhibits/ancient-mesopotamia-speaks" role="button" aria-label="More info: Ancient Mesopotamia Speaks">More Info</a></p>
+							<p>On view through June 2020.</p>
+							<p class="button-row"><a data-link-parent="card_event2" class="btn btn-peabody back-link" href="https://peabody.yale.edu/exhibits/ancient-mesopotamia-speaks" role="button" title="More info: Ancient Mesopotamia Speaks" aria-label="More info: Ancient Mesopotamia Speaks">More Info</a></p>
 						</div>
 					</figure>
 				</div>
@@ -535,7 +502,7 @@ $randomtwo = $_SESSION['randomtwo'];
 				<div class="box-item box" id="card_event9">
 					<figure class="front photo-front photo-front-shadow-topbottom" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/events_exhibitions/Gold_event card_2018-4-10-mini.jpg'); background-position: right;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">California Gold</h2></figcaption>
+							<h2 class="box-header">California Gold</h2>
 							<h5 class="box-date box-date-right">On View Now</h5>
 						</div>
 					</figure>
@@ -547,7 +514,7 @@ $randomtwo = $_SESSION['randomtwo'];
 							<hr />
 							<p>Experience the beauty and splendor of California gold. This very special collection features 23 stunning pieces from the Golden State. </p>
 							<p>On view now.</p>
-							<p class="button-row"><a data-link-parent="card_event9" class="btn btn-peabody back-link" href="/exhibits/california-gold" role="button"  aria-label="More info: California Gold">More Info</a></p>
+							<p class="button-row"><a data-link-parent="card_event9" class="btn btn-peabody back-link" href="https://peabody.yale.edu/exhibits/california-gold" role="button" title="More info: California Gold" aria-label="More info: California Gold">More Info</a></p>
 						</div>
 					</figure>
 				</div>
@@ -559,11 +526,7 @@ $randomtwo = $_SESSION['randomtwo'];
 
 		<div class="row">
 			<div class="col-md-12">
-				<p align="center" style="text-align: center">
-				<strong>NOTE:</strong> We are postponing or canceling all public events and tours until <strong>April 5th.</strong><br />
-					<a href="/about-us/updates/2020-03-11--covid-19" title="More info: Event and tour cancellation">More Info</a>
-				</p>
-				<p class="button-row"><a class="btn btn-peabody btn-lg" href="/events/upcoming-events" role="button" title="View Calendar"><i class="far fa-calendar-alt"></i> View Calendar</a></p>
+				<p class="button-row"><a class="btn btn-peabody btn-lg" href="https://peabody.yale.edu/events/upcoming-events" role="button" title="View Calendar" aria-label="View Calendar"><i class="far fa-calendar-alt"></i> View Calendar</a></p>
 			</div>
 		</div>
 
@@ -574,26 +537,26 @@ $randomtwo = $_SESSION['randomtwo'];
 		<div class="row card-row" id="actionsRow1">
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta1">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/EXHIBITS_am.jpg'); background-position:right;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Visit</h2></figcaption>
+							<h2 class="box-header">Visit</h2>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
 							<h5 class="event-back-heading">Visit</h5>
 							<p>Explore the 4.5-billion-year history of the Earth and its life, all under one roof. From mummies and mastodons to dinosaurs and diamonds, there's something fascinating around every corner of the Peabody. Come see for yourself!</p>
-							<p><a href="/exhibits/">Learn more about our exhibitions</a></p>
-							<p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online">Buy Tickets Online</a>&nbsp;<strong style="color: #EE0000">New!</strong></p>
+							<p><a href="https://peabody.yale.edu/exhibits/">Learn more about our exhibitions</a></p>
+							<p class="button-row"><a data-link-parent="card_cta1" class="btn btn-peabody back-link" href="https://shop.peabody.yale.edu/#/Admission" role="button" title="Buy Tickets Online" aria-label="Buy Tickets Online">Buy Tickets Online</a>&nbsp;<strong style="color: red">New!</strong></p>
 						</div>
 					</figure>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta2">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/YALESTUDENTS_am.jpg'); background-position:center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Yale Students</h2></figcaption>
+							<h2 class="box-header">Yale Students</h2>
 						</div>
 					</figure>
 					<figure class="back diagonal-back">
@@ -601,12 +564,12 @@ $randomtwo = $_SESSION['randomtwo'];
 							<div class="back-top back-left">
 								<h5 class="event-back-heading-double">Yale Students</h5>
 								<p>The Peabody is YOUR natural history museum. Join our community today.</p>
-								<p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody back-link" href="/yale-students" role="button" aria-label="More info about Peabody student programs">More info</a></p>
+								<p class="button-row"><a data-link-parent="card_cta2" class="btn btn-peabody back-link" href="https://peabody.yale.edu/yale-students" role="button" title="Learn more about Peabody student programs" aria-label="Learn more about Peabody student programs">More info</a></p>
 							</div>
 							<div class="back-bottom back-right" id="card_cta2_customtext">
 								<h5 class="event-back-heading-double">Study Gallery</h5>
 								<p>Our new exhibition enriches Yale courses each semester specimens and artifacts from our collections.</p>
-								<a href="/exhibits/object-study-gallery" aria-label="Learn more about Object Study Gallery" class="btn btn-peabody back-link" data-link-parent="card_cta2b" role="button">Learn more</button></a>
+								<a href="https://peabody.yale.edu/exhibits/object-study-gallery" title="Object Study Gallery" aria-label="Object Study Gallery" class="btn btn-peabody back-link" data-link-parent="card_cta2b" role="button">Learn more</button></a>
 							</div>
 						</div>
 					</figure>
@@ -614,16 +577,16 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta3">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/COLLECTIONS_am.jpg'); background-position:center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Collections &amp; Research</h2></figcaption>
+							<h2 class="box-header">Collections &amp; Research</h2>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
 							<h5 class="event-back-heading">Collections &amp; Research</h5>
-							<p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="https://collections.peabody.yale.edu/search/" aria-label="Search the database" class="back-link" data-link-parent="card_cta3">search the database</a> for over 8.5 million objects.</p>
-							<p class="button-row"><a data-link-parent="card_cta3" class="btn btn-peabody back-link" href="/collections/the-collections" role="button"  aria-label="Explore the Collections">Explore the Collections</a></p>
+							<p>Explore the vast collections and cutting-edge research of the Peabody Museum, or <a href="https://collections.peabody.yale.edu/search/" aria-label="Search the collections database" title="Search the collections database" class="back-link" data-link-parent="card_cta3">search the database</a> for over 8.5 million objects.</p>
+							<p class="button-row"><a data-link-parent="card_cta3" class="btn btn-peabody back-link" href="https://peabody.yale.edu/collections/the-collections" role="button" title="Explore the Collections" aria-label="Explore the Collections">Explore the Collections</a></p>
 						</div>
 					</figure>
 				</div>
@@ -633,26 +596,26 @@ $randomtwo = $_SESSION['randomtwo'];
 		<div class="row card-row" id="actionsRow2">
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta4">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/CARD_GROUPSALES_SCHOOL-GROUPVISITS_HOMEPAGE.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/CARD_GROUPSALES_SCHOOL-GROUPVISITS_HOMEPAGE.jpg'); background-position:center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">School &amp; Group Visits</h2></figcaption>
+							<h2 class="box-header">School &amp; Group Visits</h2>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
 							<h5 class="event-back-heading">School &amp; Group Visits</h5>
 							<p>Learn about our many offerings and schedule your field trip here. Field trip planning made easy.</p>
-							<p><a href="/education/general-information-reservations" aria-label="General information and fees" class="back-link" data-link-parent="card_cta4">General information and fees</a></p>
-							<a href="/education/school-program-registration-form" aria-label="Register today for a school or group visit" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
+							<p><a href="https://peabody.yale.edu/education/general-information-reservations" title="Field trip information and fees" aria-label="Field trip information and fees" class="back-link" data-link-parent="card_cta4">General information and fees</a></p>
+							<a href="https://peabody.yale.edu/education/school-program-registration-form" title="Register for a school or group visit" aria-label="Register for a school or group visit" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
 						</div>
 					</figure>
 				</div>
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta5">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/CARD_GROUPSALES_BIRTHDAYPARTIES_DINOSAUR-DISCOVERY.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/CARD_GROUPSALES_BIRTHDAYPARTIES_DINOSAUR-DISCOVERY.jpg'); background-position:center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Birthday Parties</h2></figcaption>
+							<h2 class="box-header">Birthday Parties</h2>
 						</div>
 					</figure>
 					<figure class="back">
@@ -660,7 +623,7 @@ $randomtwo = $_SESSION['randomtwo'];
 							<h5 class="event-back-heading" rel="card">Birthday Parties</h5>
 							<p>Join us for a birthday party your child will remember at one of the premier university natural history museums in the world. </p>
 							<!--							<p><strong>NOTE:</strong> Birthday parties resume in September.</p>-->
-							<a href="/education/birthday-parties" aria-label="Register today for a birthday party" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
+							<a href="https://peabody.yale.edu/education/birthday-parties" title="Request a birthday party" aria-label="Request a birthday party" class="btn btn-peabody back-link" data-link-parent="card_cta4" role="button">Register today</a>
 						</div>
 					</figure>
 				</div>
@@ -668,16 +631,16 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta6">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/CARD_MEMBERSHIP_HOMEPAGE.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/CARD_MEMBERSHIP_HOMEPAGE.jpg'); background-position:center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Become a Member</h2></figcaption>
+							<h2 class="box-header">Become a Member</h2>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
 							<h5 class="event-back-heading" rel="card">Become a Member</h5>
 							<p>Become a member of the Peabody today! Help support our mission, programs and exhibitions, and discover a world of benefits. </p>
-							<p class="button-row"><a href="https://shop.peabody.yale.edu/#/Membership" aria-label="Browse plans, Become a member" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Browse plans</a></p>
+							<p class="button-row"><a href="https://shop.peabody.yale.edu/#/Membership" title="Become a member" aria-label="Become a member" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Browse plans</a></p>
 						</div>
 					</figure>
 				</div>
@@ -687,9 +650,9 @@ $randomtwo = $_SESSION['randomtwo'];
 		<div class="row card-row" id="actionsRow3">
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta7">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/CARD_RETAIL_HOMEPAGE_WG_2018.jpg'); background-position:center;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/CARD_RETAIL_HOMEPAGE_WG_2018.jpg'); background-position:center;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Museum Store</h2></figcaption>
+							<h2 class="box-header">Museum Store</h2>
 						</div>
 					</figure>
 					<figure class="back">
@@ -697,7 +660,7 @@ $randomtwo = $_SESSION['randomtwo'];
 							<h5 class="event-back-heading">Museum Store</h5>
 							<p>Shop the Peabody Museum store online and find something for every natural history lover!</p>
 							<p class="button-row">
-								<a href="https://shop.peabody.yale.edu/#/Retail" aria-label="Shop now at the Peabody Museum online store" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Shop Now</a>&nbsp;<strong style="color: #EE0000">New!</strong>
+								<a href="https://shop.peabody.yale.edu/#/Retail" title="Shop the Peabody Museum online store" aria-label="Shop the Peabody Museum online store" class="btn btn-peabody back-link" data-link-parent="card_cta7" role="button">Shop Now</a>&nbsp;<strong style="color: red">New!</strong>
 <!--								<strong>Coming soon!</strong>-->
 							</p>
 						</div>
@@ -706,35 +669,31 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta8">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/CONNECT_kz.jpg'); background-position:left;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Connect</h2></figcaption>
+							<h2 class="box-header">Connect</h2>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
-							<form action="https://yale.us18.list-manage.com/subscribe/post?u=1acb03bb40621ac8dbc99d4bd&amp;id=7346d65d59" method="post" class="form-horizontal form-contact validate" target="_blank" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" novalidate aria-label="Mailing List Form">
+							<form action="https://yale.us18.list-manage.com/subscribe/post?u=1acb03bb40621ac8dbc99d4bd&amp;id=7346d65d59" method="post" class="form-horizontal form-contact validate" target="_blank" name="mc-embedded-subscribe-form" id="mc-embedded-subscribe-form" novalidate>
 								<fieldset rel="card">
-									<legend><h5 class="event-back-heading" rel="card">Sign up for our mailing list</h5></legend>
-									<!--<h6 class="event-back-heading" rel="card" style="visibility: visible;">(All fields required)</h6>-->
+									<h5 class="event-back-heading" rel="card">Sign up for our mailing list</h5>
 
 									<div id="signup_textfields" rel="card">
 										<div class="form-group" rel="card">
 											<div class="col-xs-12" rel="card">
-												<label for="mce-FNAME" aria-labelledby="requiredMsg">First Name<i class="fas fa-asterisk"></i></label>
-												<input data-form-parent="card_cta8" placeholder="First Name" rel="card" type="text" value="" name="FNAME" class="required form-control input-md" id="mce-FNAME" aria-required="true" required>
+												<input data-form-parent="card_cta8" placeholder="First Name" rel="card" type="text" value="" name="FNAME" class="required form-control input-md" id="mce-FNAME">
 											</div>
 										</div>
 										<div class="form-group" rel="card">
 											<div class="col-xs-12" rel="card">
-												<label for="mce-LNAME" aria-labelledby="requiredMsg">Last Name<i class="fas fa-asterisk"></i></label>
-												<input data-form-parent="card_cta8" placeholder="Last Name" rel="card" type="text" value="" name="LNAME" class="required form-control input-md" id="mce-LNAME" aria-required="true" required>
+												<input data-form-parent="card_cta8" placeholder="Last Name" rel="card" type="text" value="" name="LNAME" class="required form-control input-md" id="mce-LNAME">
 											</div>
 										</div>
 										<div class="form-group" rel="card">
 											<div class="col-xs-12" rel="card">
-												<label for="mce-EMAIL" aria-labelledby="requiredMsg">Email Address<i class="fas fa-asterisk"></i></label>
-												<input data-form-parent="card_cta8" placeholder="Email Address" rel="card" type="text" value="" name="EMAIL" class="required email form-control input-md" id="mce-EMAIL" aria-required="true" required>
+												<input data-form-parent="card_cta8" placeholder="Email Address" rel="card" type="text" value="" name="EMAIL" class="required email form-control input-md" id="mce-EMAIL">
 											</div>
 										</div>
 									</div>
@@ -742,13 +701,12 @@ $randomtwo = $_SESSION['randomtwo'];
 										<div class="response" id="mce-error-response" style="display:none"></div>
 										<div class="response" id="mce-success-response" style="display:none"></div>
 									</div>
-									<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1acb03bb40621ac8dbc99d4bd_7346d65d59" tabindex="-1" value="" aria-label="No Fill"></div>
+									<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1acb03bb40621ac8dbc99d4bd_7346d65d59" tabindex="-1" value=""></div>
 
 									<div class="form-group" rel="card">
+										<label class="col-md-4 control-label" for="submit" rel="card"></label>
 										<div class="col-md-8" rel="card">
-											<input type="submit" rel="card" id="mc-embedded-subscribe" data-form-parent="card_cta8" name="subscribe" class="button btn btn-peabody back-submit" title="Sign up for the Peabody mailing list" aria-label="Subscribe to the Peabody mailing list" value="Subscribe" tabindex="0">
-											<br>
-											<span style="margin-top:3px" id="requiredMsg"><i class="fas fa-asterisk"></i> Required Field</span>
+											<input type="submit" rel="card" id="mc-embedded-subscribe" data-form-parent="card_cta8" name="subscribe" class="button btn btn-peabody back-submit" title="Sign up for the Peabody mailing list" aria-label="Sign up for the Peabody mailing list" value="Subscribe" tabindex="-1">
 										</div>
 									</div>
 								</fieldset>
@@ -759,16 +717,16 @@ $randomtwo = $_SESSION['randomtwo'];
 			</div>
 			<div class="col-md-4">
 				<div class="box-item box" id="card_cta9">
-					<figure class="front photo-front photo-front-shadow" style="background-image:url('/sites/default/files/2017/frontpage/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
+					<figure class="front photo-front photo-front-shadow" style="background-image:url('https://peabody.yale.edu/sites/default/files/2017/frontpage/img/cards/actions/SUPPORT_am.jpg'); background-position:right;">
 						<div class="front-content">
-							<figcaption><h2 class="box-header">Support</h2></figcaption>
+							<h2 class="box-header">Support</h2>
 						</div>
 					</figure>
 					<figure class="back">
 						<div class="back-content">
 							<h5 class="event-back-heading-double">Donate to the Peabody</h5>
 							<p>Thanks to donors like you, the Peabody Museum is able to pursue its mission of advancing our understanding of earth’s history and sharing the results of this research with the widest possible audience. </p>
-							<p class="button-row"><a href="https://yale.edu/givepeabody" target="_blank" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta9" role="button">Donate now</button></a></p>
+							<p class="button-row"><a href="https://yale.edu/givepeabody" target="_blank" title="Donate now" aria-label="Donate now" class="btn btn-peabody back-link" data-link-parent="card_cta9" role="button">Donate now</button></a></p>
 						</div>
 					</figure>
 				</div>
@@ -779,45 +737,42 @@ $randomtwo = $_SESSION['randomtwo'];
 
 
 		<!-- Hours & Admission -->
-		<div role="table" aria-label="Museum Hours" aria-describedby="tableDesc">
-		<div class="row" >
+		<div class="row">
 			<div class="col-md-12">
 				<h2 class="mediumTitle">Hours &amp; Admission</h2>
-				<span id="tableDesc" class="sr-only">Peabody Museum Operating Hours</span>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-6" role="row">
+			<div class="col-xs-6">
 				<p style="text-align: right;">
-					<span class="hours-day" role="rowheader"><strong>Sunday</strong></span><br />
-					<span class="hours-day" role="rowheader"><strong>Monday</strong></span><br />
-					<span class="hours-day" role="rowheader"><strong>Tuesday</strong></span><br />
-					<span class="hours-day" role="rowheader"><strong>Wednesday</strong></span><br />
-					<span class="hours-day" role="rowheader"><strong>Thursday</strong></span><br />
-					<span class="hours-day" role="rowheader"><strong>Friday</strong></span><br />
-					<span class="hours-day" role="rowheader"><strong>Saturday</strong></span>
+					<span class="hours-day"><strong>Sunday</strong></span><br />
+					<span class="hours-day"><strong>Monday</strong></span><br />
+					<span class="hours-day"><strong>Tuesday</strong></span><br />
+					<span class="hours-day"><strong>Wednesday</strong></span><br />
+					<span class="hours-day"><strong>Thursday</strong></span><br />
+					<span class="hours-day"><strong>Friday</strong></span><br />
+					<span class="hours-day"><strong>Saturday</strong></span>
 				</p>
 			</div>
-			<div class="col-xs-6" role="row">
+			<div class="col-xs-6">
 				<p>
-					<span class="hours-time" role="cell">12 pm &ndash; 5 pm</span><br />
-					<span class="hours-time hours-time-closed" role="cell">CLOSED</span><br />
-					<span class="hours-time" role="cell">10 am &ndash; 5 pm</span><br />
-					<span class="hours-time" role="cell">10 am &ndash; 5 pm</span><br />
-					<span class="hours-time" role="cell">10 am &ndash; 5 pm</span><br />
-					<span class="hours-time" role="cell">10 am &ndash; 5 pm</span><br />
-					<span class="hours-time" role="cell">10 am &ndash; 5 pm</span>
+					<span class="hours-time">12 pm &ndash; 5 pm</span><br />
+					<span class="hours-time hours-time-closed">CLOSED</span><br />
+					<span class="hours-time">10 am &ndash; 5 pm</span><br />
+					<span class="hours-time">10 am &ndash; 5 pm</span><br />
+					<span class="hours-time">10 am &ndash; 5 pm</span><br />
+					<span class="hours-time">10 am &ndash; 5 pm</span><br />
+					<span class="hours-time">10 am &ndash; 5 pm</span>
 				</p>
 			</div>
 		</div>
-	  </div>
 
 		<div class="row">
 			<div class="col-md-12">
-				<p align="center"><br />Openings subject to inclement weather and holiday schedules.<br />Please check our <a href="/visit/admission-hours" title="Admissions information">admissions</a> page for more information.<br /><br /></p>
+				<p align="center"><br />Openings subject to inclement weather and holiday schedules.<br />Please check our <a href="https://peabody.yale.edu/visit/admission-hours" title="Admissions information" aria-label="Admissions information">admissions</a> page for more information.<br /><br /></p>
 
 				<p align="center">
-					<a href="https://www.google.com/maps/place/Yale+Peabody+Museum+of+Natural+History/@41.31611,-72.920938,15z/data=!4m5!3m4!1s0x89e7d9c874e11dd1:0x368793b0d438047!8m2!3d41.315785!4d-72.921048?hl=en" class="btn btn-peabody" target="_blank" aria-label="Directions to the Peabody"><i class="fas fa-directions" aria-hidden="true"></i> Directions</a>
+					<a href="https://www.google.com/maps/place/Yale+Peabody+Museum+of+Natural+History/@41.31611,-72.920938,15z/data=!4m5!3m4!1s0x89e7d9c874e11dd1:0x368793b0d438047!8m2!3d41.315785!4d-72.921048?hl=en" class="btn btn-peabody" target="_blank" title="Directions to the Peabody" aria-label="Directions to the Peabody"><i class="fas fa-directions" aria-hidden="true"></i> Directions</a>
 				</p>
 			</div>
 		</div>
@@ -825,28 +780,28 @@ $randomtwo = $_SESSION['randomtwo'];
 		<div class="row">
 			<div class="col-xs-12">
 				<ul class="social-icons">
-					<li class="social-icon-facebook"><a href="https://www.facebook.com/YalePeabodyMuseum/" target="_blank" aria-label="Peabody Museum on Facebook"><i class="fab fa-facebook-f"></i></a></li>
-					<li class="social-icon-instagram"><a href="https://www.instagram.com/yalepeabodymuseum/" target="_blank" aria-label="Peabody Museum on Instagram"><i class="fab fa-instagram"></i></a></li>
-					<li class="social-icon-twitter"><a href="https://twitter.com/yalepeabody" target="_blank" aria-label="Peabody Museum on Twitter"><i class="fab fa-twitter"></i></a></li>
-					<li class="social-icon-youtube"><a href="https://www.youtube.com/user/yalepeabodymuseum" target="_blank" aria-label="Peabody Museum YouTube channel"><i class="fab fa-youtube"></i></a></li>
+					<li class="social-icon-facebook"><a href="https://www.facebook.com/YalePeabodyMuseum/" target="_blank" title="Peabody Museum on Facebook" aria-label="Peabody Museum on Facebook"><i class="fab fa-facebook-f"></i></a></li>
+					<li class="social-icon-instagram"><a href="https://www.instagram.com/yalepeabodymuseum/" target="_blank" title="Peabody Museum on Instagram" aria-label="Peabody Museum on Instagram"><i class="fab fa-instagram"></i></a></li>
+					<li class="social-icon-twitter"><a href="https://twitter.com/yalepeabody" target="_blank" title="Peabody Museum on Twitter" aria-label="Peabody Museum on Twitter"><i class="fab fa-twitter"></i></a></li>
+					<li class="social-icon-youtube"><a href="https://www.youtube.com/user/yalepeabodymuseum" target="_blank" title="Peabody Museum's YouTube channel" aria-label="Peabody Museum YouTube channel"><i class="fab fa-youtube"></i></a></li>
 				</ul>
 			</div>
 		</div>
 
 		<hr />
-       </main>
+
 		<footer class="row footer-copyright">
 			<div class="col-xs-12 col-sm-2 col-md-1">
 				<p class="footer-logo footer-item">
-					<a href="https://www.yale.edu" title="Yale University Website"><img src="/sites/default/files/images/yaleWordmark.gif" alt="Yale University Website" width="72" height="36"></a>
+					<a href="https://www.yale.edu" title="Yale University Website" aria-label="Yale University Website"><img src="https://peabody.yale.edu/sites/default/files/images/yaleWordmark.gif" alt="Yale University" width="72" height="36"></a>
 				</p>
 			</div>
 			<div class="col-xs-12 col-sm-10 col-md-11">
 				<p class="footer-item footer-text">Copyright &copy; 2020, Yale Peabody Museum of Natural History. All rights reserved.<br /> 170 Whitney Ave, New Haven, CT 06511</p>
 				<p class="footer-item footer-text">
 					<span id="footerPrivacyTerms">
-                        &nbsp;&bull;&nbsp;<a target="_blank" href="https://usability.yale.edu/web-accessibility/accessibility-yale" title="Yale University Accessibility Commitment Policy">Accessibility</a>&nbsp;&bull;&nbsp;<a target="_blank" href="https://www.yale.edu/privacy" title="Yale University Privacy Policy">Privacy Policy</a>&nbsp;&bull;&nbsp;
-                    <a href="/about-us/terms-use-what-you-need-know" title="Terms of Use">Terms of Use</a>&nbsp;&bull;&nbsp;
+                        &nbsp;&bull;&nbsp;<a target="_blank" href="https://usability.yale.edu/web-accessibility/accessibility-yale" title="Yale University Accessibility Commitment Policy" aria-label="Yale University Accessibility Commitment Policy">Accessibility</a>&nbsp;&bull;&nbsp;<a target="_blank" href="https://www.yale.edu/privacy" title="Yale University Privacy Policy" aria-label="Yale University Privacy Policy">Privacy Policy</a>&nbsp;&bull;&nbsp;
+                    <a href="https://peabody.yale.edu/about-us/terms-use-what-you-need-know" title="Terms of Use" aria-label="Terms of Use">Terms of Use</a>&nbsp;&bull;&nbsp;
                     </span>
 				</p>
 			</div>
